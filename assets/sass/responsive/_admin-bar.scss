@@ -1,0 +1,82 @@
+/*==================================
+=            Admin Bar             =
+==================================*/
+
+body.admin-bar {
+
+	/*----------  For Desktop  ----------*/
+	@media ( min-width: 782px ) {
+
+		.menu-toggle-desktop {
+			top: 47px;
+		}
+
+		.navigation-offcanvas,
+		.navigation-offcanvas-push,
+		.mini-cart-sidebar {
+			top: 32px;
+		}
+		
+		.site-header {
+			&.header-sticky-desktop {
+				.header-inner-wrapper {
+					top: 32px;
+				}
+			}
+		}
+
+		.search-form-container {
+			&.search-form-style-fullscreen,
+			&.search-form-style-halfscreen {
+				top: 32px;
+			}
+		}
+
+		.slider {
+			&.slider-height--full {
+				.swiper-container {
+					height: calc( 100vh - 32px );
+				}
+			}
+		}
+	}
+	
+	/*----------  For Tablet  ----------*/
+	@media ( max-width: 782px ) and ( min-width: 600px ) {
+		.menu-toggle-mobile {
+			top: 42px;
+		}
+		
+		.menu-toggle-desktop {
+			top: 57px;
+		}
+
+		.navigation-offcanvas,
+		.navigation-offcanvas-push,
+		.navigation-mobile,
+		.mini-cart-sidebar {
+			top: 42px;
+		}
+
+		.search-form-container {
+			&.search-form-style-fullscreen,
+			&.search-form-style-halfscreen {
+				top: 42px;
+			}
+		}
+
+	}
+
+	@media ( max-width : 600px ) {
+		.site-header {
+			&.header-sticky-mobile {
+				.header-inner-wrapper {
+					top: 46px;
+				}
+			}
+		}
+	}
+}
+
+
+/*=====  End of Admin Bar   ======*/

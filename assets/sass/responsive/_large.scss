@@ -1,0 +1,22 @@
+@media screen and ( min-width: 992px ) {
+	/* Make sticky header on desktop */
+	.header-sticky-desktop {
+		.header-inner-wrapper {
+			position: fixed;
+		}
+	}
+}
+
+
+
+@media ( min-width: 768px ) {
+	
+	/* Only make slider full viewport height on larger devices */
+	.slider {
+		&.slider-height--full {
+			.swiper-container {
+				height: 100vh;
+			}
+		}
+	}
+}

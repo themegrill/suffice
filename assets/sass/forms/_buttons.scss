@@ -1,0 +1,178 @@
+.btn {
+	@include btn();
+
+	&:hover {
+		box-shadow: inset 1px 1px 100px rgba( 255, 255, 255, 0.3 );
+	}
+
+	.fa {
+		line-height: 1.3;
+		&.icon-left {
+			float: left;
+			padding-right: 10px;
+		}
+
+		&.icon-right {
+			float: right;
+			padding-left: 10px;
+		}
+	}
+}
+
+/*----------  Sizes  ----------*/
+.btn-small {
+	padding: 7px 15px;
+	font-size: 12px;
+	border-width: 1px;
+}
+
+.btn-wide {
+	padding: 13px 45px;
+	font-size: 12px;
+	border-width: 2px;
+}
+
+.btn-medium {
+	font-size: 14px;
+	font-weight: 500;
+	padding: 20px 45px;
+	border-width: 2px;
+}
+
+.btn-large {
+	font-size: 22px;
+	font-weight: 500;
+	padding: 30px 60px;
+	border-width: 4px;
+}
+
+/*----------  Variations  ----------*/
+
+.btn-flat {
+	border-radius: none;
+}
+
+.btn-rounded {
+	border-radius: 100px;
+}
+
+.btn-bordered {
+	border-color: #fff;
+	border-style: solid;
+}
+
+.btn-rounded-edges {
+	border-radius: 3px;
+}
+
+.btn-left {
+	text-align: left;
+}
+
+.btn-right {
+	text-align: right;
+}
+
+.btn-center {
+	text-align: center;
+}
+
+/*----------  Button color styles  ----------*/
+.btn-primary {
+	background: $color-brand-primary;
+	color: #ffffff;
+	border-color: #fff;
+}
+.btn-orange {
+	background: $color-orange;
+	color: #fff;
+	border-color: #fff;
+
+	&:hover {
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+		background: lighten($color-orange, 3);
+		border-color: lighten($color-orange, 3);
+	}
+}
+
+.btn-cyan {
+	background: $color-cyan;
+	color: #fff;
+	border-color: #fff;
+
+	&:hover {
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+		background: lighten($color-cyan, 3);
+		border-color: lighten($color-cyan, 3);
+	}
+}
+.btn-pink {
+	background: $color-pink;
+	color: #fff;
+	border-color: #fff;
+
+	&:hover {
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+		background: lighten($color-pink, 3);
+		border-color: lighten($color-pink, 3);
+	}
+}
+
+.btn-yellow {
+	background: darken($color-yellow, 10);
+	color: #fff;
+	border-color: #fff;
+
+	&:hover {
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+		background: lighten($color-yellow, 1);
+		border-color: lighten($color-yellow, 1);
+	}
+}
+.btn-ghost {
+	background: transparent;
+	border-style: solid;
+}
+
+.btn-white {
+	background: #fff;
+	color: $color-gray-darker;
+	
+	.fa {
+		color: $color-gray-darker;
+	}
+
+	&:hover {
+		background: $color-gray-darker;
+		color: #fff;
+
+		.fa {
+			color: #fff;
+		}
+	}
+}
+
+.btn-black {
+	background: $color-gray-darker;
+	color: #fff;
+
+	&:hover {
+		background: #fff;
+		color: $color-gray-darker;
+
+		.fa {
+			color: $color-gray-darker;
+		}
+	}
+}
+
+/*----------  Buttom Group  ----------*/
+.btn-group {
+	.btn {
+		margin-right: 15px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

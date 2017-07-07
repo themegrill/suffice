@@ -1,0 +1,8 @@
+/* Remove display of required Google Rich Snippets class */
+.extra-hatom-entry-title {
+	display: none;
+}
+
+.updated:not( .published ) {
+	display: none;
+}

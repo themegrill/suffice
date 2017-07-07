@@ -1,0 +1,38 @@
+@media screen and ( max-width: 992px ) {
+
+	/* breadcrumbs on mobile and tablets */
+	.breadcrumbs {
+		padding: 15px 0;
+
+		.breadcrumbs-page,
+		.breadcrumbs-trail {
+			float: none;
+		}
+
+		.breadcrumbs-page {
+			margin-bottom: 5px;
+			.breadcrumbs-page-title {
+				font-size: 18px;
+			}
+		}
+
+		.breadcrumbs-trail {
+			li {
+				a, 
+				span {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and ( min-width: 768px) and ( max-width: 992px ) {
+	.header-sticky {
+		&.header-sticky-tablet {
+			.header-inner-wrapper {
+				position: fixed;
+			}
+		}
+	}
+}

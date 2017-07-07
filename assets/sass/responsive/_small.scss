@@ -1,0 +1,78 @@
+@media screen and ( max-width: 480px ) {
+
+	/* Header adjustment on mobile devices*/
+	.header-top {
+		.header-top-left-section {
+			width: 50%;
+		}
+		
+		.header-top-right-section {
+			padding-top: 40px;
+			width: 50%;
+		}
+	}
+	
+	// fix cta to align center.
+	.cta {
+		text-align: center;
+
+		.cta-icon-inner {
+			margin: 15px auto 45px !important;
+		}
+	}
+	
+	.featured-post-container {
+		&.feature-post-style-two {
+			.feature-post-grid-container {
+				position: initial;
+				max-width: none;
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: 768px ) {
+	
+	.header-sticky-mobile {
+		.header-inner-wrapper {
+			position: fixed;
+		}
+	}
+
+	/* When logo is in center and menu also on center*/
+	.logo-center-menu-center {
+		.header-action-container {
+			top: -75px;
+		}
+	}
+
+	.search-form-container {
+		&.search-form-style-fullscreen {
+			.search-form {
+				.search-field {
+					font-size: 18px;
+				}
+
+				.search-submit {
+					font-size: 14px;
+					top: 0;
+					padding: 0 10px;
+				}
+			}
+
+		}
+	}
+
+	.slider {
+		.slider-content {
+			.slider-title {
+				font-size: 32px;
+			}
+
+			.slider-description {
+				font-size: 18px;
+				font-weight: normal;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.suffice-kirki-seperator {
+	margin: 45px 0 15px;
+	display: block;
+	position: relative;
+	font-size: 18px;
+	padding-bottom: 8px;
+	text-transform: uppercase;
+	line-height: 1.5;
+	border-bottom: 1px solid #ccc;
+}
+
+.suffice-kirki-seperator::before {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 30px;
+	background: #00baf4;
+	bottom: -1px;
+}

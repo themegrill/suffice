@@ -1,0 +1,149 @@
+.icon-box {
+	.icon-box-readmore {
+		font-weight: 500;
+		text-transform: uppercase;
+		color: $color-gray;
+		border-bottom: 2px solid $color-gray;
+		text-decoration: none;
+	}
+
+	.icon-box-icon-container {
+		height: 100%;
+		width: 100%;
+
+		.icon-box-inner-icon {
+			display: table;
+			height: 100%;
+			width: 100%;
+
+			.fa {
+				padding-top: 5px;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.icon-box-icon {
+		color: #fff;
+	}
+}
+
+/*----------  Variations  ----------*/
+.icon-box-hexagon {
+
+	.icon-box-icon {
+		width: 100px;
+		margin: 35px auto 38px;
+		border-radius: 10px;
+		color: #fff;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		display: block;
+		position: relative;
+		text-shadow: none;
+		transition: all 0.35s linear;
+		background: $color-gray-dark;
+		font-size: 20px;
+
+		&::before,
+		&::after {
+			z-index: 0;
+			top: -15px;
+			content: '';
+			position: absolute;
+			width: 55px;
+			height: 55px;
+			transform: scaleX(1.7) rotate(45deg);
+			background: inherit;
+			left: 23px;
+			border-radius: 10px 24px;
+			cursor: pointer;
+		}
+		&::before {
+			top: 24px;
+		}
+
+		.icon-box-icon-container {
+			position: absolute;
+			z-index: 3;
+			text-align: center;
+			cursor: pointer;
+		}
+	}
+	
+	
+	&:hover {
+		.icon-box-icon {
+			opacity: 0.6;
+		}
+	}
+	.icon-box-description {
+		.icon-box-title {
+			text-transform: uppercase;
+			margin: 0;
+			padding: 15px 0;
+		}
+
+		.icon-box-content {
+			margin: 0 0 15px;
+		}
+	}
+}
+
+
+.icon-box-small {
+	position: relative;
+
+
+	.icon-box-icon {
+		width: 45px;
+		height: 45px;
+		background: $color-gray-dark;
+		position: absolute;
+		left: 0;
+		top: 9px;
+		border-radius: 3px;
+		text-align: center;
+		transform: rotate(45deg);
+		transition: all 0.3s ease;
+		
+		.icon-box-inner-icon {
+			transform: rotate(-45deg);
+		}
+	}
+
+	.icon-box-description {
+		margin: 0 0 0 75px;
+
+		.icon-box-title {
+			margin: 0;
+			font-weight: 500;
+		}
+
+		.icon-box-readmore {
+			font-size: 12px;
+			text-transform: none;
+			border-bottom: none;
+			padding: 5px 10px;
+			background: $color-gray-dark;
+			color: #fff;
+			transition: all 0.3s ease;
+
+			&:hover {
+				background: lighten($color-gray-dark, 10);
+			}
+		}
+	}
+}
+
+/*----------  Positioning  ----------*/
+.icon-box-center {
+	text-align: center;
+
+	.icon-box-icon-hexagon {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}

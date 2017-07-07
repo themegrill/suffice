@@ -1,0 +1,147 @@
+/*
+Theme Name: Suffice
+Theme URI: https://themegrill.com/themes/suffice/
+Author: ThemeGrill
+Author URI: https://themegrill.com
+Description: Suffice is a highly flexible multipurpose WordPress theme that is beautifully crafted with the great attention to details. This theme is not just stunning by its clean and sleek design but is equally powerful by its galore of awe-inspiring features. Integration to SiteOrigin’s page builder and Suffice Toolkit plugin makes it one of the most customizable and easy to use themes. In addition, it is completely compliant with WooCommerce and uses the best SEO practices for top-notch performance of your website. This theme also offers you a wide range of unique demos from which you can choose any to create your own cutting edge website. Also, Suffice features versatile header styles, advanced color options, multiple widget areas and premium widgets. Hence, with this simple drag and drop theme, you can easily have your site up and running in no time.
+Version: 1.0.4
+License: GNU General Public License, version 3 (GPLv3)
+License URI: http://www.gnu.org/licenses/gpl-3.0.txt
+Tags: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, custom-colors, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce, portfolio
+Text Domain: suffice
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+suffice is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
+*/
+
+/**
+*
+* TABLE OF CONTENT
+*
+* # Grid
+* # Reset
+* # Typography
+* # Globals
+* # Elements
+* # Froms
+* # Navigations
+* # Modules
+	# Accessibility
+	# Alignments
+	# Clearings
+* # Header
+* # Widgets
+* # Content
+	# Posts
+	# Pages
+	# Asides
+	# Comments
+* # Footer
+* # Media
+	# captions
+	# galleries
+* # Media Queriess
+	# Mobile
+	# Tablets
+	# Computers
+* # Print
+*
+*/
+
+
+/*----------  variables  ----------*/
+@import 'variables/colors';
+@import 'variables/structure';
+@import 'variables/typography';
+
+/*----------  Mixins  ----------*/
+@import 'mixins/buttons';
+@import 'mixins/grid';
+@import 'mixins/miscellenious';
+
+/*----------  Normalize  ----------*/
+@import 'reset/normalize';
+
+/*----------  Grid  ----------*/
+@import 'layout/grid';
+
+/*----------  Typography  ----------*/
+@import 'typography/copy';
+@import 'typography/headings';
+
+/*----------  Global  ----------*/
+@import 'global/global';
+
+/*----------  Elements  ----------*/
+@import 'elements/list';
+@import 'elements/tables';
+@import 'elements/title';
+@import 'elements/slider';
+@import 'elements/icon-boxes';
+@import 'elements/portfolio';
+@import 'elements/team';
+@import 'elements/testimonials';
+@import 'elements/cta';
+@import 'elements/counter';
+@import 'elements/woocommerce';
+@import 'elements/bbpress';
+@import 'elements/breadcrumbs';
+@import 'elements/tabs';
+@import 'elements/preloader';
+@import 'elements/search';
+@import 'elements/infinite-scroll';
+
+/*----------  Navigations  ----------*/
+@import 'navigations/links';
+@import 'navigations/menus';
+
+/*----------  Modules  ----------*/
+@import 'modules/accessibility';
+@import 'modules/alignments';
+@import 'modules/clearings';
+
+/*----------  Layout  ----------*/
+@import 'forms/buttons';
+@import 'forms/fields';
+@import 'layout/body';
+@import 'layout/main';
+
+/*----------  Header  ----------*/
+@import 'layout/header';
+@import 'layout/paddings';
+
+/*----------  Widget  ----------*/
+@import 'site/secondary/widgets';
+
+/*----------  Content  ----------*/
+@import 'site/primary/posts';
+@import 'site/primary/featured-posts';
+@import 'site/primary/pages';
+@import 'site/primary/asides';
+@import 'site/primary/comments';
+
+/*----------  Media  ----------*/
+@import 'media/captions';
+@import 'media/galleries';
+@import 'media/media';
+
+/*----------  Footer  ----------*/
+@import 'layout/footer';
+
+
+/*----------  responsive  ----------*/
+@import 'responsive/large';
+@import 'responsive/medium';
+@import 'responsive/small';
+
+/*----------  Admin Bar  ----------*/
+@import 'responsive/admin-bar';
+
+/*----------  Compatibility  ----------*/
+@import 'compatibility/thirdparty';

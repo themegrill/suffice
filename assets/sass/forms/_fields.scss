@@ -1,0 +1,97 @@
+.form-input,
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='number'],
+input[type='tel'],
+input[type='range'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='color'],
+textarea {
+	padding: 7px 15px;
+	border: 1px solid #fff;
+	outline: none;
+	transition: border-color 0.35s;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+
+	&:focus {
+		border: 1px solid $color-brand-primary;
+	}
+}
+
+textarea {
+	width: 100%;
+}
+
+input[type='submit'] {
+	@include btn();
+	background: $color-brand-primary;
+	color: #ffffff;
+	border-color: #fff;
+}
+
+.form-input-small {
+	padding: 5px;
+}
+
+.form-input-full-width {
+	width: 100%;
+}
+
+.form-input-medium {
+	padding: 15px 20px;
+}
+
+
+.form-input-rounded {
+	border-radius: 3px;
+}
+
+.form-column {
+	input,
+	label {
+		display: block;
+	}
+
+	label {
+		color: $color-gray;
+		margin: 0 0 15px;
+		font-size: 15px;
+
+	}
+
+	.form-input {
+		padding: 7px 15px 7px 35px;
+	}
+
+	.form-input-small {
+		padding: 7px 15px;
+	}
+	.fa {
+		position: absolute;
+		color: $color-gray-lighter;
+		font-size: 16px;
+		left: 27px;
+		top: 42px;
+	}
+}
+
+
+/* Contact Form 7 */
+form.wpcf7-form {
+	.wpcf7-text {
+		width: 100%;
+		background: #f9fafb;
+		color: #aeb1bd;
+		margin-bottom: 0;
+		padding: 10px 15px;
+	}
+}

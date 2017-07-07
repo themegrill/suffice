@@ -1,0 +1,127 @@
+.counter {
+	padding: 45px 0 0;
+	margin: 0 0 45px;
+}
+
+.counter-item {
+	text-align: center;
+	.counter-icon {
+		width: 100px;
+		height: 100px;
+		background: #ccc;
+		margin: 0 auto 15px;
+
+		.fa {
+			margin-top: 32px;
+			font-size: 32px;
+		}
+	}
+
+	.counter-info {
+		.counter-number {
+			font-size: 32px;
+			margin: 0 0 5px;
+		}
+
+		.counter-title {
+			color: $color-gray;
+		}
+	}
+}
+
+
+/*----------  Variation  ----------*/
+.counter-style-hexagon {
+	.counter-icon {
+		margin: 0 auto 45px;
+		width: 150px;
+		border-radius: 10px;
+		color: #fff;
+		height: 92px;
+		line-height: 95px;
+		text-align: center;
+		display: block;
+		position: relative;
+		text-shadow: none;
+		transition: all 0.2s linear;
+		background: $color-brand-primary;
+
+		&::before,
+		&::after {
+			z-index: 0;
+			top: -26px;
+			content: '';
+			position: absolute;
+			width: 76px;
+			height: 76px;
+			transform: scaleX(1.7) rotate(45deg);
+			background: inherit;
+			left: 37px;
+			border-radius: 10px 24px;
+			cursor: default;
+		}
+		&::before {
+			top: 42px;
+		}
+
+		.counter-icon-inner {
+			position: absolute;
+			z-index: 3;
+			text-align: center;
+			width: 100%;
+			padding: 5px 0 0;
+			cursor: default;
+		}
+
+		.fa {
+			font-size: 32px;
+			color: #fff;
+			margin: 0;
+		}
+	}
+
+	.counter-info {
+		.counter-number {
+			font-size: 48px;
+			font-weight: 300;
+			color: $color-gray-dark;
+		}
+	}
+}
+
+.counter-style-bold {
+	position: relative;
+
+	.counter-icon {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: none;
+		color: $color-gray-darken;
+
+		.fa {
+			margin: 0;
+			font-size: 90px;
+		}
+	}
+
+	.counter-info {
+		margin-left: 100px;
+		text-align: left;
+
+		.counter-number {
+			font-weight: 600;
+			color: $color-gray-darken;
+			font-size: 48px;
+			margin: 0;
+		}
+
+		.counter-title {
+			font-size: 16px;
+			font-weight: 500;
+			color: $color-gray-dark;
+			text-transform: uppercase;
+		}
+	}
+}
+

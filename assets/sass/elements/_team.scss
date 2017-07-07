@@ -1,0 +1,130 @@
+/*===================================
+=            Team Member            =
+===================================*/
+	
+.team-member {
+	margin-bottom: 30px;
+	
+	.team-bubble-one,
+	.team-bubble-two {
+		display: none;
+	}
+
+	.team-social-icons {
+		.social-links {
+			li {
+				display: inline-block;
+				a {
+					display: block;
+					padding: 0 10px;
+					&::before {
+						font-family: FontAwesome;
+					}
+				}
+
+				a[href*='facebook.com']::before {
+					content: '\f09a';
+				}
+
+				a[href*='instagram.com']::before {
+					content: '\f16d';
+				}
+
+				a[href*='twitter.com']::before {
+					content: '\f099';
+				}
+
+				a[href*='linkedin.com']::before {
+					content: '\f0e1';
+				}
+
+				a[href*='plus.google.com']::before {
+					content: '\f0d5';
+				}
+			}
+		}
+	}
+
+	.team-member-thumbnail {
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&.team-bubble {
+		text-align: center;
+		cursor: pointer;
+		padding-top: 38px;
+		margin-bottom: 30px;
+
+		.team-member-thumbnail {
+			position: relative;
+			height: 220px;
+			margin: 0 0 15px;
+			
+			.team-member-thumbnail-inner {
+				width: 120px;
+				height: 120px;
+				overflow: hidden;
+				top: 50px;
+			}
+
+			.team-social-icons {
+				display: none;
+			}
+			
+			.team-member-thumbnail-inner,
+			.team-bubble-one,
+			.team-bubble-two {
+				display: block;
+				position: absolute;
+				border-radius: 100%;
+				transition: all 0.2s linear;
+				margin: 0 auto;
+				left: 0;
+				right: 0;
+			}
+
+			.team-bubble-one {
+				background: #e4edf7;
+				width: 220px;
+				height: 220px;
+				top: 0;
+			}
+
+			.team-bubble-two {
+				background: #d1e3f6;
+				width: 170px;
+				height: 170px;
+				top: 25px;
+			}
+		}
+
+		.team-member-description {
+			.team-member-title {
+				font-size: 16px;
+				color: $color-gray;
+				margin: 0 0 10px;
+			}
+
+			.team-member-position {
+				font-size: 12px;
+				color: $color-gray-light;
+			}
+
+			.social-links {
+				padding: 0;
+				margin: 9px 0 0;
+			}
+		}
+
+		&:hover {
+			.team-bubble-one,
+			.team-bubble-two {
+				transform: scale(1.1);
+			}
+		}
+	}
+}
+
+/*=====  End of Team Member  ======*/

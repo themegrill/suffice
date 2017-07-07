@@ -1,0 +1,150 @@
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+
+#page {
+	background: #fff;
+	position: relative;
+	word-wrap: break-word;
+	transition: padding 0.35s;
+
+	&.off-canvas {
+		padding-left: 300px;
+		overflow: hidden;
+
+		&.slide-from-right {
+			padding-left: 0;
+			padding-right: 300px;
+		}
+	}
+
+}
+
+
+
+/*----------  Layout  ----------*/
+#primary,
+#secondary {
+	margin-top: 60px;
+}
+
+#primary {
+	float: left;
+	width: 66.66666667%;
+
+	@media( max-width: 768px ) {
+		float: none;
+		width: 100%;
+	}
+}
+
+#secondary {
+	float: right;
+	width: 33.33333333%;
+	padding-left: 45px;
+
+	@media( max-width: 768px ) {
+		float: none;
+		width: 100%;
+	}
+}
+
+#colophon {
+	clear: both;
+}
+
+/*----------  Hotels  ----------*/
+.hotels-container {
+	.hotels {
+		padding: 0;
+		list-style-type: none;
+
+		.hotel-thumbnail {
+			margin: 0;
+			padding: 0;
+			position: relative;
+			overflow: hidden;
+
+			img {
+				display: block;
+			}
+
+			.inside-caption {
+				background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) );
+				margin: 0;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				padding: 15px;
+
+				.star {
+					color: #f7c032;
+				}
+			}
+		}
+
+		.hotel-description {
+			background: #f9f7f5;
+			padding: 20px;
+
+			.hotel-title {
+				margin: 0 0 7px;
+				font-size: 18px;
+			}
+
+			.hotel-price {
+				.amount {
+					color: #ffa742;
+					font-weight: 600;
+				}
+
+				.time-periods {
+					font-size: 12px;
+					color: $color-gray-light;
+				}
+			}
+		}
+	}
+}
+
+/*====================================
+=            Homepage App            =
+====================================*/
+
+.app-features {
+	.app-features-left,
+	.app-features-right {
+		padding: 10% 0 0;
+	}
+
+	.app-feature-image {
+		text-align: center;
+	}
+}
+
+.cta-app {
+	margin-bottom: 0;
+	padding: 0;
+	.cta-app-image {
+		padding-top: 90px;
+		margin-bottom: -4px;
+	}
+
+	.cta-info {
+		margin-top: 28%;
+	}
+}
+/*=====  End of Homepage App  ======*/

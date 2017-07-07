@@ -1,0 +1,97 @@
+.title {
+	margin: 30px 0;
+	
+	.title-title {
+		font-weight: 500;
+		font-size: 26px;
+		color: $color-gray-dark;
+		margin: 0 0 15px;
+	}
+
+	.sub-title {
+		margin: 0;
+		color: $color-gray;
+	}
+	
+	&.title-left {
+		text-align: left;
+	}
+
+	&.title-right {
+		text-align: right;
+	}
+
+	&.title-center {
+		text-align: center;
+	}
+
+	&.title-magazine {
+		position: relative;
+		margin: 45px 0 15px;
+
+		.title-title {
+			padding: 10px 20px;
+			background: $color-brand-secondary;
+			display: inline-block;
+			font-size: 16px;
+			color: #fff;
+			font-weight: normal;
+			text-transform: none;
+			margin: 0;
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				background: inherit;
+				left: 0;
+				bottom: 0;
+			}
+		}
+	}
+
+	&.title-arrow-down {
+		.title-title {
+			padding: 10px 20px;
+			background: $color-gray-darker;
+			font-size: 16px;
+			color: #fff;
+			font-weight: normal;
+			text-transform: none;
+			margin: 0;
+			position: relative;
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 20px;
+				height: 20px;
+				background: inherit;
+				bottom: -10px;
+				left: 35px;
+				transform: rotate(45deg);
+			}
+		}
+
+		&.title-center {
+			.title-title {
+				&::before {
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		&.title-right {
+			.title-title {
+				&::before {
+					left: auto;
+					right: 20px;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}

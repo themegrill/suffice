@@ -1,0 +1,124 @@
+.portfolio-items {
+	&.no-gutter {
+		li {
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+.portfolio-navigation {
+	margin: 0 0 75px;
+
+	.navigation-portfolio {
+		list-style-type: none;
+		padding: 0;
+
+		li {
+			display: inline-block;
+			margin-right: 15px;
+			a {
+				font-family: $font-family-heading;
+				font-size: 12px;
+				text-transform: uppercase;
+				color: $color-gray-light;
+				text-decoration: none;
+				font-weight: 600;
+				padding: 5px 10px;
+				transition: all 0.3s ease-in-out;
+				cursor: pointer;
+			}
+
+			&.active {
+				a {
+					background: $color-brand-primary;
+					color: #fff;
+				}
+			}
+
+			&:hover {
+				a {
+					background: $color-brand-primary;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&.portfolio-navigation-center {
+		text-align: center;
+	}
+}
+
+.portfolio-items {
+	padding: 0;
+	list-style-type: none;
+
+	.portfolio-item {
+		margin-bottom: 30px;
+		.portfolio-item-thumbnail {
+			position: relative;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			cursor: pointer;
+
+			img {
+				display: block;
+				max-width: 100%;
+				height: auto;
+			}
+
+			.portfolio-item-description {
+				visibility: hidden;
+				opacity: 0;
+				transform: translateY(50%);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				background: rgba(255, 255, 255, 0.9);
+				width: 100%;
+				padding: 15px;
+				transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+
+				.portfolio-item-title {
+					margin: 0;
+					font-size: 18px;
+					color: #2c3e50;
+				}
+
+				.portfolio-item-categories {
+					color: #83909c;
+					font-size: 12px;
+				}
+			}
+
+			&:hover {
+				.portfolio-item-description {
+					visibility: visible;
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+	}
+
+
+	/* Variations */
+	&.portfolio-with-text {
+		.portfolio-item {
+			.portfolio-item-thumbnail {
+				position: initial;
+			}
+
+			.portfolio-item-description {
+				visibility: visible;
+				opacity: 1;
+				transform: none;
+				position: initial;
+			}
+		}
+	}
+}
+
+

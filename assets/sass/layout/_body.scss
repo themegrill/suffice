@@ -1,0 +1,82 @@
+body {
+	background: #fff;
+	/* Fallback for when there is no custom background color defined. */
+}
+
+/* Left Sidebar */
+body.left-sidebar {
+
+	#primary {
+		float: right;
+	}
+
+	#secondary {
+		float: left;
+		padding-left: 0;
+		padding-right: 45px;
+	}
+}
+
+/* Full-Width */
+body.full-width {
+	#primary,
+	#secondary {
+		float: none;
+		width: 100%;
+	}
+}
+
+/*----------  Boxed Layout  ----------*/
+
+body.boxed {
+	margin: 15px auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	@media ( min-width: 768px ) {
+		width: 750px;
+	}
+
+	@media ( min-width: 992px ) {
+		width: 970px;
+	}
+
+	@media ( min-width: 1200px ) {
+		width: 1170px;
+	}
+
+	.header-sticky {
+		.header-inner-wrapper {
+			margin: 0 auto;
+		}
+		@media (min-width: 768px) {
+			.header-inner-wrapper {
+				width: 750px;
+			}
+		}
+		@media (min-width: 992px) {
+			.header-inner-wrapper {
+				width: 970px;
+			}
+		}
+		@media (min-width: 1200px) {
+			.header-inner-wrapper {
+				width: 1170px;
+			}
+		}
+	}
+}
+
+/*---------- On Page Builder Page  ----------*/
+body.siteorigin-panels {
+	#primary, 
+	#secondary {
+		margin-top: 0;
+	}
+
+	.hentry {
+		margin-bottom: 0;
+	}
+
+	.site-footer {
+		margin-top: 0;
+	}
+}
