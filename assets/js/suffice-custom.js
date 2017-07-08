@@ -10,9 +10,17 @@
 jQuery( document ).ready( function( $ ) {
 
 	/*===========================================
+	=            Reusable/Global Variables          =
+	===========================================*/
+	var mediaQueryDesktopSize = '( min-width: 992px )',
+	mediaQueryTabletSize = '( min-width: 768px) and ( max-width: 992px )',
+	mediaQueryMobileSize = '( max-width: 768px )';
+
+	/*=====  End of Reusable Variables======*/
+
+	/*===========================================
 	=            Menu fix in tablets            =
 	===========================================*/
-	
 	( function () {
 		var container;
 		container = document.getElementById( 'site-navigation' );
@@ -202,7 +210,7 @@ jQuery( document ).ready( function( $ ) {
 
 			}, {
 			  offset: 'bottom-in-view'
-			})
+			});
 		});
 	}
 
@@ -255,7 +263,7 @@ jQuery( document ).ready( function( $ ) {
 	=            MINI CART            =
 	=================================*/
 	
-	( function() {
+	( function initializeMiniCart() {
 
 		$( document.body ).on( 'click', '.header-action-container .header-action-item-cart .fa', function() {
 			$( document.body ).find( '.mini-cart-sidebar' ).addClass( 'show-mini-cart' );
@@ -294,8 +302,6 @@ jQuery( document ).ready( function( $ ) {
 	/*==================================
 	=            Navigation            =
 	==================================*/
-	
-	/*----------  Off Canvas Menu  ----------*/
 	$( document.body ).on('suffice_navigation', function() {
 		var mainMenu = $( '.main-navigation' ),
 		currentMenuItemLink = $( '.navigation-offcanvas .menu-primary li.menu-item-has-children > a, .navigation-offcanvas-push .menu-primary li.menu-item-has-children > a, .navigation-offcanvas .primary-menu li.page_item_has_children > a, .navigation-offcanvas-push .primary-menu li.page_item_has_children > a' );
@@ -453,6 +459,37 @@ jQuery( document ).ready( function( $ ) {
 		}
 
 
+	
+		/**
+		 * Fixes sub menu going out of viewport
+		 */
+		( function sufficeFixSubmenu() {
+			var subMenu = $( '.menu-primary .menu-item-has-children' );
+			
+			subMenu.hover(function() {
+				if ( ! $( this ).children( 'ul.sub-menu' ).visible() ) {
+					$( this ).children( 'ul.sub-menu' ).addClass( 'sub-menu--left' );
+				}
+
+				$( this ).children( 'ul.sub-menu' ).addClass( 'sub-menu--show' );
+
+			}, function() {
+				$( this ).children( 'ul.sub-menu' ).removeClass( 'sub-menu--show' );
+				$( this ).children( 'ul.sub-menu' ).removeClass( 'sub-menu--left' );
+			});
+		}) ();
+
+	}).trigger( 'suffice_navigation' );
+
+
+	/*=====  End of Navigation  ======*/
+
+
+	/*=====================================
+	=            Sticky Header           =
+	=====================================*/
+	( function sufficeStickyHeader() {
+		
 		/**
 		 * Sticky menu slide in slide out
 		 */
@@ -544,15 +581,13 @@ jQuery( document ).ready( function( $ ) {
 		function hideFullHeader() {
 			$( '.header-sticky-desktop, .header-sticky-tablet, .header-sticky-mobile' ).find( '.header-inner-wrapper' ).css('transform', 'translateY(-100%)');
 		}
-
-		if ( typeof $.fn.headroom !== 'undefined' ) {
-
-			if ( ! $( '.header-sticky' ).hasClass('header-transparent') ) {
-				// Fix header margin bottom
-				$( '.header-sticky-desktop, .header-sticky-tablet, .header-sticky-mobile' ).css( 'margin-bottom', $( '.header-sticky' ).find( '.header-inner-wrapper' ).height() );
-			}
-
-			$( '.header-sticky-desktop, .header-sticky-tablet, .header-sticky-mobile' ).headroom({
+		
+		/**
+		 * Initialize Headroom
+		 * @param {string} elementClass class of header
+		 */
+		function initializeHeadroom( headerClass ) {
+			$( headerClass ).headroom({
 				tolerance: {
 					down: 15
 				},
@@ -575,31 +610,32 @@ jQuery( document ).ready( function( $ ) {
 				}
 			});
 		}
-
 		/**
-		 * Fixes sub menu going out of viewport
+		 * Initialize headroom js.
 		 */
-		( function sufficeFixSubmenu() {
-			var subMenu = $( '.menu-primary .menu-item-has-children' );
-			
-			subMenu.hover(function() {
-				if ( ! $( this ).children( 'ul.sub-menu' ).visible() ) {
-					$( this ).children( 'ul.sub-menu' ).addClass( 'sub-menu--left' );
+		if ( typeof $.fn.headroom !== 'undefined' ) {
+
+			// Push content downwards when header is not transparent
+			if ( ! $( '.header-sticky' ).hasClass('header-transparent') ) {
+				// push content downwards on desktop
+				if ( window.matchMedia( mediaQueryDesktopSize ).matches ) {
+					$( '.header-sticky-desktop' ).css( 'margin-bottom', $( '.header-sticky-desktop' ).find( '.header-inner-wrapper' ).height() );
+				} else if( window.matchMedia( mediaQueryTabletSize ).matches ) {
+					$( '.header-sticky-tablet' ).css( 'margin-bottom', $( '.header-sticky-tablet' ).find( '.header-inner-wrapper' ).height() );
 				}
+				
+			}
 
-				$( this ).children( 'ul.sub-menu' ).addClass( 'sub-menu--show' );
+			// Initialize headroom on desktop and tablet
+			if ( window.matchMedia( mediaQueryDesktopSize ).matches ) {
+				initializeHeadroom( '.header-sticky-desktop');
+			} else if( window.matchMedia( mediaQueryTabletSize ).matches ) {
+				initializeHeadroom( '.header-sticky-tablet');
+			}
+		}
+	}) ();
 
-			}, function() {
-				$( this ).children( 'ul.sub-menu' ).removeClass( 'sub-menu--show' );
-				$( this ).children( 'ul.sub-menu' ).removeClass( 'sub-menu--left' );
-			});
-		}) ();
-
-	}).trigger( 'suffice_navigation' );
-
-
-	/*=====  End of Navigation  ======*/
-
+	/*=====  End Sticky Header  ======*/
 
 	/*=====================================
 	=            Add Scrollbar           =
