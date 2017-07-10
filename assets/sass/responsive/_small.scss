@@ -29,6 +29,23 @@
 			}
 		}
 	}
+
+	.slider {
+		.slider-content {
+			.slider-title {
+				font-size: 20px !important;
+			}
+
+			.slider-description {
+				display: none;
+			}
+
+			.btn {
+				font-size: 10px;
+				padding: 10px;
+			}
+		}
+	}
 }
 
 @media screen and ( max-width: 768px ) {
