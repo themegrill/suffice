@@ -97,6 +97,10 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 == Changelog ==
 
+= 1.0.5 - 2017-07-10 =
+* Fix - Access margin on sticky header
+* Fix - Slider caption not getting smaller on mobile devices
+
 = 1.0.4 - 2017-07-07 =
 * Tweaks - Introduce theme Welcome Page
 

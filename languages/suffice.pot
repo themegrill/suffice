@@ -472,6 +472,54 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
+#: inc/customizer.php:73
+msgid "Primary Color"
+msgstr ""
+
+#: inc/customizer.php:74
+msgid "Controls main color of site."
+msgstr ""
+
+#: inc/customizer.php:86
+msgid "Secondary Color"
+msgstr ""
+
+#: inc/customizer.php:87
+msgid "Controls accent color of site."
+msgstr ""
+
+#: inc/customizer.php:99, inc/kirki-translation.php:11
+msgid "Background Color"
+msgstr ""
+
+#: inc/customizer.php:100
+msgid "Controls background color of site."
+msgstr ""
+
+#: inc/customizer.php:112
+msgid "Heading Color"
+msgstr ""
+
+#: inc/customizer.php:113
+msgid "Controls heading color of site."
+msgstr ""
+
+#: inc/customizer.php:125
+msgid "Paragraph Color"
+msgstr ""
+
+#: inc/customizer.php:126
+msgid "Controls paragraph color of site."
+msgstr ""
+
+#: inc/customizer.php:138
+msgid "Meta Color"
+msgstr ""
+
+#: inc/customizer.php:139
+msgid "Controls meta color of site."
+msgstr ""
+
 #: inc/demo-config.php:24
 msgid "Suffice"
 msgstr ""
@@ -1046,10 +1094,6 @@ msgstr ""
 
 #: inc/kirki-customizer.php:1269
 msgid "Turn on to enable carousel on related posts."
-msgstr ""
-
-#: inc/kirki-translation.php:11
-msgid "Background Color"
 msgstr ""
 
 #: inc/kirki-translation.php:12
