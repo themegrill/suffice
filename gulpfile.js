@@ -80,7 +80,7 @@ function postCSSfile() {
 
 // Creates Zip file of theme
 function createZip() {
-    return gulp.src( ['**', '!.*', '!*.zip', '!.*/**', '!gulpfile.js', '!project.ruleset.xml', '!package.json', '!node_modules/', '!node_modules/**', '!assets/sass', '!assets/sass/**'] )
+    return gulp.src( ['**', '!.*', '!*.zip', '!.*/**', '!gulpfile.js', '!project.ruleset.xml', '!package.json', '!node_modules', '!node_modules/**', '!assets/sass', '!assets/sass/**'] )
         .pipe( zip( 'suffice.zip' ) )
         .pipe( gulp.dest( './' ) );
 }
