@@ -50,8 +50,12 @@
 		.swiper-button-prev {
 			display: none;
 		}
-
 	}
+
+	.header-action-search-form {
+		right: -35px;
+	}
+
 }
 
 @media screen and ( max-width: 768px ) {
