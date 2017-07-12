@@ -66,16 +66,6 @@ body.admin-bar {
 		}
 
 	}
-
-	@media ( max-width : 600px ) {
-		.site-header {
-			&.header-sticky-mobile {
-				.header-inner-wrapper {
-					top: 46px;
-				}
-			}
-		}
-	}
 }
 
 
