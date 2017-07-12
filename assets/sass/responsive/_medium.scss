@@ -28,10 +28,14 @@
 }
 
 @media screen and ( min-width: 768px) and ( max-width: 992px ) {
-	.header-sticky {
-		&.header-sticky-tablet {
+	.header-sticky-tablet {
+		.header-inner-wrapper {
+			position: fixed;
+		}
+
+		&.headroom--not-top {
 			.header-inner-wrapper {
-				position: fixed;
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 			}
 		}
 	}

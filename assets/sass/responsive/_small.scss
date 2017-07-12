@@ -64,6 +64,12 @@
 		.header-inner-wrapper {
 			position: fixed;
 		}
+
+		&.headroom--not-top {
+			.header-inner-wrapper {
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+			}
+		}
 	}
 
 	/* When logo is in center and menu also on center*/
