@@ -12,15 +12,6 @@
 		}
 	}
 	
-	// fix cta to align center.
-	.cta {
-		text-align: center;
-
-		.cta-icon-inner {
-			margin: 15px auto 45px !important;
-		}
-	}
-	
 	.featured-post-container {
 		&.feature-post-style-two {
 			.feature-post-grid-container {
@@ -56,6 +47,18 @@
 		right: -35px;
 	}
 
+	.cta {
+		.cta-bordered-inner {
+			.cta-actions {
+				.btn-group {
+					.btn {
+						margin-right: 0;
+						margin-bottom: 15px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media screen and ( max-width: 768px ) {
@@ -107,5 +110,44 @@
 				font-weight: normal;
 			}
 		}
+	}
+
+	.cta {
+		text-align: center;
+		
+		.cta-info {
+			.cta-title {
+				font-size: 24px;
+			}
+		}
+		.cta-icon-inner {
+			margin: 15px auto 45px !important;
+		}
+	}
+
+	.cta-boxed-one {
+		padding: 30px;
+
+		.cta-bordered-inner {
+			flex-direction: column;
+
+			.cta-actions {
+				.btn-group {
+					float: none;
+				}
+			}
+		}
+	}
+
+	.cta-big-bordered {
+		padding: 20px;
+
+		.cta-bordered-inner {
+			padding: 20px;
+		}
+	}
+
+	.cta-background {
+		padding: 45px;
 	}
 }

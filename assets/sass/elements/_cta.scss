@@ -76,6 +76,33 @@
 	}
 }
 
+.cta-boxed-one {
+
+	.cta-bordered-inner {
+		display: flex;
+		flex-wrap: wrap;
+
+		.cta-icon {
+			flex: 1;
+		}
+
+		.cta-info {
+			flex: 6;
+			padding: 0 30px;
+		}
+
+		.cta-actions {
+			flex: 2;
+			clear: both;
+
+			.btn-group {
+				float: right;
+			}
+		}
+	}
+}
+
+
 /* Variations */
 .cta-big-bordered {
 	text-align: center;
