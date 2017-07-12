@@ -21,6 +21,11 @@ jQuery( document ).ready( function( $ ) {
 		* Toggles `focus` class to allow submenu access on tablets.
 		*/
 		( function( container ) {
+
+			if ( ! container ) {
+				return;
+			}
+
 			var touchStartFn, i,
 			parentLink = container.querySelectorAll( '.menu-item-has-children > a, .page_item_has_children > a' );
 			
@@ -28,17 +33,20 @@ jQuery( document ).ready( function( $ ) {
 				touchStartFn = function( e ) {
 					var menuItem = this.parentNode, i;
 					
-					if ( ! menuItem.classList.contains( 'focus' ) ) {
-						e.preventDefault();
-						for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
-							if ( menuItem === menuItem.parentNode.children[i] ) {
-								continue;
+					if( ! $( container ).hasClass( 'navigation-mobile' ) ) {
+
+						if ( ! menuItem.classList.contains( 'focus' ) ) {
+							e.preventDefault();
+							for ( i = 0; i < menuItem.parentNode.children.length; ++i ) {
+								if ( menuItem === menuItem.parentNode.children[i] ) {
+									continue;
+								}
+								menuItem.parentNode.children[i].classList.remove( 'focus' );
 							}
-							menuItem.parentNode.children[i].classList.remove( 'focus' );
+							menuItem.classList.add( 'focus' );
+						} else {
+							menuItem.classList.remove( 'focus' );
 						}
-						menuItem.classList.add( 'focus' );
-					} else {
-						menuItem.classList.remove( 'focus' );
 					}
 				};
 				
