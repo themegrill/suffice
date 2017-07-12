@@ -100,6 +100,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 = 1.0.6 - 2017-07-12 =
 * Fix - Link color effecting link of mobile menu
 * Fix - Height Increasing on mobile menu
+* Fix - Tap on mobile menu not cycling through menu
 * Tweaks - Search form on mobile is centered
 * Add - New responsive style for call to action
 * Add - New responsive style for slider
