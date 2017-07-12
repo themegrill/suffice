@@ -652,7 +652,7 @@
 					a {
 						border-top: 1px solid lighten($color-dark-blue, 5);
 						text-decoration: none;
-						color: #fff;
+						color: #fff !important;
 						display: block;
 						transition: -webkit-transform 0.35s;
 						transition: transform 0.35s;
