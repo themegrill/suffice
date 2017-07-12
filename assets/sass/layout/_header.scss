@@ -1,6 +1,5 @@
 .site-header {
 	
-	
 	&.logo-right-menu-left {
 		.site-branding {
 			padding-left: 0;
@@ -133,7 +132,7 @@
 		top: 0;
 		width: 100%;
 		z-index: 999;
-		transition: transform 0.35s;
+		transition: transform 0.35s, box-shadow 0.35s;
 	}
 
 	&.header-transparent-logo {
