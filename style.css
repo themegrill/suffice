@@ -7110,6 +7110,9 @@ object {
 	.header-action-container .navigation-togglers-wrapper .menu-toggle-mobile {
 		display: block;
 	}
+	.header-action-container .navigation-togglers-wrapper .menu-toggle-desktop {
+		display: none;
+	}
 	.main-navigation {
 		display: none;
 	}
