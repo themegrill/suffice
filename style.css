@@ -7110,7 +7110,7 @@ object {
 	.header-action-container .navigation-togglers-wrapper .menu-toggle-mobile {
 		display: block;
 	}
-	.header-action-container .navigation-togglers-wrapper .menu-toggle-desktop {
+	.header-action-container .navigation-togglers-wrapper .menu-toggle-desktop.menu-toggle-navigation-offcanvas, .header-action-container .navigation-togglers-wrapper .menu-toggle-desktop.menu-toggle-navigation-offcanvas-push, .header-action-container .navigation-togglers-wrapper .menu-toggle-desktop.menu-toggle-navigation-fullscreen {
 		display: none;
 	}
 	.main-navigation {

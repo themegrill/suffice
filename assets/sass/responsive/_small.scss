@@ -171,7 +171,11 @@
 			}
 
 			.menu-toggle-desktop {
-				display: none;
+				&.menu-toggle-navigation-offcanvas,
+				&.menu-toggle-navigation-offcanvas-push,
+				&.menu-toggle-navigation-fullscreen {
+					display: none;
+				}
 			}
 		}
 	}
