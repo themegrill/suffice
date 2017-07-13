@@ -38,6 +38,8 @@
 		line-height: 24px;
 		
 		> span {
+			color: $color-gray;
+
 			&::after {
 				content: '|';
 				padding: 10px;
@@ -50,6 +52,8 @@
 			}
 
 			a {
+				color: $color-gray-darken;
+				
 				&:hover {
 					color: $color-brand-primary;
 				}

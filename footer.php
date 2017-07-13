@@ -66,6 +66,9 @@ endif;
 if ( '1' === suffice_get_option( 'suffice_show_preloader', '0' ) ) :
 	get_template_part( 'template-parts/preloader/preloader', 'main' );
 endif;
+
+// Show mobile menu.
+get_template_part( 'template-parts/footer/navigation', 'mobile' );
 ?>
 
 <?php wp_footer(); ?>

@@ -2,13 +2,14 @@
 
 	/* Header adjustment on mobile devices*/
 	.header-top {
-		.header-top-left-section {
-			width: 50%;
-		}
-		
+		.header-top-left-section,
 		.header-top-right-section {
-			padding-top: 40px;
-			width: 50%;
+			float: none;
+			text-align: center;
+		}
+
+		.header-top-left-section {
+			margin-bottom: 10px;
 		}
 	}
 	
@@ -150,4 +151,30 @@
 	.cta-background {
 		padding: 45px;
 	}
+
+	// remove padding of sidebar
+	#secondary {
+		padding-left: 0;
+	}
+
+	#primary,
+	#secondary {
+		margin-top: 30px;
+	}
+
+
+	// show mobile menu toggle
+	.header-action-container {
+		.navigation-togglers-wrapper {
+			.menu-toggle-mobile {
+				display: block;
+			}
+		}
+	}
+
+	// hide main menu
+	.main-navigation {
+		display: none;
+	}
+
 }
