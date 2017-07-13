@@ -12,9 +12,10 @@
 
 	/**
 	 * @var array $VARS
+	 * @var Freemius $fs
 	 */
-	$slug = $VARS['slug'];
-	$fs   = freemius( $slug );
+	$fs   = freemius( $VARS['id'] );
+	$slug = $fs->get_slug();
 
 	$message_header  = sprintf(
 		fs_text( 'start-trial-prompt-header', $slug ),
@@ -23,6 +24,7 @@
 	);
 	$message_content = sprintf(
 		fs_text( 'start-trial-prompt-message', $slug ),
+		$fs->get_module_type(),
 		sprintf(
 			'<a href="%s" target="_blank">%s</a>',
 			'https://freemius.com',
@@ -55,8 +57,7 @@ HTML;
 				    + '		</div>'
 				    + '	</div>'
 				    + '</div>',
-			    $modal           = $(modalHtml),
-			    moduleSlug       = '<?php echo $slug; ?>',
+			    $modal = $( modalHtml ),
 			    trialData;
 
 			$modal.appendTo($('body'));
@@ -80,10 +81,10 @@ HTML;
 						url       : ajaxurl,
 						method    : 'POST',
 						data      : {
-							action  : '<?php echo $fs->get_ajax_action( 'start_trial' ) ?>',
-							security: '<?php echo $fs->get_ajax_security( 'start_trial' ) ?>',
-							slug    : moduleSlug,
-							trial   : trialData
+							action   : '<?php echo $fs->get_ajax_action( 'start_trial' ) ?>',
+							security : '<?php echo $fs->get_ajax_security( 'start_trial' ) ?>',
+							module_id: '<?php echo $fs->get_id() ?>',
+							trial    : trialData
 						},
 						beforeSend: function () {
 							// Disable all buttons during trial activation.

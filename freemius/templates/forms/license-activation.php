@@ -11,10 +11,10 @@
 	}
 
 	/**
-	 * @var array $VARS
+	 * @var Freemius $fs
 	 */
-	$slug = $VARS['slug'];
-	$fs   = freemius( $slug );
+	$fs   = freemius( $VARS['id'] );
+	$slug = $fs->get_slug();
 
 	$cant_find_license_key_text = fs_text( 'cant-find-license-key', $slug );
 	$message_above_input_field  = fs_text( 'activate-license-message', $slug );
@@ -32,7 +32,11 @@
 
 		$freemius_link = '<a href="' . $freemius_site_url . '" target="_blank" tabindex="0">freemius.com</a>';
 
-		$message_below_input_field = sprintf( fs_text( 'license-sync-disclaimer', $slug ), $freemius_link );
+		$message_below_input_field = sprintf( fs_text( 'license-sync-disclaimer', $slug ),
+				$fs->get_module_type(),
+				$freemius_link,
+				$fs->get_module_type()
+			);
 
 		$activate_button_text = fs_text( 'agree-activate-license', $slug );
 	}
@@ -49,7 +53,7 @@
 	<div class="notice notice-error inline license-activation-message"><p></p></div>
 	<p>{$message_above_input_field}</p>
 	<input class="license_key" type="text" placeholder="{$license_key_text}" tabindex="1" />
-	<a class="show-license-resend-modal show-license-resend-modal-{$slug}" href="!#" tabindex="2">{$cant_find_license_key_text}</a>
+	<a class="show-license-resend-modal show-license-resend-modal-{$fs->get_unique_affix()}" href="!#" tabindex="2">{$cant_find_license_key_text}</a>
 	<p>{$message_below_input_field}</p>
 HTML;
 
@@ -76,11 +80,10 @@ HTML;
 				+ '	</div>'
 				+ '</div>',
 			$modal = $(modalHtml),
-			$activateLicenseLink      = $('span.activate-license.<?php echo $VARS['slug'] ?> a, .activate-license-trigger.<?php echo $VARS['slug'] ?>'),
+			$activateLicenseLink      = $('span.activate-license.<?php echo $fs->get_unique_affix() ?> a, .activate-license-trigger.<?php echo $fs->get_unique_affix() ?>'),
 			$activateLicenseButton    = $modal.find('.button-activate-license'),
 			$licenseKeyInput          = $modal.find('input.license_key'),
-			$licenseActivationMessage = $modal.find( '.license-activation-message' ),
-			pluginSlug                = '<?php echo $slug ?>';
+			$licenseActivationMessage = $modal.find( '.license-activation-message' );
 
 		$modal.appendTo($('body'));
 
@@ -135,8 +138,8 @@ HTML;
 					data: {
 						action     : '<?php echo $fs->get_ajax_action( 'activate_license' ) ?>',
 						security   : '<?php echo $fs->get_ajax_security( 'activate_license' ) ?>',
-						slug       : pluginSlug,
-						license_key: licenseKey
+						license_key: licenseKey,
+						module_id  : '<?php echo $fs->get_id() ?>'
 					},
 					beforeSend: function () {
 						$activateLicenseButton.text( <?php fs_json_encode_echo( 'activating-license', $slug ) ?> );

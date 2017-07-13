@@ -15,9 +15,25 @@
 		#region Properties
 
 		/**
+		 * @since 1.2.2
+		 *
 		 * @var string
 		 */
-		protected $_plugin_slug;
+		protected $_module_unique_affix;
+
+		/**
+		 * @since 1.2.2
+		 *
+		 * @var number
+		 */
+		protected $_module_id;
+
+		/**
+		 * @since 1.2.2
+		 *
+		 * @var string
+		 */
+		protected $_module_type;
 
 		/**
 		 * @since 1.0.6
@@ -89,22 +105,28 @@
 		private static $_instances = array();
 
 		/**
-		 * @param string $plugin_slug
+		 * @param number $module_id
+		 * @param string $module_type
+		 * @param string $module_unique_affix
 		 *
 		 * @return FS_Admin_Menu_Manager
 		 */
-		static function instance( $plugin_slug ) {
-			if ( ! isset( self::$_instances[ $plugin_slug ] ) ) {
-				self::$_instances[ $plugin_slug ] = new FS_Admin_Menu_Manager( $plugin_slug );
+		static function instance( $module_id, $module_type, $module_unique_affix ) {
+			$key = 'm_' . $module_id;
+
+			if ( ! isset( self::$_instances[ $key ] ) ) {
+				self::$_instances[ $key ] = new FS_Admin_Menu_Manager( $module_id, $module_type, $module_unique_affix );
 			}
 
-			return self::$_instances[ $plugin_slug ];
+			return self::$_instances[ $key ];
 		}
 
-		protected function __construct( $plugin_slug ) {
-			$this->_logger = FS_Logger::get_logger( WP_FS__SLUG . '_' . $plugin_slug . '_admin_menu', WP_FS__DEBUG_SDK, WP_FS__ECHO_DEBUG_SDK );
+		protected function __construct( $module_id, $module_type, $module_unique_affix ) {
+			$this->_logger = FS_Logger::get_logger( WP_FS__SLUG . '_' . $module_id . '_admin_menu', WP_FS__DEBUG_SDK, WP_FS__ECHO_DEBUG_SDK );
 
-			$this->_plugin_slug = $plugin_slug;
+			$this->_module_id           = $module_id;
+			$this->_module_type         = $module_type;
+			$this->_module_unique_affix = $module_unique_affix;
 		}
 
 		#endregion Singleton
@@ -128,7 +150,7 @@
 		function init( $menu, $is_addon = false ) {
 			$this->_menu_exists = ( isset( $menu['slug'] ) && ! empty( $menu['slug'] ) );
 
-			$this->_menu_slug = ! empty( $menu['slug'] ) ? $menu['slug'] : null;
+			$this->_menu_slug = ( $this->_menu_exists ? $menu['slug'] : $this->_module_unique_affix );
 
 			$this->_default_submenu_items = array();
 			// @deprecated
@@ -252,7 +274,7 @@
 			}
 
 			return fs_apply_filter(
-				$this->_plugin_slug,
+				$this->_module_unique_affix,
 				'is_submenu_visible',
 				$this->get_bool_option( $this->_default_submenu_items, $id, $default ),
 				$id
@@ -273,19 +295,7 @@
 		function get_slug( $page = '' ) {
 			return ( ( false === strpos( $this->_menu_slug, '.php?' ) ) ?
 				$this->_menu_slug :
-				$this->_plugin_slug ) . ( empty( $page ) ? '' : ( '-' . $page ) );
-		}
-
-		/**
-		 * Check if module has a menu slug set.
-		 *
-		 * @author Vova Feldman (@svovaf)
-		 * @since  1.2.1.6
-		 *
-		 * @return bool
-		 */
-		function has_menu_slug() {
-			return $this->has_menu();
+				$this->_module_unique_affix ) . ( empty( $page ) ? '' : ( '-' . $page ) );
 		}
 
 		/**
@@ -359,7 +369,7 @@
 			if ( false === strpos( $this->_menu_slug, '.php?' ) ) {
 				return $this->_menu_slug;
 			} else {
-				return $this->_plugin_slug;
+				return $this->_module_unique_affix;
 			}
 		}
 
@@ -385,7 +395,7 @@
 		 */
 		function is_main_settings_page() {
 			if ( $this->_menu_exists &&
-			     ( fs_is_plugin_page( $this->_menu_slug ) || fs_is_plugin_page( $this->_plugin_slug ) )
+			     ( fs_is_plugin_page( $this->_menu_slug ) || fs_is_plugin_page( $this->_module_unique_affix ) )
 			) {
 				/**
 				 * Module has a settings menu and the context page is the main settings page, so assume it's in
@@ -394,6 +404,16 @@
 				 * @since 1.2.2
 				 */
 				return true;
+			}
+
+			global $pagenow;
+			if ( ( WP_FS__MODULE_TYPE_THEME === $this->_module_type ) && 'themes.php' === $pagenow ) {
+				/**
+				 * In activation only when show_optin query string param is given.
+				 *
+				 * @since 1.2.2
+				 */
+				return fs_request_get_bool( $this->_module_unique_affix . '_show_optin' );
 			}
 
 			return false;
@@ -506,14 +526,14 @@
 
 			$submenu_slug = $this->get_raw_slug();
 
-			$position      = - 1;
+			$position   = - 1;
 			$found_submenu = false;
 
 			$hook_name = get_plugin_page_hookname( $submenu_slug, '' );
 
 			foreach ( $submenu[ $top_level_menu_slug ] as $pos => $sub ) {
 				if ( $submenu_slug === $sub[2] ) {
-					$position      = $pos;
+					$position   = $pos;
 					$found_submenu = $sub;
 				}
 			}
@@ -635,7 +655,7 @@
 
 			$mask = '%s <span class="update-plugins %s count-%3$s" aria-hidden="true"><span>%3$s<span class="screen-reader-text">%3$s notifications</span></span></span>';
 
-			if ( $this->_is_top_level ) {
+			if ($this->_is_top_level) {
 				// Find main menu item.
 				$found_menu = $this->find_top_level_menu();
 
@@ -648,7 +668,9 @@
 						$counter
 					);
 				}
-			} else {
+			}
+			else
+			{
 				$found_submenu = $this->find_main_submenu();
 
 				if ( false !== $found_submenu ) {
