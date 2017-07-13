@@ -299,11 +299,29 @@ jQuery( document ).ready( function( $ ) {
 		/*==================================
 		=            Navigation            =
 		==================================*/
-		
 		var mainMenu = $( '.main-navigation' ),
-		mobileMenu = $( '.mobile-navigation' ),
-		currentMenuItemLink = $( '.navigation-offcanvas .menu-primary li.menu-item-has-children > a, .navigation-offcanvas-push .menu-primary li.menu-item-has-children > a, .navigation-offcanvas .primary-menu li.page_item_has_children > a, .navigation-offcanvas-push .primary-menu li.page_item_has_children > a' );
+		mobileMenu = $( '.mobile-navigation' );
+
+		// Offconvas menu toggle 
+		var currentMenuItemLink = $( '.navigation-offcanvas .menu-primary li.menu-item-has-children > a, .navigation-offcanvas-push .menu-primary li.menu-item-has-children > a, .navigation-offcanvas .primary-menu li.page_item_has_children > a, .navigation-offcanvas-push .primary-menu li.page_item_has_children > a' );
 		
+		currentMenuItemLink.click(function(event) {
+			var $el = $( this ),
+			listItem = $el.parent( 'li'),
+			subMenu = listItem.children( '.sub-menu, .children');
+			
+			if ( $( window ).width() >= 768 ) {
+				event.preventDefault();
+				
+				subMenu.slideToggle ( '200' );
+				listItem.toggleClass('menu-slided');
+				
+				if ( !subMenu.children( 'li.menu-show-all').length ) {
+					subMenu.append('<li class="menu-show-all"><a href="' + $el.attr( 'href' ) + '">Go to ' + $el.text() + '</a></li>');
+				}
+			}
+		});
+
 		/**
 		 * Slides inside the sub menu
 		 * @param {string}  $el element name for sliding inside
