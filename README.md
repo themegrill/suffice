@@ -2,7 +2,7 @@
 Author: ThemeGrill
 Requires at least: WordPress 4.3
 Tested up to: WordPress 4.8
-Version: 1.0.5
+Version: 1.0.7
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce, portfolio
@@ -96,6 +96,13 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
+
+= 1.0.7 - 2017-07-13 =
+* Fix - Slider overlaying mobile menu
+* Fix - Link color effecting meta links
+* Fix - Close button not working on full screen menu
+* Fix - Sidebar padding issue on mobile devices
+* Tweaks - Header top info is centered now
 
 = 1.0.6 - 2017-07-12 =
 * Fix - Link color effecting link of mobile menu

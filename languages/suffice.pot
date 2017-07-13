@@ -1703,12 +1703,12 @@ msgstr ""
 msgid "WooCommerce"
 msgstr ""
 
-#: template-parts/header/header-action.php:23
-msgid "Show Search Form"
+#: template-parts/footer/navigation-mobile.php:12, template-parts/navigation/navigation-primary.php:17
+msgid "close"
 msgstr ""
 
-#: template-parts/navigation/navigation-primary.php:17
-msgid "close"
+#: template-parts/header/header-action.php:23
+msgid "Show Search Form"
 msgstr ""
 
 #: template-parts/navigation/navigation-togglers.php:13
