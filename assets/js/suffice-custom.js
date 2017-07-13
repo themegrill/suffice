@@ -432,7 +432,11 @@ jQuery( document ).ready( function( $ ) {
 			closeMobileMenu();
 		});
 		
-		
+		$( '.navigation-fullscreen .nav-header .nav-close').click(function(event) {
+			event.preventDefault();
+			$( '.navigation-fullscreen' ).removeClass( 'navigation--show' );
+		});
+
 		/*----------  Mobile Menu - cycles through inner sub menu  ----------*/
 		
 		$( '.mobile-navigation li.menu-item-has-children > a, .mobile-navigation li.page_item_has_children > a' ).click(function(event) {
