@@ -323,3 +323,39 @@ $suffice_version = $theme['Version'];
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-suffice-admin.php';
 }
+
+/** Freemius */
+// Create a helper function for easy SDK access.
+function suffice_fs() {
+    global $suffice_fs;
+
+    if ( ! isset( $suffice_fs ) ) {
+        // Include Freemius SDK.
+        require_once dirname(__FILE__) . '/freemius/start.php';
+
+        $suffice_fs = fs_dynamic_init( array(
+            'id'                  => '1217',
+            'slug'                => 'suffice',
+            'type'                => 'theme',
+            'public_key'          => 'pk_085bdc87271236b93bd78b164b768',
+            'is_premium'          => false,
+            'has_addons'          => false,
+            'has_paid_plans'      => false,
+            'menu'                => array(
+                'slug'           => 'suffice-welcome',
+                'account'        => false,
+                'support'        => false,
+                'parent'         => array(
+                    'slug' => 'themes.php',
+                ),
+            ),
+        ) );
+    }
+
+    return $suffice_fs;
+}
+
+// Init Freemius.
+suffice_fs();
+// Signal that SDK was initiated.
+do_action( 'suffice_fs_loaded' );
