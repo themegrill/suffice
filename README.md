@@ -20,7 +20,12 @@ For more information about Suffice please go to https://themegrill.com/themes/su
 4. Go to https://themegrill.com/themes/suffice/ for a guide on how to customize this theme.
 5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
-== Copyright ==
+== Copyright and License ==
+External resources linked to the theme.
+* Open Sans by Steve Matteson https://fonts.google.com/specimen/Open+Sans
+  Apache License, Version 2.0
+* Open Sans by Indian Type Foundry https://fonts.google.com/specimen/Poppins
+  Open Font License
 
 Suffice WordPress Theme, Copyright (c) 2017, ThemeGrill
 Suffice is distributed under the terms of the GNU GPL
@@ -96,6 +101,9 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
+
+= Version TBD =
+* Tweaks - Enqueue google fonts
 
 = 1.0.7 - 2017-07-13 =
 * Fix - Slider overlaying mobile menu

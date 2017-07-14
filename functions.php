@@ -192,11 +192,53 @@ function suffice_widgets_init() {
 }
 add_action( 'widgets_init', 'suffice_widgets_init' );
 
+if ( ! function_exists( 'suffice_fonts_url' ) ) :
+/**
+ * Register google fonts.
+ */
+function suffice_fonts_url()
+{
+	$fonts_url = '';
+	$fonts     = array();
+	$subsets   = 'latin,latin-ext';
+
+	/**
+	 * Translators: If there are characters in your language that are not
+	 * supported by Open Sans, translate this to 'off'. Do not translate
+	 * into your own language.
+	 */
+	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'suffice' ) ) {
+		$fonts[] = 'Open Sans:400,400i,700,700i';
+	}
+
+	/**
+	 * Translators: If there are characters in your language that are not
+	 * supported by Poppins, translate this to 'off'. Do not translate
+	 * into your own language.
+	 */
+	if ( 'off' !== _x( 'on', 'Poppins font: on or off', 'suffice' ) ) {
+		$fonts[] = 'Poppins:400,500,600,700';
+	}
+
+	if ( $fonts ) {
+		$fonts_url = add_query_arg( array(
+			'family' => urlencode( implode( '|', $fonts ) ),
+			'subset' => urlencode( $subsets ),
+		), 'https://fonts.googleapis.com/css' );
+	}
+
+	return $fonts_url;
+}
+endif;
+
 /**
  * Enqueue scripts and styles.
  */
 function suffice_scripts() {
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
+	/* Google fonts */
+	wp_enqueue_style( 'suffice-fonts', suffice_fonts_url(), array(), null );
 
 	/* Stylesheets */
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome' . $suffix . '.css', array(), '4.7' );
