@@ -20,7 +20,7 @@ For more information about Suffice please go to https://themegrill.com/themes/su
 4. Go to https://themegrill.com/themes/suffice/ for a guide on how to customize this theme.
 5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
-== Copyright and  ==
+== Copyright and License ==
 External resources linked to the theme.
 * Open Sans by Steve Matteson https://fonts.google.com/specimen/Open+Sans
   Apache License, Version 2.0
