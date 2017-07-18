@@ -2,7 +2,7 @@
 Author: ThemeGrill
 Requires at least: WordPress 4.3
 Tested up to: WordPress 4.8
-Version: 1.0.7
+Version: 1.0.8
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce, portfolio
@@ -102,8 +102,9 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 == Changelog ==
 
-= Version TBD =
+= 1.0.8 - 2017-07-18 =
 * Tweaks - Enqueue google fonts
+* Add - Editor Style
 
 = 1.0.7 - 2017-07-13 =
 * Fix - Slider overlaying mobile menu
