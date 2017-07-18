@@ -100,6 +100,12 @@ if ( ! function_exists( 'suffice_setup' ) ) :
 			'recommended-widgets' 	=> false,
 		) );
 
+		/*
+		* This theme styles the visual editor to resemble the theme style,
+		* specifically font, colors, and column width.
+		*/
+		add_editor_style( array( 'editor-style.css', suffice_fonts_url() ) );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'suffice_setup' );
@@ -192,44 +198,44 @@ function suffice_widgets_init() {
 }
 add_action( 'widgets_init', 'suffice_widgets_init' );
 
-if ( ! function_exists( 'suffice_fonts_url' ) ) :
 /**
- * Register google fonts.
- */
-function suffice_fonts_url()
-{
-	$fonts_url = '';
-	$fonts     = array();
-	$subsets   = 'latin,latin-ext';
+* Registers google fonts.
+*/
+if ( ! function_exists( 'suffice_fonts_url' ) ) :
+	function suffice_fonts_url() {
+		$fonts_url = '';
+		$fonts     = array();
+		$subsets   = 'latin,latin-ext';
 
-	/**
-	 * Translators: If there are characters in your language that are not
-	 * supported by Open Sans, translate this to 'off'. Do not translate
-	 * into your own language.
-	 */
-	if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'suffice' ) ) {
-		$fonts[] = 'Open Sans:400,400i,700,700i';
+		/**
+		* Translators: If there are characters in your language that are not
+		* supported by Open Sans, translate this to 'off'. Do not translate
+		* into your own language.
+		*/
+		if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'suffice' ) ) {
+			$fonts[] = 'Open Sans:400,400i,700,700i';
+		}
+
+		/**
+		* Translators: If there are characters in your language that are not
+		* supported by Poppins, translate this to 'off'. Do not translate
+		* into your own language.
+		*/
+		if ( 'off' !== _x( 'on', 'Poppins font: on or off', 'suffice' ) ) {
+			$fonts[] = 'Poppins:400,500,600,700';
+		}
+
+		if ( $fonts ) {
+			$fonts_url = add_query_arg( array(
+				'family' => urlencode( implode( '|', $fonts ) ),
+				'subset' => urlencode( $subsets ),
+			), 'https://fonts.googleapis.com/css' );
+		}
+
+		return $fonts_url;
 	}
-
-	/**
-	 * Translators: If there are characters in your language that are not
-	 * supported by Poppins, translate this to 'off'. Do not translate
-	 * into your own language.
-	 */
-	if ( 'off' !== _x( 'on', 'Poppins font: on or off', 'suffice' ) ) {
-		$fonts[] = 'Poppins:400,500,600,700';
-	}
-
-	if ( $fonts ) {
-		$fonts_url = add_query_arg( array(
-			'family' => urlencode( implode( '|', $fonts ) ),
-			'subset' => urlencode( $subsets ),
-		), 'https://fonts.googleapis.com/css' );
-	}
-
-	return $fonts_url;
-}
 endif;
+
 
 /**
  * Enqueue scripts and styles.
@@ -369,32 +375,32 @@ if ( is_admin() ) {
 /** Freemius */
 // Create a helper function for easy SDK access.
 function suffice_fs() {
-    global $suffice_fs;
+	global $suffice_fs;
 
-    if ( ! isset( $suffice_fs ) ) {
-        // Include Freemius SDK.
-        require_once dirname(__FILE__) . '/freemius/start.php';
+	if ( ! isset( $suffice_fs ) ) {
+		// Include Freemius SDK.
+		require_once dirname(__FILE__) . '/freemius/start.php';
 
-        $suffice_fs = fs_dynamic_init( array(
-            'id'                  => '1217',
-            'slug'                => 'suffice',
-            'type'                => 'theme',
-            'public_key'          => 'pk_085bdc87271236b93bd78b164b768',
-            'is_premium'          => false,
-            'has_addons'          => false,
-            'has_paid_plans'      => false,
-            'menu'                => array(
-                'slug'           => 'suffice-welcome',
-                'account'        => false,
-                'support'        => false,
-                'parent'         => array(
-                    'slug' => 'themes.php',
-                ),
-            ),
-        ) );
-    }
+		$suffice_fs = fs_dynamic_init( array(
+			'id'                  => '1217',
+			'slug'                => 'suffice',
+			'type'                => 'theme',
+			'public_key'          => 'pk_085bdc87271236b93bd78b164b768',
+			'is_premium'          => false,
+			'has_addons'          => false,
+			'has_paid_plans'      => false,
+			'menu'                => array(
+				'slug'           => 'suffice-welcome',
+				'account'        => false,
+				'support'        => false,
+				'parent'         => array(
+					'slug' => 'themes.php',
+				),
+			),
+		) );
+	}
 
-    return $suffice_fs;
+	return $suffice_fs;
 }
 
 // Init Freemius.
