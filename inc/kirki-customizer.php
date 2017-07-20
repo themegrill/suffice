@@ -1378,7 +1378,7 @@ function suffice_customizer_custom_scripts() { ?>
 <style>
 	/* Theme Instructions Panel CSS */
 	li#accordion-section-suffice_important_links h3.accordion-section-title, li#accordion-section-suffice_important_links h3.accordion-section-title:focus { background-color: #00baf4 !important; color: #fff !important; }
-	li#accordion-section-suffice_important_links h3.accordion-section-title:hover { background-color: #1C9BA4 !important; color: #fff !important; }
+	li#accordion-section-suffice_important_links h3.accordion-section-title:hover { background-color: #00c2ff !important; color: #fff !important; }
 	li#accordion-section-suffice_important_links h3.accordion-section-title:after { color: #fff !important; }
 	/* Upsell button CSS */
 	#sub-accordion-section-suffice_important_links a {
@@ -1397,7 +1397,7 @@ function suffice_customizer_custom_scripts() { ?>
 	#sub-accordion-section-suffice_important_links a:hover {
 		color: #ffffff;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006e2e+0,006e2e+100;Green+Flat+%233 */
-		background:#1C9BA4;
+		background:#00c2ff;
 	}
 </style>
 <?php
