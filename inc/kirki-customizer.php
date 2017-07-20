@@ -30,6 +30,13 @@ Kirki::add_panel( 'suffice_theme_options', array(
  * Sections
  */
 
+/** Important Links Section */
+Kirki::add_section( 'suffice_important_links', array(
+	'title'          => esc_html__( 'Suffice Important Links', 'suffice' ),
+	'priority'       => 5,
+	'capability'     => 'edit_theme_options',
+) );
+
 /* Top Header */
 Kirki::add_section( 'suffice_section_top_header', array(
 	'title'			=> esc_html__( 'Top Header Settings', 'suffice' ),
@@ -157,6 +164,59 @@ Kirki::add_section( 'suffice_section_related_posts', array(
 	'priority'		=> 160,
 	'capability'	=> 'edit_theme_options',
 ) );
+
+/**
+ * ============ Suffice Important Links ===========
+ */
+
+Kirki::add_field( 'suffice_config', array(
+	'type'        => 'custom',
+	'settings'    => 'suffice_view_pro_link',
+	'section'     => 'suffice_important_links',
+	'default'     => '<a target="_blank" href="' . esc_url( 'https://themegrill.com/themes/suffice/' ) . '">'.esc_html( 'View Pro', 'suffice' ).'</a>',
+	'priority'    => 10,
+) );
+
+Kirki::add_field( 'suffice_config', array(
+	'type'        => 'custom',
+	'settings'    => 'suffice_theme_info_link',
+	'section'     => 'suffice_important_links',
+	'default'     => '<a target="_blank" href="' . esc_url( 'https://themegrill.com/themes/suffice/' ) . '">'.esc_html( 'Theme Info', 'suffice' ).'</a>',
+	'priority'    => 20,
+) );
+
+Kirki::add_field( 'suffice_config', array(
+	'type'        => 'custom',
+	'settings'    => 'suffice_support_link',
+	'section'     => 'suffice_important_links',
+	'default'     => '<a target="_blank" href="' . esc_url( 'https://themegrill.com/support-forum/' ) . '">'.esc_html( 'Support', 'suffice' ).'</a>',
+	'priority'    => 30,
+) );
+
+Kirki::add_field( 'suffice_config', array(
+	'type'        => 'custom',
+	'settings'    => 'suffice_doc_link',
+	'section'     => 'suffice_important_links',
+	'default'     => '<a target="_blank" href="' . esc_url( 'https://docs.themegrill.com/suffice/' ) . '">'.esc_html( 'Documentation', 'suffice' ).'</a>',
+	'priority'    => 40,
+) );
+
+Kirki::add_field( 'suffice_config', array(
+	'type'        => 'custom',
+	'settings'    => 'suffice_demo_link',
+	'section'     => 'suffice_important_links',
+	'default'     => '<a target="_blank" href="' . esc_url( 'https://demo.themegrill.com/suffice/' ) . '">'.esc_html( 'View Free Demos', 'suffice' ).'</a>',
+	'priority'    => 50,
+) );
+
+Kirki::add_field( 'suffice_config', array(
+	'type'        => 'custom',
+	'settings'    => 'suffice_pro_demo_link',
+	'section'     => 'suffice_important_links',
+	'default'     => '<a target="_blank" href="' . esc_url( 'https://demo.themegrill.com/suffice-pro/' ) . '">'.esc_html( 'View Pro Demos', 'suffice' ).'</a>',
+	'priority'    => 50,
+) );
+
 
 /**
  * ============Top Header styles===========
@@ -1308,3 +1368,37 @@ foreach ( $categories as $category_list ) {
 }
 
 /*=====  End of Category Color Options  ======*/
+
+/*
+ * Custom Scripts
+ */
+add_action( 'customize_controls_print_footer_scripts', 'suffice_customizer_custom_scripts' );
+
+function suffice_customizer_custom_scripts() { ?>
+<style>
+	/* Theme Instructions Panel CSS */
+	li#accordion-section-suffice_important_links h3.accordion-section-title, li#accordion-section-suffice_important_links h3.accordion-section-title:focus { background-color: #00baf4 !important; color: #fff !important; }
+	li#accordion-section-suffice_important_links h3.accordion-section-title:hover { background-color: #00c2ff !important; color: #fff !important; }
+	li#accordion-section-suffice_important_links h3.accordion-section-title:after { color: #fff !important; }
+	/* Upsell button CSS */
+	#sub-accordion-section-suffice_important_links a {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8fc800+0,8fc800+100;Green+Flat+%232 */
+		background: #00baf4;
+		color: #fff;
+		display: block;
+		margin: 15px 0 0;
+		padding: 5px 0;
+		text-align: center;
+		font-weight: 600;
+		text-decoration: none;
+		padding: 8px 0;
+	}
+
+	#sub-accordion-section-suffice_important_links a:hover {
+		color: #ffffff;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006e2e+0,006e2e+100;Green+Flat+%233 */
+		background:#00c2ff;
+	}
+</style>
+<?php
+}
