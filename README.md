@@ -101,6 +101,8 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
+= Version TBD =
+* Tweaks - Kirki toolkit update
 
 = 1.0.8 - 2017-07-18 =
 * Tweaks - Enqueue google fonts
