@@ -103,6 +103,8 @@ Unless otherwise specified, all the theme files, scripts and images including th
 == Changelog ==
 = Version TBD =
 * Tweaks - Kirki toolkit update
+* Tweaks - Added upsell links
+* Tweaks - Added demo preview link for Suffice Pro 
 
 = 1.0.8 - 2017-07-18 =
 * Tweaks - Enqueue google fonts
