@@ -534,6 +534,46 @@ msgstr ""
 msgid "Suffice"
 msgstr ""
 
+#: inc/demo-config.php:28
+msgid "Suffice Pro"
+msgstr ""
+
+#: inc/demo-config.php:33
+msgid "Suffice Pro App"
+msgstr ""
+
+#: inc/demo-config.php:38
+msgid "Suffice Pro Construction"
+msgstr ""
+
+#: inc/demo-config.php:43
+msgid "Suffice Pro Food"
+msgstr ""
+
+#: inc/demo-config.php:48
+msgid "Suffice Pro Gym"
+msgstr ""
+
+#: inc/demo-config.php:53
+msgid "Suffice Pro Magazine"
+msgstr ""
+
+#: inc/demo-config.php:58
+msgid "Suffice Pro One Page"
+msgstr ""
+
+#: inc/demo-config.php:63
+msgid "Suffice Pro Photography"
+msgstr ""
+
+#: inc/demo-config.php:68
+msgid "Suffice Pro Portfolio"
+msgstr ""
+
+#: inc/demo-config.php:73
+msgid "Suffice Pro Shop"
+msgstr ""
+
 #: inc/extras.php:120
 msgid "Home"
 msgstr ""
@@ -591,518 +631,522 @@ msgid "Theme Option"
 msgstr ""
 
 #: inc/kirki-customizer.php:35
+msgid "Suffice Important Links"
+msgstr ""
+
+#: inc/kirki-customizer.php:42
 msgid "Top Header Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:43
+#: inc/kirki-customizer.php:50
 msgid "Header Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:51
+#: inc/kirki-customizer.php:58
 msgid "Transparent Header Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:59
+#: inc/kirki-customizer.php:66
 msgid "Menu Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:67
+#: inc/kirki-customizer.php:74
 msgid "Layout Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:75
+#: inc/kirki-customizer.php:82
 msgid "Color Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:83
+#: inc/kirki-customizer.php:90
 msgid "Preloader Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:91
+#: inc/kirki-customizer.php:98
 msgid "Page Title Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:99
+#: inc/kirki-customizer.php:106
 msgid "Breadcrumbs Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:107
+#: inc/kirki-customizer.php:114
 msgid "Footer Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:115
+#: inc/kirki-customizer.php:122
 msgid "Sidebar Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:123
+#: inc/kirki-customizer.php:130
 msgid "Widget Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:131
+#: inc/kirki-customizer.php:138
 msgid "Blog/Article Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:139
+#: inc/kirki-customizer.php:146
 msgid "Category Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:147
+#: inc/kirki-customizer.php:154
 msgid "Search Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:155
+#: inc/kirki-customizer.php:162
 msgid "Related Posts Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:169
+#: inc/kirki-customizer.php:229
 msgid "Header Content Left"
 msgstr ""
 
-#: inc/kirki-customizer.php:170
+#: inc/kirki-customizer.php:230
 msgid "Choose what content you want to display on left section of header top."
 msgstr ""
 
-#: inc/kirki-customizer.php:176, inc/kirki-customizer.php:193, inc/kirki-customizer.php:205
+#: inc/kirki-customizer.php:236, inc/kirki-customizer.php:253, inc/kirki-customizer.php:265
 msgid "Contact Info"
 msgstr ""
 
-#: inc/kirki-customizer.php:177, inc/kirki-customizer.php:194
+#: inc/kirki-customizer.php:237, inc/kirki-customizer.php:254
 msgid "Social Icon"
 msgstr ""
 
-#: inc/kirki-customizer.php:178, inc/kirki-customizer.php:195, inc/kirki-customizer.php:1051, inc/kirki-customizer.php:1165
+#: inc/kirki-customizer.php:238, inc/kirki-customizer.php:255, inc/kirki-customizer.php:1111, inc/kirki-customizer.php:1225
 msgid "Disabled"
 msgstr ""
 
-#: inc/kirki-customizer.php:186
+#: inc/kirki-customizer.php:246
 msgid "Header Content Right"
 msgstr ""
 
-#: inc/kirki-customizer.php:187
+#: inc/kirki-customizer.php:247
 msgid "Choose what content you want to display on right section of header top."
 msgstr ""
 
-#: inc/kirki-customizer.php:212
+#: inc/kirki-customizer.php:272
 msgid "Location for Contact Info"
 msgstr ""
 
-#: inc/kirki-customizer.php:213
+#: inc/kirki-customizer.php:273
 msgid "Provide location to be displayed on contact info."
 msgstr ""
 
-#: inc/kirki-customizer.php:230
+#: inc/kirki-customizer.php:290
 msgid "Phone Number for Contact"
 msgstr ""
 
-#: inc/kirki-customizer.php:231
+#: inc/kirki-customizer.php:291
 msgid "Provide phone number to be displayed on contact info."
 msgstr ""
 
-#: inc/kirki-customizer.php:248
+#: inc/kirki-customizer.php:308
 msgid "Email Address for Contact"
 msgstr ""
 
-#: inc/kirki-customizer.php:249
+#: inc/kirki-customizer.php:309
 msgid "Provide address to be displayed on contact info."
 msgstr ""
 
-#: inc/kirki-customizer.php:270
+#: inc/kirki-customizer.php:330
 msgid "Header Layout Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:271
+#: inc/kirki-customizer.php:331
 msgid "Choose how you want to display header layout."
 msgstr ""
 
-#: inc/kirki-customizer.php:288, inc/kirki-customizer.php:295
+#: inc/kirki-customizer.php:348, inc/kirki-customizer.php:355
 msgid "Sticky Header"
 msgstr ""
 
-#: inc/kirki-customizer.php:296
+#: inc/kirki-customizer.php:356
 msgid "Choose whether to make header sticky or not"
 msgstr ""
 
-#: inc/kirki-customizer.php:306
+#: inc/kirki-customizer.php:366
 msgid "Sticky Header Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:307
+#: inc/kirki-customizer.php:367
 msgid "Choose the header sticky style."
 msgstr ""
 
-#: inc/kirki-customizer.php:330
+#: inc/kirki-customizer.php:390
 msgid "Header Action Box"
 msgstr ""
 
-#: inc/kirki-customizer.php:337
+#: inc/kirki-customizer.php:397
 msgid "Search Icon"
 msgstr ""
 
-#: inc/kirki-customizer.php:338
+#: inc/kirki-customizer.php:398
 msgid "Turn on to display search icon on header."
 msgstr ""
 
-#: inc/kirki-customizer.php:348
+#: inc/kirki-customizer.php:408
 msgid "Cart Icon"
 msgstr ""
 
-#: inc/kirki-customizer.php:349
+#: inc/kirki-customizer.php:409
 msgid "Turn on to display cart icon on beside header menu."
 msgstr ""
 
-#: inc/kirki-customizer.php:360
+#: inc/kirki-customizer.php:420
 msgid "Wishlist Icon"
 msgstr ""
 
-#: inc/kirki-customizer.php:361
+#: inc/kirki-customizer.php:421
 msgid "Turn on to display wishlist icon on header."
 msgstr ""
 
-#: inc/kirki-customizer.php:379
+#: inc/kirki-customizer.php:439
 msgid "Site Logo"
 msgstr ""
 
-#: inc/kirki-customizer.php:380
+#: inc/kirki-customizer.php:440
 msgid "Sets the custom logo when menu is transparent."
 msgstr ""
 
-#: inc/kirki-customizer.php:398
+#: inc/kirki-customizer.php:458
 msgid "Layout Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:399
+#: inc/kirki-customizer.php:459
 msgid "Choose layout style default is set to Wide"
 msgstr ""
 
-#: inc/kirki-customizer.php:413
+#: inc/kirki-customizer.php:473
 msgid "Blog Page"
 msgstr ""
 
-#: inc/kirki-customizer.php:414
+#: inc/kirki-customizer.php:474
 msgid "Controls the blog page layout"
 msgstr ""
 
-#: inc/kirki-customizer.php:430
+#: inc/kirki-customizer.php:490
 msgid "Archive Layout"
 msgstr ""
 
-#: inc/kirki-customizer.php:431
+#: inc/kirki-customizer.php:491
 msgid "Controls the layout of archive."
 msgstr ""
 
-#: inc/kirki-customizer.php:447
+#: inc/kirki-customizer.php:507
 msgid "Single Content Layout"
 msgstr ""
 
-#: inc/kirki-customizer.php:448
+#: inc/kirki-customizer.php:508
 msgid "Controls the layout of single post."
 msgstr ""
 
-#: inc/kirki-customizer.php:464
+#: inc/kirki-customizer.php:524
 msgid "Page Layout"
 msgstr ""
 
-#: inc/kirki-customizer.php:465
+#: inc/kirki-customizer.php:525
 msgid "Controls the layout of page."
 msgstr ""
 
-#: inc/kirki-customizer.php:481
+#: inc/kirki-customizer.php:541
 msgid "Search Results Layout"
 msgstr ""
 
-#: inc/kirki-customizer.php:482
+#: inc/kirki-customizer.php:542
 msgid "Controls the layout where search result is displayed."
 msgstr ""
 
-#: inc/kirki-customizer.php:498
+#: inc/kirki-customizer.php:558
 msgid "404 Layout"
 msgstr ""
 
-#: inc/kirki-customizer.php:499
+#: inc/kirki-customizer.php:559
 msgid "Controls the 404 layout."
 msgstr ""
 
-#: inc/kirki-customizer.php:522
+#: inc/kirki-customizer.php:582
 msgid "Main Menu Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:523
+#: inc/kirki-customizer.php:583
 msgid "Controls the navigaiton style in main menu."
 msgstr ""
 
-#: inc/kirki-customizer.php:546
+#: inc/kirki-customizer.php:606
 msgid "Sub Menu Styling"
 msgstr ""
 
-#: inc/kirki-customizer.php:553
+#: inc/kirki-customizer.php:613
 msgid "Dropdown Icon Indicator"
 msgstr ""
 
-#: inc/kirki-customizer.php:554
+#: inc/kirki-customizer.php:614
 msgid "Turn on to show arrow on item to indicate it has sub menu."
 msgstr ""
 
-#: inc/kirki-customizer.php:564
+#: inc/kirki-customizer.php:624
 msgid "Dropdown Shadow"
 msgstr ""
 
-#: inc/kirki-customizer.php:565
+#: inc/kirki-customizer.php:625
 msgid "Turn on to show box shadow on dropdown."
 msgstr ""
 
-#: inc/kirki-customizer.php:582
+#: inc/kirki-customizer.php:642
 msgid "Sub Menu Item Devider"
 msgstr ""
 
-#: inc/kirki-customizer.php:583
+#: inc/kirki-customizer.php:643
 msgid "Turn on to show border on list item."
 msgstr ""
 
-#: inc/kirki-customizer.php:600
+#: inc/kirki-customizer.php:660
 msgid "Fullscreen Menu Styling"
 msgstr ""
 
-#: inc/kirki-customizer.php:614
+#: inc/kirki-customizer.php:674
 msgid "Menu Background Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:615
+#: inc/kirki-customizer.php:675
 msgid "Controls the background color of menu."
 msgstr ""
 
-#: inc/kirki-customizer.php:660
+#: inc/kirki-customizer.php:720
 msgid "Theme Skin"
 msgstr ""
 
-#: inc/kirki-customizer.php:661
+#: inc/kirki-customizer.php:721
 msgid "Select Dark or Light Theme"
 msgstr ""
 
-#: inc/kirki-customizer.php:680
+#: inc/kirki-customizer.php:740
 msgid "Predefined Color Scheme"
 msgstr ""
 
-#: inc/kirki-customizer.php:681
+#: inc/kirki-customizer.php:741
 msgid "Controls the color scheme of theme. You can also customize them using seperate control."
 msgstr ""
 
-#: inc/kirki-customizer.php:715
+#: inc/kirki-customizer.php:775
 msgid "Preloader"
 msgstr ""
 
-#: inc/kirki-customizer.php:716
+#: inc/kirki-customizer.php:776
 msgid "Turn on to show page preloader when page loads"
 msgstr ""
 
-#: inc/kirki-customizer.php:726
+#: inc/kirki-customizer.php:786
 msgid "Preloader Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:727
+#: inc/kirki-customizer.php:787
 msgid "Controls the style of preloader."
 msgstr ""
 
-#: inc/kirki-customizer.php:749
+#: inc/kirki-customizer.php:809
 msgid "Preloader Background Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:750
+#: inc/kirki-customizer.php:810
 msgid "Controls the background color of preloader."
 msgstr ""
 
-#: inc/kirki-customizer.php:778
+#: inc/kirki-customizer.php:838
 msgid "Moon Cirlce Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:779
+#: inc/kirki-customizer.php:839
 msgid "Controls the color of circle on preloader moon."
 msgstr ""
 
-#: inc/kirki-customizer.php:811
+#: inc/kirki-customizer.php:871
 msgid "Inner Circle Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:812
+#: inc/kirki-customizer.php:872
 msgid "Controls the colors of inner circle color."
 msgstr ""
 
-#: inc/kirki-customizer.php:854
+#: inc/kirki-customizer.php:914
 msgid "Outer Circle Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:855
+#: inc/kirki-customizer.php:915
 msgid "Controls the colors of outer circle color."
 msgstr ""
 
-#: inc/kirki-customizer.php:887
+#: inc/kirki-customizer.php:947
 msgid "Rotation Speed"
 msgstr ""
 
-#: inc/kirki-customizer.php:888
+#: inc/kirki-customizer.php:948
 msgid "Controls the speed of how fast circle rotates."
 msgstr ""
 
-#: inc/kirki-customizer.php:933
+#: inc/kirki-customizer.php:993
 msgid "Bouncing Dot Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:934
+#: inc/kirki-customizer.php:994
 msgid "Controls the color of bouncing dot."
 msgstr ""
 
-#: inc/kirki-customizer.php:971
+#: inc/kirki-customizer.php:1031
 msgid "Page Title Bar"
 msgstr ""
 
-#: inc/kirki-customizer.php:972
+#: inc/kirki-customizer.php:1032
 msgid "Controls whether to show page title bar or not."
 msgstr ""
 
-#: inc/kirki-customizer.php:989
+#: inc/kirki-customizer.php:1049
 msgid "Breadcrumbs"
 msgstr ""
 
-#: inc/kirki-customizer.php:990
+#: inc/kirki-customizer.php:1050
 msgid "Controls whether to show breadcrumbs or not."
 msgstr ""
 
-#: inc/kirki-customizer.php:1007
+#: inc/kirki-customizer.php:1067
 msgid "Footer Widgets"
 msgstr ""
 
-#: inc/kirki-customizer.php:1008
+#: inc/kirki-customizer.php:1068
 msgid "Turn on to display widgets on footer."
 msgstr ""
 
-#: inc/kirki-customizer.php:1018
+#: inc/kirki-customizer.php:1078
 msgid "Footer Widget Column"
 msgstr ""
 
-#: inc/kirki-customizer.php:1019
+#: inc/kirki-customizer.php:1079
 msgid "Controls how many widgets should be displayed in one row."
 msgstr ""
 
-#: inc/kirki-customizer.php:1043
+#: inc/kirki-customizer.php:1103
 msgid "Footer Bottom Right Content"
 msgstr ""
 
-#: inc/kirki-customizer.php:1044
+#: inc/kirki-customizer.php:1104
 msgid "Select what element to display on footer bottom right section."
 msgstr ""
 
-#: inc/kirki-customizer.php:1049
+#: inc/kirki-customizer.php:1109
 msgid "Footer Menu"
 msgstr ""
 
-#: inc/kirki-customizer.php:1050
+#: inc/kirki-customizer.php:1110
 msgid "Social Links"
 msgstr ""
 
-#: inc/kirki-customizer.php:1066
+#: inc/kirki-customizer.php:1126
 msgid "Sticky Sidebar"
 msgstr ""
 
-#: inc/kirki-customizer.php:1067
+#: inc/kirki-customizer.php:1127
 msgid "Controls whether to activate sticky sidebar or not."
 msgstr ""
 
-#: inc/kirki-customizer.php:1084
+#: inc/kirki-customizer.php:1144
 msgid "Widget Title Ribbon"
 msgstr ""
 
-#: inc/kirki-customizer.php:1085
+#: inc/kirki-customizer.php:1145
 msgid "Turn on to show ribbon on widget title."
 msgstr ""
 
-#: inc/kirki-customizer.php:1105
+#: inc/kirki-customizer.php:1165
 msgid "Blog Post Archive"
 msgstr ""
 
-#: inc/kirki-customizer.php:1112
+#: inc/kirki-customizer.php:1172
 msgid "Blog Post Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:1113
+#: inc/kirki-customizer.php:1173
 msgid "Controls the post style on blog."
 msgstr ""
 
-#: inc/kirki-customizer.php:1128
+#: inc/kirki-customizer.php:1188
 msgid "Grid Layout Columns"
 msgstr ""
 
-#: inc/kirki-customizer.php:1129
+#: inc/kirki-customizer.php:1189
 msgid "Controls the amounth of columns to display on grid layout."
 msgstr ""
 
-#: inc/kirki-customizer.php:1150
+#: inc/kirki-customizer.php:1210
 msgid "Post Title alignment"
 msgstr ""
 
-#: inc/kirki-customizer.php:1151
+#: inc/kirki-customizer.php:1211
 msgid "Choose whether to display post title according to featured post image."
 msgstr ""
 
-#: inc/kirki-customizer.php:1163
+#: inc/kirki-customizer.php:1223
 msgid "Below"
 msgstr ""
 
-#: inc/kirki-customizer.php:1164
+#: inc/kirki-customizer.php:1224
 msgid "Above"
 msgstr ""
 
-#: inc/kirki-customizer.php:1180
+#: inc/kirki-customizer.php:1240
 msgid "Search Results Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:1181
+#: inc/kirki-customizer.php:1241
 msgid "Controls the layout for the search results on page"
 msgstr ""
 
-#: inc/kirki-customizer.php:1196
+#: inc/kirki-customizer.php:1256
 msgid "Column on One Row"
 msgstr ""
 
-#: inc/kirki-customizer.php:1197
+#: inc/kirki-customizer.php:1257
 msgid "Controls the column of search result on grid style."
 msgstr ""
 
-#: inc/kirki-customizer.php:1226
+#: inc/kirki-customizer.php:1286
 msgid "Related Post"
 msgstr ""
 
-#: inc/kirki-customizer.php:1227
+#: inc/kirki-customizer.php:1287
 msgid "Turn on to display related post on single blog post."
 msgstr ""
 
-#: inc/kirki-customizer.php:1237
+#: inc/kirki-customizer.php:1297
 msgid "Get Related Post From"
 msgstr ""
 
-#: inc/kirki-customizer.php:1238
+#: inc/kirki-customizer.php:1298
 msgid "Choose whether to get related post from. Default is categories."
 msgstr ""
 
-#: inc/kirki-customizer.php:1243
+#: inc/kirki-customizer.php:1303
 msgid "Categories"
 msgstr ""
 
-#: inc/kirki-customizer.php:1244
+#: inc/kirki-customizer.php:1304
 msgid "Tags"
 msgstr ""
 
-#: inc/kirki-customizer.php:1252
+#: inc/kirki-customizer.php:1312
 msgid "Related Post Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:1253
+#: inc/kirki-customizer.php:1313
 msgid "Controls the layout of related posts."
 msgstr ""
 
-#: inc/kirki-customizer.php:1268
+#: inc/kirki-customizer.php:1328
 msgid "Related Post Carousel"
 msgstr ""
 
-#: inc/kirki-customizer.php:1269
+#: inc/kirki-customizer.php:1329
 msgid "Turn on to enable carousel on related posts."
 msgstr ""
 
