@@ -1079,7 +1079,7 @@ Kirki::add_field( 'suffice_config', array(
 	'description'		=> esc_html__( 'Controls how many widgets should be displayed in one row.', 'suffice' ),
 	'section'			=> 'suffice_section_footer',
 	'priority'			=> 10,
-	'default'			=> 'col-md-3',
+	'default'			=> 'footer-widgets-column--four',
 	'active_callback'	=> array(
 		array(
 			'setting'		=> 'suffice_show_footer_widget',
@@ -1088,10 +1088,10 @@ Kirki::add_field( 'suffice_config', array(
 		),
 	),
 	'choices'			=> array(
-		'col-md-12'				=> get_template_directory_uri() . '/assets/img/col-1.png',
-		'col-md-6'				=> get_template_directory_uri() . '/assets/img/col-2.png',
-		'col-md-4'				=> get_template_directory_uri() . '/assets/img/col-3.png',
-		'col-md-3'				=> get_template_directory_uri() . '/assets/img/col-4.png',
+		'footer-widgets-column--one'				=> get_template_directory_uri() . '/assets/img/col-1.png',
+		'footer-widgets-column--two'				=> get_template_directory_uri() . '/assets/img/col-2.png',
+		'footer-widgets-column--three'				=> get_template_directory_uri() . '/assets/img/col-3.png',
+		'footer-widgets-column--four'				=> get_template_directory_uri() . '/assets/img/col-4.png',
 	),
 	'transport'			=> 'postMessage',
 ) );

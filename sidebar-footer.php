@@ -17,14 +17,10 @@ if ( ! is_active_sidebar( 'footer-sidebar-1' ) &&
 }
 ?>
 
-<div class="footer-widgets">
-	<div class="row">
-		<?php for ( $i = 1 ; $i <= 4 ; $i++ ) { ?>
-			<div class="footer-widget-area footer-sidebar-<?php echo esc_attr( $i . ' ' . suffice_get_footer_widget_class() ); ?>">
-				<?php if ( is_active_sidebar( 'footer-sidebar-' . $i ) ) : ?>
-					<?php dynamic_sidebar( 'footer-sidebar-' . $i ); ?>
-				<?php endif; ?>
-			</div>
-		<?php } ?>
-	</div> <!-- end row -->
+<div class="footer-widgets <?php echo esc_attr( suffice_get_footer_widget_class() ); ?>">
+	<?php for ( $i = 1 ; $i <= 4 ; $i++ ) { ?>
+		<?php if ( is_active_sidebar( 'footer-sidebar-' . $i ) ) : ?>
+			<?php dynamic_sidebar( 'footer-sidebar-' . $i ); ?>
+		<?php endif; ?>
+	<?php } ?>
 </div> <!-- footer-widgets -->
