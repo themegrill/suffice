@@ -137,9 +137,11 @@
 	
 	/* Header adjustment on mobile devices*/
 	.header-top {
+		.container--flex {
+			flex-direction: column;
+		}
 		.header-top-left-section,
 		.header-top-right-section {
-			float: none;
 			text-align: center;
 		}
 

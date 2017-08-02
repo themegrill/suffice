@@ -43,7 +43,7 @@ do_action( 'suffice_before' ); ?>
 			<div class="header-inner-wrapper">
 				<?php if ( ( 'disabled' !== suffice_get_option( 'suffice_header_content_left' ) ) || ( 'disabled' !== suffice_get_option( 'suffice_header_content_right' ) ) ) : ?>
 					<div class="header-top">
-						<div class="container">
+						<div class="container container--flex">
 							<div class="header-top-left-section">
 								<?php suffice_top_header_left_content(); ?>
 							</div>

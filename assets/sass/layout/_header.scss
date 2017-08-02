@@ -97,13 +97,17 @@
 	border-bottom: 0 solid rgba(255, 255, 255, 0.5);
 	transition: all 0.35s;
 
+	.container--flex {
+		justify-content: space-between;
+		align-items: center;
+	}
+
 	.header-top-left-section {
-		float: left;
 		text-align: left;
+		flex: 7;
 	}
 
 	.header-top-right-section {
-		float: right;
 		text-align: right;
 	}
 }
