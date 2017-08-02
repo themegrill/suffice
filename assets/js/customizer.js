@@ -41,17 +41,8 @@
 		} );
 	} );
 
-	// add class to widget on footer.
-	api( 'suffice_footer_columns_count', function( value ) {
-		value.bind( function( to ) {
-			$( '.footer-top' ).find( '.footer-widgets' ).find( '.footer-widget-area' ).
-			removeClass('col-md-3 col-md-4 col-md-6 col-md-12').
-			addClass( to );
-		} );
-	} );
-
 	// add class to widget .
-	api( 'sufficet_show_widget_title_ribbon', function( value ) {
+	api( 'suffice[sufficet_show_widget_title_ribbon]', function( value ) {
 		value.bind( function( to ) {
 			if ( true === to ) {
 				$( '.widget-area' ).find( '.widget' ).addClass( 'widget--ribbon' );
