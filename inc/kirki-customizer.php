@@ -12,7 +12,7 @@
 Kirki::add_config( 'suffice_config', array(
 	'capability'	=> 'edit_theme_options',
 	'option_type'   => 'option',
-	'option_name'   => 'suffice'
+	'option_name'   => 'suffice',
 ) );
 
 

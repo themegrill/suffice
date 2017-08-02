@@ -5,7 +5,7 @@
 		var themeColorScheme = [];
 
 		// changes color as per theme 
-		api( 'suffice_theme_skin', function( value ) {
+		api( 'suffice[suffice_theme_skin]', function( value ) {
 			value.bind( function( to ) {
 				if ( 'dark' === to ) {
 					themeColorScheme = [ '#1D2329', '#FAFBF7', '#E2E7E8', '#e9e8e8'];
@@ -15,33 +15,33 @@
 				}
 
 				// Update background Color.
-				api( 'suffice_color_background' ).set( themeColorScheme[0] );
-				api.control( 'suffice_color_background' ).container.find( '.color-picker-hex' )
+				api( 'suffice[suffice_color_background]' ).set( themeColorScheme[0] );
+				api.control( 'suffice[suffice_color_background]' ).container.find( '.color-picker-hex' )
 					.data( 'data-default-color', themeColorScheme[0] )
 					.wpColorPicker( 'defaultColor', themeColorScheme[0] );
 
 				// Update Heading Color.
-				api( 'suffice_color_heading' ).set( themeColorScheme[1] );
-				api.control( 'suffice_color_heading' ).container.find( '.color-picker-hex' )
+				api( 'suffice[suffice_color_heading]' ).set( themeColorScheme[1] );
+				api.control( 'suffice[suffice_color_heading]' ).container.find( '.color-picker-hex' )
 					.data( 'data-default-color', themeColorScheme[1] )
 					.wpColorPicker( 'defaultColor', themeColorScheme[1] );
 
 				// Update Paragraph Color.
-				api( 'suffice_color_paragraph' ).set( themeColorScheme[2] );
-				api.control( 'suffice_color_paragraph' ).container.find( '.color-picker-hex' )
+				api( 'suffice[suffice_color_paragraph]' ).set( themeColorScheme[2] );
+				api.control( 'suffice[suffice_color_paragraph]' ).container.find( '.color-picker-hex' )
 					.data( 'data-default-color', themeColorScheme[2] )
 					.wpColorPicker( 'defaultColor', themeColorScheme[2] );
 
 				// Update Meta Color.
-				api( 'suffice_color_meta' ).set( themeColorScheme[3] );
-				api.control( 'suffice_color_meta' ).container.find( '.color-picker-hex' )
+				api( 'suffice[suffice_color_meta]' ).set( themeColorScheme[3] );
+				api.control( 'suffice[suffice_color_meta]' ).container.find( '.color-picker-hex' )
 					.data( 'data-default-color', themeColorScheme[3] )
 					.wpColorPicker( 'defaultColor', themeColorScheme[3] );
 			});
 		});
 
 		// changes color as per color scheme 
-		api( 'suffice_predefined_color_scheme', function( value ){
+		api( 'suffice[suffice_predefined_color_scheme]', function( value ){
 			value.bind( function( to ) {
 				
 				/* Check what color scheme it is */
@@ -56,38 +56,38 @@
 				}
 
 				// Update Primary Color.
-				api( 'suffice_color_primary' ).set( colorscheme[0] );
-				api.control( 'suffice_color_primary' ).container.find( '.color-picker-hex' )
+				api( 'suffice[suffice_color_primary]' ).set( colorscheme[0] );
+				api.control( 'suffice[suffice_color_primary]' ).container.find( '.color-picker-hex' )
 					.data( 'data-default-color', colorscheme[0] )
 					.wpColorPicker( 'defaultColor', colorscheme[0] );
 
 				// Update Secondary Color.
-				api( 'suffice_color_secondary' ).set( colorscheme[1] );
-				api.control( 'suffice_color_secondary' ).container.find( '.color-picker-hex' )
+				api( 'suffice[suffice_color_secondary]' ).set( colorscheme[1] );
+				api.control( 'suffice[suffice_color_secondary]' ).container.find( '.color-picker-hex' )
 					.data( 'data-default-color', colorscheme[1] )
 					.wpColorPicker( 'defaultColor', colorscheme[1] );
 
 				// Update Background Color.
-				api( 'suffice_color_background' ).set( colorscheme[2] );
-				api.control( 'suffice_color_background' ).container.find( '.color-picker-hex' )
+				api( 'suffice[suffice_color_background]' ).set( colorscheme[2] );
+				api.control( 'suffice[suffice_color_background]' ).container.find( '.color-picker-hex' )
 					.data( 'data-default-color', colorscheme[2] )
 					.wpColorPicker( 'defaultColor', colorscheme[2] );
 
 				// Update Heading Color.
-				api( 'suffice_color_heading' ).set( colorscheme[3] );
-				api.control( 'suffice_color_heading' ).container.find( '.color-picker-hex' )
+				api( 'suffice[suffice_color_heading]' ).set( colorscheme[3] );
+				api.control( 'suffice[suffice_color_heading]' ).container.find( '.color-picker-hex' )
 					.data( 'data-default-color', colorscheme[3] )
 					.wpColorPicker( 'defaultColor', colorscheme[3] );
 
 				// Update Paragraph Color.
-				api( 'suffice_color_paragraph' ).set( colorscheme[4] );
-				api.control( 'suffice_color_paragraph' ).container.find( '.color-picker-hex' )
+				api( 'suffice[suffice_color_paragraph]' ).set( colorscheme[4] );
+				api.control( 'suffice[suffice_color_paragraph]' ).container.find( '.color-picker-hex' )
 					.data( 'data-default-color', colorscheme[4] )
 					.wpColorPicker( 'defaultColor', colorscheme[4] );
 
 				// Update Meta Color.
-				api( 'suffice_color_meta' ).set( colorscheme[5] );
-				api.control( 'suffice_color_meta' ).container.find( '.color-picker-hex' )
+				api( 'suffice[suffice_color_meta]' ).set( colorscheme[5] );
+				api.control( 'suffice[suffice_color_meta]' ).container.find( '.color-picker-hex' )
 					.data( 'data-default-color', colorscheme[5] )
 					.wpColorPicker( 'defaultColor', colorscheme[5] );
 			} );
