@@ -36,7 +36,7 @@
 		<div class="footer-bottom">
 			<div class="container">
 				<div class="footer-bottom-container">
-					<div class="site-info pull-left">
+					<div class="site-info">
 						<?php do_action( 'suffice_footer_copyright_text' ); ?>
 					</div><!-- .site-info -->
 

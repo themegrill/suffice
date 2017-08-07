@@ -13,7 +13,7 @@ $footer_content_right = suffice_get_option( 'suffice_footer_bottom_right_content
 ?>
 
 <?php if ( 'footer-menu' === $footer_content_right ) : ?>
-	<div class="footer-navigation pull-right">
+	<div class="footer-navigation">
 		<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'footer-menu', 'fallback_cb' => false ) ); ?>
 	</div> <!-- .footer-navigation -->
 <?php elseif ( 'social' === $footer_content_right ) : ?>
