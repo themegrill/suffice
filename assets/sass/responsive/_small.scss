@@ -123,7 +123,7 @@
 	.footer-widgets {
 		&.footer-widgets-col--three,
 		&.footer-widgets-col--four {
-			.widget {
+			.footer-widget-area {
 				width: 48.5%;
 			}
 		}
@@ -203,7 +203,7 @@
 		&.footer-widgets-col--two,
 		&.footer-widgets-col--three,
 		&.footer-widgets-col--four {
-			.widget {
+			.footer-widget-area {
 				width: 100%;
 			}
 		}
