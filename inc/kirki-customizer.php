@@ -1079,7 +1079,7 @@ Kirki::add_field( 'suffice_config', array(
 	'description'		=> esc_html__( 'Controls how many widgets should be displayed in one row.', 'suffice' ),
 	'section'			=> 'suffice_section_footer',
 	'priority'			=> 10,
-	'default'			=> 'footer-widgets-column--four',
+	'default'			=> 'footer-widgets-col--four',
 	'active_callback'	=> array(
 		array(
 			'setting'		=> 'suffice_show_footer_widget',
@@ -1088,10 +1088,10 @@ Kirki::add_field( 'suffice_config', array(
 		),
 	),
 	'choices'			=> array(
-		'footer-widgets-column--one'				=> get_template_directory_uri() . '/assets/img/col-1.png',
-		'footer-widgets-column--two'				=> get_template_directory_uri() . '/assets/img/col-2.png',
-		'footer-widgets-column--three'				=> get_template_directory_uri() . '/assets/img/col-3.png',
-		'footer-widgets-column--four'				=> get_template_directory_uri() . '/assets/img/col-4.png',
+		'footer-widgets-col--one'				=> get_template_directory_uri() . '/assets/img/col-1.png',
+		'footer-widgets-col--two'				=> get_template_directory_uri() . '/assets/img/col-2.png',
+		'footer-widgets-col--three'				=> get_template_directory_uri() . '/assets/img/col-3.png',
+		'footer-widgets-col--four'				=> get_template_directory_uri() . '/assets/img/col-4.png',
 	),
 	'transport'			=> 'postMessage',
 ) );

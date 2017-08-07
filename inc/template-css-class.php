@@ -206,7 +206,7 @@ function suffice_get_widget_class() {
  * @return string
  */
 function suffice_get_footer_widget_class() {
-	$footer_column_class = esc_attr( suffice_get_option( 'suffice_footer_columns_count', 'footer-widgets-column--four' ) );
+	$footer_column_class = esc_attr( suffice_get_option( 'suffice_footer_columns_count', 'footer-widgets-col--four' ) );
 	return $footer_column_class;
 }
 
