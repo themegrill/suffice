@@ -102,12 +102,16 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 == Changelog ==
 
-= 1.0.8 - 2017-07-27 =
+= 1.0.8 - 2017-08-07 =
 * Tweaks - Enqueue google fonts
 * Add - Editor Style
 * Tweaks - Kirki toolkit update
 * Tweaks - Added upsell links
 * Tweaks - Added demo preview link for Suffice Pro 
+* Fix - Color scheme control
+* Fix - widget title button not working on customizer
+* Fix - Footer widgets on mobile
+* Fix - Top header on mobile
 
 = 1.0.7 - 2017-07-13 =
 * Fix - Slider overlaying mobile menu
