@@ -54,7 +54,7 @@
 
 	<div class="entry-content">
 		<?php
-		if ( 'post-style-grid' === suffice_get_option( 'suffice_blog_post_style', 'post-style-classic' ) ) {
+		if ( ! is_single() && 'post-style-grid' === suffice_get_option( 'suffice_blog_post_style', 'post-style-classic' ) ) {
 			the_excerpt();
 		} else {
 			the_content( sprintf(
