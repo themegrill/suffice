@@ -1581,6 +1581,10 @@ msgstr ""
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
+#: freemius/includes/class-fs-plugin-updater.php:592
+msgid "Unable to connect to the filesystem. Please confirm your credentials."
+msgstr ""
+
 #: inc/admin/class-suffice-admin.php:36, inc/admin/class-suffice-admin.php:36, inc/admin/class-suffice-admin.php:116
 msgid "About"
 msgstr ""
