@@ -16,7 +16,7 @@
 		</div> <!-- .logo-container -->
 	<?php endif; ?>
 
-	<?php if ( suffice_get_option( 'suffice_header_transparent_logo' ) && '1' === suffice_get_option( 'suffice_sticky_header', '1' ) ) : ?>
+	<?php if ( suffice_get_option( 'suffice_header_transparent_logo' ) && true === suffice_get_option( 'suffice_sticky_header', true ) ) : ?>
 		<div class="logo-container logo-container--transparent">
 			<?php
 			$transparent_logo = '';

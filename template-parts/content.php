@@ -24,7 +24,7 @@
 		// if is single content page.
 		if ( is_single() ) {
 			// Show title upwards if selected above.
-			if ( ( 'above' === suffice_get_option( 'suffice_blog_single_post_title_pos', 'below' ) ) && ( '1' !== suffice_get_option( 'suffice_show_pagetitle_bar', '1' ) ) ) :
+			if ( ( 'above' === suffice_get_option( 'suffice_blog_single_post_title_pos', 'below' ) ) && ( true !== suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) ) :
 				get_template_part( 'template-parts/content-parts/entry', 'title' );
 			endif;
 
@@ -32,7 +32,7 @@
 			get_template_part( 'template-parts/content-parts/entry', 'thumbnail' );
 
 			// Show title downwards if selected below.
-			if ( ( 'below' === suffice_get_option( 'suffice_blog_single_post_title_pos', 'below' ) ) && ( '1' !== suffice_get_option( 'suffice_show_pagetitle_bar', '1' ) ) ) :
+			if ( ( 'below' === suffice_get_option( 'suffice_blog_single_post_title_pos', 'below' ) ) && ( true !== suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) ) :
 				get_template_part( 'template-parts/content-parts/entry', 'title' );
 			endif;
 		} else {

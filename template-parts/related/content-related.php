@@ -13,7 +13,7 @@
 $column_count = 3; // get counted column for bootstrap use.
 
 $related_post_item_class = 'related-post-item-grid col-xs-4 col-sm-6 col-md-' . $column_count;
-if ( '1' === suffice_get_option( 'suffice_related_carousel', '1' ) ) {
+if ( true === suffice_get_option( 'suffice_related_carousel', true ) ) {
 	$related_post_item_class = 'swiper-slide';
 }
 ?>

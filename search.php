@@ -22,7 +22,7 @@ get_header(); ?>
 
 			<?php
 			if ( have_posts() ) : ?>
-				<?php if ( '1' !== suffice_get_option( 'suffice_show_pagetitle_bar', '1' ) ) : ?>
+				<?php if ( true !== suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) : ?>
 					<header class="page-header">
 						<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'suffice' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 					</header><!-- .page-header -->

@@ -19,7 +19,7 @@
 	 */
 	do_action( 'suffice_before_post_content' ); ?>
 
-	<?php if ( ! is_page_template( 'page-templates/page-builder.php' ) && ( '1' !== suffice_get_option( 'suffice_show_pagetitle_bar', '1' ) ) ) : ?>
+	<?php if ( ! is_page_template( 'page-templates/page-builder.php' ) && ( true !== suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) ) : ?>
 		<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		</header><!-- .entry-header -->

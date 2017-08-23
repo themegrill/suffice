@@ -23,7 +23,7 @@ get_header(); ?>
 			<?php
 			if ( have_posts() ) : ?>
 
-				<?php if ( '1' !== suffice_get_option( 'suffice_show_pagetitle_bar', '1' ) ) : ?>
+				<?php if ( true !== suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) : ?>
 					<header class="page-header">
 						<?php
 						the_archive_title( '<h1 class="page-title">', '</h1>' );

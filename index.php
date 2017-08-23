@@ -29,7 +29,7 @@ do_action( 'suffice_before_body_content' ); ?>
 	if ( have_posts() ) :
 
 		if ( is_home() && ! is_front_page() ) : ?>
-			<?php if ( '1' !== suffice_get_option( 'suffice_show_pagetitle_bar', '1' ) ) : ?>
+			<?php if ( true !== suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) : ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>

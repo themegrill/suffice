@@ -168,17 +168,17 @@ function suffice_navigation_class() {
 	$classes[] = suffice_get_option( 'suffice_menu_style', 'navigation-default' );
 
 	// box shadow for dropdown.
-	if ( '1' === suffice_get_option( 'suffice_menu_submenu_show_shadow', '1' ) ) {
+	if ( true === suffice_get_option( 'suffice_menu_submenu_show_shadow', true ) ) {
 		$classes[] = 'menu-has-submenu-shadow';
 	}
 
 	// shows border on dropdown list item.
-	if ( '1' === suffice_get_option( 'suffice_menu_submenu_show_devider', '1' ) ) {
+	if ( true === suffice_get_option( 'suffice_menu_submenu_show_devider', true ) ) {
 		$classes[] = 'menu-has-submenu-devider';
 	}
 
 	// shows down arrow on dropdown.
-	if ( '1' === suffice_get_option( 'suffice_menu_submenu_show_indicator', '1' ) ) {
+	if ( true === suffice_get_option( 'suffice_menu_submenu_show_indicator', true ) ) {
 		$classes[] = 'menu-has-submenu-indicator';
 	}
 
@@ -193,7 +193,7 @@ function suffice_navigation_class() {
  */
 function suffice_get_widget_class() {
 	$classes = '';
-	if ( '1' === suffice_get_option( 'sufficet_show_widget_title_ribbon', '1' ) ) {
+	if ( true === suffice_get_option( 'sufficet_show_widget_title_ribbon', true ) ) {
 		$classes = 'widget--ribbon';
 	}
 

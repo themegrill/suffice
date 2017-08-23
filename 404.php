@@ -21,7 +21,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
-			<?php if ( '1' !== suffice_get_option( 'suffice_show_pagetitle_bar', '1' ) ) : ?>
+			<?php if ( true !== suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) : ?>
 				<header class="page-header">
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'suffice' ); ?></h1>
 				</header><!-- .page-header -->
