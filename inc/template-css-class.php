@@ -131,7 +131,7 @@ function suffice_header_class() {
 	$classes[] = suffice_get_option( 'suffice_header_style', 'logo-left-menu-right' );
 
 	// checks whether header is sticky or not.
-	if ( '1' === suffice_get_option( 'suffice_sticky_header', '1' ) ) {
+	if ( true === suffice_get_option( 'suffice_sticky_header', true ) ) {
 		$classes[] = 'header-sticky';
 		$classes[] = 'header-sticky-desktop';
 		$classes[] = suffice_get_option( 'suffice_sticky_header_style', 'header-sticky-style-full-slide' );
@@ -141,7 +141,7 @@ function suffice_header_class() {
 	if ( is_page() ) {
 		global $post;
 
-		if ( '1' === get_post_meta( $post->ID, 'suffice_header_transparency', true ) && '1' === suffice_get_option( 'suffice_sticky_header', '1' ) ) {
+		if ( true === get_post_meta( $post->ID, 'suffice_header_transparency', true ) && true === suffice_get_option( 'suffice_sticky_header', true ) ) {
 			$classes[] = 'header-transparent';
 
 			// if transparent logo is set.
