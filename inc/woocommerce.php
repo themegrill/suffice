@@ -57,7 +57,7 @@ add_action( 'widgets_init', 'suffice_woo_widget_init' );
  * @return boolean
  */
 function suffice_woo_show_hide_pagetitle() {
-	if ( true === suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) {
+	if ( true == suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) {
 		return false;
 	} else {
 		return true;

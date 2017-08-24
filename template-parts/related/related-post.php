@@ -23,7 +23,7 @@ $related_post_class .= $style;
 $related_post_atrribute = '';
 
 // if related post is set to be carousel.
-if ( true === suffice_get_option( 'suffice_related_carousel', true ) ) {
+if ( true == suffice_get_option( 'suffice_related_carousel', true ) ) {
 	$related_post_class .= ' related-post-carousel';
 	$related_post_atrribute .= ' data-carousel-active = 1';
 	$related_post_atrribute .= ' data-carousel-column =' . 3;
@@ -58,7 +58,7 @@ $related_post = new WP_Query( $args );
 if ( $related_post->have_posts() ) :
 
 	// If carousel is active.
-	if ( true === suffice_get_option( 'suffice_related_carousel', true ) ) {
+	if ( true == suffice_get_option( 'suffice_related_carousel', true ) ) {
 		$related_post_class .= ' swiper-container';
 		$related_post_inner_class = 'swiper-wrapper';
 	} else {
@@ -79,7 +79,7 @@ if ( $related_post->have_posts() ) :
 
 		<?php
 		// if navigation control is active, show controls.
-		if ( ( true === suffice_get_option( 'suffice_related_carousel', true ) ) ) {
+		if ( ( true == suffice_get_option( 'suffice_related_carousel', true ) ) ) {
 			?>
 			<div class="recent-button-next"></div>
 			<div class="recent-button-prev"></div>

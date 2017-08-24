@@ -26,7 +26,7 @@
 		<div class="footer-top">
 			<div class="container">
 				<?php
-				if ( true === suffice_get_option( 'suffice_show_footer_widget', true ) ) {
+				if ( true == suffice_get_option( 'suffice_show_footer_widget', true ) ) {
 					get_sidebar( 'footer' );
 				}
 				?>
@@ -58,12 +58,12 @@
 
 <?php
 /* If woocomemrce is active and show cart icon is active place mini cart */
-if ( true === suffice_get_option( 'suffice_show_cart', true ) && suffice_is_woocommerce_active() ) :
+if ( true == suffice_get_option( 'suffice_show_cart', true ) && suffice_is_woocommerce_active() ) :
 	get_template_part( 'template-parts/woocommerce/mini', 'cart' );
 endif;
 
 /* If show preloader is active, show preloader */
-if ( true === suffice_get_option( 'suffice_show_preloader', false ) ) :
+if ( true == suffice_get_option( 'suffice_show_preloader', false ) ) :
 	get_template_part( 'template-parts/preloader/preloader', 'main' );
 endif;
 
