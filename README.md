@@ -102,6 +102,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 == Changelog ==
 = Version TBD =
+* Tweak - Nav close icon on offcanvas menu
 * Fix - Sticky header on logo center menu center and offcanvas/fullscreen menu
 
 = 1.0.9 - 2017-08-18 =

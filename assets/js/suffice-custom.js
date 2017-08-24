@@ -437,6 +437,14 @@ jQuery( document ).ready( function( $ ) {
 			$( '.navigation-fullscreen' ).removeClass( 'navigation--show' );
 		});
 
+		/*----------  Offcanvas menu  ----------*/
+
+		$( '.navigation-offcanvas .nav-header .nav-close').click(function(event) {
+			event.preventDefault();
+			$( '.navigation-offcanvas' ).removeClass( 'navigation--show' );
+			$( document.body ).find( '.suffice-body-dimmer' ).removeClass( 'dim-it' );
+		});
+
 		/*----------  Mobile Menu - cycles through inner sub menu  ----------*/
 		
 		$( '.mobile-navigation li.menu-item-has-children > a, .mobile-navigation li.page_item_has_children > a' ).click(function(event) {
