@@ -58,7 +58,7 @@ add_action( 'wp_head', 'suffice_pingback_header' );
  * Adds the breadcrumb
  */
 function suffice_add_breadcrumb() {
-	if ( ( ! is_front_page() ) && ( ! is_page_template( 'page-templates/page-builder.php' ) ) && ( true === suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) ) {
+	if ( ( ! is_front_page() ) && ( ! is_page_template( 'page-templates/page-builder.php' ) ) && ( true == suffice_get_option( 'suffice_show_pagetitle_bar', true ) ) ) {
 
 		// hide on bbpress.
 		if ( function_exists( 'is_bbpress' ) ) {
@@ -84,7 +84,7 @@ if ( ! function_exists( 'suffice_breadcrumbs' ) ) {
 		echo '<div class="container">';
 		suffice_page_title();
 
-		if ( true === suffice_get_option( 'suffice_show_breadcrumbs', true ) ) {
+		if ( true == suffice_get_option( 'suffice_show_breadcrumbs', true ) ) {
 			suffice_breadcrumbs_trail();
 		}
 		echo '</div">';
