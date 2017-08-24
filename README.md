@@ -101,6 +101,9 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog ==
+= Version TBD =
+* Fix - Sticky header on logo center menu center and offcanvas/fullscreen menu
+
 = 1.0.9 - 2017-08-18 =
 * Fix - Excerpt on single post
 

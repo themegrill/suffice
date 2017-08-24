@@ -574,11 +574,18 @@ jQuery( document ).ready( function( $ ) {
 		/**
 		* Fixes bottom header when scrolled
 		*/
-		function showBottomHeader(){
+		function showBottomHeader( subtractLogo ){
+			
+			// By default set the value of subtractLogo to false 
+			if ( subtractLogo === undefined ) {
+				subtractLogo = false;
+			}
+
 			var headerSticky = $( '.header-sticky-desktop, .header-sticky-tablet, .header-sticky-mobile' ),
 			headerStickyInner = headerSticky.find( '.header-inner-wrapper' ),
 			headerTopSubtract = 0,
-			headerLogoSubtract = 0;
+			headerLogoSubtract = 0,
+			notDefaultNavigation = false;
 			
 			/* Checks if header top exist, add it to be subtracted */
 			headerTopSubtract = getHeaderTopHeight();
@@ -588,8 +595,18 @@ jQuery( document ).ready( function( $ ) {
 				headerLogoSubtract = getHeaderLogoHeight();
 			}
 			
-			var calculatedHeight =  headerTopSubtract + headerLogoSubtract;
+			/* If on logo-center-menu-center navigation is not default only subtract header top( not logo ) */
+			if ( ! $( '.main-navigation' ).hasClass( 'navigation-default' ) && headerSticky.hasClass( 'logo-center-menu-center' ) ) {
+				notDefaultNavigation = true;
+			}
 			
+			var calculatedHeight = headerTopSubtract + headerLogoSubtract;
+			
+			
+			if ( subtractLogo || notDefaultNavigation ) {
+				calculatedHeight = headerTopSubtract;
+			}
+
 			headerStickyInner.css('transform', 'translateY(-' + calculatedHeight + 'px)');
 		}
 		
@@ -613,13 +630,17 @@ jQuery( document ).ready( function( $ ) {
 		* Initialize headroom on header
 		* @param {string} stickyHeaderClass name of header to make it sticky
 		*/
-		function setupStickyHeader( stickyHeaderClass, checkStickyClass ) {
+		function setupStickyHeader( stickyHeaderClass, checkStickyClass, subtractLogo ) {
 			
+			// By default set the value of isCenterMenuActive to false 
+			if ( subtractLogo === undefined ) {
+				subtractLogo = false;
+			}
+
 			if ( typeof $.fn.headroom !== 'undefined' ) {
 				var siteHeader = $( '.site-header' );
 				//checks if header has sticky class or not
 				if ( siteHeader.hasClass( checkStickyClass ) ) {
-					
 					// Push content downwards when header is sticky and not trasnparent
 					if ( ! $( stickyHeaderClass ).hasClass( 'header-transparent' ) ) {
 						
@@ -638,7 +659,7 @@ jQuery( document ).ready( function( $ ) {
 						},
 						onUnpin: function() {
 							if ( $( stickyHeaderClass ).hasClass( 'header-sticky-style-half-slide' ) ) {
-								showBottomHeader();
+								showBottomHeader( subtractLogo );
 								
 							} else {
 								hideFullHeader();
