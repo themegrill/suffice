@@ -257,7 +257,7 @@ function suffice_scripts() {
 	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.jquery' . $suffix . '.js', array( 'jquery' ), '3.4.0', true );
 	wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/assets/js/jquery.waypoints' . $suffix . '.js', array( 'jquery' ), '4.0.1', true );
 	wp_enqueue_script( 'visible', get_template_directory_uri() . '/assets/js/jquery.visible' . $suffix . '.js', array( 'jquery' ), '1.0.0', true );
-	if ( true === suffice_get_option( 'suffice_sticky_header', true ) ) {
+	if ( true == suffice_get_option( 'suffice_sticky_header', true ) ) {
 		wp_enqueue_script( 'headroom', get_template_directory_uri() . '/assets/js/headroom' . $suffix . '.js', array( 'jquery' ), '0.9', true );
 		wp_enqueue_script( 'headroom-jquery', get_template_directory_uri() . '/assets/js/jQuery.headroom' . $suffix . '.js', array( 'jquery' ), '0.9', true );
 	}
@@ -267,7 +267,7 @@ function suffice_scripts() {
 	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/assets/js/smooth-scroll' . $suffix . '.js' , array( 'jquery' ), '10.2.1', true );
 	wp_enqueue_script( 'gumshoe', get_template_directory_uri() . '/assets/js/gumshoe' . $suffix . '.js' , array( 'jquery' ), '3.3.3', true );
 	/* Loads sticky sidebar js if enabled */
-	if ( true === suffice_get_option( 'suffice_sticky_sidebar', false ) ) {
+	if ( true == suffice_get_option( 'suffice_sticky_sidebar', false ) ) {
 		wp_enqueue_script( 'theia-sticky-sidebar', get_template_directory_uri() . '/assets/js/theia-sticky-sidebar' . $suffix . '.js', array( 'jquery' ), false, true );
 		wp_enqueue_script( 'ResizeSensor', get_template_directory_uri() . '/assets/js/ResizeSensor' . $suffix . '.js', array( 'jquery' ), false, true );
 	}
@@ -326,7 +326,7 @@ require get_template_directory() . '/inc/extras.php';
 /**
  * Custom meta boxes
  */
-if ( true === suffice_get_option( 'suffice_sticky_header', true ) ) {
+if ( true == suffice_get_option( 'suffice_sticky_header', true ) ) {
 	require get_template_directory() . '/inc/meta-boxes.php';
 }
 

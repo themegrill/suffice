@@ -28,7 +28,7 @@ do_action( 'suffice_before_body_content' ); ?>
 			the_post_navigation();
 
 			// If related post is active, then show related posts.
-			if ( true === suffice_get_option( 'suffice_blog_single_show_related', true ) ) {
+			if ( true == suffice_get_option( 'suffice_blog_single_show_related', true ) ) {
 				get_template_part( 'template-parts/related/related', 'post' );
 			}
 
