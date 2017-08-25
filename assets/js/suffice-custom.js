@@ -637,8 +637,9 @@ jQuery( document ).ready( function( $ ) {
 		/**
 		* Initialize headroom on header
 		* @param {string} stickyHeaderClass name of header to make it sticky
+		* @param {string} subtractLogo determines whether logo to substract or not
 		*/
-		function setupStickyHeader( stickyHeaderClass, checkStickyClass, subtractLogo ) {
+		function setupStickyHeader( stickyHeaderClass, subtractLogo ) {
 			
 			// By default set the value of isCenterMenuActive to false 
 			if ( subtractLogo === undefined ) {
@@ -647,26 +648,27 @@ jQuery( document ).ready( function( $ ) {
 
 			if ( typeof $.fn.headroom !== 'undefined' ) {
 				var siteHeader = $( '.site-header' );
+				
+				// check if headroom is already initialized on header if yes then destroy
+				if( siteHeader.hasClass( 'headroom' ) ) {
+					siteHeader.headroom('destroy');
+				}
+
 				//checks if header has sticky class or not
-				if ( siteHeader.hasClass( checkStickyClass ) ) {
+				if ( siteHeader.hasClass( stickyHeaderClass ) ) {
+
 					// Push content downwards when header is sticky and not trasnparent
-					if ( ! $( stickyHeaderClass ).hasClass( 'header-transparent' ) ) {
-						
-						// close mobile menu 
-						closeMobileMenu();
-						
-						$( '.main-navigation' ).css( 'height', 'auto' );
-						
-						$( stickyHeaderClass ).css( 'margin-bottom', $( stickyHeaderClass ).find( '.header-inner-wrapper' ).height() );
+					if ( ! $( '.' + stickyHeaderClass ).hasClass( 'header-transparent' ) ) {
+						$( '.' +  stickyHeaderClass ).css( 'margin-bottom', $( stickyHeaderClass ).find( '.header-inner-wrapper' ).height() );
 					}
-					
+
 					// make header sticky
-					$( stickyHeaderClass ).headroom({
+					$( '.' +  stickyHeaderClass ).headroom({
 						tolerance: {
 							down: 15
 						},
 						onUnpin: function() {
-							if ( $( stickyHeaderClass ).hasClass( 'header-sticky-style-half-slide' ) ) {
+							if ( $( '.' + stickyHeaderClass ).hasClass( 'header-sticky-style-half-slide' ) ) {
 								showBottomHeader( subtractLogo );
 								
 							} else {
@@ -674,7 +676,7 @@ jQuery( document ).ready( function( $ ) {
 							}
 						},
 						onPin: function() {
-							if ( $( stickyHeaderClass ).hasClass( 'header-sticky-style-half-slide' ) ) {
+							if ( $( '.' + stickyHeaderClass ).hasClass( 'header-sticky-style-half-slide' ) ) {
 							} else {
 								showBottomHeader();
 							}
@@ -687,9 +689,7 @@ jQuery( document ).ready( function( $ ) {
 					siteHeader.css( 'margin-bottom', '0' );
 				}	
 			}
-			
 		}
-		
 		
 		// Declare media query sizes
 		var mediaQueryDesktop = window.matchMedia( '( min-width: 992px )' ),
@@ -703,7 +703,7 @@ jQuery( document ).ready( function( $ ) {
 		*/
 		function performActionOnDesktop( mediaQuery ) {
 			if ( mediaQuery.matches ) {
-				setupStickyHeader( '.header-sticky-desktop', 'header-sticky-desktop' );
+				setupStickyHeader( 'header-sticky-desktop' );
 			}
 		}
 		mediaQueryDesktop.addListener( performActionOnDesktop );
@@ -714,7 +714,7 @@ jQuery( document ).ready( function( $ ) {
 		*/
 		function performActionOnTablet( mediaQuery ) {
 			if ( mediaQuery.matches ) {
-				setupStickyHeader( '.header-sticky-tablet', 'header-sticky-tablet' );
+				setupStickyHeader( 'header-sticky-tablet');
 			}
 		}
 		
@@ -726,15 +726,14 @@ jQuery( document ).ready( function( $ ) {
 		*/
 		function performActionOnMobile( mediaQuery ) {
 			if ( mediaQuery.matches ) {
-				setupStickyHeader( '.header-sticky-mobile', 'header-sticky-mobile' );
+				setupStickyHeader( 'header-sticky-mobile' );
 			}
 		}
 		mediaQueryMobile.addListener( performActionOnMobile );
-		/*=====  Header  ======*/
-		
-		
-		
-		
+
+		/*=====  End Header  ======*/
+
+
 		/*===============================
 		=        1pg/smooth scroll      =
 		===============================*/
