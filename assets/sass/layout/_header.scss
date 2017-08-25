@@ -93,7 +93,7 @@
 
 .header-top {
 	padding: 15px 0;
-	background-color: #1f1f1f;
+	background-color: #1F1F1F;
 	border-bottom: 0 solid rgba(255, 255, 255, 0.5);
 	transition: all 0.35s;
 
@@ -113,7 +113,7 @@
 }
 
 .header-bottom {
-	background-color: #f9f9f9;
+	background-color: #F9F9F9;
 	border-bottom: 0 solid rgba(255, 255, 255, 0.5);
 	transition: all 0.35s;
 
@@ -251,7 +251,7 @@
 		border: none;
 		outline: none;
 		background: $color-brand-primary;
-		color: #ffffff;
+		color: #FFFFFF;
 		cursor: pointer;
 		box-shadow: 0 0 60px rgba( 0, 0, 0, 0.5 );
 		transition: box-shadow 0.35s, opacity 0.35s, visibility 0.35s, transform 0.35s;
@@ -265,7 +265,7 @@
 
 		&::before {
 			text-indent: 0;
-			content: '';
+			content: "";
 			font-family: FontAwesome;
 			float: left;
 			margin-left: 16px;
@@ -273,7 +273,7 @@
 
 		&.wp-custom-header-video-pause {
 			&::before {
-				content: '\f04b';
+				content: "\f04b";
 			}
 		}
 
@@ -281,7 +281,7 @@
 			font-size: 24px;
 			&::before {
 				margin-left: 14px;
-				content: '\f04c';
+				content: "\f04c";
 			}
 		}
 	}

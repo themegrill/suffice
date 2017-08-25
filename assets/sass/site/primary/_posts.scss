@@ -41,13 +41,13 @@
 			color: $color-gray;
 
 			&::after {
-				content: '|';
+				content: "|";
 				padding: 10px;
 			}
 
 			&:last-child {
 				&::after {
-					content: '';
+					content: "";
 				}
 			}
 
@@ -66,8 +66,8 @@
 		.read-more {
 			font-weight: 500;
 			text-transform: uppercase;
-			color: #67666a;
-			border-bottom: 2px solid #67666a;
+			color: #67666A;
+			border-bottom: 2px solid #67666A;
 			text-decoration: none;
 			font-size: 12px;
 			transition: all 0.35s;
@@ -103,7 +103,7 @@
 				color: $color-gray-light;
 				font-size: 12px;
 				padding: 0 15px;
-				border-right: 1px solid #ccc;
+				border-right: 1px solid #CCC;
 
 				&:first-child {
 					padding-left: 0;
@@ -190,14 +190,14 @@
 
 		span {
 			&::after {
-				content: '/';
+				content: "/";
 				padding-left: 5px;
 				color: $color-gray;
 			}
 
 			&:last-child {
 				&::after {
-					content: '';
+					content: "";
 				}
 			}
 		}
@@ -302,7 +302,7 @@
 					.related-title {
 						margin: 0;
 						a {
-							color: #fff;
+							color: #FFF;
 							display: block;
 						}
 					}
@@ -337,7 +337,7 @@
 					.related-title {
 						margin: 0;
 						a {
-							color: #fff;
+							color: #FFF;
 							display: block;
 						}
 					}
@@ -365,9 +365,9 @@
 		cursor: pointer;
 
 		&::before {
-			content: '';
+			content: "";
 			font-family: FontAwesome;
-			color: #fff;
+			color: #FFF;
 			font-size: 20px;
 		}
 
@@ -380,7 +380,7 @@
 		left: 0;
 
 		&::before {
-			content: '\f104';
+			content: "\f104";
 		}
 	}
 
@@ -388,7 +388,7 @@
 		right: 0;
 
 		&::before {
-			content: '\f105';
+			content: "\f105";
 		}
 	}
 

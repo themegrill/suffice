@@ -11,7 +11,7 @@
 						background: $color-brand-secondary;
 						padding: 5px;
 						font-size: 12px;
-						color: #fff;
+						color: #FFF;
 						text-decoration: none;
 					}
 				}
@@ -22,7 +22,7 @@
 			}
 
 			.entry-title {
-				color: #fff;
+				color: #FFF;
 				font-size: 18px;
 			}
 			
@@ -45,7 +45,7 @@
 				.posted-on,
 				.comments {
 					&::before {
-						content: '';
+						content: "";
 						font-family: FontAwesome;
 						color: $color-gray-lighten;
 						font-size: 14px;
@@ -55,13 +55,13 @@
 
 				.posted-on {
 					&::before {
-						content: '\f017';
+						content: "\f017";
 					}
 				}
 
 				.comments {
 					&::before {
-						content: '\f0e5';
+						content: "\f0e5";
 					}
 				}
 			}
@@ -92,7 +92,7 @@
 				position: relative;
 
 				&::before {
-					content: '';
+					content: "";
 					position: absolute;
 					right: 0;
 					top: 0;
@@ -139,7 +139,7 @@
 
 				.time-periods {
 					font-size: 14px;
-					color: #fff;
+					color: #FFF;
 					padding-left: 5px;
 				}
 			}
@@ -153,7 +153,7 @@
 				visibility: hidden;
 				opacity: 0;
 				transform: translate(0, 40px);
-				color: #fff;
+				color: #FFF;
 			}
 
 			&:last-child {

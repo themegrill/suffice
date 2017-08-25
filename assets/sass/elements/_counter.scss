@@ -8,7 +8,7 @@
 	.counter-icon {
 		width: 100px;
 		height: 100px;
-		background: #ccc;
+		background: #CCC;
 		margin: 0 auto 15px;
 
 		.fa {
@@ -36,7 +36,7 @@
 		margin: 0 auto 45px;
 		width: 150px;
 		border-radius: 10px;
-		color: #fff;
+		color: #FFF;
 		height: 92px;
 		line-height: 95px;
 		text-align: center;
@@ -50,7 +50,7 @@
 		&::after {
 			z-index: 0;
 			top: -26px;
-			content: '';
+			content: "";
 			position: absolute;
 			width: 76px;
 			height: 76px;
@@ -75,7 +75,7 @@
 
 		.fa {
 			font-size: 32px;
-			color: #fff;
+			color: #FFF;
 			margin: 0;
 		}
 	}

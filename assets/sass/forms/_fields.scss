@@ -1,26 +1,26 @@
 .form-input,
-input[type='text'],
-input[type='email'],
-input[type='url'],
-input[type='password'],
-input[type='search'],
-input[type='number'],
-input[type='tel'],
-input[type='range'],
-input[type='date'],
-input[type='month'],
-input[type='week'],
-input[type='time'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='color'],
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
 textarea {
 	padding: 7px 15px;
-	border: 1px solid #fff;
+	border: 1px solid #FFF;
 	outline: none;
 	transition: border-color 0.35s;
 	margin-bottom: 15px;
-	border: 1px solid #ccc;
+	border: 1px solid #CCC;
 
 	&:focus {
 		border: 1px solid $color-brand-primary;
@@ -31,11 +31,11 @@ textarea {
 	width: 100%;
 }
 
-input[type='submit'] {
+input[type="submit"] {
 	@include btn();
 	background: $color-brand-primary;
-	color: #ffffff;
-	border-color: #fff;
+	color: #FFFFFF;
+	border-color: #FFF;
 }
 
 .form-input-small {
@@ -89,8 +89,8 @@ input[type='submit'] {
 form.wpcf7-form {
 	.wpcf7-text {
 		width: 100%;
-		background: #f9fafb;
-		color: #aeb1bd;
+		background: #F9FAFB;
+		color: #AEB1BD;
 		margin-bottom: 0;
 		padding: 10px 15px;
 	}

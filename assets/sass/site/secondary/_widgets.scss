@@ -15,7 +15,7 @@
 		list-style-type: none;
 
 		> li {
-			border-bottom: 1px solid #f4f3f3;
+			border-bottom: 1px solid #F4F3F3;
 			padding: 10px 0;
 			line-height: 24px;
 			
@@ -46,7 +46,7 @@
 			padding: 0 0 0 30px;
 
 			&::before {
-				content: '';
+				content: "";
 				position: absolute;
 				top: 3px;
 				left: 0;
@@ -79,7 +79,7 @@
 			}
 		}
 
-		input[type='submit'],
+		input[type="submit"],
 		.search-submit {
 			position: absolute;
 			top: 0;
@@ -101,7 +101,7 @@
 
 			&:hover {
 				background: $color-brand-primary;
-				color: #fff;
+				color: #FFF;
 			}
 		}
 	}
@@ -134,7 +134,7 @@
 			font-weight: 500;
 
 			&::before {
-				content: '';
+				content: "";
 				position: absolute;
 				top: 3px;
 				left: 0;
@@ -147,7 +147,7 @@
 
 		tbody a {
 			background-color: $color-brand-primary;
-			color: #fff;
+			color: #FFF;
 			display: block;
 			font-weight: 700;
 			text-decoration: none;
@@ -156,7 +156,7 @@
 			&:hover, 
 			&:focus {
 				background-color: $color-brand-secondary;
-				color: #fff;
+				color: #FFF;
 			}
 		}
 
@@ -172,7 +172,7 @@
 			a {
 				display: inline-block;
 				padding: 5px;
-				border: 1px solid #999db2;
+				border: 1px solid #999DB2;
 				transition: all 0.35s;
 				font-size: 12px;
 				text-decoration: none;
@@ -183,7 +183,7 @@
 				&:hover {
 					background: $color-brand-primary;
 					border-color: $color-brand-primary;
-					color: #fff;
+					color: #FFF;
 				}
 			}
 		}

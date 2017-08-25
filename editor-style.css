@@ -105,7 +105,7 @@ dfn {
 }
 
 mark {
-	background-color: #eee;
+	background-color: #EEE;
 	color: #222;
 }
 
@@ -193,7 +193,7 @@ button:-moz-focusring,
 }
 
 fieldset {
-	border: 1px solid #bbb;
+	border: 1px solid #BBB;
 	margin: 0 2px;
 	padding: 0.35em 0.625em 0.75em;
 }
@@ -269,7 +269,7 @@ template {
 
 /*----------  Body  ----------*/
 body {
-	background-color: #fff;
+	background-color: #FFF;
 	margin: 20px;
 }
 
@@ -286,9 +286,9 @@ p {
 }
 
 blockquote {
-	font-family: georgia, 'Times New Roman', cursive;
+	font-family: georgia, "Times New Roman", cursive;
 	font-size: 16px;
-	border-left: 3px solid #e5e4e6;
+	border-left: 3px solid #E5E4E6;
 	margin-left: 30px;
 	padding-left: 30px;
 }

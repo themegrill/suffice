@@ -84,7 +84,7 @@ dfn {
 }
 
 mark {
-	background-color: #eee;
+	background-color: #EEE;
 	color: #222;
 }
 
@@ -113,7 +113,7 @@ video {
 	display: inline-block;
 }
 
-audio:not([controls]) {
+audio:not( [controls] ) {
 	display: none;
 	height: 0;
 }
@@ -124,7 +124,7 @@ img {
 	height: auto;
 }
 
-svg:not(:root) {
+svg:not( :root ) {
 	overflow: hidden;
 }
 
@@ -172,7 +172,7 @@ button:-moz-focusring,
 }
 
 fieldset {
-	border: 1px solid #bbb;
+	border: 1px solid #BBB;
 	margin: 0 2px;
 	padding: 0.35em 0.625em 0.75em;
 }

@@ -7,7 +7,7 @@
 		li {
 			display: table-cell;
 			margin-right: -2px;
-			border-right: 1px solid #fff;
+			border-right: 1px solid #FFF;
 
 			a {
 				text-decoration: none;
@@ -32,7 +32,7 @@
 
 			&.active {
 				a {
-					background: #fff;
+					background: #FFF;
 				}
 			}
 		}
@@ -57,15 +57,15 @@
 		padding: 45px 0;
 
 		.tab-title {
-			margin: 0 0 30px 0;
+			margin: 0 0 30px;
 			font-size: 22px;
 			font-weight: 500;
 			position: relative;
 			text-transform: uppercase;
 
-			&:after {
+			&::after {
+				content: "";
 				position: absolute;
-				content: '';
 				height: 1px;
 				width: 20px;
 				left: 0;

@@ -3,13 +3,13 @@
 	padding: 45px;
 
 	.cta-icon-inner {
-		background: #ccc;
+		background: #CCC;
 		border-radius: 100%;
 		width: 100px;
 		height: 100px;
 		text-align: center;
 		font-size: 32px;
-		color: #fff;
+		color: #FFF;
 		
 		.cta-icon-container {
 			display: table;
@@ -38,7 +38,7 @@
 			&::after {
 				z-index: 0;
 				top: -15px;
-				content: '';
+				content: "";
 				position: absolute;
 				width: 55px;
 				height: 55px;
@@ -110,7 +110,7 @@
 	.cta-bordered-inner {
 		width: 100%;
 		height: 100%;
-		border: 4px solid #fff;
+		border: 4px solid #FFF;
 		padding: 45px;
 	}
 	
@@ -129,13 +129,13 @@
 		padding: 0;
 		.cta-title {
 			font-size: 42px;
-			color: #fff;
+			color: #FFF;
 			text-transform: uppercase;
 			font-weight: 600;
 		}
 
 		.cta-content {
-			color: #fff;
+			color: #FFF;
 		}
 	}
 
@@ -147,6 +147,6 @@
 .cta-light {
 	.cta-title,
 	.cta-content {
-		color: #fff;
+		color: #FFF;
 	}
 }

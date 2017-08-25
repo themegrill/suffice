@@ -3,7 +3,7 @@
 	ul.products {
 		li.product {
 			position: relative;
-			border: 1px solid #e5e5e5;
+			border: 1px solid #E5E5E5;
 			
 			.product-info {
 				padding: 0 15px;
@@ -14,7 +14,7 @@
 			}
 
 			.star-rating {
-				color: #fccc2f;
+				color: #FCCC2F;
 				padding: 5px 0;
 			}
 			
@@ -28,7 +28,7 @@
 				background: none;
 				width: 100%;
 				text-align: center;
-				border-top: 1px solid #e5e5e5;
+				border-top: 1px solid #E5E5E5;
 				font-weight: normal;
 				padding: 13px 0;
 				border-radius: 0;
@@ -36,7 +36,7 @@
 				color: $color-gray-dark;
 
 				&::before {
-					content: '\f07a';
+					content: "\f07a";
 					font-family: FontAwesome;
 					font-size: 15px;
 					padding-right: 10px;
@@ -49,26 +49,26 @@
 
 				&:hover {
 					background: $color-brand-primary;
-					color: #fff;
+					color: #FFF;
 				}
 			}
 
 			.added_to_cart {
 				width: 100%;
 				text-align: center;
-				border-top: 1px solid #e5e5e5;
+				border-top: 1px solid #E5E5E5;
 				padding: 10px 0;
 				color: $color-gray;
 
 				&:hover {
 					background: $color-brand-primary;
-					color: #fff;
+					color: #FFF;
 				}
 			}
 
 			&.product-style-clean {
 				box-shadow: 0 0 26px rgba(0, 0, 0, 0.07);
-				border-bottom: 3px solid #a6bccb;
+				border-bottom: 3px solid #A6BCCB;
 			}
 
 			span.onsale {
@@ -110,9 +110,9 @@
 				.woocommerce-loop-category__title {
 					left: 20%;
 					right: 20%;
-					background: #ffffff;
-					border-bottom: 6px solid #dddddd;
-					box-shadow: 0 0 20px rgba( 0, 0 ,0 , 0.07 );
+					background: #FFFFFF;
+					border-bottom: 6px solid #DDDDDD;
+					box-shadow: 0 0 20px rgba( 0, 0, 0, 0.07 );
 				}
 			}
 		}
@@ -151,7 +151,7 @@
 
 				span.current {
 					background: $color-gray-dark;
-					color: #fff;
+					color: #FFF;
 				}
 
 				a {
@@ -160,7 +160,7 @@
 
 					&:hover {
 						background: $color-gray-dark;
-						color: #fff;
+						color: #FFF;
 					}
 				}
 
@@ -169,7 +169,7 @@
 					text-indent: -9999px;
 
 					&::before {
-						content: '\f105';
+						content: "\f105";
 						font-family: FontAwesome;
 						text-indent: 0;
 						float: left;
@@ -181,7 +181,7 @@
 					text-indent: -9999px;
 
 					&::before {
-						content: '\f104';
+						content: "\f104";
 						font-family: FontAwesome;
 						text-indent: 0;
 						float: left;
@@ -206,7 +206,7 @@
 	//  Product Rating
 	.woocommerce-product-rating {
 		.star-rating {
-			color: #fccc2f;
+			color: #FCCC2F;
 			padding: 5px 0;
 		}
 	}
@@ -259,7 +259,7 @@
 						margin-top: 5px;
 						float: right;
 						color: $color-gray;
-						border-bottom: 1px solid #ccc;
+						border-bottom: 1px solid #CCC;
 
 						@include clearfix();
 
@@ -287,8 +287,8 @@
 				border: none;
 				text-decoration: none;
 				background: $color-brand-primary;
-				color: #fff;
-				border-color: #fff;
+				color: #FFF;
+				border-color: #FFF;
 				border-radius: 0;
 
 				&:hover {
@@ -357,7 +357,7 @@
 			margin-bottom: 30px;
 
 			&::after {
-				content: '';
+				content: "";
 				position: absolute;
 				bottom: -4px;
 				left: 0;
@@ -413,7 +413,7 @@
 		.button {
 			&:disabled {
 				padding: 12px 30px;
-				color: #fff;
+				color: #FFF;
 			}
 		}
 
@@ -429,7 +429,7 @@
 				margin-bottom: 30px;
 
 				&::after {
-					content: '';
+					content: "";
 					position: absolute;
 					bottom: -4px;
 					left: 0;
@@ -446,7 +446,7 @@
 		.form-row {
 			input.input-text {
 				padding: 7px 15px;
-				border: 1px solid #ccc;
+				border: 1px solid #CCC;
 				outline: none;
 				transition: border-color 0.35s;
 				margin-bottom: 15px;
@@ -471,8 +471,8 @@
 		border: none;
 		text-decoration: none;
 		background: $color-brand-primary;
-		color: #fff;
-		border-color: #fff;
+		color: #FFF;
+		border-color: #FFF;
 		border-radius: 0;
 		font-weight: normal;
 		font-size: 12px;
@@ -562,13 +562,13 @@
 
 		.mini-cart__title {
 			margin: 0;
-			color: #fff;
+			color: #FFF;
 			font-size: 18px;
 			float: left;
 		}
 
 		.mini-cart__close {
-			color: #fff;
+			color: #FFF;
 			font-size: 12px;
 			float: right;
 			line-height: 2.2;
@@ -591,7 +591,7 @@
 			margin-bottom: 15px !important;
 			
 			> a {
-				color: #fff;
+				color: #FFF;
 				font-size: 13px;
 				font-weight: normal !important;
 				margin-right: 15px;
@@ -603,7 +603,7 @@
 			.remove {
 				float: right;
 				font-size: 18px;
-				color: #fff !important;
+				color: #FFF !important;
 				margin-right: 0;
 
 				&:hover {
@@ -638,7 +638,7 @@
 		border-bottom: 1px solid lighten( $color-dark-blue, 5%);
 		border-top: 1px solid lighten( $color-dark-blue, 5%);
 		padding: 10px 0;
-		color: #fff;
+		color: #FFF;
 		@include clearfix();
 
 		strong {
@@ -659,7 +659,7 @@
 			padding: 12px 30px;
 			font-size: 12px;
 			text-transform: uppercase;
-			color: #fff;
+			color: #FFF;
 			background: $color-gray-light;
 			line-height: 1;
 			transition: all 0.35s;
@@ -674,7 +674,7 @@
 			
 			&:hover {
 				background: lighten( $color-brand-secondary, 5%);
-				color: #fff;
+				color: #FFF;
 			}
 		}
 	}
@@ -694,7 +694,7 @@
 			margin-bottom: 30px;
 
 			.product-inner-wrapper {
-				border: 1px solid #e5e5e5;
+				border: 1px solid #E5E5E5;
 				a {
 					img {
 						height: auto;
@@ -719,17 +719,17 @@
 					line-height: 1;
 					width: 5.4em;
 					font-family: star;
-					color: #fccc2f;
+					color: #FCCC2F;
 					padding: 5px 0;
 					margin-bottom: 10px;
 
 					&::before {
-						content: '\73\73\73\73\73';
-					    color: #d3ced2;
-					    float: left;
-					    top: 0;
-					    left: 0;
-					    position: absolute;
+						content: "\73\73\73\73\73";
+						color: #D3CED2;
+						float: left;
+						top: 0;
+						left: 0;
+						position: absolute;
 					}
 
 					span {
@@ -741,10 +741,10 @@
 						padding-top: 1.5em;
 
 						&::before {
-							content: '\53\53\53\53\53';
-						    top: 0;
-						    position: absolute;
-						    left: 0;
+							content: "\53\53\53\53\53";
+							top: 0;
+							position: absolute;
+							left: 0;
 						}
 					}
 				}
@@ -753,7 +753,7 @@
 			&.product-style-clean {
 				.product-inner-wrapper {
 					box-shadow: 0 0 26px rgba(0, 0, 0, 0.07);
-					border-bottom: 3px solid #a6bccb;
+					border-bottom: 3px solid #A6BCCB;
 				}
 			}
 		}

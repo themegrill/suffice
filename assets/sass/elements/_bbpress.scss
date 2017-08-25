@@ -12,8 +12,8 @@
 
 	li.bbp-header,
 	li.bbp-footer {
-		border-top: 1px solid #ccc;
-		border-bottom: 1px solid #ccc;
+		border-top: 1px solid #CCC;
+		border-bottom: 1px solid #CCC;
 		background: none;
 		font-weight: normal;
 		padding: 10px 0;
@@ -73,7 +73,7 @@
 			outline: none;
 			transition: border-color 0.35s;
 			margin-bottom: 15px;
-			border: 1px solid #ccc;
+			border: 1px solid #CCC;
 			border-radius: 3px;
 
 			&:focus {
@@ -87,7 +87,7 @@
 			padding: 8px;
 			background: $color-brand-primary;
 			border-radius: 3px;
-			color: #fff;
+			color: #FFF;
 			cursor: pointer;
 
 			&:hover {

@@ -56,92 +56,92 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 
 
 /*----------  variables  ----------*/
-@import 'variables/colors';
-@import 'variables/structure';
-@import 'variables/typography';
+@import "variables/colors";
+@import "variables/structure";
+@import "variables/typography";
 
 /*----------  Mixins  ----------*/
-@import 'mixins/buttons';
-@import 'mixins/grid';
-@import 'mixins/miscellenious';
+@import "mixins/buttons";
+@import "mixins/grid";
+@import "mixins/miscellenious";
 
 /*----------  Normalize  ----------*/
-@import 'reset/normalize';
+@import "reset/normalize";
 
 /*----------  Grid  ----------*/
-@import 'layout/grid';
+@import "layout/grid";
 
 /*----------  Typography  ----------*/
-@import 'typography/copy';
-@import 'typography/headings';
+@import "typography/copy";
+@import "typography/headings";
 
 /*----------  Global  ----------*/
-@import 'global/global';
+@import "global/global";
 
 /*----------  Elements  ----------*/
-@import 'elements/list';
-@import 'elements/tables';
-@import 'elements/title';
-@import 'elements/slider';
-@import 'elements/icon-boxes';
-@import 'elements/portfolio';
-@import 'elements/team';
-@import 'elements/testimonials';
-@import 'elements/cta';
-@import 'elements/counter';
-@import 'elements/woocommerce';
-@import 'elements/bbpress';
-@import 'elements/breadcrumbs';
-@import 'elements/tabs';
-@import 'elements/preloader';
-@import 'elements/search';
-@import 'elements/infinite-scroll';
+@import "elements/list";
+@import "elements/tables";
+@import "elements/title";
+@import "elements/slider";
+@import "elements/icon-boxes";
+@import "elements/portfolio";
+@import "elements/team";
+@import "elements/testimonials";
+@import "elements/cta";
+@import "elements/counter";
+@import "elements/woocommerce";
+@import "elements/bbpress";
+@import "elements/breadcrumbs";
+@import "elements/tabs";
+@import "elements/preloader";
+@import "elements/search";
+@import "elements/infinite-scroll";
 
 /*----------  Navigations  ----------*/
-@import 'navigations/links';
-@import 'navigations/menus';
+@import "navigations/links";
+@import "navigations/menus";
 
 /*----------  Modules  ----------*/
-@import 'modules/accessibility';
-@import 'modules/alignments';
-@import 'modules/clearings';
+@import "modules/accessibility";
+@import "modules/alignments";
+@import "modules/clearings";
 
 /*----------  Layout  ----------*/
-@import 'forms/buttons';
-@import 'forms/fields';
-@import 'layout/body';
-@import 'layout/main';
+@import "forms/buttons";
+@import "forms/fields";
+@import "layout/body";
+@import "layout/main";
 
 /*----------  Header  ----------*/
-@import 'layout/header';
-@import 'layout/paddings';
+@import "layout/header";
+@import "layout/paddings";
 
 /*----------  Widget  ----------*/
-@import 'site/secondary/widgets';
+@import "site/secondary/widgets";
 
 /*----------  Content  ----------*/
-@import 'site/primary/posts';
-@import 'site/primary/featured-posts';
-@import 'site/primary/pages';
-@import 'site/primary/asides';
-@import 'site/primary/comments';
+@import "site/primary/posts";
+@import "site/primary/featured-posts";
+@import "site/primary/pages";
+@import "site/primary/asides";
+@import "site/primary/comments";
 
 /*----------  Media  ----------*/
-@import 'media/captions';
-@import 'media/galleries';
-@import 'media/media';
+@import "media/captions";
+@import "media/galleries";
+@import "media/media";
 
 /*----------  Footer  ----------*/
-@import 'layout/footer';
+@import "layout/footer";
 
 
 /*----------  responsive  ----------*/
-@import 'responsive/large';
-@import 'responsive/medium';
-@import 'responsive/small';
+@import "responsive/large";
+@import "responsive/medium";
+@import "responsive/small";
 
 /*----------  Admin Bar  ----------*/
-@import 'responsive/admin-bar';
+@import "responsive/admin-bar";
 
 /*----------  Compatibility  ----------*/
-@import 'compatibility/thirdparty';
+@import "compatibility/thirdparty";

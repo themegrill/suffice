@@ -57,7 +57,7 @@
 }
 
 .btn-bordered {
-	border-color: #fff;
+	border-color: #FFF;
 	border-style: solid;
 }
 
@@ -80,13 +80,13 @@
 /*----------  Button color styles  ----------*/
 .btn-primary {
 	background: $color-brand-primary;
-	color: #ffffff;
-	border-color: #fff;
+	color: #FFFFFF;
+	border-color: #FFF;
 }
 .btn-orange {
 	background: $color-orange;
-	color: #fff;
-	border-color: #fff;
+	color: #FFF;
+	border-color: #FFF;
 
 	&:hover {
 		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -97,8 +97,8 @@
 
 .btn-cyan {
 	background: $color-cyan;
-	color: #fff;
-	border-color: #fff;
+	color: #FFF;
+	border-color: #FFF;
 
 	&:hover {
 		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -108,8 +108,8 @@
 }
 .btn-pink {
 	background: $color-pink;
-	color: #fff;
-	border-color: #fff;
+	color: #FFF;
+	border-color: #FFF;
 
 	&:hover {
 		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -120,8 +120,8 @@
 
 .btn-yellow {
 	background: darken($color-yellow, 10);
-	color: #fff;
-	border-color: #fff;
+	color: #FFF;
+	border-color: #FFF;
 
 	&:hover {
 		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -135,7 +135,7 @@
 }
 
 .btn-white {
-	background: #fff;
+	background: #FFF;
 	color: $color-gray-darker;
 	
 	.fa {
@@ -144,20 +144,20 @@
 
 	&:hover {
 		background: $color-gray-darker;
-		color: #fff;
+		color: #FFF;
 
 		.fa {
-			color: #fff;
+			color: #FFF;
 		}
 	}
 }
 
 .btn-black {
 	background: $color-gray-darker;
-	color: #fff;
+	color: #FFF;
 
 	&:hover {
-		background: #fff;
+		background: #FFF;
 		color: $color-gray-darker;
 
 		.fa {

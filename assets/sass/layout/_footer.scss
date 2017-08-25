@@ -1,6 +1,6 @@
 .site-footer {
 	margin-top: 60px;
-	background-color: #14172a;
+	background-color: #14172A;
 }
 
 
@@ -13,19 +13,19 @@
 
 	.widget {
 		.widget-title {
-			color: #fff;
+			color: #FFF;
 			text-transform: uppercase;
 			padding: 0;
 
 			&::before {
-				content: '';
+				content: "";
 				border: none;
 
 			}
 		}
 		
 		p {
-			color: #5f6581;
+			color: #5F6581;
 		}
 		ul {
 			margin: 0;
@@ -39,12 +39,12 @@
 				span,
 				a,
 				span a {
-					color: #5f6581;
+					color: #5F6581;
 				}
 
 				a {
 					&:hover {
-						color: #8087a8;
+						color: #8087A8;
 					}
 				}
 			}
@@ -52,7 +52,7 @@
 	}
 
 	.textwidget {
-		color: #5f6581;
+		color: #5F6581;
 		line-height: 24px;
 	}
 
@@ -86,14 +86,14 @@
 		padding: 15px 0;
 		font-size: 12px;
 		flex: 6;
-		color: #516f8e;
+		color: #516F8E;
 
 		a {
 			text-decoration: none;
-			color: #516f8e;
+			color: #516F8E;
 
 			&:hover {
-				color: lighten(#516f8e, 20%);
+				color: lighten(#516F8E, 20%);
 			}
 		}
 	}

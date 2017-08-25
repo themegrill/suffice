@@ -1,7 +1,7 @@
 {
   "rules": {
     "indentation": "tab",
-    "color-hex-case": "lower",
+    "color-hex-case": "upper",
     "color-no-invalid-hex": true,
     "function-calc-no-unspaced-operator": true,
     "function-comma-space-after": "always-single-line",
@@ -13,7 +13,7 @@
     "number-no-trailing-zeros": true,
     "length-zero-no-unit": true,
     "string-no-newline": true,
-    "string-quotes": "single",
+    "string-quotes": "double",
     "unit-case": "lower",
     "unit-no-unknown": true,
     "unit-whitelist": ["px", "%", "deg", "ms", "em", "vh", "vw", "rem", "s", "ex", "pt", "cm"],

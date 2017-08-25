@@ -78,7 +78,7 @@
 
 		&.slider-content-cursive {
 			.slider-title {
-				font-family: 'Great Vibes', cursive;
+				font-family: "Great Vibes", cursive;
 				font-weight: normal;
 			}
 		}
@@ -117,9 +117,9 @@
 
 
 			&::before {
-				content: '';
+				content: "";
 				font-family: FontAwesome;
-				color: #fff;
+				color: #FFF;
 				font-size: 72px;
 			}
 		}
@@ -128,7 +128,7 @@
 			left: 30px;
 
 			&::before {
-				content: '\f104';
+				content: "\f104";
 			}
 		}
 
@@ -136,7 +136,7 @@
 			right: 30px;
 
 			&::before {
-				content: '\f105';
+				content: "\f105";
 			}
 		}
 

@@ -25,7 +25,7 @@
 	}
 
 	.icon-box-icon {
-		color: #fff;
+		color: #FFF;
 	}
 }
 
@@ -36,7 +36,7 @@
 		width: 100px;
 		margin: 35px auto 38px;
 		border-radius: 10px;
-		color: #fff;
+		color: #FFF;
 		height: 60px;
 		line-height: 60px;
 		text-align: center;
@@ -51,7 +51,7 @@
 		&::after {
 			z-index: 0;
 			top: -15px;
-			content: '';
+			content: "";
 			position: absolute;
 			width: 55px;
 			height: 55px;
@@ -128,7 +128,7 @@
 			border-bottom: none;
 			padding: 5px 10px;
 			background: $color-gray-dark;
-			color: #fff;
+			color: #FFF;
 			transition: all 0.3s ease;
 
 			&:hover {

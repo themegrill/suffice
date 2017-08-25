@@ -4,7 +4,7 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #f8f8f8;
+	background-color: #F8F8F8;
 	z-index: 99999;
 	text-align: center;
 	
@@ -87,7 +87,7 @@
 			height: 40px;
 			border-top-right-radius: 20px;
 			border-bottom-left-radius: 20px;
-			background-color: #fff;
+			background-color: #FFF;
 			-webkit-animation: spin 1s infinite linear;
 			animation: spin 1s infinite linear;
 			box-shadow: 0 0 15px rgba( 0, 0, 0, 0.1);
@@ -97,9 +97,9 @@
 	&.preloader-circular-stroke,
 	&.preloader-circular-stroke-text {
 		.preloader-animation {
-			border-top: 1em solid #eee;
-			border-right: 1em solid #eee;
-			border-bottom: 1em solid #eee;
+			border-top: 1em solid #EEE;
+			border-right: 1em solid #EEE;
+			border-bottom: 1em solid #EEE;
 			border-left: 1em solid #666;
 			-webkit-transform: translateZ( 0 );
 			transform: translateZ( 0 );
@@ -153,14 +153,14 @@
 				transform: translateY(0);
 				-webkit-animation: jump 0.3s alternate infinite cubic-bezier( 0.2, 0, 0.5, 1);
 				animation: jump 0.3s alternate infinite cubic-bezier( 0.2, 0, 0.5, 1);
-				background-color: #fff;
+				background-color: #FFF;
 			}
 
 			@for $i from 1 through 5 {
 				li:nth-of-type( #{$i} ) {
 					-webkit-animation-delay: 111ms * $i;
 					animation-delay: 111ms * $i;
-					background-color: darken( #fff, 5% * $i );
+					background-color: darken( #FFF, 5% * $i );
 				}
 			}
 		}

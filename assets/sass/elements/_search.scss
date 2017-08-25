@@ -18,7 +18,7 @@
 	.search-submit {
 		display: inline-block;
 		background: $color-brand-primary;
-		color: #fff;
+		color: #FFF;
 		outline: none;
 		border: none;
 		padding: 11px;
@@ -37,7 +37,7 @@
 	position: absolute;
 	right: 0;
 	top: 45px;
-	background: #fff;
+	background: #FFF;
 	padding: 15px;
 	border-top: 3px solid $color-brand-primary;
 	transform: translateY( 50% );
@@ -80,11 +80,11 @@
 
 				&::before,
 				&::after {
-					content: '';
+					content: "";
 					position: absolute;
 					height: 35px;
 					width: 2px;
-					background-color: #fff;
+					background-color: #FFF;
 					top: 50%;
 					left: 50%;
 				}
@@ -112,9 +112,9 @@
 				width: 100%;
 				border: none;
 				background: none;
-				border-bottom: 2px solid #fff;
+				border-bottom: 2px solid #FFF;
 				outline: none;
-				color: #fff;
+				color: #FFF;
 				border-radius: 0;
 				padding: 15px 0;
 			}
@@ -144,7 +144,7 @@
 				right: 0;
 				background: $color-brand-primary;
 				padding: 30px;
-				color: #fff;
+				color: #FFF;
 				line-height: 0;
 				border-radius: 0;
 			}

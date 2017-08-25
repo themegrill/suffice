@@ -16,34 +16,34 @@ Description: Used to style the TinyMCE editor.
  * 7.0 - Galleries
  * 8.0 - Media Elements
  */
-@import 'variables/colors';
-@import 'variables/structure';
-@import 'variables/typography';
+@import "variables/colors";
+@import "variables/structure";
+@import "variables/typography";
 
 /*----------  Normalize  ----------*/
-@import 'reset/normalize';
+@import "reset/normalize";
 
 /*----------  Body  ----------*/
 body {
-    background-color: #fff;
+	background-color: #FFF;
 	margin: 20px;
 }
 /*----------  Typography  ----------*/
-@import 'typography/copy';
-@import 'typography/headings';
+@import "typography/copy";
+@import "typography/headings";
  
 
 /*----------  Elements  ----------*/
-@import 'elements/list';
+@import "elements/list";
 
 /*----------  ALigmnent  ----------*/
-@import 'modules/alignments';
+@import "modules/alignments";
 
 /*----------  Caption  ----------*/
-@import 'media/captions';
+@import "media/captions";
 
 /*----------  Galleries  ----------*/
-@import 'media/galleries';
+@import "media/galleries";
 
 /*----------  Media Elements  ----------*/
-@import 'media/media';
+@import "media/media";
