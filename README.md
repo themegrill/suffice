@@ -1,4 +1,4 @@
-=== Suffice ===
+## Suffice 
 Author: ThemeGrill
 Requires at least: WordPress 4.3
 Tested up to: WordPress 4.8
@@ -7,12 +7,12 @@ License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 Tags: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce, portfolio
 
-== Description ==
+### Description
 Suffice is a highly flexible multipurpose WordPress theme that is beautifully crafted with the great attention to details. This theme is not just stunning by its clean and sleek design but is equally powerful by its galore of awe-inspiring features. Integration to SiteOrigin’s page builder and Suffice Toolkit plugin makes it one of the most customizable and easy to use themes. In addition, it is completely compliant with WooCommerce and uses the best SEO practices for top-notch performance of your website. This theme also offers you a wide range of unique demos from which you can choose any to create your own cutting edge website. Also, Suffice features versatile header styles, advanced color options, multiple widget areas and premium widgets. Hence, with this simple drag and drop theme, you can easily have your site up and running in no time.
 
 For more information about Suffice please go to https://themegrill.com/themes/suffice/
 
-== Installation ==
+### Installation
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
 2. Type in Suffice in the search form and press the 'Enter' key on your keyboard.
@@ -20,11 +20,11 @@ For more information about Suffice please go to https://themegrill.com/themes/su
 4. Go to https://themegrill.com/themes/suffice/ for a guide on how to customize this theme.
 5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
-== Copyright and License ==
+### Copyright and License
 External resources linked to the theme.
 * Open Sans by Steve Matteson https://fonts.google.com/specimen/Open+Sans
   Apache License, Version 2.0
-* Open Sans by Indian Type Foundry https://fonts.google.com/specimen/Poppins
+* Poppins by Indian Type Foundry https://fonts.google.com/specimen/Poppins
   Open Font License
 
 Suffice WordPress Theme, Copyright (c) 2017, ThemeGrill
@@ -100,7 +100,7 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
-== Changelog ==
+### Changelog
 = 1.0.9 - 2017-08-18 =
 * Fix - Excerpt on single post
 
