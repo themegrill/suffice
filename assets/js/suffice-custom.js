@@ -656,10 +656,9 @@ jQuery( document ).ready( function( $ ) {
 
 				//checks if header has sticky class or not
 				if ( siteHeader.hasClass( stickyHeaderClass ) ) {
-
 					// Push content downwards when header is sticky and not trasnparent
 					if ( ! $( '.' + stickyHeaderClass ).hasClass( 'header-transparent' ) ) {
-						$( '.' +  stickyHeaderClass ).css( 'margin-bottom', $( stickyHeaderClass ).find( '.header-inner-wrapper' ).height() );
+						$( '.' +  stickyHeaderClass ).css( 'margin-bottom', $( '.' + stickyHeaderClass ).find( '.header-inner-wrapper' ).height() );
 					}
 
 					// make header sticky
