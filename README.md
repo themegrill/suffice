@@ -1,11 +1,11 @@
 # Suffice 
-Author: ThemeGrill
-Requires at least: WordPress 4.3
-Tested up to: WordPress 4.8
-Version: 1.0.9
-License: GPLv3 or later
-License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
-Tags: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce, portfolio
+**Author**: ThemeGrill
+**Requires** at least: WordPress 4.3
+**Tested up to**: WordPress 4.8
+**Version**: 1.0.9
+**License**: GPLv3 or later
+**License URI**: https://www.gnu.org/licenses/gpl-3.0.en.html
+**Tags**: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce, portfolio
 
 ## Description
 Suffice is a highly flexible multipurpose WordPress theme that is beautifully crafted with the great attention to details. This theme is not just stunning by its clean and sleek design but is equally powerful by its galore of awe-inspiring features. Integration to SiteOrigin’s page builder and Suffice Toolkit plugin makes it one of the most customizable and easy to use themes. In addition, it is completely compliant with WooCommerce and uses the best SEO practices for top-notch performance of your website. This theme also offers you a wide range of unique demos from which you can choose any to create your own cutting edge website. Also, Suffice features versatile header styles, advanced color options, multiple widget areas and premium widgets. Hence, with this simple drag and drop theme, you can easily have your site up and running in no time.
@@ -101,10 +101,10 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog
-= 1.0.9 - 2017-08-18 =
+### 1.0.9 - 2017-08-18
 * Fix - Excerpt on single post
 
-= 1.0.8 - 2017-08-07 =
+### 1.0.8 - 2017-08-07
 * Tweaks - Enqueue google fonts
 * Add - Editor Style
 * Tweaks - Kirki toolkit update
@@ -115,14 +115,14 @@ Unless otherwise specified, all the theme files, scripts and images including th
 * Fix - Footer widgets on mobile
 * Fix - Top header on mobile
 
-= 1.0.7 - 2017-07-13 =
+### 1.0.7 - 2017-07-13
 * Fix - Slider overlaying mobile menu
 * Fix - Link color effecting meta links
 * Fix - Close button not working on full screen menu
 * Fix - Sidebar padding issue on mobile devices
 * Tweaks - Header top info is centered now
 
-= 1.0.6 - 2017-07-12 =
+### 1.0.6 - 2017-07-12
 * Fix - Link color effecting link of mobile menu
 * Fix - Height Increasing on mobile menu
 * Fix - Tap on mobile menu not cycling through menu
@@ -130,24 +130,24 @@ Unless otherwise specified, all the theme files, scripts and images including th
 * Add - New responsive style for call to action
 * Add - New responsive style for slider
 
-= 1.0.5 - 2017-07-10 =
+### 1.0.5 - 2017-07-10
 * Fix - Access margin on sticky header
 * Fix - Slider caption not getting smaller on mobile devices
 
-= 1.0.4 - 2017-07-07 =
+### 1.0.4 - 2017-07-07
 * Tweaks - Introduce theme Welcome Page
 
-= 1.0.3 - 2017-07-06 =
+### 1.0.3 - 2017-07-06
 * Tweaks - Recommend ThemeGrill Demo Importer plugin
 * Fix - Height issue of sticky header
 * Fix - Mobile menu height
 
-= 1.0.2 - 2017-07-05 =
+### 1.0.2 - 2017-07-05
 * Fix - Include README.md file
 
-= 1.0.1 - 2017-05-20 =
+### 1.0.1 - 2017-05-20
 * Tweaks - Screenshot changed
 * Tweaks - Some Enhancements
 
-= 1.0.0 - 2017-05-03 =
+### 1.0.0 - 2017-05-03
 * Initial Release
