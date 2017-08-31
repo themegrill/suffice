@@ -1,6 +1,6 @@
 {
   "name": "suffice",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

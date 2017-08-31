@@ -2,7 +2,7 @@
 **Author**: ThemeGrill
 **Requires** at least: WordPress 4.3
 **Tested up to**: WordPress 4.8
-**Version**: 1.0.9
+**Version**: 1.0.10
 **License**: GPLv3 or later
 **License URI**: https://www.gnu.org/licenses/gpl-3.0.en.html
 **Tags**: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce, portfolio
@@ -101,6 +101,14 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog
+### Version 1.0.10 - 2017-08-31
+* Fix - Sticky header sliding completely upwards when header is center and menu is set to offcanvas
+* Tweak - get_theme_mod changed to suffice_get_option
+* Fix - Sticky header settings not working on customizer but works on front-end
+* Fix - sub menu is way too downwards and not able to hover 
+* Add - Close icon on offcanvas menu
+* Tweaks - Add icons on customizer option
+
 ### 1.0.9 - 2017-08-18
 * Fix - Excerpt on single post
 
