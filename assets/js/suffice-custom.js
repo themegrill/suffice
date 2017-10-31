@@ -510,9 +510,7 @@ jQuery( document ).ready( function( $ ) {
 			$('.navigation-offcanvas .menu-primary, .navigation-offcanvas .primary-menu, .navigation-offcanvas-push .menu-primary, .navigation-offcanvas-push .primary-menu, .navigation-fullscreen .menu-primary, .navigation-fullscreen .primary-menu').perfectScrollbar();
 			
 			// add scrollbar on mobile menu
-			if ( $(window).width() <= 768 ) {
-				$('.main-navigation .menu-primary').perfectScrollbar();
-			}
+			$('#mobile-navigation').perfectScrollbar({ suppressScrollX : true });
 			
 			// add scrollbar on mini cart
 			$( '.mini-cart-sidebar .mini-cart-sidebar-inner').perfectScrollbar();
