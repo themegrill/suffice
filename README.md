@@ -102,7 +102,8 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 ## Changelog
 ### Version TBD
-Fix - Vertical scrollbar not working on mobile navigation
+* Fix 	- Vertical scrollbar not working on mobile navigation
+* Tweak - Kirki updated to `v3.0.15`
 
 ### Version 1.0.10 - 2017-08-31
 * Fix - Sticky header sliding completely upwards when header is center and menu is set to offcanvas
