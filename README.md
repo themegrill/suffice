@@ -1,4 +1,4 @@
-# Suffice 
+# Suffice
 **Author**: ThemeGrill
 **Requires** at least: WordPress 4.3
 **Tested up to**: WordPress 4.8
@@ -101,7 +101,7 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog
-### Version TBD
+### Version 1.1.0 - 2017-11-15
 * Fix 	- Vertical scrollbar not working on mobile navigation
 * Tweak - Kirki updated to `v3.0.15`
 
@@ -109,7 +109,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 * Fix - Sticky header sliding completely upwards when header is center and menu is set to offcanvas
 * Tweak - get_theme_mod changed to suffice_get_option
 * Fix - Sticky header settings not working on customizer but works on front-end
-* Fix - sub menu is way too downwards and not able to hover 
+* Fix - sub menu is way too downwards and not able to hover
 * Add - Close icon on offcanvas menu
 * Tweaks - Add icons on customizer option
 
@@ -121,7 +121,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 * Add - Editor Style
 * Tweaks - Kirki toolkit update
 * Tweaks - Added upsell links
-* Tweaks - Added demo preview link for Suffice Pro 
+* Tweaks - Added demo preview link for Suffice Pro
 * Fix - Color scheme control
 * Fix - widget title button not working on customizer
 * Fix - Footer widgets on mobile
