@@ -1,4 +1,4 @@
-# Copyright (C) 2017 Suffice
+# Copyright (C) 2018 Suffice
 # This file is distributed under the same license as the Suffice package.
 msgid ""
 msgstr ""
@@ -1541,19 +1541,19 @@ msgstr ""
 msgid "Add widgets here to be displayed on woocommerce page."
 msgstr ""
 
-#: page-templates/full-width.php:2
+#: page-templates/full-width.php:3
 msgid "Full Width"
 msgstr ""
 
-#: page-templates/left-sidebar.php:2
+#: page-templates/left-sidebar.php:3
 msgid "Left Sidebar"
 msgstr ""
 
-#: page-templates/page-builder.php:2
+#: page-templates/page-builder.php:3
 msgid "Page Builder"
 msgstr ""
 
-#: page-templates/right-sidebar.php:2
+#: page-templates/right-sidebar.php:3
 msgid "Right Sidebar"
 msgstr ""
 
@@ -1681,11 +1681,11 @@ msgstr ""
 msgid "Need more features?"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:209, inc/admin/class-suffice-admin.php:343
+#: inc/admin/class-suffice-admin.php:209, inc/admin/class-suffice-admin.php:345
 msgid "Upgrade to PRO version for more exciting features."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:210, inc/admin/class-suffice-admin.php:346
+#: inc/admin/class-suffice-admin.php:210, inc/admin/class-suffice-admin.php:348
 msgid "View Pro"
 msgstr ""
 
@@ -1737,7 +1737,7 @@ msgstr ""
 msgid "Suffice Toolkit"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:317, inc/admin/class-suffice-admin.php:320, inc/admin/class-suffice-admin.php:323
+#: inc/admin/class-suffice-admin.php:317, inc/admin/class-suffice-admin.php:320, inc/admin/class-suffice-admin.php:323, inc/admin/class-suffice-admin.php:326
 msgid " by ThemeGrill"
 msgstr ""
 
@@ -1750,14 +1750,14 @@ msgid "Easy Social Sharing"
 msgstr ""
 
 #: inc/admin/class-suffice-admin.php:325
+msgid "Everest Forms – Easy Contact Form and Form Builder"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:328
 msgid "Page Builder by SiteOrigin"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:326
-msgid "Contact Form 7"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:327
+#: inc/admin/class-suffice-admin.php:329
 msgid "WooCommerce"
 msgstr ""
 
