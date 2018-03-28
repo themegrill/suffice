@@ -322,8 +322,10 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 					<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/easy-social-sharing/' ); ?>" target="_blank"><?php esc_html_e( 'Easy Social Sharing', 'suffice' ); ?></a>
 						<?php esc_html_e(' by ThemeGrill', 'suffice'); ?>
 					</li>
+					<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/everest-forms/' ); ?>" target="_blank"><?php esc_html_e( 'Everest Forms – Easy Contact Form and Form Builder', 'suffice' ); ?></a>
+						<?php esc_html_e(' by ThemeGrill', 'suffice'); ?>
+					</li>
 					<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/siteorigin-panels/' ); ?>" target="_blank"><?php esc_html_e( 'Page Builder by SiteOrigin', 'suffice' ); ?></a></li>
-					<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/contact-form-7/' ); ?>" target="_blank"><?php esc_html_e( 'Contact Form 7', 'suffice' ); ?></a></li>
 					<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/woocommerce/' ); ?>" target="_blank"><?php esc_html_e( 'WooCommerce', 'suffice' ); ?></a></li>
 				</ol>
 
