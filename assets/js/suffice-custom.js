@@ -760,8 +760,11 @@ jQuery( document ).ready( function( $ ) {
 					offset: calculatestickyheaderheight() + 10,
 				});
 			}
+
+			/* Close onepage mobile navigation on menu item click */
+			$( '.menu-primary li:not( .page_item_has_children, .menu-item-has-children ) > a[href^="#"]' ).click( { isonepage: 'onepage' }, closeMobileMenu );
 		}) ();
-		
+
 		/*=====  1pg/smooth scroll  ======*/
 		
 		
