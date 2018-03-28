@@ -31,47 +31,47 @@ function suffice_demo_importer_packages( $packages ) {
 		),
 		'suffice-pro-app' => array(
 			'name'    => __( 'Suffice Pro App', 'suffice' ),
-			'preview' => 'https://demo.themegrill.com/suffice-app/',
+			'preview' => 'https://demo.themegrill.com/suffice-pro-app/',
 			'pro_link'=> 'https://themegrill.com/themes/suffice/'
 		),
 		'suffice-pro-construction' => array(
 			'name'    => __( 'Suffice Pro Construction', 'suffice' ),
-			'preview' => 'https://demo.themegrill.com/suffice-construction/',
+			'preview' => 'https://demo.themegrill.com/suffice-pro-construction/',
 			'pro_link'=> 'https://themegrill.com/themes/suffice/'
 		),
 		'suffice-pro-food' => array(
 			'name'    => __( 'Suffice Pro Food', 'suffice' ),
-			'preview' => 'https://demo.themegrill.com/suffice-food/',
+			'preview' => 'https://demo.themegrill.com/suffice-pro-food/',
 			'pro_link'=> 'https://themegrill.com/themes/suffice/'
 		),
 		'suffice-pro-gym' => array(
 			'name'    => __( 'Suffice Pro Gym', 'suffice' ),
-			'preview' => 'https://demo.themegrill.com/suffice-gym/',
+			'preview' => 'https://demo.themegrill.com/suffice-pro-gym/',
 			'pro_link'=> 'https://themegrill.com/themes/suffice/'
 		),
 		'suffice-pro-magazine' => array(
 			'name'    => __( 'Suffice Pro Magazine', 'suffice' ),
-			'preview' => 'https://demo.themegrill.com/suffice-magazine/',
+			'preview' => 'https://demo.themegrill.com/suffice-pro-magazine/',
 			'pro_link'=> 'https://themegrill.com/themes/suffice/'
 		),
 		'suffice-pro-one-page' => array(
 			'name'    => __( 'Suffice Pro One Page', 'suffice' ),
-			'preview' => 'https://demo.themegrill.com/suffice-one-page/',
+			'preview' => 'https://demo.themegrill.com/suffice-pro-one-page/',
 			'pro_link'=> 'https://themegrill.com/themes/suffice/'
 		),
 		'suffice-pro-photography' => array(
 			'name'    => __( 'Suffice Pro Photography', 'suffice' ),
-			'preview' => 'https://demo.themegrill.com/suffice-photography/',
+			'preview' => 'https://demo.themegrill.com/suffice-pro-photography/',
 			'pro_link'=> 'https://themegrill.com/themes/suffice/'
 		),
 		'suffice-pro-portfolio' => array(
 			'name'    => __( 'Suffice Pro Portfolio', 'suffice' ),
-			'preview' => 'https://demo.themegrill.com/suffice-portfolio/',
+			'preview' => 'https://demo.themegrill.com/suffice-pro-portfolio/',
 			'pro_link'=> 'https://themegrill.com/themes/suffice/'
 		),
 		'suffice-pro-shop' => array(
 			'name'    => __( 'Suffice Pro Shop', 'suffice' ),
-			'preview' => 'https://demo.themegrill.com/suffice-shop/',
+			'preview' => 'https://demo.themegrill.com/suffice-pro-shop/',
 			'pro_link'=> 'https://themegrill.com/themes/suffice/'
 		),
 	);
