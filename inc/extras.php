@@ -368,7 +368,7 @@ if ( ! function_exists( 'suffice_footer_copyright_text' ) ) {
 
 		$wp_link = '<a href="'.esc_url( 'https://wordpress.org' ).'" target="_blank" title="' . esc_attr__( 'WordPress', 'suffice' ) . '"><span>' . __( 'WordPress', 'suffice' ) . '</span></a>';
 
-		$tg_link =  '<a href="'.esc_url( 'https://themegrill.com/themes/suffice' ).'" target="_blank" title="'.esc_attr__( 'ThemeGrill', 'suffice' ).'" rel="designer"><span>'.__( 'ThemeGrill', 'suffice') .'</span></a>';
+		$tg_link =  '<a href="'.esc_url( 'https://themegrill.com/themes/suffice' ).'" target="_blank" title="'.esc_attr__( 'ThemeGrill', 'suffice' ).'" rel="author"><span>'.__( 'ThemeGrill', 'suffice') .'</span></a>';
 
 		$default_footer_value = sprintf( __( 'Copyright %1$s %2$s. All rights reserved.', 'suffice' ), date( 'Y' ), $site_link ).' '.sprintf( __( 'Powered by %s.', 'suffice' ), $wp_link ).' '.sprintf( __( 'Theme: %1$s by %2$s.', 'suffice' ), 'Suffice', $tg_link );
 
