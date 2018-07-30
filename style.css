@@ -5653,7 +5653,7 @@ html {
 }
 
 .hotels-container .hotels .hotel-thumbnail .inside-caption {
-	background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5));
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5));
 	margin: 0;
 	position: absolute;
 	left: 0;
@@ -6256,6 +6256,11 @@ html {
 	border-color: #00BAF4;
 }
 
+.hentry .entry-footer .cat-links,
+.hentry .entry-footer .tags-links {
+	margin-right: 20px;
+}
+
 .blog-style-grid .hentry,
 .featured-post-container .hentry {
 	margin: 0 0 30px;
@@ -6645,7 +6650,7 @@ html {
 	left: 0;
 	right: 0;
 	padding: 45px 20px 30px;
-	background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5));
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5));
 }
 
 .featured-post-container.feature-post-style-one .featured-post .entry-price {
