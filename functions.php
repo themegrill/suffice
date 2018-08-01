@@ -2,11 +2,11 @@
 /**
  * Suffice functions and definitions
  *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ * @link       https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package ThemeGrill
+ * @package    ThemeGrill
  * @subpackage Suffice
- * @since Suffice 1.0.0
+ * @since      Suffice 1.0.0
  */
 
 if ( ! function_exists( 'suffice_setup' ) ) :
@@ -63,9 +63,9 @@ if ( ! function_exists( 'suffice_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' 		=> esc_html__( 'Primary', 'suffice' ),
-			'social'		=> esc_html__( 'Social', 'suffice' ),
-			'footer'		=> esc_html__( 'Footer', 'suffice' ),
+			'primary' => esc_html__( 'Primary', 'suffice' ),
+			'social'  => esc_html__( 'Social', 'suffice' ),
+			'footer'  => esc_html__( 'Footer', 'suffice' ),
 		) );
 
 		/*
@@ -96,8 +96,8 @@ if ( ! function_exists( 'suffice_setup' ) ) :
 
 		// Add theme support for SiteOrigin Page Builder.
 		add_theme_support( 'siteorigin-panels', array(
-			'margin-bottom'         => 30,
-			'recommended-widgets' 	=> false,
+			'margin-bottom'       => 30,
+			'recommended-widgets' => false,
 		) );
 
 		/*
@@ -196,11 +196,12 @@ function suffice_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
+
 add_action( 'widgets_init', 'suffice_widgets_init' );
 
 /**
-* Registers google fonts.
-*/
+ * Registers google fonts.
+ */
 if ( ! function_exists( 'suffice_fonts_url' ) ) :
 	function suffice_fonts_url() {
 		$fonts_url = '';
@@ -208,19 +209,19 @@ if ( ! function_exists( 'suffice_fonts_url' ) ) :
 		$subsets   = 'latin,latin-ext';
 
 		/**
-		* Translators: If there are characters in your language that are not
-		* supported by Open Sans, translate this to 'off'. Do not translate
-		* into your own language.
-		*/
+		 * Translators: If there are characters in your language that are not
+		 * supported by Open Sans, translate this to 'off'. Do not translate
+		 * into your own language.
+		 */
 		if ( 'off' !== _x( 'on', 'Open Sans font: on or off', 'suffice' ) ) {
 			$fonts[] = 'Open Sans:400,400i,700,700i';
 		}
 
 		/**
-		* Translators: If there are characters in your language that are not
-		* supported by Poppins, translate this to 'off'. Do not translate
-		* into your own language.
-		*/
+		 * Translators: If there are characters in your language that are not
+		 * supported by Poppins, translate this to 'off'. Do not translate
+		 * into your own language.
+		 */
 		if ( 'off' !== _x( 'on', 'Poppins font: on or off', 'suffice' ) ) {
 			$fonts[] = 'Poppins:400,500,600,700';
 		}
@@ -263,9 +264,9 @@ function suffice_scripts() {
 	}
 	wp_enqueue_script( 'perfect-scrollbar', get_template_directory_uri() . '/assets/js/perfect-scrollbar.jquery' . $suffix . '.js', array( 'jquery' ), '0.6.16', true );
 	wp_enqueue_script( 'isotope', get_template_directory_uri() . '/assets/js/isotope.pkgd' . $suffix . '.js', array( 'jquery' ), '3.0.2', true );
-	wp_enqueue_script( 'countup', get_template_directory_uri() . '/assets/js/countUp' . $suffix . '.js' , array( 'jquery' ), '1.8.3', true );
-	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/assets/js/smooth-scroll' . $suffix . '.js' , array( 'jquery' ), '10.2.1', true );
-	wp_enqueue_script( 'gumshoe', get_template_directory_uri() . '/assets/js/gumshoe' . $suffix . '.js' , array( 'jquery' ), '3.3.3', true );
+	wp_enqueue_script( 'countup', get_template_directory_uri() . '/assets/js/countUp' . $suffix . '.js', array( 'jquery' ), '1.8.3', true );
+	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/assets/js/smooth-scroll' . $suffix . '.js', array( 'jquery' ), '10.2.1', true );
+	wp_enqueue_script( 'gumshoe', get_template_directory_uri() . '/assets/js/gumshoe' . $suffix . '.js', array( 'jquery' ), '3.3.3', true );
 	/* Loads sticky sidebar js if enabled */
 	if ( true == suffice_get_option( 'suffice_sticky_sidebar', false ) ) {
 		wp_enqueue_script( 'theia-sticky-sidebar', get_template_directory_uri() . '/assets/js/theia-sticky-sidebar' . $suffix . '.js', array( 'jquery' ), false, true );
@@ -282,6 +283,7 @@ function suffice_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'suffice_scripts' );
 
 /**
@@ -291,6 +293,7 @@ function suffice_customizer_controls_styles() {
 	$theme_version = wp_get_theme()->get( 'version' );
 	wp_enqueue_style( 'customizer', get_template_directory_uri() . '/assets/css/customizer.css', array(), $theme_version );
 }
+
 add_action( 'customize_controls_enqueue_scripts', 'suffice_customizer_controls_styles' );
 
 /**
@@ -355,16 +358,14 @@ require get_template_directory() . '/inc/kirki-translation.php';
 require get_template_directory() . '/inc/kirki-customizer.php';
 
 /**
- * Load Demo Importer Configs.
+ * Load Suffice Demo Importer compatibility file.
  */
-if ( class_exists( 'TG_Demo_Importer' ) ) {
-	require get_template_directory() . '/inc/demo-config.php';
-}
+require get_template_directory() . '/inc/demo-importer/class-demo-importer.php';
 
 /**
  * Assign the Suffice version to a variable.
  */
-$theme            = wp_get_theme( 'suffice' );
+$theme           = wp_get_theme( 'suffice' );
 $suffice_version = $theme['Version'];
 
 /* Calling in the admin area for the Welcome Page */
@@ -379,21 +380,21 @@ function suffice_fs() {
 
 	if ( ! isset( $suffice_fs ) ) {
 		// Include Freemius SDK.
-		require_once dirname(__FILE__) . '/freemius/start.php';
+		require_once dirname( __FILE__ ) . '/freemius/start.php';
 
 		$suffice_fs = fs_dynamic_init( array(
-			'id'                  => '1217',
-			'slug'                => 'suffice',
-			'type'                => 'theme',
-			'public_key'          => 'pk_085bdc87271236b93bd78b164b768',
-			'is_premium'          => false,
-			'has_addons'          => false,
-			'has_paid_plans'      => false,
-			'menu'                => array(
-				'slug'           => 'suffice-welcome',
-				'account'        => false,
-				'support'        => false,
-				'parent'         => array(
+			'id'             => '1217',
+			'slug'           => 'suffice',
+			'type'           => 'theme',
+			'public_key'     => 'pk_085bdc87271236b93bd78b164b768',
+			'is_premium'     => false,
+			'has_addons'     => false,
+			'has_paid_plans' => false,
+			'menu'           => array(
+				'slug'    => 'suffice-welcome',
+				'account' => false,
+				'support' => false,
+				'parent'  => array(
 					'slug' => 'themes.php',
 				),
 			),
