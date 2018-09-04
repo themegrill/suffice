@@ -135,7 +135,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 
 				<a href="<?php echo esc_url( 'https://demo.themegrill.com/suffice/' ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'suffice' ); ?></a>
 
-				<a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/' ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'suffice' ); ?></a>
+				<a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/?utm_source=suffice-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'suffice' ); ?></a>
 
 				<a href="<?php echo esc_url( 'https://wordpress.org/support/theme/suffice/reviews?rate=5#new-post' ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'suffice' ); ?></a>
 			</p>
@@ -236,7 +236,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 							<h3><?php esc_html_e( 'Need more features?', 'suffice' ); ?></h3>
 							<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'suffice' ) ?></p>
 							<p>
-								<a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/' ); ?>" class="button button-secondary"><?php esc_html_e( 'View Pro', 'suffice' ); ?></a>
+								<a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/?utm_source=suffice-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'View Pro', 'suffice' ); ?></a>
 							</p>
 						</div>
 
@@ -387,7 +387,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 				<p class="about-description"><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'suffice' ); ?></p>
 
 				<div class="btn-wrapper">
-					<a href="<?php echo esc_url( apply_filters( 'suffice_pro_theme_url', 'https://themegrill.com/themes/suffice/' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View Pro', 'suffice' ); ?></a>
+					<a href="<?php echo esc_url( apply_filters( 'suffice_pro_theme_url', 'https://themegrill.com/themes/suffice/?utm_source=suffice-free-vs-pro-table&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View Pro', 'suffice' ); ?></a>
 				</div>
 
 			</div>
