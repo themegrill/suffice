@@ -30,13 +30,6 @@ Kirki::add_panel( 'suffice_theme_options', array(
  * Sections
  */
 
-/** Important Links Section */
-Kirki::add_section( 'suffice_important_links', array(
-	'title'          => esc_html__( 'Suffice Important Links', 'suffice' ),
-	'priority'       => 5,
-	'capability'     => 'edit_theme_options',
-) );
-
 /* Top Header */
 Kirki::add_section( 'suffice_section_top_header', array(
 	'title'			=> esc_html__( 'Top Header Settings', 'suffice' ),
@@ -164,59 +157,6 @@ Kirki::add_section( 'suffice_section_related_posts', array(
 	'priority'		=> 160,
 	'capability'	=> 'edit_theme_options',
 ) );
-
-/**
- * ============ Suffice Important Links ===========
- */
-
-Kirki::add_field( 'suffice_config', array(
-	'type'        => 'custom',
-	'settings'    => 'suffice_view_pro_link',
-	'section'     => 'suffice_important_links',
-	'default'     => '<a target="_blank" href="' . esc_url( 'https://themegrill.com/themes/suffice/' ) . '">'.esc_html( 'View Pro', 'suffice' ).'</a>',
-	'priority'    => 10,
-) );
-
-Kirki::add_field( 'suffice_config', array(
-	'type'        => 'custom',
-	'settings'    => 'suffice_theme_info_link',
-	'section'     => 'suffice_important_links',
-	'default'     => '<a target="_blank" href="' . esc_url( 'https://themegrill.com/themes/suffice/' ) . '">'.esc_html( 'Theme Info', 'suffice' ).'</a>',
-	'priority'    => 20,
-) );
-
-Kirki::add_field( 'suffice_config', array(
-	'type'        => 'custom',
-	'settings'    => 'suffice_support_link',
-	'section'     => 'suffice_important_links',
-	'default'     => '<a target="_blank" href="' . esc_url( 'https://themegrill.com/support-forum/' ) . '">'.esc_html( 'Support', 'suffice' ).'</a>',
-	'priority'    => 30,
-) );
-
-Kirki::add_field( 'suffice_config', array(
-	'type'        => 'custom',
-	'settings'    => 'suffice_doc_link',
-	'section'     => 'suffice_important_links',
-	'default'     => '<a target="_blank" href="' . esc_url( 'https://docs.themegrill.com/suffice/' ) . '">'.esc_html( 'Documentation', 'suffice' ).'</a>',
-	'priority'    => 40,
-) );
-
-Kirki::add_field( 'suffice_config', array(
-	'type'        => 'custom',
-	'settings'    => 'suffice_demo_link',
-	'section'     => 'suffice_important_links',
-	'default'     => '<a target="_blank" href="' . esc_url( 'https://demo.themegrill.com/suffice/' ) . '">'.esc_html( 'View Free Demos', 'suffice' ).'</a>',
-	'priority'    => 50,
-) );
-
-Kirki::add_field( 'suffice_config', array(
-	'type'        => 'custom',
-	'settings'    => 'suffice_pro_demo_link',
-	'section'     => 'suffice_important_links',
-	'default'     => '<a target="_blank" href="' . esc_url( 'https://demo.themegrill.com/suffice-pro/' ) . '">'.esc_html( 'View Pro Demos', 'suffice' ).'</a>',
-	'priority'    => 50,
-) );
-
 
 /**
  * ============Top Header styles===========

@@ -2,9 +2,9 @@
 /**
  * Suffice Theme Customizer
  *
- * @package ThemeGrill
+ * @package    ThemeGrill
  * @subpackage Suffice
- * @since Suffice 1.0.0
+ * @since      Suffice 1.0.0
  */
 
 /**
@@ -19,50 +19,50 @@ function suffice_customize_register( $wp_customize ) {
 
 	// Setting: primary color.
 	$wp_customize->add_setting( 'suffice[suffice_color_primary]', array(
-		'default'              => '#00baf4',
-		'type'                 => 'option',
-		'capability'           => 'edit_theme_options',
-		'sanitize_callback'    => 'sanitize_hex_color',
+		'default'           => '#00baf4',
+		'type'              => 'option',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 
 	// Setting: Secondary Color.
 	$wp_customize->add_setting( 'suffice[suffice_color_secondary]', array(
-		'default'              => '#ef7278',
-		'type'                 => 'option',
-		'capability'           => 'edit_theme_options',
-		'sanitize_callback'    => 'sanitize_hex_color',
+		'default'           => '#ef7278',
+		'type'              => 'option',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 
 	// Setting: background color.
 	$wp_customize->add_setting( 'suffice[suffice_color_background]', array(
-		'default'              => '#ffffff',
-		'type'                 => 'option',
-		'capability'           => 'edit_theme_options',
-		'sanitize_callback'    => 'sanitize_hex_color',
+		'default'           => '#ffffff',
+		'type'              => 'option',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 
 	// Setting: heading color.
 	$wp_customize->add_setting( 'suffice[suffice_color_heading]', array(
-		'default'              => '#424143',
-		'type'                 => 'option',
-		'capability'           => 'edit_theme_options',
-		'sanitize_callback'    => 'sanitize_hex_color',
+		'default'           => '#424143',
+		'type'              => 'option',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 
 	// Setting: pagagraph color.
 	$wp_customize->add_setting( 'suffice[suffice_color_paragraph]', array(
-		'default'              => '#424143',
-		'type'                 => 'option',
-		'capability'           => 'edit_theme_options',
-		'sanitize_callback'    => 'sanitize_hex_color',
+		'default'           => '#424143',
+		'type'              => 'option',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 
 	// Setting: meta color.
 	$wp_customize->add_setting( 'suffice[suffice_color_meta]', array(
-		'default'              => '#807f83',
-		'type'                 => 'option',
-		'capability'           => 'edit_theme_options',
-		'sanitize_callback'    => 'sanitize_hex_color',
+		'default'           => '#807f83',
+		'type'              => 'option',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 
 	// Control: Primary color.
@@ -70,11 +70,11 @@ function suffice_customize_register( $wp_customize ) {
 		$wp_customize,
 		'suffice[suffice_color_primary]',
 		array(
-			'label'                => esc_html__( 'Primary Color', 'suffice' ),
-			'description'          => esc_html__( 'Controls main color of site.', 'suffice' ),
-			'section'              => 'suffice_section_colors',
-			'settings'             => 'suffice[suffice_color_primary]',
-			'priority'             => 11,
+			'label'       => esc_html__( 'Primary Color', 'suffice' ),
+			'description' => esc_html__( 'Controls main color of site.', 'suffice' ),
+			'section'     => 'suffice_section_colors',
+			'settings'    => 'suffice[suffice_color_primary]',
+			'priority'    => 11,
 		)
 	) );
 
@@ -83,11 +83,11 @@ function suffice_customize_register( $wp_customize ) {
 		$wp_customize,
 		'suffice[suffice_color_secondary]',
 		array(
-			'label'                => esc_html__( 'Secondary Color', 'suffice' ),
-			'description'          => esc_html__( 'Controls accent color of site.', 'suffice' ),
-			'section'              => 'suffice_section_colors',
-			'settings'             => 'suffice[suffice_color_secondary]',
-			'priority'             => 11,
+			'label'       => esc_html__( 'Secondary Color', 'suffice' ),
+			'description' => esc_html__( 'Controls accent color of site.', 'suffice' ),
+			'section'     => 'suffice_section_colors',
+			'settings'    => 'suffice[suffice_color_secondary]',
+			'priority'    => 11,
 		)
 	) );
 
@@ -96,11 +96,11 @@ function suffice_customize_register( $wp_customize ) {
 		$wp_customize,
 		'suffice[suffice_color_background]',
 		array(
-			'label'                => esc_html__( 'Background Color', 'suffice' ),
-			'description'          => esc_html__( 'Controls background color of site.', 'suffice' ),
-			'section'              => 'suffice_section_colors',
-			'settings'             => 'suffice[suffice_color_background]',
-			'priority'             => 11,
+			'label'       => esc_html__( 'Background Color', 'suffice' ),
+			'description' => esc_html__( 'Controls background color of site.', 'suffice' ),
+			'section'     => 'suffice_section_colors',
+			'settings'    => 'suffice[suffice_color_background]',
+			'priority'    => 11,
 		)
 	) );
 
@@ -109,11 +109,11 @@ function suffice_customize_register( $wp_customize ) {
 		$wp_customize,
 		'suffice[suffice_color_heading]',
 		array(
-			'label'                => esc_html__( 'Heading Color', 'suffice' ),
-			'description'          => esc_html__( 'Controls heading color of site.', 'suffice' ),
-			'section'              => 'suffice_section_colors',
-			'settings'             => 'suffice[suffice_color_heading]',
-			'priority'             => 11,
+			'label'       => esc_html__( 'Heading Color', 'suffice' ),
+			'description' => esc_html__( 'Controls heading color of site.', 'suffice' ),
+			'section'     => 'suffice_section_colors',
+			'settings'    => 'suffice[suffice_color_heading]',
+			'priority'    => 11,
 		)
 	) );
 
@@ -122,11 +122,11 @@ function suffice_customize_register( $wp_customize ) {
 		$wp_customize,
 		'suffice[suffice_color_paragraph]',
 		array(
-			'label'                => esc_html__( 'Paragraph Color', 'suffice' ),
-			'description'          => esc_html__( 'Controls paragraph color of site.', 'suffice' ),
-			'section'              => 'suffice_section_colors',
-			'settings'             => 'suffice[suffice_color_paragraph]',
-			'priority'             => 11,
+			'label'       => esc_html__( 'Paragraph Color', 'suffice' ),
+			'description' => esc_html__( 'Controls paragraph color of site.', 'suffice' ),
+			'section'     => 'suffice_section_colors',
+			'settings'    => 'suffice[suffice_color_paragraph]',
+			'priority'    => 11,
 		)
 	) );
 
@@ -135,15 +135,66 @@ function suffice_customize_register( $wp_customize ) {
 		$wp_customize,
 		'suffice[suffice_color_meta]',
 		array(
-			'label'                => esc_html__( 'Meta Color', 'suffice' ),
-			'description'          => esc_html__( 'Controls meta color of site.', 'suffice' ),
-			'section'              => 'suffice_section_colors',
-			'settings'             => 'suffice[suffice_color_meta]',
-			'priority'             => 11,
+			'label'       => esc_html__( 'Meta Color', 'suffice' ),
+			'description' => esc_html__( 'Controls meta color of site.', 'suffice' ),
+			'section'     => 'suffice_section_colors',
+			'settings'    => 'suffice[suffice_color_meta]',
+			'priority'    => 11,
 		)
 	) );
 
+	/**
+	 * Class to include upsell link campaign for theme.
+	 *
+	 * Class SUFFICE_Upsell_Section
+	 */
+	class SUFFICE_Upsell_Section extends WP_Customize_Section {
+		public $type = 'suffice-upsell-section';
+		public $url  = '';
+		public $id   = '';
+
+		/**
+		 * Gather the parameters passed to client JavaScript via JSON.
+		 *
+		 * @return array The array to be exported to the client as JSON.
+		 */
+		public function json() {
+			$json        = parent::json();
+			$json['url'] = esc_url( $this->url );
+			$json['id']  = $this->id;
+
+			return $json;
+		}
+
+		/**
+		 * An Underscore (JS) template for rendering this section.
+		 */
+		protected function render_template() {
+			?>
+			<li id="accordion-section-{{ data.id }}" class="suffice-upsell-accordion-section control-section-{{ data.type }} cannot-expand accordion-section">
+				<h3 class="accordion-section-title"><a href="{{{ data.url }}}" target="_blank">{{ data.title }}</a></h3>
+			</li>
+			<?php
+		}
+	}
+
+	// Register `SUFFICE_Upsell_Section` type section.
+	$wp_customize->register_section_type( 'SUFFICE_Upsell_Section' );
+
+	// Add `SUFFICE_Upsell_Section` to display pro link.
+	$wp_customize->add_section(
+		new SUFFICE_Upsell_Section( $wp_customize, 'suffice_upsell_section',
+			array(
+				'title'      => esc_html__( 'View PRO version', 'suffice' ),
+				'url'        => 'https://themegrill.com/themes/suffice/?utm_source=suffice-customizer&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro',
+				'capability' => 'edit_theme_options',
+				'priority'   => 1,
+			)
+		)
+	);
+
 }
+
 add_action( 'customize_register', 'suffice_customize_register' );
 
 /**
@@ -152,14 +203,19 @@ add_action( 'customize_register', 'suffice_customize_register' );
 function suffice_customize_preview_js() {
 	wp_enqueue_script( 'suffice_customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
+
 add_action( 'customize_preview_init', 'suffice_customize_preview_js' );
 
 /**
  * Binds JS handlers or customizer backend to control color scheme controls
  */
 function suffice_customize_control_control_js() {
-	wp_enqueue_script( 'suffice_color_control', get_template_directory_uri() . '/assets/js/color-scheme-control.js', array( 'customize-controls', 'jquery' ), null, true );
+	wp_enqueue_script( 'suffice_color_control', get_template_directory_uri() . '/assets/js/color-scheme-control.js', array(
+		'customize-controls',
+		'jquery',
+	), null, true );
 }
+
 add_action( 'customize_controls_enqueue_scripts', 'suffice_customize_control_control_js' );
 
 /**
@@ -171,12 +227,12 @@ function suffice_inline_style() {
 	/**
 	 * Color variables
 	 */
-	$primary_color     = esc_html( suffice_get_option( 'suffice_color_primary', '#00baf4' ) );
-	$secondary_color   = esc_html( suffice_get_option( 'suffice_color_secondary', '#ef7278' ) );
-	$background_color  = esc_html( suffice_get_option( 'suffice_color_background', '#ffffff' ) );
-	$heading_color     = esc_html( suffice_get_option( 'suffice_color_heading', '#424143' ) );
-	$paragraph_color   = esc_html( suffice_get_option( 'suffice_color_paragraph', '#424143' ) );
-	$meta_color        = esc_html( suffice_get_option( 'suffice_color_meta', '#807f83' ) );
+	$primary_color    = esc_html( suffice_get_option( 'suffice_color_primary', '#00baf4' ) );
+	$secondary_color  = esc_html( suffice_get_option( 'suffice_color_secondary', '#ef7278' ) );
+	$background_color = esc_html( suffice_get_option( 'suffice_color_background', '#ffffff' ) );
+	$heading_color    = esc_html( suffice_get_option( 'suffice_color_heading', '#424143' ) );
+	$paragraph_color  = esc_html( suffice_get_option( 'suffice_color_paragraph', '#424143' ) );
+	$meta_color       = esc_html( suffice_get_option( 'suffice_color_meta', '#807f83' ) );
 
 	/* If primary color is not default add css on inline style */
 	if ( '#00baf4' !== $primary_color ) {
@@ -406,4 +462,29 @@ function suffice_inline_style() {
 	}
 	wp_add_inline_style( 'suffice-style', $inline_css );
 }
+
 add_action( 'wp_enqueue_scripts', 'suffice_inline_style', 10 );
+
+
+function suffice_upsell_scripts() {
+	?>
+	<script>
+		( function ( $, api ) {
+			api.sectionConstructor['suffice-upsell-section'] = api.Section.extend( {
+
+				// No events for this type of section.
+				attachEvents : function () {
+				},
+
+				// Always make the section active.
+				isContextuallyActive : function () {
+					return true;
+				}
+			} );
+		} )( jQuery, wp.customize );
+
+	</script>
+	<?php
+}
+
+add_action( 'customize_controls_print_footer_scripts', 'suffice_upsell_scripts' );
