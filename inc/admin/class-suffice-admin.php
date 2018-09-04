@@ -33,7 +33,10 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 		public function admin_menu() {
 			$theme = wp_get_theme( get_template() );
 
-			$page = add_theme_page( esc_html__( 'About', 'suffice' ) . ' ' . $theme->display( 'Name' ), esc_html__( 'About', 'suffice' ) . ' ' . $theme->display( 'Name' ), 'activate_plugins', 'suffice-welcome', array( $this, 'welcome_screen' ) );
+			$page = add_theme_page( esc_html__( 'About', 'suffice' ) . ' ' . $theme->display( 'Name' ), esc_html__( 'About', 'suffice' ) . ' ' . $theme->display( 'Name' ), 'activate_plugins', 'suffice-welcome', array(
+				$this,
+				'welcome_screen',
+			) );
 			add_action( 'admin_print_styles-' . $page, array( $this, 'enqueue_styles' ) );
 		}
 
@@ -59,8 +62,8 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 				add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
 				update_option( 'suffice_admin_notice_welcome', 1 );
 
-			// No option? Let run the notice wizard again..
-			} elseif( ! get_option( 'suffice_admin_notice_welcome' ) ) {
+				// No option? Let run the notice wizard again..
+			} elseif ( ! get_option( 'suffice_admin_notice_welcome' ) ) {
 				add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
 			}
 		}
@@ -113,7 +116,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 			?>
 			<div class="suffice-theme-info">
 				<h1>
-					<?php esc_html_e('About', 'suffice'); ?>
+					<?php esc_html_e( 'About', 'suffice' ); ?>
 					<?php echo $theme->display( 'Name' ); ?>
 					<?php printf( '%s', $major_version ); ?>
 				</h1>
@@ -128,7 +131,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 			</div>
 
 			<p class="suffice-actions">
-				<a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Theme Info', 'suffice' ); ?></a>
+				<a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/?utm_source=suffice-about&utm_medium=theme-info-link&utm_campaign=theme-info' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Theme Info', 'suffice' ); ?></a>
 
 				<a href="<?php echo esc_url( 'https://demo.themegrill.com/suffice/' ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'suffice' ); ?></a>
 
@@ -138,16 +141,33 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 			</p>
 
 			<h2 class="nav-tab-wrapper">
-				<a class="nav-tab <?php if ( empty( $_GET['tab'] ) && $_GET['page'] == 'suffice-welcome' ) echo 'nav-tab-active'; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'suffice-welcome' ), 'themes.php' ) ) ); ?>">
+				<a class="nav-tab <?php if ( empty( $_GET['tab'] ) && $_GET['page'] == 'suffice-welcome' ) {
+					echo 'nav-tab-active';
+				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'suffice-welcome' ), 'themes.php' ) ) ); ?>">
 					<?php echo $theme->display( 'Name' ); ?>
 				</a>
-				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'supported_plugins' ) echo 'nav-tab-active'; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'suffice-welcome', 'tab' => 'supported_plugins' ), 'themes.php' ) ) ); ?>">
+				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'supported_plugins' ) {
+					echo 'nav-tab-active';
+				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
+					'page' => 'suffice-welcome',
+					'tab'  => 'supported_plugins',
+				), 'themes.php' ) ) ); ?>">
 					<?php esc_html_e( 'Supported Plugins', 'suffice' ); ?>
 				</a>
-				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'free_vs_pro' ) echo 'nav-tab-active'; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'suffice-welcome', 'tab' => 'free_vs_pro' ), 'themes.php' ) ) ); ?>">
+				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'free_vs_pro' ) {
+					echo 'nav-tab-active';
+				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
+					'page' => 'suffice-welcome',
+					'tab'  => 'free_vs_pro',
+				), 'themes.php' ) ) ); ?>">
 					<?php esc_html_e( 'Free Vs Pro', 'suffice' ); ?>
 				</a>
-				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'changelog' ) echo 'nav-tab-active'; ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'suffice-welcome', 'tab' => 'changelog' ), 'themes.php' ) ) ); ?>">
+				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'changelog' ) {
+					echo 'nav-tab-active';
+				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
+					'page' => 'suffice-welcome',
+					'tab'  => 'changelog',
+				), 'themes.php' ) ) ); ?>">
 					<?php esc_html_e( 'Changelog', 'suffice' ); ?>
 				</a>
 			</h2>
@@ -162,7 +182,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 
 			// Look for a {$current_tab}_screen method.
 			if ( is_callable( array( $this, $current_tab . '_screen' ) ) ) {
-				return $this->{ $current_tab . '_screen' }();
+				return $this->{$current_tab . '_screen'}();
 			}
 
 			// Fallback to about screen.
@@ -181,39 +201,51 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 
 				<div class="changelog point-releases">
 					<div class="under-the-hood two-col">
-	               <div class="col">
-	                  <h3><?php esc_html_e( 'Import Demo', 'suffice' ); ?></h3>
-	                  <p><?php esc_html_e( 'Needs ThemeGrill Demo Importer plugin.', 'suffice' ) ?></p>
-	                  <p><a href="<?php echo esc_url( network_admin_url( 'plugin-install.php?tab=search&type=term&s=themegrill-demo-importer' ) ); ?>" class="button button-primary"><?php esc_html_e( 'Install', 'suffice' ); ?></a></p>
-	               </div>
+						<div class="col">
+							<h3><?php esc_html_e( 'Import Demo', 'suffice' ); ?></h3>
+							<p><?php esc_html_e( 'Needs ThemeGrill Demo Importer plugin.', 'suffice' ) ?></p>
+							<p>
+								<a href="<?php echo esc_url( network_admin_url( 'plugin-install.php?tab=search&type=term&s=themegrill-demo-importer' ) ); ?>" class="button button-primary"><?php esc_html_e( 'Install', 'suffice' ); ?></a>
+							</p>
+						</div>
 						<div class="col">
 							<h3><?php esc_html_e( 'Theme Customizer', 'suffice' ); ?></h3>
 							<p><?php esc_html_e( 'All Theme Options are available via Customize screen.', 'suffice' ) ?></p>
-							<p><a href="<?php echo admin_url( 'customize.php' ); ?>" class="button button-secondary"><?php esc_html_e( 'Customize', 'suffice' ); ?></a></p>
+							<p>
+								<a href="<?php echo admin_url( 'customize.php' ); ?>" class="button button-secondary"><?php esc_html_e( 'Customize', 'suffice' ); ?></a>
+							</p>
 						</div>
 
 						<div class="col">
 							<h3><?php esc_html_e( 'Documentation', 'suffice' ); ?></h3>
 							<p><?php esc_html_e( 'Please view our documentation page to setup the theme.', 'suffice' ) ?></p>
-							<p><a href="<?php echo esc_url( 'https://docs.themegrill.com/suffice/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Documentation', 'suffice' ); ?></a></p>
+							<p>
+								<a href="<?php echo esc_url( 'https://docs.themegrill.com/suffice/?utm_source=suffice-about&utm_medium=documentation-link&utm_campaign=documentation' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Documentation', 'suffice' ); ?></a>
+							</p>
 						</div>
 
 						<div class="col">
 							<h3><?php esc_html_e( 'Got theme support question?', 'suffice' ); ?></h3>
 							<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'suffice' ) ?></p>
-							<p><a href="<?php echo esc_url( 'https://themegrill.com/support-forum/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Support Forum', 'suffice' ); ?></a></p>
+							<p>
+								<a href="<?php echo esc_url( 'https://themegrill.com/support-forum/?utm_source=suffice-about&utm_medium=support-forum-link&utm_campaign=support-forum' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Support Forum', 'suffice' ); ?></a>
+							</p>
 						</div>
 
 						<div class="col">
 							<h3><?php esc_html_e( 'Need more features?', 'suffice' ); ?></h3>
 							<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'suffice' ) ?></p>
-							<p><a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/' ); ?>" class="button button-secondary"><?php esc_html_e( 'View Pro', 'suffice' ); ?></a></p>
+							<p>
+								<a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/' ); ?>" class="button button-secondary"><?php esc_html_e( 'View Pro', 'suffice' ); ?></a>
+							</p>
 						</div>
 
 						<div class="col">
 							<h3><?php esc_html_e( 'Got sales related question?', 'suffice' ); ?></h3>
 							<p><?php esc_html_e( 'Please send it via our sales contact page.', 'suffice' ) ?></p>
-							<p><a href="<?php echo esc_url( 'https://themegrill.com/contact/' ); ?>" class="button button-secondary"><?php esc_html_e( 'Contact Page', 'suffice' ); ?></a></p>
+							<p>
+								<a href="<?php echo esc_url( 'https://themegrill.com/contact/?utm_source=suffice-about&utm_medium=contact-page-link&utm_campaign=contact-page' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Contact Page', 'suffice' ); ?></a>
+							</p>
 						</div>
 
 						<div class="col">
@@ -262,16 +294,16 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 				<p class="about-description"><?php esc_html_e( 'View changelog below:', 'suffice' ); ?></p>
 
 				<?php
-					$changelog_file = apply_filters( 'suffice_changelog_file', get_template_directory() . '/README.md' );
+				$changelog_file = apply_filters( 'suffice_changelog_file', get_template_directory() . '/README.md' );
 
-					// Check if the changelog file exists and is readable.
-					if ( $changelog_file && is_readable( $changelog_file ) ) {
-						WP_Filesystem();
-						$changelog = $wp_filesystem->get_contents( $changelog_file );
-						$changelog_list = $this->parse_changelog( $changelog );
+				// Check if the changelog file exists and is readable.
+				if ( $changelog_file && is_readable( $changelog_file ) ) {
+					WP_Filesystem();
+					$changelog      = $wp_filesystem->get_contents( $changelog_file );
+					$changelog_list = $this->parse_changelog( $changelog );
 
-						echo wp_kses_post( $changelog_list );
-					}
+					echo wp_kses_post( $changelog_list );
+				}
 				?>
 			</div>
 			<?php
@@ -279,7 +311,9 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 
 		/**
 		 * Parse changelog from readme file.
+		 *
 		 * @param  string $content
+		 *
 		 * @return string
 		 */
 		private function parse_changelog( $content ) {
@@ -313,20 +347,28 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 
 				<p class="about-description"><?php esc_html_e( 'This theme recommends following plugins:', 'suffice' ); ?></p>
 				<ol>
-					<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/suffice-toolkit/' ); ?>" target="_blank"><?php esc_html_e( 'Suffice Toolkit', 'suffice' ); ?></a>
-						<?php esc_html_e(' by ThemeGrill', 'suffice'); ?>
+					<li>
+						<a href="<?php echo esc_url( 'https://wordpress.org/plugins/suffice-toolkit/' ); ?>" target="_blank"><?php esc_html_e( 'Suffice Toolkit', 'suffice' ); ?></a>
+						<?php esc_html_e( ' by ThemeGrill', 'suffice' ); ?>
 					</li>
-					<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/social-icons/' ); ?>" target="_blank"><?php esc_html_e( 'Social Icons', 'suffice' ); ?></a>
-						<?php esc_html_e(' by ThemeGrill', 'suffice'); ?>
+					<li>
+						<a href="<?php echo esc_url( 'https://wordpress.org/plugins/social-icons/' ); ?>" target="_blank"><?php esc_html_e( 'Social Icons', 'suffice' ); ?></a>
+						<?php esc_html_e( ' by ThemeGrill', 'suffice' ); ?>
 					</li>
-					<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/easy-social-sharing/' ); ?>" target="_blank"><?php esc_html_e( 'Easy Social Sharing', 'suffice' ); ?></a>
-						<?php esc_html_e(' by ThemeGrill', 'suffice'); ?>
+					<li>
+						<a href="<?php echo esc_url( 'https://wordpress.org/plugins/easy-social-sharing/' ); ?>" target="_blank"><?php esc_html_e( 'Easy Social Sharing', 'suffice' ); ?></a>
+						<?php esc_html_e( ' by ThemeGrill', 'suffice' ); ?>
 					</li>
-					<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/everest-forms/' ); ?>" target="_blank"><?php esc_html_e( 'Everest Forms – Easy Contact Form and Form Builder', 'suffice' ); ?></a>
-						<?php esc_html_e(' by ThemeGrill', 'suffice'); ?>
+					<li>
+						<a href="<?php echo esc_url( 'https://wordpress.org/plugins/everest-forms/' ); ?>" target="_blank"><?php esc_html_e( 'Everest Forms – Easy Contact Form and Form Builder', 'suffice' ); ?></a>
+						<?php esc_html_e( ' by ThemeGrill', 'suffice' ); ?>
 					</li>
-					<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/siteorigin-panels/' ); ?>" target="_blank"><?php esc_html_e( 'Page Builder by SiteOrigin', 'suffice' ); ?></a></li>
-					<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/woocommerce/' ); ?>" target="_blank"><?php esc_html_e( 'WooCommerce', 'suffice' ); ?></a></li>
+					<li>
+						<a href="<?php echo esc_url( 'https://wordpress.org/plugins/siteorigin-panels/' ); ?>" target="_blank"><?php esc_html_e( 'Page Builder by SiteOrigin', 'suffice' ); ?></a>
+					</li>
+					<li>
+						<a href="<?php echo esc_url( 'https://wordpress.org/plugins/woocommerce/' ); ?>" target="_blank"><?php esc_html_e( 'WooCommerce', 'suffice' ); ?></a>
+					</li>
 				</ol>
 
 			</div>
