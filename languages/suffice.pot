@@ -112,10 +112,14 @@ msgstr ""
 msgid "Install Plugins"
 msgstr ""
 
+#. translators: %s: plugin name.
+#. translators: %s: plugin name.
 #: inc/class-tgm-plugin-activation.php:330, inc/extras.php:462
 msgid "Installing Plugin: %s"
 msgstr ""
 
+#. translators: %s: plugin name.
+#. translators: %s: plugin name.
 #: inc/class-tgm-plugin-activation.php:332, inc/extras.php:464
 msgid "Updating Plugin: %s"
 msgstr ""
@@ -196,14 +200,20 @@ msgid_plural "The following plugins were activated successfully:"
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: plugin name.
+#. translators: 1: plugin name.
 #: inc/class-tgm-plugin-activation.php:390, inc/extras.php:521
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
+#. translators: 1: plugin name.
+#. translators: 1: plugin name.
 #: inc/class-tgm-plugin-activation.php:392, inc/extras.php:523
 msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
 msgstr ""
 
+#. translators: 1: dashboard link.
+#. translators: 1: dashboard link.
 #: inc/class-tgm-plugin-activation.php:394, inc/extras.php:525
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
@@ -245,6 +255,7 @@ msgctxt "plugin A *and* plugin B"
 msgid "and"
 msgstr ""
 
+#. translators: %s: version number
 #: inc/class-tgm-plugin-activation.php:1982
 msgid "TGMPA v%s"
 msgstr ""
@@ -293,11 +304,13 @@ msgstr ""
 msgid "Update recommended"
 msgstr ""
 
+#. translators: 1: install status, 2: update status
 #: inc/class-tgm-plugin-activation.php:2342
 msgctxt "Install/Update Status"
 msgid "%1$s, %2$s"
 msgstr ""
 
+#. translators: 1: number of plugins.
 #: inc/class-tgm-plugin-activation.php:2388
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
@@ -305,18 +318,21 @@ msgid_plural "All <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: number of plugins.
 #: inc/class-tgm-plugin-activation.php:2392
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: number of plugins.
 #: inc/class-tgm-plugin-activation.php:2396
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: number of plugins.
 #: inc/class-tgm-plugin-activation.php:2400
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
@@ -383,7 +399,7 @@ msgstr ""
 msgid "Upgrade message from the plugin author:"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2717, inc/admin/class-suffice-admin.php:187
+#: inc/class-tgm-plugin-activation.php:2717, inc/admin/class-suffice-admin.php:208
 msgid "Install"
 msgstr ""
 
@@ -530,47 +546,51 @@ msgstr ""
 msgid "Controls meta color of site."
 msgstr ""
 
-#: inc/demo-config.php:24
+#: inc/customizer.php:188, inc/admin/class-suffice-admin.php:138
+msgid "View PRO version"
+msgstr ""
+
+#: inc/demo-config.php:22
 msgid "Suffice"
 msgstr ""
 
-#: inc/demo-config.php:28
+#: inc/demo-config.php:26
 msgid "Suffice Pro"
 msgstr ""
 
-#: inc/demo-config.php:33
+#: inc/demo-config.php:31
 msgid "Suffice Pro App"
 msgstr ""
 
-#: inc/demo-config.php:38
+#: inc/demo-config.php:36
 msgid "Suffice Pro Construction"
 msgstr ""
 
-#: inc/demo-config.php:43
+#: inc/demo-config.php:41
 msgid "Suffice Pro Food"
 msgstr ""
 
-#: inc/demo-config.php:48
+#: inc/demo-config.php:46
 msgid "Suffice Pro Gym"
 msgstr ""
 
-#: inc/demo-config.php:53
+#: inc/demo-config.php:51
 msgid "Suffice Pro Magazine"
 msgstr ""
 
-#: inc/demo-config.php:58
+#: inc/demo-config.php:56
 msgid "Suffice Pro One Page"
 msgstr ""
 
-#: inc/demo-config.php:63
+#: inc/demo-config.php:61
 msgid "Suffice Pro Photography"
 msgstr ""
 
-#: inc/demo-config.php:68
+#: inc/demo-config.php:66
 msgid "Suffice Pro Portfolio"
 msgstr ""
 
-#: inc/demo-config.php:73
+#: inc/demo-config.php:71
 msgid "Suffice Pro Shop"
 msgstr ""
 
@@ -631,522 +651,518 @@ msgid "Theme Option"
 msgstr ""
 
 #: inc/kirki-customizer.php:35
-msgid "Suffice Important Links"
-msgstr ""
-
-#: inc/kirki-customizer.php:42
 msgid "Top Header Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:50
+#: inc/kirki-customizer.php:43
 msgid "Header Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:58
+#: inc/kirki-customizer.php:51
 msgid "Transparent Header Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:66
+#: inc/kirki-customizer.php:59
 msgid "Menu Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:74
+#: inc/kirki-customizer.php:67
 msgid "Layout Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:82
+#: inc/kirki-customizer.php:75
 msgid "Color Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:90
+#: inc/kirki-customizer.php:83
 msgid "Preloader Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:98
+#: inc/kirki-customizer.php:91
 msgid "Page Title Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:106
+#: inc/kirki-customizer.php:99
 msgid "Breadcrumbs Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:114
+#: inc/kirki-customizer.php:107
 msgid "Footer Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:122
+#: inc/kirki-customizer.php:115
 msgid "Sidebar Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:130
+#: inc/kirki-customizer.php:123
 msgid "Widget Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:138
+#: inc/kirki-customizer.php:131
 msgid "Blog/Article Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:146
+#: inc/kirki-customizer.php:139
 msgid "Category Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:154
+#: inc/kirki-customizer.php:147
 msgid "Search Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:162
+#: inc/kirki-customizer.php:155
 msgid "Related Posts Settings"
 msgstr ""
 
-#: inc/kirki-customizer.php:229
+#: inc/kirki-customizer.php:169
 msgid "Header Content Left"
 msgstr ""
 
-#: inc/kirki-customizer.php:230
+#: inc/kirki-customizer.php:170
 msgid "Choose what content you want to display on left section of header top."
 msgstr ""
 
-#: inc/kirki-customizer.php:236, inc/kirki-customizer.php:253, inc/kirki-customizer.php:265
+#: inc/kirki-customizer.php:176, inc/kirki-customizer.php:193, inc/kirki-customizer.php:205
 msgid "Contact Info"
 msgstr ""
 
-#: inc/kirki-customizer.php:237, inc/kirki-customizer.php:254
+#: inc/kirki-customizer.php:177, inc/kirki-customizer.php:194
 msgid "Social Icon"
 msgstr ""
 
-#: inc/kirki-customizer.php:238, inc/kirki-customizer.php:255, inc/kirki-customizer.php:1111, inc/kirki-customizer.php:1225
+#: inc/kirki-customizer.php:178, inc/kirki-customizer.php:195, inc/kirki-customizer.php:1051, inc/kirki-customizer.php:1165
 msgid "Disabled"
 msgstr ""
 
-#: inc/kirki-customizer.php:246
+#: inc/kirki-customizer.php:186
 msgid "Header Content Right"
 msgstr ""
 
-#: inc/kirki-customizer.php:247
+#: inc/kirki-customizer.php:187
 msgid "Choose what content you want to display on right section of header top."
 msgstr ""
 
-#: inc/kirki-customizer.php:272
+#: inc/kirki-customizer.php:212
 msgid "Location for Contact Info"
 msgstr ""
 
-#: inc/kirki-customizer.php:273
+#: inc/kirki-customizer.php:213
 msgid "Provide location to be displayed on contact info."
 msgstr ""
 
-#: inc/kirki-customizer.php:290
+#: inc/kirki-customizer.php:230
 msgid "Phone Number for Contact"
 msgstr ""
 
-#: inc/kirki-customizer.php:291
+#: inc/kirki-customizer.php:231
 msgid "Provide phone number to be displayed on contact info."
 msgstr ""
 
-#: inc/kirki-customizer.php:308
+#: inc/kirki-customizer.php:248
 msgid "Email Address for Contact"
 msgstr ""
 
-#: inc/kirki-customizer.php:309
+#: inc/kirki-customizer.php:249
 msgid "Provide address to be displayed on contact info."
 msgstr ""
 
-#: inc/kirki-customizer.php:330
+#: inc/kirki-customizer.php:270
 msgid "Header Layout Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:331
+#: inc/kirki-customizer.php:271
 msgid "Choose how you want to display header layout."
 msgstr ""
 
-#: inc/kirki-customizer.php:348, inc/kirki-customizer.php:355
+#: inc/kirki-customizer.php:288, inc/kirki-customizer.php:295
 msgid "Sticky Header"
 msgstr ""
 
-#: inc/kirki-customizer.php:356
+#: inc/kirki-customizer.php:296
 msgid "Choose whether to make header sticky or not"
 msgstr ""
 
-#: inc/kirki-customizer.php:366
+#: inc/kirki-customizer.php:306
 msgid "Sticky Header Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:367
+#: inc/kirki-customizer.php:307
 msgid "Choose the header sticky style."
 msgstr ""
 
-#: inc/kirki-customizer.php:390
+#: inc/kirki-customizer.php:330
 msgid "Header Action Box"
 msgstr ""
 
-#: inc/kirki-customizer.php:397
+#: inc/kirki-customizer.php:337
 msgid "Search Icon"
 msgstr ""
 
-#: inc/kirki-customizer.php:398
+#: inc/kirki-customizer.php:338
 msgid "Turn on to display search icon on header."
 msgstr ""
 
-#: inc/kirki-customizer.php:408
+#: inc/kirki-customizer.php:348
 msgid "Cart Icon"
 msgstr ""
 
-#: inc/kirki-customizer.php:409
+#: inc/kirki-customizer.php:349
 msgid "Turn on to display cart icon on beside header menu."
 msgstr ""
 
-#: inc/kirki-customizer.php:420
+#: inc/kirki-customizer.php:360
 msgid "Wishlist Icon"
 msgstr ""
 
-#: inc/kirki-customizer.php:421
+#: inc/kirki-customizer.php:361
 msgid "Turn on to display wishlist icon on header."
 msgstr ""
 
-#: inc/kirki-customizer.php:439
+#: inc/kirki-customizer.php:379
 msgid "Site Logo"
 msgstr ""
 
-#: inc/kirki-customizer.php:440
+#: inc/kirki-customizer.php:380
 msgid "Sets the custom logo when menu is transparent."
 msgstr ""
 
-#: inc/kirki-customizer.php:458
+#: inc/kirki-customizer.php:398
 msgid "Layout Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:459
+#: inc/kirki-customizer.php:399
 msgid "Choose layout style default is set to Wide"
 msgstr ""
 
-#: inc/kirki-customizer.php:473
+#: inc/kirki-customizer.php:413
 msgid "Blog Page"
 msgstr ""
 
-#: inc/kirki-customizer.php:474
+#: inc/kirki-customizer.php:414
 msgid "Controls the blog page layout"
 msgstr ""
 
-#: inc/kirki-customizer.php:490
+#: inc/kirki-customizer.php:430
 msgid "Archive Layout"
 msgstr ""
 
-#: inc/kirki-customizer.php:491
+#: inc/kirki-customizer.php:431
 msgid "Controls the layout of archive."
 msgstr ""
 
-#: inc/kirki-customizer.php:507
+#: inc/kirki-customizer.php:447
 msgid "Single Content Layout"
 msgstr ""
 
-#: inc/kirki-customizer.php:508
+#: inc/kirki-customizer.php:448
 msgid "Controls the layout of single post."
 msgstr ""
 
-#: inc/kirki-customizer.php:524
+#: inc/kirki-customizer.php:464
 msgid "Page Layout"
 msgstr ""
 
-#: inc/kirki-customizer.php:525
+#: inc/kirki-customizer.php:465
 msgid "Controls the layout of page."
 msgstr ""
 
-#: inc/kirki-customizer.php:541
+#: inc/kirki-customizer.php:481
 msgid "Search Results Layout"
 msgstr ""
 
-#: inc/kirki-customizer.php:542
+#: inc/kirki-customizer.php:482
 msgid "Controls the layout where search result is displayed."
 msgstr ""
 
-#: inc/kirki-customizer.php:558
+#: inc/kirki-customizer.php:498
 msgid "404 Layout"
 msgstr ""
 
-#: inc/kirki-customizer.php:559
+#: inc/kirki-customizer.php:499
 msgid "Controls the 404 layout."
 msgstr ""
 
-#: inc/kirki-customizer.php:582
+#: inc/kirki-customizer.php:522
 msgid "Main Menu Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:583
+#: inc/kirki-customizer.php:523
 msgid "Controls the navigaiton style in main menu."
 msgstr ""
 
-#: inc/kirki-customizer.php:606
+#: inc/kirki-customizer.php:546
 msgid "Sub Menu Styling"
 msgstr ""
 
-#: inc/kirki-customizer.php:613
+#: inc/kirki-customizer.php:553
 msgid "Dropdown Icon Indicator"
 msgstr ""
 
-#: inc/kirki-customizer.php:614
+#: inc/kirki-customizer.php:554
 msgid "Turn on to show arrow on item to indicate it has sub menu."
 msgstr ""
 
-#: inc/kirki-customizer.php:624
+#: inc/kirki-customizer.php:564
 msgid "Dropdown Shadow"
 msgstr ""
 
-#: inc/kirki-customizer.php:625
+#: inc/kirki-customizer.php:565
 msgid "Turn on to show box shadow on dropdown."
 msgstr ""
 
-#: inc/kirki-customizer.php:642
+#: inc/kirki-customizer.php:582
 msgid "Sub Menu Item Devider"
 msgstr ""
 
-#: inc/kirki-customizer.php:643
+#: inc/kirki-customizer.php:583
 msgid "Turn on to show border on list item."
 msgstr ""
 
-#: inc/kirki-customizer.php:660
+#: inc/kirki-customizer.php:600
 msgid "Fullscreen Menu Styling"
 msgstr ""
 
-#: inc/kirki-customizer.php:674
+#: inc/kirki-customizer.php:614
 msgid "Menu Background Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:675
+#: inc/kirki-customizer.php:615
 msgid "Controls the background color of menu."
 msgstr ""
 
-#: inc/kirki-customizer.php:720
+#: inc/kirki-customizer.php:660
 msgid "Theme Skin"
 msgstr ""
 
-#: inc/kirki-customizer.php:721
+#: inc/kirki-customizer.php:661
 msgid "Select Dark or Light Theme"
 msgstr ""
 
-#: inc/kirki-customizer.php:740
+#: inc/kirki-customizer.php:680
 msgid "Predefined Color Scheme"
 msgstr ""
 
-#: inc/kirki-customizer.php:741
+#: inc/kirki-customizer.php:681
 msgid "Controls the color scheme of theme. You can also customize them using seperate control."
 msgstr ""
 
-#: inc/kirki-customizer.php:775
+#: inc/kirki-customizer.php:715
 msgid "Preloader"
 msgstr ""
 
-#: inc/kirki-customizer.php:776
+#: inc/kirki-customizer.php:716
 msgid "Turn on to show page preloader when page loads"
 msgstr ""
 
-#: inc/kirki-customizer.php:786
+#: inc/kirki-customizer.php:726
 msgid "Preloader Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:787
+#: inc/kirki-customizer.php:727
 msgid "Controls the style of preloader."
 msgstr ""
 
-#: inc/kirki-customizer.php:809
+#: inc/kirki-customizer.php:749
 msgid "Preloader Background Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:810
+#: inc/kirki-customizer.php:750
 msgid "Controls the background color of preloader."
 msgstr ""
 
-#: inc/kirki-customizer.php:838
+#: inc/kirki-customizer.php:778
 msgid "Moon Cirlce Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:839
+#: inc/kirki-customizer.php:779
 msgid "Controls the color of circle on preloader moon."
 msgstr ""
 
-#: inc/kirki-customizer.php:871
+#: inc/kirki-customizer.php:811
 msgid "Inner Circle Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:872
+#: inc/kirki-customizer.php:812
 msgid "Controls the colors of inner circle color."
 msgstr ""
 
-#: inc/kirki-customizer.php:914
+#: inc/kirki-customizer.php:854
 msgid "Outer Circle Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:915
+#: inc/kirki-customizer.php:855
 msgid "Controls the colors of outer circle color."
 msgstr ""
 
-#: inc/kirki-customizer.php:947
+#: inc/kirki-customizer.php:887
 msgid "Rotation Speed"
 msgstr ""
 
-#: inc/kirki-customizer.php:948
+#: inc/kirki-customizer.php:888
 msgid "Controls the speed of how fast circle rotates."
 msgstr ""
 
-#: inc/kirki-customizer.php:993
+#: inc/kirki-customizer.php:933
 msgid "Bouncing Dot Color"
 msgstr ""
 
-#: inc/kirki-customizer.php:994
+#: inc/kirki-customizer.php:934
 msgid "Controls the color of bouncing dot."
 msgstr ""
 
-#: inc/kirki-customizer.php:1031
+#: inc/kirki-customizer.php:971
 msgid "Page Title Bar"
 msgstr ""
 
-#: inc/kirki-customizer.php:1032
+#: inc/kirki-customizer.php:972
 msgid "Controls whether to show page title bar or not."
 msgstr ""
 
-#: inc/kirki-customizer.php:1049
+#: inc/kirki-customizer.php:989
 msgid "Breadcrumbs"
 msgstr ""
 
-#: inc/kirki-customizer.php:1050
+#: inc/kirki-customizer.php:990
 msgid "Controls whether to show breadcrumbs or not."
 msgstr ""
 
-#: inc/kirki-customizer.php:1067
+#: inc/kirki-customizer.php:1007
 msgid "Footer Widgets"
 msgstr ""
 
-#: inc/kirki-customizer.php:1068
+#: inc/kirki-customizer.php:1008
 msgid "Turn on to display widgets on footer."
 msgstr ""
 
-#: inc/kirki-customizer.php:1078
+#: inc/kirki-customizer.php:1018
 msgid "Footer Widget Column"
 msgstr ""
 
-#: inc/kirki-customizer.php:1079
+#: inc/kirki-customizer.php:1019
 msgid "Controls how many widgets should be displayed in one row."
 msgstr ""
 
-#: inc/kirki-customizer.php:1103
+#: inc/kirki-customizer.php:1043
 msgid "Footer Bottom Right Content"
 msgstr ""
 
-#: inc/kirki-customizer.php:1104
+#: inc/kirki-customizer.php:1044
 msgid "Select what element to display on footer bottom right section."
 msgstr ""
 
-#: inc/kirki-customizer.php:1109
+#: inc/kirki-customizer.php:1049
 msgid "Footer Menu"
 msgstr ""
 
-#: inc/kirki-customizer.php:1110
+#: inc/kirki-customizer.php:1050
 msgid "Social Links"
 msgstr ""
 
-#: inc/kirki-customizer.php:1126
+#: inc/kirki-customizer.php:1066
 msgid "Sticky Sidebar"
 msgstr ""
 
-#: inc/kirki-customizer.php:1127
+#: inc/kirki-customizer.php:1067
 msgid "Controls whether to activate sticky sidebar or not."
 msgstr ""
 
-#: inc/kirki-customizer.php:1144
+#: inc/kirki-customizer.php:1084
 msgid "Widget Title Ribbon"
 msgstr ""
 
-#: inc/kirki-customizer.php:1145
+#: inc/kirki-customizer.php:1085
 msgid "Turn on to show ribbon on widget title."
 msgstr ""
 
-#: inc/kirki-customizer.php:1165
+#: inc/kirki-customizer.php:1105
 msgid "Blog Post Archive"
 msgstr ""
 
-#: inc/kirki-customizer.php:1172
+#: inc/kirki-customizer.php:1112
 msgid "Blog Post Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:1173
+#: inc/kirki-customizer.php:1113
 msgid "Controls the post style on blog."
 msgstr ""
 
-#: inc/kirki-customizer.php:1188
+#: inc/kirki-customizer.php:1128
 msgid "Grid Layout Columns"
 msgstr ""
 
-#: inc/kirki-customizer.php:1189
+#: inc/kirki-customizer.php:1129
 msgid "Controls the amounth of columns to display on grid layout."
 msgstr ""
 
-#: inc/kirki-customizer.php:1210
+#: inc/kirki-customizer.php:1150
 msgid "Post Title alignment"
 msgstr ""
 
-#: inc/kirki-customizer.php:1211
+#: inc/kirki-customizer.php:1151
 msgid "Choose whether to display post title according to featured post image."
 msgstr ""
 
-#: inc/kirki-customizer.php:1223
+#: inc/kirki-customizer.php:1163
 msgid "Below"
 msgstr ""
 
-#: inc/kirki-customizer.php:1224
+#: inc/kirki-customizer.php:1164
 msgid "Above"
 msgstr ""
 
-#: inc/kirki-customizer.php:1240
+#: inc/kirki-customizer.php:1180
 msgid "Search Results Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:1241
+#: inc/kirki-customizer.php:1181
 msgid "Controls the layout for the search results on page"
 msgstr ""
 
-#: inc/kirki-customizer.php:1256
+#: inc/kirki-customizer.php:1196
 msgid "Column on One Row"
 msgstr ""
 
-#: inc/kirki-customizer.php:1257
+#: inc/kirki-customizer.php:1197
 msgid "Controls the column of search result on grid style."
 msgstr ""
 
-#: inc/kirki-customizer.php:1286
+#: inc/kirki-customizer.php:1226
 msgid "Related Post"
 msgstr ""
 
-#: inc/kirki-customizer.php:1287
+#: inc/kirki-customizer.php:1227
 msgid "Turn on to display related post on single blog post."
 msgstr ""
 
-#: inc/kirki-customizer.php:1297
+#: inc/kirki-customizer.php:1237
 msgid "Get Related Post From"
 msgstr ""
 
-#: inc/kirki-customizer.php:1298
+#: inc/kirki-customizer.php:1238
 msgid "Choose whether to get related post from. Default is categories."
 msgstr ""
 
-#: inc/kirki-customizer.php:1303
+#: inc/kirki-customizer.php:1243
 msgid "Categories"
 msgstr ""
 
-#: inc/kirki-customizer.php:1304
+#: inc/kirki-customizer.php:1244
 msgid "Tags"
 msgstr ""
 
-#: inc/kirki-customizer.php:1312
+#: inc/kirki-customizer.php:1252
 msgid "Related Post Style"
 msgstr ""
 
-#: inc/kirki-customizer.php:1313
+#: inc/kirki-customizer.php:1253
 msgid "Controls the layout of related posts."
 msgstr ""
 
-#: inc/kirki-customizer.php:1328
+#: inc/kirki-customizer.php:1268
 msgid "Related Post Carousel"
 msgstr ""
 
-#: inc/kirki-customizer.php:1329
+#: inc/kirki-customizer.php:1269
 msgid "Turn on to enable carousel on related posts."
 msgstr ""
 
@@ -1517,18 +1533,21 @@ msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
+#. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:67, inc/template-tags.php:73
 msgid ", "
 msgstr ""
 
 #: inc/template-tags.php:69
-msgid "Posted in %1$s"
+msgid "Posted in: %1$s"
 msgstr ""
 
 #: inc/template-tags.php:75
-msgid "Tagged %1$s"
+msgid "Tagged: %1$s"
 msgstr ""
 
+#. translators: %s: Name of current post
+#. translators: %s: Name of current post
 #: inc/template-tags.php:82, template-parts/content-page.php:45
 msgid "Edit %s"
 msgstr ""
@@ -1577,6 +1596,7 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
+#. translators: %s: Name of current post.
 #: template-parts/content.php:62
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
@@ -1585,179 +1605,175 @@ msgstr ""
 msgid "Unable to connect to the filesystem. Please confirm your credentials."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:36, inc/admin/class-suffice-admin.php:36, inc/admin/class-suffice-admin.php:116
+#: inc/admin/class-suffice-admin.php:36, inc/admin/class-suffice-admin.php:36, inc/admin/class-suffice-admin.php:119
 msgid "About"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:74
+#: inc/admin/class-suffice-admin.php:77
 msgid "Action failed. Please refresh the page and retry."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:78
+#: inc/admin/class-suffice-admin.php:81
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:92
+#: inc/admin/class-suffice-admin.php:95
 msgid "Dismiss"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:93
+#: inc/admin/class-suffice-admin.php:96
 msgid "Welcome! Thank you for choosing Suffice! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:95
+#: inc/admin/class-suffice-admin.php:98
 msgid "Get started with Suffice"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:131
+#: inc/admin/class-suffice-admin.php:134
 msgid "Theme Info"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:133
+#: inc/admin/class-suffice-admin.php:136
 msgid "View Demo"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:135
-msgid "View PRO version"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:137
+#: inc/admin/class-suffice-admin.php:140
 msgid "Rate this theme"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:145
+#: inc/admin/class-suffice-admin.php:155
 msgid "Supported Plugins"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:148
+#: inc/admin/class-suffice-admin.php:163
 msgid "Free Vs Pro"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:151
+#: inc/admin/class-suffice-admin.php:171
 msgid "Changelog"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:185
+#: inc/admin/class-suffice-admin.php:205
 msgid "Import Demo"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:186
+#: inc/admin/class-suffice-admin.php:206
 msgid "Needs ThemeGrill Demo Importer plugin."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:190
+#: inc/admin/class-suffice-admin.php:212
 msgid "Theme Customizer"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:191
+#: inc/admin/class-suffice-admin.php:213
 msgid "All Theme Options are available via Customize screen."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:192
+#: inc/admin/class-suffice-admin.php:215
 msgid "Customize"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:196, inc/admin/class-suffice-admin.php:198
+#: inc/admin/class-suffice-admin.php:220, inc/admin/class-suffice-admin.php:223
 msgid "Documentation"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:197
+#: inc/admin/class-suffice-admin.php:221
 msgid "Please view our documentation page to setup the theme."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:202
+#: inc/admin/class-suffice-admin.php:228
 msgid "Got theme support question?"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:203
+#: inc/admin/class-suffice-admin.php:229
 msgid "Please put it in our dedicated support forum."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:204
+#: inc/admin/class-suffice-admin.php:231
 msgid "Support Forum"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:208
+#: inc/admin/class-suffice-admin.php:236
 msgid "Need more features?"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:209, inc/admin/class-suffice-admin.php:345
+#: inc/admin/class-suffice-admin.php:237, inc/admin/class-suffice-admin.php:387
 msgid "Upgrade to PRO version for more exciting features."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:210, inc/admin/class-suffice-admin.php:348
+#: inc/admin/class-suffice-admin.php:239, inc/admin/class-suffice-admin.php:390
 msgid "View Pro"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:214
+#: inc/admin/class-suffice-admin.php:244
 msgid "Got sales related question?"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:215
+#: inc/admin/class-suffice-admin.php:245
 msgid "Please send it via our sales contact page."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:216
+#: inc/admin/class-suffice-admin.php:247
 msgid "Contact Page"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:222, inc/admin/class-suffice-admin.php:230
+#: inc/admin/class-suffice-admin.php:254, inc/admin/class-suffice-admin.php:262
 msgid "Translate"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:226
+#: inc/admin/class-suffice-admin.php:258
 msgid "Click below to translate this theme into your own language."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:242
+#: inc/admin/class-suffice-admin.php:274
 msgid "Return to Updates"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:242
+#: inc/admin/class-suffice-admin.php:274
 msgid "Return to Dashboard &rarr; Updates"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:245
+#: inc/admin/class-suffice-admin.php:277
 msgid "Go to Dashboard &rarr; Home"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:245
+#: inc/admin/class-suffice-admin.php:277
 msgid "Go to Dashboard"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:262
+#: inc/admin/class-suffice-admin.php:294
 msgid "View changelog below:"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:314
+#: inc/admin/class-suffice-admin.php:348
 msgid "This theme recommends following plugins:"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:316
+#: inc/admin/class-suffice-admin.php:351
 msgid "Suffice Toolkit"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:317, inc/admin/class-suffice-admin.php:320, inc/admin/class-suffice-admin.php:323, inc/admin/class-suffice-admin.php:326
+#: inc/admin/class-suffice-admin.php:352, inc/admin/class-suffice-admin.php:356, inc/admin/class-suffice-admin.php:360, inc/admin/class-suffice-admin.php:364
 msgid " by ThemeGrill"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:319
+#: inc/admin/class-suffice-admin.php:355
 msgid "Social Icons"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:322
+#: inc/admin/class-suffice-admin.php:359
 msgid "Easy Social Sharing"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:325
+#: inc/admin/class-suffice-admin.php:363
 msgid "Everest Forms – Easy Contact Form and Form Builder"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:328
+#: inc/admin/class-suffice-admin.php:367
 msgid "Page Builder by SiteOrigin"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:329
+#: inc/admin/class-suffice-admin.php:370
 msgid "WooCommerce"
 msgstr ""
 
