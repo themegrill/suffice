@@ -318,7 +318,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 		 */
 		private function parse_changelog( $content ) {
 			$matches   = null;
-			$regexp    = '~==\s*Changelog\s*==(.*)($)~Uis';
+			$regexp    = '~##\s*Changelog\s*(.*)($)~Uis';
 			$changelog = '';
 
 			if ( preg_match( $regexp, $content, $matches ) ) {
