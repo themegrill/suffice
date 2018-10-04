@@ -14,6 +14,7 @@ defined( 'ABSPATH' ) || exit;
  * @deprecated 1.5.0
  *
  * @param  array $demo_config Demo config.
+ *
  * @return array
  */
 function suffice_demo_importer_packages( $packages ) {
@@ -85,7 +86,7 @@ add_filter( 'themegrill_demo_importer_packages', 'suffice_demo_importer_packages
  * @param  string $demo_id
  * @param  array  $demo_data
  */
-function restaurantpress_data_update( $demo_id, $demo_data ) {
+function suffice_restaurantpress_data_update( $demo_id, $demo_data ) {
 	if ( ! empty( $demo_data['restaurantpress_data_update'] ) ) {
 		foreach ( $demo_data['restaurantpress_data_update'] as $data_type => $data_value ) {
 			$data = [];
@@ -108,4 +109,4 @@ function restaurantpress_data_update( $demo_id, $demo_data ) {
 	}
 }
 
-add_action( 'themegrill_ajax_demo_imported', 'restaurantpress_data_update', 10, 2 );
+add_action( 'themegrill_ajax_demo_imported', 'suffice_restaurantpress_data_update', 10, 2 );
