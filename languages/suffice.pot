@@ -550,47 +550,47 @@ msgstr ""
 msgid "View PRO version"
 msgstr ""
 
-#: inc/demo-config.php:22
+#: inc/demo-config.php:23
 msgid "Suffice"
 msgstr ""
 
-#: inc/demo-config.php:26
+#: inc/demo-config.php:27
 msgid "Suffice Pro"
 msgstr ""
 
-#: inc/demo-config.php:31
+#: inc/demo-config.php:32
 msgid "Suffice Pro App"
 msgstr ""
 
-#: inc/demo-config.php:36
+#: inc/demo-config.php:37
 msgid "Suffice Pro Construction"
 msgstr ""
 
-#: inc/demo-config.php:41
+#: inc/demo-config.php:42
 msgid "Suffice Pro Food"
 msgstr ""
 
-#: inc/demo-config.php:46
+#: inc/demo-config.php:47
 msgid "Suffice Pro Gym"
 msgstr ""
 
-#: inc/demo-config.php:51
+#: inc/demo-config.php:52
 msgid "Suffice Pro Magazine"
 msgstr ""
 
-#: inc/demo-config.php:56
+#: inc/demo-config.php:57
 msgid "Suffice Pro One Page"
 msgstr ""
 
-#: inc/demo-config.php:61
+#: inc/demo-config.php:62
 msgid "Suffice Pro Photography"
 msgstr ""
 
-#: inc/demo-config.php:66
+#: inc/demo-config.php:67
 msgid "Suffice Pro Portfolio"
 msgstr ""
 
-#: inc/demo-config.php:71
+#: inc/demo-config.php:72
 msgid "Suffice Pro Shop"
 msgstr ""
 
