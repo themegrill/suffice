@@ -106,6 +106,9 @@ if ( ! function_exists( 'suffice_setup' ) ) :
 		*/
 		add_editor_style( array( 'editor-style.css', suffice_fonts_url() ) );
 
+		// Gutenberg layout support.
+		add_theme_support( 'align-wide' );
+
 	}
 endif;
 add_action( 'after_setup_theme', 'suffice_setup' );

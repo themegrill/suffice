@@ -4,7 +4,7 @@
 
 .hentry {
 	margin-bottom: 90px;
-	
+
 	.entry-thumbnail {
 		margin: 0 0 20px;
 
@@ -14,7 +14,7 @@
 			height: auto;
 		}
 	}
-	
+
 	.entry-header {
 		margin: 0;
 	}
@@ -36,7 +36,7 @@
 	.entry-meta {
 		margin: 0 0 20px;
 		line-height: 24px;
-		
+
 		> span {
 			color: $color-gray;
 
@@ -53,7 +53,7 @@
 
 			a {
 				color: $color-gray-darken;
-				
+
 				&:hover {
 					color: $color-brand-primary;
 				}
@@ -139,7 +139,7 @@
 			font-size: 12px;
 		}
 	}
-	
+
 }
 
 .post-style-list {
@@ -157,7 +157,7 @@
 		height: 135px;
 		overflow: hidden;
 		margin: 0;
-	
+
 		.entry-date {
 			width: 100%;
 			text-align: center;
@@ -414,3 +414,39 @@
 }
 
 /*=====  End of Related Post  ======*/
+
+
+/*====================================
+=            Gutenberg AlignWide            =
+====================================*/
+.full-width {
+	.alignfull {
+		margin-left: calc(50% - 49.5vw);
+		margin-right: calc(50% - 49.5vw);
+		max-width: unset;
+
+		img {
+			max-width: unset;
+		}
+	}
+
+	.alignwide {
+		margin-left: -60px;
+		margin-right: -60px;
+		max-width: unset;
+	}
+
+	&.boxed {
+		#content {
+			overflow: hidden;
+		}
+
+		.alignwide {
+			margin-left: -60px;
+			margin-right: -60px;
+		}
+
+	}
+}
+
+/*=====  End of Gutenberg AlignWide  ======*/
