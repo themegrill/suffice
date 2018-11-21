@@ -1,5 +1,5 @@
 @media screen and ( max-width: 768px ) {
-	
+
 	.header-sticky-mobile {
 		.header-inner-wrapper {
 			position: fixed;
@@ -51,7 +51,7 @@
 
 	.cta {
 		text-align: center;
-		
+
 		.cta-info {
 			.cta-title {
 				font-size: 24px;
@@ -129,12 +129,37 @@
 		}
 	}
 
+	.full-width {
+		&.boxed {
+			.alignwide {
+				margin-left: -20px;
+				margin-right: -20px;
+			}
+
+		}
+	}
+
 }
 
+@media screen and ( max-width: 600px ) {
+	.full-width {
+		.alignwide {
+			margin-left: 0;
+			margin-right: 0;
+		}
 
+		&.boxed {
+			.alignwide {
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+		}
+	}
+}
 
 @media screen and ( max-width: 480px ) {
-	
+
 	/* Header adjustment on mobile devices*/
 	.header-top {
 		.container--flex {
@@ -149,7 +174,7 @@
 			margin-bottom: 10px;
 		}
 	}
-	
+
 	.featured-post-container {
 		&.feature-post-style-two {
 			.feature-post-grid-container {
