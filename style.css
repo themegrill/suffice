@@ -6558,8 +6558,8 @@ html {
 =            Gutenberg AlignWide            =
 ====================================*/
 .full-width .alignfull {
-	margin-left: calc(50% - 50vw);
-	margin-right: calc(50% - 50vw);
+	margin-left: calc(50% - 49.5vw);
+	margin-right: calc(50% - 49.5vw);
 	max-width: unset;
 }
 
@@ -6568,8 +6568,8 @@ html {
 }
 
 .full-width .alignwide {
-	margin-left: -100px;
-	margin-right: -100px;
+	margin-left: -60px;
+	margin-right: -60px;
 	max-width: unset;
 }
 
@@ -6578,8 +6578,8 @@ html {
 }
 
 .full-width.boxed .alignwide {
-	margin-left: -100px;
-	margin-right: -100px;
+	margin-left: -60px;
+	margin-right: -60px;
 }
 
 /*=====  End of Gutenberg AlignWide  ======*/

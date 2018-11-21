@@ -421,8 +421,8 @@
 ====================================*/
 .full-width {
 	.alignfull {
-		margin-left: calc(50% - 50vw);
-		margin-right: calc(50% - 50vw);
+		margin-left: calc(50% - 49.5vw);
+		margin-right: calc(50% - 49.5vw);
 		max-width: unset;
 
 		img {
@@ -431,8 +431,8 @@
 	}
 
 	.alignwide {
-		margin-left: -100px;
-		margin-right: -100px;
+		margin-left: -60px;
+		margin-right: -60px;
 		max-width: unset;
 	}
 
@@ -442,8 +442,8 @@
 		}
 
 		.alignwide {
-			margin-left: -100px;
-			margin-right: -100px;
+			margin-left: -60px;
+			margin-right: -60px;
 		}
 
 	}
