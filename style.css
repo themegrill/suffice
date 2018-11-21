@@ -5653,7 +5653,7 @@ html {
 }
 
 .hotels-container .hotels .hotel-thumbnail .inside-caption {
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5));
+	background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5));
 	margin: 0;
 	position: absolute;
 	left: 0;
@@ -6554,6 +6554,35 @@ html {
 }
 
 /*=====  End of Related Post  ======*/
+/*====================================
+=            Gutenberg AlignWide            =
+====================================*/
+.full-width .alignfull {
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	max-width: unset;
+}
+
+.full-width .alignfull img {
+	max-width: unset;
+}
+
+.full-width .alignwide {
+	margin-left: -100px;
+	margin-right: -100px;
+	max-width: unset;
+}
+
+.full-width.boxed #content {
+	overflow: hidden;
+}
+
+.full-width.boxed .alignwide {
+	margin-left: -100px;
+	margin-right: -100px;
+}
+
+/*=====  End of Gutenberg AlignWide  ======*/
 .featured-post-container.feature-post-style-one .featured-post .entry-cat, .featured-post-container.feature-post-style-two .featured-post .entry-cat, .featured-post-container.feature-post-style-three .featured-post .entry-cat {
 	margin: 0 0 15px;
 }
@@ -6650,7 +6679,7 @@ html {
 	left: 0;
 	right: 0;
 	padding: 45px 20px 30px;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5));
+	background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5));
 }
 
 .featured-post-container.feature-post-style-one .featured-post .entry-price {
@@ -7064,6 +7093,13 @@ object {
 }
 
 /*----------  responsive  ----------*/
+@media screen and (max-width: 1200px) {
+	.full-width .alignwide {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+}
+
 @media screen and (min-width: 992px) {
 	/* Make sticky header on desktop */
 	.header-sticky-desktop .header-inner-wrapper {
@@ -7182,6 +7218,21 @@ object {
 	}
 	.footer-widgets.footer-widgets-col--three .footer-widget-area, .footer-widgets.footer-widgets-col--four .footer-widget-area {
 		width: 48.5%;
+	}
+	.full-width.boxed .alignwide {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.full-width .alignwide {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.full-width.boxed .alignwide {
+		margin-left: 0;
+		margin-right: 0;
 	}
 }
 
