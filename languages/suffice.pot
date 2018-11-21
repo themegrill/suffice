@@ -58,40 +58,40 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:140
+#: functions.php:143
 msgid "Sidebar Left"
 msgstr ""
 
-#: functions.php:142, functions.php:152, functions.php:162, functions.php:172, functions.php:182, functions.php:192
+#: functions.php:145, functions.php:155, functions.php:165, functions.php:175, functions.php:185, functions.php:195
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:150
+#: functions.php:153
 msgid "Sidebar Right"
 msgstr ""
 
-#: functions.php:160
+#: functions.php:163
 msgid "Footer Sidebar 1"
 msgstr ""
 
-#: functions.php:170
+#: functions.php:173
 msgid "Footer Sidebar 2"
 msgstr ""
 
-#: functions.php:180
+#: functions.php:183
 msgid "Footer Sidebar 3"
 msgstr ""
 
-#: functions.php:190
+#: functions.php:193
 msgid "Footer Sidebar 4"
 msgstr ""
 
-#: functions.php:215
+#: functions.php:218
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:224
+#: functions.php:227
 msgctxt "Poppins font: on or off"
 msgid "on"
 msgstr ""
