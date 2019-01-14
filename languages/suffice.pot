@@ -1,4 +1,4 @@
-# Copyright (C) 2018 Suffice
+# Copyright (C) 2019 Suffice
 # This file is distributed under the same license as the Suffice package.
 msgid ""
 msgstr ""
@@ -86,12 +86,12 @@ msgstr ""
 msgid "Footer Sidebar 4"
 msgstr ""
 
-#: functions.php:218
+#: functions.php:219
 msgctxt "Open Sans font: on or off"
 msgid "on"
 msgstr ""
 
-#: functions.php:227
+#: functions.php:228
 msgctxt "Poppins font: on or off"
 msgid "on"
 msgstr ""
@@ -1775,6 +1775,19 @@ msgstr ""
 
 #: inc/admin/class-suffice-admin.php:370
 msgid "WooCommerce"
+msgstr ""
+
+#. translators: %1$s Zakra theme link %2$s Zakra theme demo link
+#: inc/admin/class-suffice-new-theme-notice.php:66
+msgid "Zakra - our new most flexible free WordPress theme. %1$s Zakra is fully compatible with Gutenberg, Elementor and other major page builders. Comes with %2$s to quickly setup your new website."
+msgstr ""
+
+#: inc/admin/class-suffice-new-theme-notice.php:70
+msgid "Check it out!"
+msgstr ""
+
+#: inc/admin/class-suffice-new-theme-notice.php:75
+msgid "10+ free starter sites"
 msgstr ""
 
 #: template-parts/footer/navigation-mobile.php:12, template-parts/navigation/navigation-primary.php:17
