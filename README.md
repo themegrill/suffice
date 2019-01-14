@@ -102,6 +102,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 ## Changelog
 ### Version TBD
+* Update - Isotope JS to 3.0.6
 * Recommend - Zakra theme
 
 ### Version 1.1.4 - 2018-11-21
