@@ -112,14 +112,10 @@ msgstr ""
 msgid "Install Plugins"
 msgstr ""
 
-#. translators: %s: plugin name.
-#. translators: %s: plugin name.
 #: inc/class-tgm-plugin-activation.php:330, inc/extras.php:462
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#. translators: %s: plugin name.
-#. translators: %s: plugin name.
 #: inc/class-tgm-plugin-activation.php:332, inc/extras.php:464
 msgid "Updating Plugin: %s"
 msgstr ""
@@ -200,20 +196,14 @@ msgid_plural "The following plugins were activated successfully:"
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: 1: plugin name.
-#. translators: 1: plugin name.
 #: inc/class-tgm-plugin-activation.php:390, inc/extras.php:521
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
-#. translators: 1: plugin name.
-#. translators: 1: plugin name.
 #: inc/class-tgm-plugin-activation.php:392, inc/extras.php:523
 msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
 msgstr ""
 
-#. translators: 1: dashboard link.
-#. translators: 1: dashboard link.
 #: inc/class-tgm-plugin-activation.php:394, inc/extras.php:525
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
@@ -255,7 +245,6 @@ msgctxt "plugin A *and* plugin B"
 msgid "and"
 msgstr ""
 
-#. translators: %s: version number
 #: inc/class-tgm-plugin-activation.php:1982
 msgid "TGMPA v%s"
 msgstr ""
@@ -304,13 +293,11 @@ msgstr ""
 msgid "Update recommended"
 msgstr ""
 
-#. translators: 1: install status, 2: update status
 #: inc/class-tgm-plugin-activation.php:2342
 msgctxt "Install/Update Status"
 msgid "%1$s, %2$s"
 msgstr ""
 
-#. translators: 1: number of plugins.
 #: inc/class-tgm-plugin-activation.php:2388
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
@@ -318,21 +305,18 @@ msgid_plural "All <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: 1: number of plugins.
 #: inc/class-tgm-plugin-activation.php:2392
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: 1: number of plugins.
 #: inc/class-tgm-plugin-activation.php:2396
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
-#. translators: 1: number of plugins.
 #: inc/class-tgm-plugin-activation.php:2400
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
@@ -1533,7 +1517,6 @@ msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
-#. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:67, inc/template-tags.php:73
 msgid ", "
 msgstr ""
@@ -1546,8 +1529,6 @@ msgstr ""
 msgid "Tagged: %1$s"
 msgstr ""
 
-#. translators: %s: Name of current post
-#. translators: %s: Name of current post
 #: inc/template-tags.php:82, template-parts/content-page.php:45
 msgid "Edit %s"
 msgstr ""
@@ -1560,19 +1541,19 @@ msgstr ""
 msgid "Add widgets here to be displayed on woocommerce page."
 msgstr ""
 
-#: page-templates/full-width.php:3
+#: page-templates/full-width.php:2
 msgid "Full Width"
 msgstr ""
 
-#: page-templates/left-sidebar.php:3
+#: page-templates/left-sidebar.php:2
 msgid "Left Sidebar"
 msgstr ""
 
-#: page-templates/page-builder.php:3
+#: page-templates/page-builder.php:2
 msgid "Page Builder"
 msgstr ""
 
-#: page-templates/right-sidebar.php:3
+#: page-templates/right-sidebar.php:2
 msgid "Right Sidebar"
 msgstr ""
 
@@ -1596,7 +1577,6 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#. translators: %s: Name of current post.
 #: template-parts/content.php:62
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
@@ -1777,7 +1757,6 @@ msgstr ""
 msgid "WooCommerce"
 msgstr ""
 
-#. translators: %1$s Zakra theme link %2$s Zakra theme demo link
 #: inc/admin/class-suffice-new-theme-notice.php:66
 msgid "Zakra - our new most flexible free WordPress theme. %1$s Zakra is fully compatible with Gutenberg, Elementor and other major page builders. Comes with %2$s to quickly setup your new website."
 msgstr ""
