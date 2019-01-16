@@ -103,8 +103,6 @@ Unless otherwise specified, all the theme files, scripts and images including th
 ## Changelog
 ## TBD ## 
 * Updated - Kirki to 3.0.35.3
-
-### Version 1.1.5 - 2019-01-14
 * Update - Isotope JS to 3.0.6
 * Recommend - Zakra theme
 
