@@ -101,6 +101,9 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog
+## Version TBD
+* Remove - Freemius SDK.
+
 ## Version 1.1.5 - 2019-01-16
 * Updated - Kirki to 3.0.35.3
 * Update - Isotope JS to 3.0.6
