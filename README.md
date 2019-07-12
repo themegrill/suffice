@@ -2,7 +2,7 @@
 **Author**: ThemeGrill
 **Requires** at least: WordPress 4.3
 **Tested up to**: WordPress 5.2.2
-**Version**: 1.1.6
+**Version**: 1.1.7
 **License**: GPLv3 or later
 **License URI**: https://www.gnu.org/licenses/gpl-3.0.en.html
 **Tags**: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce, portfolio
@@ -101,7 +101,7 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog
-## Version TBD
+## Version 1.1.7 - 2019-07-12
 * Tweak - Added `wp_body_open` function to support WordPress 5.2 `wp_body_open` hook.
 * Remove - Removed dashboard message to align with the theme review guidelines
 
