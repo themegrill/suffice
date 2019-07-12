@@ -96,12 +96,188 @@ msgctxt "Poppins font: on or off"
 msgid "on"
 msgstr ""
 
-#: header.php:39
+#: header.php:45
 msgid "Skip to content"
 msgstr ""
 
-#: search.php:27, inc/extras.php:299
-msgid "Search Results for: %s"
+#: inc/admin/class-suffice-admin.php:36, inc/admin/class-suffice-admin.php:36, inc/admin/class-suffice-admin.php:119
+msgid "About"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:77
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:81
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:95
+msgid "Dismiss"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:96
+msgid "Welcome! Thank you for choosing Suffice! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s."
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:98
+msgid "Get started with Suffice"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:134
+msgid "Theme Info"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:136
+msgid "View Demo"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:138, inc/customizer.php:188
+msgid "View PRO version"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:140
+msgid "Rate this theme"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:155
+msgid "Supported Plugins"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:163
+msgid "Free Vs Pro"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:171
+msgid "Changelog"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:205
+msgid "Import Demo"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:206
+msgid "Needs ThemeGrill Demo Importer plugin."
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:208, inc/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:212
+msgid "Theme Customizer"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:213
+msgid "All Theme Options are available via Customize screen."
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:215
+msgid "Customize"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:220, inc/admin/class-suffice-admin.php:223
+msgid "Documentation"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:221
+msgid "Please view our documentation page to setup the theme."
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:228
+msgid "Got theme support question?"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:229
+msgid "Please put it in our dedicated support forum."
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:231
+msgid "Support Forum"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:236
+msgid "Need more features?"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:237, inc/admin/class-suffice-admin.php:387
+msgid "Upgrade to PRO version for more exciting features."
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:239, inc/admin/class-suffice-admin.php:390
+msgid "View Pro"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:244
+msgid "Got sales related question?"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:245
+msgid "Please send it via our sales contact page."
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:247
+msgid "Contact Page"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:254, inc/admin/class-suffice-admin.php:262
+msgid "Translate"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:258
+msgid "Click below to translate this theme into your own language."
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:274
+msgid "Return to Updates"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:274
+msgid "Return to Dashboard &rarr; Updates"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:277
+msgid "Go to Dashboard &rarr; Home"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:277
+msgid "Go to Dashboard"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:294
+msgid "View changelog below:"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:348
+msgid "This theme recommends following plugins:"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:351
+msgid "Suffice Toolkit"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:352, inc/admin/class-suffice-admin.php:356, inc/admin/class-suffice-admin.php:360, inc/admin/class-suffice-admin.php:364
+msgid " by ThemeGrill"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:355
+msgid "Social Icons"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:359
+msgid "Easy Social Sharing"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:363
+msgid "Everest Forms – Easy Contact Form and Form Builder"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:367
+msgid "Page Builder by SiteOrigin"
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:370
+msgid "WooCommerce"
 msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:327, inc/extras.php:459
@@ -399,10 +575,6 @@ msgstr ""
 msgid "Upgrade message from the plugin author:"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2717, inc/admin/class-suffice-admin.php:208
-msgid "Install"
-msgstr ""
-
 #: inc/class-tgm-plugin-activation.php:2723
 msgid "Update"
 msgstr ""
@@ -546,10 +718,6 @@ msgstr ""
 msgid "Controls meta color of site."
 msgstr ""
 
-#: inc/customizer.php:188, inc/admin/class-suffice-admin.php:138
-msgid "View PRO version"
-msgstr ""
-
 #: inc/demo-config.php:23
 msgid "Suffice"
 msgstr ""
@@ -624,6 +792,10 @@ msgstr ""
 
 #: inc/extras.php:297
 msgid "Page NOT Found"
+msgstr ""
+
+#: inc/extras.php:299, search.php:27
+msgid "Search Results for: %s"
 msgstr ""
 
 #: inc/extras.php:369, inc/extras.php:369
@@ -1599,191 +1771,6 @@ msgstr ""
 #. translators: %s: Name of current post.
 #: template-parts/content.php:62
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:36, inc/admin/class-suffice-admin.php:36, inc/admin/class-suffice-admin.php:119
-msgid "About"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:77
-msgid "Action failed. Please refresh the page and retry."
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:81
-msgid "Cheatin&#8217; huh?"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:95
-msgid "Dismiss"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:96
-msgid "Welcome! Thank you for choosing Suffice! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s."
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:98
-msgid "Get started with Suffice"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:134
-msgid "Theme Info"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:136
-msgid "View Demo"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:140
-msgid "Rate this theme"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:155
-msgid "Supported Plugins"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:163
-msgid "Free Vs Pro"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:171
-msgid "Changelog"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:205
-msgid "Import Demo"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:206
-msgid "Needs ThemeGrill Demo Importer plugin."
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:212
-msgid "Theme Customizer"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:213
-msgid "All Theme Options are available via Customize screen."
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:215
-msgid "Customize"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:220, inc/admin/class-suffice-admin.php:223
-msgid "Documentation"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:221
-msgid "Please view our documentation page to setup the theme."
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:228
-msgid "Got theme support question?"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:229
-msgid "Please put it in our dedicated support forum."
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:231
-msgid "Support Forum"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:236
-msgid "Need more features?"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:237, inc/admin/class-suffice-admin.php:387
-msgid "Upgrade to PRO version for more exciting features."
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:239, inc/admin/class-suffice-admin.php:390
-msgid "View Pro"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:244
-msgid "Got sales related question?"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:245
-msgid "Please send it via our sales contact page."
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:247
-msgid "Contact Page"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:254, inc/admin/class-suffice-admin.php:262
-msgid "Translate"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:258
-msgid "Click below to translate this theme into your own language."
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:274
-msgid "Return to Updates"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:274
-msgid "Return to Dashboard &rarr; Updates"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:277
-msgid "Go to Dashboard &rarr; Home"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:277
-msgid "Go to Dashboard"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:294
-msgid "View changelog below:"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:348
-msgid "This theme recommends following plugins:"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:351
-msgid "Suffice Toolkit"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:352, inc/admin/class-suffice-admin.php:356, inc/admin/class-suffice-admin.php:360, inc/admin/class-suffice-admin.php:364
-msgid " by ThemeGrill"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:355
-msgid "Social Icons"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:359
-msgid "Easy Social Sharing"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:363
-msgid "Everest Forms – Easy Contact Form and Form Builder"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:367
-msgid "Page Builder by SiteOrigin"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:370
-msgid "WooCommerce"
-msgstr ""
-
-#. translators: %1$s Zakra theme link %2$s Zakra theme demo link
-#: inc/admin/class-suffice-new-theme-notice.php:66
-msgid "Zakra - our new most flexible free WordPress theme. %1$s Zakra is fully compatible with Gutenberg, Elementor and other major page builders. Comes with %2$s to quickly setup your new website."
-msgstr ""
-
-#: inc/admin/class-suffice-new-theme-notice.php:70
-msgid "Check it out!"
-msgstr ""
-
-#: inc/admin/class-suffice-new-theme-notice.php:75
-msgid "10+ free starter sites"
 msgstr ""
 
 #: template-parts/footer/navigation-mobile.php:12, template-parts/navigation/navigation-primary.php:17

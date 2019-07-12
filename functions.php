@@ -378,5 +378,4 @@ $suffice_version = $theme['Version'];
  */
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-suffice-admin.php';
-	require get_template_directory() . '/inc/admin/class-suffice-new-theme-notice.php';
 }
