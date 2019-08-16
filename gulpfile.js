@@ -61,7 +61,7 @@ function sassCompile() {
             indentType: 'tab',
             indentWidth: 1,
             outputStyle: 'expanded',
-            linefeed: 'crlf'
+//            linefeed: 'crlf'
         } ).on( 'error', sass.logError) )
         .pipe( gulp.dest( paths.styles.dest ) )
         .pipe( browserSync.stream() );
