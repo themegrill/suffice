@@ -3988,6 +3988,10 @@ a {
 	transition: color 0.25s ease-in-out;
 }
 
+a:focus {
+	outline: thin dotted;
+}
+
 /*----------  Header info links  ----------*/
 .header-info-links {
 	list-style-type: none;
