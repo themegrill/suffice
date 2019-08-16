@@ -36,13 +36,13 @@ if ( function_exists( 'wp_body_open' ) ) {
 do_action( 'suffice_before' ); ?>
 
 <div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'suffice' ); ?></a>
+
 	<?php
 	/**
 	 * suffice_before_header hook
 	 */
 	do_action( 'suffice_before_header' ); ?>
-
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'suffice' ); ?></a>
 
 	<header id="masthead" class="site-header <?php suffice_header_class(); ?>" role="banner">
 		<div class="header-outer-wrapper">
