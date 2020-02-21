@@ -534,3 +534,26 @@ function suffice_register_required_plugins() {
 
 	tgmpa( $plugins, $config );
 }
+
+/**
+ * Compare user's current version of plugin.
+ */
+if ( ! function_exists( 'suffice_plugin_version_compare' ) ) {
+	function suffice_plugin_version_compare( $plugin_slug, $version_to_compare ) {
+
+		if ( ! function_exists( 'get_plugins' ) ) {
+			require_once ABSPATH . 'wp-admin/includes/plugin.php';
+		}
+
+		$installed_plugins = get_plugins();
+
+		// Plugin not installed.
+		if ( ! isset( $installed_plugins[ $plugin_slug ] ) ) {
+			return false;
+		}
+
+		$tdi_user_version = $installed_plugins[ $plugin_slug ]['Version'];
+
+		return version_compare( $tdi_user_version, $version_to_compare, '<' );
+	}
+}
