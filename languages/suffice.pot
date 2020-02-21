@@ -1,4 +1,4 @@
-# Copyright (C) 2019 Suffice
+# Copyright (C) 2020 Suffice
 # This file is distributed under the same license as the Suffice package.
 msgid ""
 msgstr ""
@@ -96,7 +96,7 @@ msgctxt "Poppins font: on or off"
 msgid "on"
 msgstr ""
 
-#: header.php:45
+#: header.php:39
 msgid "Skip to content"
 msgstr ""
 
@@ -278,6 +278,28 @@ msgstr ""
 
 #: inc/admin/class-suffice-admin.php:370
 msgid "WooCommerce"
+msgstr ""
+
+#. translators: 1: Notice text 2: Plugin Name 3. CTA
+#: inc/admin/class-suffice-tdi-notice.php:40
+msgid "%1$s: Please update \"%2$s\" plugin to latest version to make sure your site is all secure. We released a security patch in the latest version of this plugin. %3$s"
+msgstr ""
+
+#: inc/admin/class-suffice-tdi-notice.php:41
+msgid "Action Required"
+msgstr ""
+
+#: inc/admin/class-suffice-tdi-notice.php:42, inc/admin/class-suffice-tdi-notice.php:54
+msgid "ThemeGrill Demo Importer"
+msgstr ""
+
+#: inc/admin/class-suffice-tdi-notice.php:47
+msgid "Update Now"
+msgstr ""
+
+#. translators: 1: Plugin name
+#: inc/admin/class-suffice-tdi-notice.php:53
+msgid "Also, if the purpose of importing the demo via \"%1$s\" plugin is fulfilled, you can simply delete this plugin now."
 msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:327, inc/extras.php:459

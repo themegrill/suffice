@@ -101,17 +101,17 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog
-= Version TBD =
+= Version 1.1.8 - 2020-02-21 =
 * Tweak - Update `screen-reader-text` CSS.
 
-## Version 1.1.7 - 2019-07-12
+= Version 1.1.7 - 2019-07-12 =
 * Tweak - Added `wp_body_open` function to support WordPress 5.2 `wp_body_open` hook.
 * Remove - Removed dashboard message to align with the theme review guidelines
 
-## Version 1.1.6 - 2019-03-07
+= Version 1.1.6 - 2019-03-07 =
 * Remove - Freemius SDK.
 
-## Version 1.1.5 - 2019-01-16
+= Version 1.1.5 - 2019-01-16 =
 * Updated - Kirki to 3.0.35.3
 * Update - Isotope JS to 3.0.6
 * Recommend - Zakra theme
