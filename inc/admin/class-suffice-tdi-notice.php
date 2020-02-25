@@ -28,46 +28,58 @@ class Suffice_TDI_Notice {
 			return;
 		}
 		?>
-		<div class="error updated tdi-notice" style="position:relative;">
+			<div class="error updated tdi-notice" style="position:relative;">
 
-			<?php
-			$action_url = self_admin_url(
-				'plugins.php'
-			);
+				<?php
+				$action_url = self_admin_url(
+					'plugins.php'
+				);
 
-			$msg = sprintf(
+				$msg = sprintf(
 				/* Translators: 1: Notice text 2: Plugin Name 3. CTA  */
-				'<p style="max-width: 700px;">' . esc_html__( '%1$s: Please update "%2$s" plugin to latest version to make sure your site is all secure. We released a security patch in the latest version of this plugin. %3$s', 'suffice' ) . '</p>',
-				'<strong>' . esc_html__( 'Action Required', 'suffice' ) . '</strong>',
-				'<strong>' . esc_html__( 'ThemeGrill Demo Importer', 'suffice' ) . '</strong>',
-				sprintf(
+					'<p style="max-width: 700px;">' . esc_html__( '%1$s: Please update "%2$s" plugin to latest version to make sure your site is all secure. We released a security patch in the latest version of this plugin. %3$s', 'suffice' ) . '</p>',
+					'<strong>' . esc_html__( 'Action Required', 'suffice' ) . '</strong>',
+					'<strong>' . esc_html__( 'ThemeGrill Demo Importer', 'suffice' ) . '</strong>',
+					sprintf(
 					/* Translators: 1: CTA link 2: CTA text */
-					'<a href="%1$s" class="">%2$s</a>',
-					esc_url( $action_url ),
-					esc_html__( 'Update Now', 'suffice' )
-				)
-			);
+						'<a href="%1$s" class="">%2$s</a>',
+						esc_url( $action_url ),
+						esc_html__( 'Update Now', 'suffice' )
+					)
+				);
 
-			$msg .= sprintf(
+				$msg .= sprintf(
 				/* Translators: 1: Plugin name */
-				'<p style="display: inline-block;">' . esc_html__( 'Also, if the purpose of importing the demo via "%1$s" plugin is fulfilled, you can simply delete this plugin now.', 'suffice' ) . '</p>',
-				'<strong>' . esc_html__( 'ThemeGrill Demo Importer', 'suffice' ) . '</strong>'
-			);
+					'<p style="display: inline-block;">' . esc_html__( 'Also, if the purpose of importing the demo via "%1$s" plugin is fulfilled, you can simply delete this plugin now.', 'suffice' ) . '</p>',
+					'<strong>' . esc_html__( 'ThemeGrill Demo Importer', 'suffice' ) . '</strong>'
+				);
 
-			echo $msg;
-			?>
-			<a class="notice-dismiss" style="text-decoration:none;" href="?nag_ignore_suffice_tdi_notice=0"></a>
-		</div>
-		<?php
+				echo $msg;
+
+				$close_tdi_notice = wp_nonce_url(
+					add_query_arg( 'suffice_ignore_tdi_notice_nag', '0', admin_url() ),
+					'suffice_tdi_notice_close_' . get_current_user_id(),
+					'suffice_tdi_notice_nonce_nag'
+				);
+				?>
+				<a class="notice-dismiss" style="text-decoration:none;" href="<?php echo esc_url( $close_tdi_notice ); ?>"></a>
+			</div>
+			<?php
 	}
 
 	public function ignore_tdi_notice() {
 		$user_id = get_current_user_id();
 
-		if ( isset( $_GET['nag_ignore_suffice_tdi_notice'] ) && '0' == $_GET['nag_ignore_suffice_tdi_notice'] ) {
-			add_user_meta( $user_id, 'ignore_suffice_tdi_notice', 'true', true );
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return;
 		}
 
+
+		if ( isset( $_GET['suffice_ignore_tdi_notice_nag'] ) && '0' == $_GET['suffice_ignore_tdi_notice_nag'] ) {
+			if ( isset( $_GET['suffice_tdi_notice_nonce_nag'] ) && wp_verify_nonce( $_GET['suffice_tdi_notice_nonce_nag'], 'suffice_tdi_notice_close_' . $user_id ) ) {
+				add_user_meta( $user_id, 'ignore_suffice_tdi_notice', 'true', true );
+			}
+		}
 	}
 
 	public function remove_tdi_notice() {
