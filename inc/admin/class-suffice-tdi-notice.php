@@ -34,12 +34,12 @@ class Suffice_TDI_Notice {
 			$action_url = self_admin_url( 'plugins.php' );
 
 			$msg = sprintf(
-			/* Translators: 1: Notice text 2: Plugin Name 3. CTA  */
+				/* Translators: 1: Notice text 2: Plugin Name 3. CTA  */
 				'<p style="max-width: 700px;">' . esc_html__( '%1$s: Please update "%2$s" plugin to latest version to make sure your site is all secure. We released a security patch in the latest version of this plugin. %3$s', 'suffice' ) . '</p>',
 				'<strong>' . esc_html__( 'Action Required', 'suffice' ) . '</strong>',
 				'<strong>' . esc_html__( 'ThemeGrill Demo Importer', 'suffice' ) . '</strong>',
 				sprintf(
-				/* Translators: 1: CTA link 2: CTA text */
+					/* Translators: 1: CTA link 2: CTA text */
 					'<a href="%1$s" class="">%2$s</a>',
 					esc_url( $action_url ),
 					esc_html__( 'Update Now', 'suffice' )
@@ -47,7 +47,7 @@ class Suffice_TDI_Notice {
 			);
 
 			$msg .= sprintf(
-			/* Translators: 1: Plugin name */
+				/* Translators: 1: Plugin name */
 				'<p style="display: inline-block;">' . esc_html__( 'Also, if the purpose of importing the demo via "%1$s" plugin is fulfilled, you can simply delete this plugin now.', 'suffice' ) . '</p>',
 				'<strong>' . esc_html__( 'ThemeGrill Demo Importer', 'suffice' ) . '</strong>'
 			);
