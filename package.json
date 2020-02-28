@@ -1,6 +1,6 @@
 {
   "name": "suffice",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "main": "gulpfile.js",
   "scripts": {
     "build": "gulp build"
