@@ -281,24 +281,24 @@ msgid "WooCommerce"
 msgstr ""
 
 #. translators: 1: Notice text 2: Plugin Name 3. CTA
-#: inc/admin/class-suffice-tdi-notice.php:40
+#: inc/admin/class-suffice-tdi-notice.php:38
 msgid "%1$s: Please update \"%2$s\" plugin to latest version to make sure your site is all secure. We released a security patch in the latest version of this plugin. %3$s"
 msgstr ""
 
-#: inc/admin/class-suffice-tdi-notice.php:41
+#: inc/admin/class-suffice-tdi-notice.php:39
 msgid "Action Required"
 msgstr ""
 
-#: inc/admin/class-suffice-tdi-notice.php:42, inc/admin/class-suffice-tdi-notice.php:54
+#: inc/admin/class-suffice-tdi-notice.php:40, inc/admin/class-suffice-tdi-notice.php:52
 msgid "ThemeGrill Demo Importer"
 msgstr ""
 
-#: inc/admin/class-suffice-tdi-notice.php:47
+#: inc/admin/class-suffice-tdi-notice.php:45
 msgid "Update Now"
 msgstr ""
 
 #. translators: 1: Plugin name
-#: inc/admin/class-suffice-tdi-notice.php:53
+#: inc/admin/class-suffice-tdi-notice.php:51
 msgid "Also, if the purpose of importing the demo via \"%1$s\" plugin is fulfilled, you can simply delete this plugin now."
 msgstr ""
 
