@@ -17,7 +17,6 @@
 			width: 100%;
 
 			.fa {
-				padding-top: 5px;
 				display: table-cell;
 				vertical-align: middle;
 			}
@@ -72,8 +71,8 @@
 			cursor: pointer;
 		}
 	}
-	
-	
+
+
 	&:hover {
 		.icon-box-icon {
 			opacity: 0.6;
@@ -108,7 +107,7 @@
 		text-align: center;
 		transform: rotate(45deg);
 		transition: all 0.3s ease;
-		
+
 		.icon-box-inner-icon {
 			transform: rotate(-45deg);
 		}
