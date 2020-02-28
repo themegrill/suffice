@@ -60,7 +60,7 @@ class Suffice_TDI_Notice {
 				'suffice_tdi_notice_nonce_nag'
 			);
 			?>
-			<a class="notice-dismiss" style="text-decoration:none;" href="<?php echo esc_url( $close_tdi_notice ); ?>"></a>
+			<a class="notice-dismiss" style="text-decoration:none;" href="<?php echo esc_url( $close_tdi_notice );?>"></a>
 		</div>
 		<?php
 	}
