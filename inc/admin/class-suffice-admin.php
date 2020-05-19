@@ -23,6 +23,24 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 		 */
 		public function __construct() {
 			add_action( 'admin_menu', array( $this, 'admin_menu' ) );
+			add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+		}
+
+		/**
+		 * Localize array for import button AJAX request.
+		 */
+		public function enqueue_scripts() {
+			wp_enqueue_style( 'suffice-admin-style', get_template_directory_uri() . '/inc/admin/css/admin.css', array(), SUFFICE_THEME_VERSION );
+
+			wp_enqueue_script( 'suffice-plugin-install-helper', get_template_directory_uri() . '/admin/js/plugin-handle.js', array( 'jquery' ), SUFFICE_THEME_VERSION, true );
+
+			$welcome_data = array(
+				'uri'      => esc_url( admin_url( '/themes.php?page=demo-importer&browse=all&suffice-hide-notice=welcome' ) ),
+				'btn_text' => esc_html__( 'Processing...', 'suffice' ),
+				'nonce'    => wp_create_nonce( 'suffice_demo_import_nonce' ),
+			);
+
+			wp_localize_script( 'suffice-plugin-install-helper', 'sufficeRedirectDemoPage', $welcome_data );
 		}
 
 		/**
@@ -48,9 +66,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 		 * Enqueue styles.
 		 */
 		public function enqueue_styles() {
-			global $suffice_version;
-
-			wp_enqueue_style( 'suffice-welcome', get_template_directory_uri() . './css/admin.css', array(), $suffice_version );
+			wp_enqueue_style( 'suffice-welcome', get_template_directory_uri() . '/inc/admin/css/admin.css', array(), SUFFICE_THEME_VERSION );
 		}
 
 
@@ -60,12 +76,10 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 		 * @access private
 		 */
 		private function intro() {
-			global $suffice_version;
-
 			$theme = wp_get_theme( get_template() );
 
 			// Drop minor version if 0
-			$major_version = substr( $suffice_version, 0, 3 );
+			$major_version = substr( SUFFICE_THEME_VERSION, 0, 3 );
 			?>
 			<div class="suffice-theme-info">
 				<h1>
