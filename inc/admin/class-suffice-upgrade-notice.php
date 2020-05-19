@@ -56,9 +56,9 @@ class Suffice_Upgrade_Notice extends Suffice_Notice {
 		 * 4. Dismiss always if clicked on 'Dismiss' button.
 		 */
 		if ( is_plugin_active( 'suffice-pro/suffice-pro.php' )
-			|| get_option( 'suffice_upgrade_notice_start_time' ) > strtotime( '-5 sec' )
+			|| get_option( 'suffice_upgrade_notice_start_time' ) > strtotime( '-5 day' )
 			|| get_user_meta( get_current_user_id(), 'suffice_upgrade_notice_dismiss', true )
-			|| get_user_meta( get_current_user_id(), 'suffice_upgrade_notice_dismiss_temporary_start_time', true ) > strtotime( '-2 sec' )
+			|| get_user_meta( get_current_user_id(), 'suffice_upgrade_notice_dismiss_temporary_start_time', true ) > strtotime( '-2 day' )
 		) {
 			add_filter( 'suffice_upgrade_notice_dismiss', '__return_true' );
 		} else {
