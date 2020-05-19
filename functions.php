@@ -382,4 +382,5 @@ if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-suffice-notice.php';
 	require get_template_directory() . '/inc/admin/class-suffice-welcome-notice.php';
 	require get_template_directory() . '/inc/admin/class-suffice-upgrade-notice.php';
+	require get_template_directory() . '/inc/admin/class-suffice-theme-review-notice.php';
 }
