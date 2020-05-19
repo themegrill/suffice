@@ -17,6 +17,10 @@ var paths = {
         src: './assets/sass/**/*.scss',
         dest: './'
     },
+    adminscss: {
+        src : ['./inc/admin/sass/admin.scss'],
+        dest: './inc/admin/css/'
+    },
     js: {
         src: './assets/js/*.js',
         dest: './assets/js/'
