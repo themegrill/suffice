@@ -50,7 +50,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 		public function enqueue_styles() {
 			global $suffice_version;
 
-			wp_enqueue_style( 'suffice-welcome', get_template_directory_uri() . '/assets/css/admin-welcome.css', array(), $suffice_version );
+			wp_enqueue_style( 'suffice-welcome', get_template_directory_uri() . './css/admin.css', array(), $suffice_version );
 		}
 
 
