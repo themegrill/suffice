@@ -370,8 +370,8 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
 /**
  * Assign the Suffice version to a variable.
  */
-$theme           = wp_get_theme( 'suffice' );
-$suffice_version = $theme['Version'];
+$suffice_theme = wp_get_theme( 'suffice' );
+define( 'SUFFICE_THEME_VERSION', $suffice_theme->get( 'Version' ) );
 
 /**
  * Calling in the admin area for the Welcome Page as well as for the new theme notice too.
