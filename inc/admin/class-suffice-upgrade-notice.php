@@ -47,9 +47,9 @@ class Suffice_Upgrade_Notice extends Suffice_Notice {
 		/**
 		 * Do not show notice if:
 		 *
-		 * 2. It has not been 5 days since the theme is activated.
-		 * 3. If the user has ignored the message partially for 2 days.
-		 * 4. Dismiss always if clicked on 'Dismiss' button.
+		 * 1. It has not been 5 days since the theme is activated.
+		 * 2. If the user has ignored the message partially for 2 days.
+		 * 3. Dismiss always if clicked on 'Dismiss' button.
 		 */
 		if ( get_option( 'suffice_upgrade_notice_start_time' ) > strtotime( '-5 day' )
 			|| get_user_meta( get_current_user_id(), 'suffice_upgrade_notice_dismiss', true )
