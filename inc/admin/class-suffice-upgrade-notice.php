@@ -43,8 +43,21 @@ class Suffice_Upgrade_Notice extends Suffice_Notice {
 	}
 
 	public function set_dismiss_notice() {
-		if ( ! function_exists( 'is_plugin_active' ) ) {
-			require_once ABSPATH . 'wp-admin/includes/plugin.php';
+
+		/**
+		 * Do not show notice if:
+		 *
+		 * 2. It has not been 5 days since the theme is activated.
+		 * 3. If the user has ignored the message partially for 2 days.
+		 * 4. Dismiss always if clicked on 'Dismiss' button.
+		 */
+		if ( get_option( 'suffice_upgrade_notice_start_time' ) > strtotime( '-5 day' )
+			|| get_user_meta( get_current_user_id(), 'suffice_upgrade_notice_dismiss', true )
+			|| get_user_meta( get_current_user_id(), 'suffice_upgrade_notice_dismiss_temporary_start_time', true ) > strtotime( '-2 day' )
+		) {
+			add_filter( 'suffice_upgrade_notice_dismiss', '__return_true' );
+		} else {
+			add_filter( 'suffice_upgrade_notice_dismiss', '__return_false' );
 		}
 	}
 
