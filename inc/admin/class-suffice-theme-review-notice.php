@@ -64,7 +64,7 @@ class Suffice_Theme_Review_Notice {
 			<p>
 				<?php
 				printf(
-				/* Translators: %1$s current user display name. */
+				    /* Translators: %1$s current user display name. */
 					esc_html__(
 						'Howdy, %1$s! It seems that you have been using this theme for more than 15 days. We hope you are happy with everything that the theme has to offer. If you can spare a minute, please help us by leaving a 5-star review on WordPress.org.  By spreading the love, we can continue to develop new amazing features in the future, for free!',
 						'suffice'
@@ -75,9 +75,7 @@ class Suffice_Theme_Review_Notice {
 			</p>
 
 			<div class="links">
-				<a href="https://wordpress.org/support/theme/suffice/reviews/?filter=5#new-post" class="btn
-				button-primary"
-				   target="_blank">
+				<a href="https://wordpress.org/support/theme/suffice/reviews/?filter=5#new-post" class="btn button-primary" target="_blank">
 					<span class="dashicons dashicons-thumbs-up"></span>
 					<span><?php esc_html_e( 'Sure', 'suffice' ); ?></span>
 				</a>
@@ -92,8 +90,7 @@ class Suffice_Theme_Review_Notice {
 					<span><?php esc_html_e( 'I already did', 'suffice' ); ?></span>
 				</a>
 
-				<a href="<?php echo esc_url( 'https://wordpress.org/support/theme/suffice/' ); ?>" class="btn
-				button-secondary" target="_blank">
+				<a href="<?php echo esc_url( 'https://wordpress.org/support/theme/suffice/' ); ?>" class="btn button-secondary" target="_blank">
 					<span class="dashicons dashicons-edit"></span>
 					<span><?php esc_html_e( 'Got theme support question?', 'suffice' ); ?></span>
 				</a>
