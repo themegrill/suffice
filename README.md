@@ -1,7 +1,8 @@
 # Suffice
 **Author**: ThemeGrill
 **Requires** at least: WordPress 4.3
-**Tested up to**: WordPress 5.2.2
+**Tested up to**: WordPress 5.4.1
+**Requires PHP**: 5.6
 **Version**: 1.1.7
 **License**: GPLv3 or later
 **License URI**: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -101,6 +102,9 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog
+= TBD =
+* Tweak - Added new required header fields for style.css.
+
 ### Version 1.1.8 - 2020-02-21
 * Tweak - Update `screen-reader-text` CSS.
 

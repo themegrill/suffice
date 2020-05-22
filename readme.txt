@@ -1,7 +1,8 @@
 == Suffice ==
 **Author**: ThemeGrill
 **Requires** at least: WordPress 4.3
-**Tested up to**: WordPress 5.2.2
+**Tested up to**: WordPress 5.4.1
+**Requires PHP**: 5.6
 **Version**: 1.1.7
 **License**: GPLv3 or later
 **License URI**: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -102,6 +103,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 == Changelog
 = TBD =
+* Add   - Required header fields: `Tested up to` and `Requires PHP` in style.css.
 * Tweak - Add and improve theme-related notices.
 
 = Version 1.1.9 - 2020-02-28 =
