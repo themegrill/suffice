@@ -86,198 +86,164 @@ msgstr ""
 msgid "Footer Sidebar 4"
 msgstr ""
 
-#: functions.php:219
-msgctxt "Open Sans font: on or off"
-msgid "on"
-msgstr ""
-
-#: functions.php:228
-msgctxt "Poppins font: on or off"
-msgid "on"
-msgstr ""
-
 #: header.php:39
 msgid "Skip to content"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:36, inc/admin/class-suffice-admin.php:36, inc/admin/class-suffice-admin.php:119
+#: inc/admin/class-suffice-admin.php:39
+msgid "Processing..."
+msgstr ""
+
+#: inc/admin/class-suffice-admin.php:53, inc/admin/class-suffice-admin.php:54, inc/admin/class-suffice-admin.php:78
 msgid "About"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:77
-msgid "Action failed. Please refresh the page and retry."
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:81
-msgid "Cheatin&#8217; huh?"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:95
-msgid "Dismiss"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:96
-msgid "Welcome! Thank you for choosing Suffice! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s."
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:98
-msgid "Get started with Suffice"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:134
+#: inc/admin/class-suffice-admin.php:93
 msgid "Theme Info"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:136
+#: inc/admin/class-suffice-admin.php:95
 msgid "View Demo"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:138, inc/customizer.php:188
+#: inc/admin/class-suffice-admin.php:97, inc/customizer.php:188
 msgid "View PRO version"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:140
+#: inc/admin/class-suffice-admin.php:99
 msgid "Rate this theme"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:155
+#: inc/admin/class-suffice-admin.php:133
 msgid "Supported Plugins"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:163
+#: inc/admin/class-suffice-admin.php:156
 msgid "Free Vs Pro"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:171
+#: inc/admin/class-suffice-admin.php:179
 msgid "Changelog"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:205
+#: inc/admin/class-suffice-admin.php:213
 msgid "Import Demo"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:206
+#: inc/admin/class-suffice-admin.php:214
 msgid "Needs ThemeGrill Demo Importer plugin."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:208, inc/class-tgm-plugin-activation.php:2717
+#: inc/admin/class-suffice-admin.php:216, inc/class-tgm-plugin-activation.php:2717
 msgid "Install"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:212
+#: inc/admin/class-suffice-admin.php:220
 msgid "Theme Customizer"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:213
+#: inc/admin/class-suffice-admin.php:221
 msgid "All Theme Options are available via Customize screen."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:215
+#: inc/admin/class-suffice-admin.php:223
 msgid "Customize"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:220, inc/admin/class-suffice-admin.php:223
+#: inc/admin/class-suffice-admin.php:228, inc/admin/class-suffice-admin.php:231
 msgid "Documentation"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:221
+#: inc/admin/class-suffice-admin.php:229
 msgid "Please view our documentation page to setup the theme."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:228
+#: inc/admin/class-suffice-admin.php:236, inc/admin/class-suffice-theme-review-notice.php:95
 msgid "Got theme support question?"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:229
+#: inc/admin/class-suffice-admin.php:237
 msgid "Please put it in our dedicated support forum."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:231
+#: inc/admin/class-suffice-admin.php:239
 msgid "Support Forum"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:236
+#: inc/admin/class-suffice-admin.php:244
 msgid "Need more features?"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:237, inc/admin/class-suffice-admin.php:387
+#: inc/admin/class-suffice-admin.php:245, inc/admin/class-suffice-admin.php:395
 msgid "Upgrade to PRO version for more exciting features."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:239, inc/admin/class-suffice-admin.php:390
+#: inc/admin/class-suffice-admin.php:247, inc/admin/class-suffice-admin.php:398
 msgid "View Pro"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:244
+#: inc/admin/class-suffice-admin.php:252
 msgid "Got sales related question?"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:245
+#: inc/admin/class-suffice-admin.php:253
 msgid "Please send it via our sales contact page."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:247
+#: inc/admin/class-suffice-admin.php:255
 msgid "Contact Page"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:254, inc/admin/class-suffice-admin.php:262
+#: inc/admin/class-suffice-admin.php:262, inc/admin/class-suffice-admin.php:270
 msgid "Translate"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:258
+#: inc/admin/class-suffice-admin.php:266
 msgid "Click below to translate this theme into your own language."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:274
-msgid "Return to Updates"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:274
-msgid "Return to Dashboard &rarr; Updates"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:277
-msgid "Go to Dashboard &rarr; Home"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:277
-msgid "Go to Dashboard"
-msgstr ""
-
-#: inc/admin/class-suffice-admin.php:294
+#: inc/admin/class-suffice-admin.php:302
 msgid "View changelog below:"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:348
+#: inc/admin/class-suffice-admin.php:356
 msgid "This theme recommends following plugins:"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:351
+#: inc/admin/class-suffice-admin.php:359
 msgid "Suffice Toolkit"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:352, inc/admin/class-suffice-admin.php:356, inc/admin/class-suffice-admin.php:360, inc/admin/class-suffice-admin.php:364
+#: inc/admin/class-suffice-admin.php:360, inc/admin/class-suffice-admin.php:364, inc/admin/class-suffice-admin.php:368, inc/admin/class-suffice-admin.php:372
 msgid " by ThemeGrill"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:355
+#: inc/admin/class-suffice-admin.php:363
 msgid "Social Icons"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:359
+#: inc/admin/class-suffice-admin.php:367
 msgid "Easy Social Sharing"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:363
+#: inc/admin/class-suffice-admin.php:371
 msgid "Everest Forms – Easy Contact Form and Form Builder"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:367
+#: inc/admin/class-suffice-admin.php:375
 msgid "Page Builder by SiteOrigin"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:370
+#: inc/admin/class-suffice-admin.php:378
 msgid "WooCommerce"
+msgstr ""
+
+#: inc/admin/class-suffice-notice.php:59, inc/admin/class-suffice-notice.php:78, inc/admin/class-suffice-welcome-notice.php:77
+msgid "Action failed. Please refresh the page and retry."
+msgstr ""
+
+#: inc/admin/class-suffice-notice.php:63, inc/admin/class-suffice-notice.php:82, inc/admin/class-suffice-welcome-notice.php:81
+msgid "Cheatin&#8217; huh?"
 msgstr ""
 
 #. translators: 1: Notice text 2: Plugin Name 3. CTA
@@ -300,6 +266,52 @@ msgstr ""
 #. translators: 1: Plugin name
 #: inc/admin/class-suffice-tdi-notice.php:51
 msgid "Also, if the purpose of importing the demo via \"%1$s\" plugin is fulfilled, you can simply delete this plugin now."
+msgstr ""
+
+#. translators: %1$s current user display name.
+#: inc/admin/class-suffice-theme-review-notice.php:68
+msgid "Howdy, %1$s! It seems that you have been using this theme for more than 15 days. We hope you are happy with everything that the theme has to offer. If you can spare a minute, please help us by leaving a 5-star review on WordPress.org.  By spreading the love, we can continue to develop new amazing features in the future, for free!"
+msgstr ""
+
+#: inc/admin/class-suffice-theme-review-notice.php:80
+msgid "Sure"
+msgstr ""
+
+#: inc/admin/class-suffice-theme-review-notice.php:85, inc/admin/class-suffice-upgrade-notice.php:95
+msgid "Maybe later"
+msgstr ""
+
+#: inc/admin/class-suffice-theme-review-notice.php:90
+msgid "I already did"
+msgstr ""
+
+#: inc/admin/class-suffice-upgrade-notice.php:74
+msgid "Howdy, %1$s! You've been using %2$s theme for a while now, and we hope you're happy with it. To access more premium features you can always upgrade to pro. All contents and settings will remain as it is after upgrading to pro, you basically start from where you left. Also, you can use the coupon code %3$s to get %4$s discount (limited time offer) while making the purchase. Enjoy! "
+msgstr ""
+
+#: inc/admin/class-suffice-upgrade-notice.php:90
+msgid "Upgrade to pro"
+msgstr ""
+
+#: inc/admin/class-suffice-upgrade-notice.php:100
+msgid "Got pre sales queries?"
+msgstr ""
+
+#: inc/admin/class-suffice-welcome-notice.php:26, inc/admin/class-suffice-welcome-notice.php:26
+msgid "Get started with Suffice"
+msgstr ""
+
+#: inc/admin/class-suffice-welcome-notice.php:46, inc/demo-config.php:23
+msgid "Suffice"
+msgstr ""
+
+#. translators: 1: welcome page link starting html tag, 2: welcome page link ending html tag.
+#: inc/admin/class-suffice-welcome-notice.php:54
+msgid "Welcome! Thank you for choosing Suffice! To fully take advantage of the best our theme can offer please make sure you visit our %1$swelcome page%2$s."
+msgstr ""
+
+#: inc/admin/class-suffice-welcome-notice.php:63
+msgid "Clicking the button will install and activate the ThemeGrill demo importer plugin."
 msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:327, inc/extras.php:459
@@ -436,21 +448,16 @@ msgstr ""
 msgid "Update Required"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:934
-msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:934, inc/class-tgm-plugin-activation.php:937
-msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
-msgstr ""
-
 #: inc/class-tgm-plugin-activation.php:937
 msgid "The remote plugin package consists of more than one file, but the files are not packaged in a folder."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1121, inc/class-tgm-plugin-activation.php:2948
-msgctxt "plugin A *and* plugin B"
-msgid "and"
+#: inc/class-tgm-plugin-activation.php:937, inc/class-tgm-plugin-activation.php:934
+msgid "Please contact the plugin provider and ask them to package their plugin according to the WordPress guidelines."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:934
+msgid "The remote plugin package does not contain a folder with the desired slug and renaming did not work."
 msgstr ""
 
 #. translators: %s: version number
@@ -482,24 +489,24 @@ msgstr ""
 msgid "Not Installed"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2319
-msgid "Installed But Not Activated"
-msgstr ""
-
 #: inc/class-tgm-plugin-activation.php:2321
 msgid "Active"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2327
-msgid "Required Update not Available"
+#: inc/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
 msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:2330
 msgid "Requires Update"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2333
-msgid "Update recommended"
+#: inc/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
 msgstr ""
 
 #. translators: 1: install status, 2: update status
@@ -536,11 +543,6 @@ msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
-
-#: inc/class-tgm-plugin-activation.php:2482
-msgctxt "as in: \"version nr unknown\""
-msgid "unknown"
-msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:2490
 msgid "Installed version:"
@@ -579,11 +581,6 @@ msgid "Status"
 msgstr ""
 
 #. translators: %2$s: plugin name in screen reader markup
-#: inc/class-tgm-plugin-activation.php:2603
-msgid "Install %2$s"
-msgstr ""
-
-#. translators: %2$s: plugin name in screen reader markup
 #: inc/class-tgm-plugin-activation.php:2608
 msgid "Update %2$s"
 msgstr ""
@@ -591,6 +588,10 @@ msgstr ""
 #. translators: %2$s: plugin name in screen reader markup
 #: inc/class-tgm-plugin-activation.php:2614
 msgid "Activate %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2603
+msgid "Install %2$s"
 msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:2684
@@ -605,20 +606,20 @@ msgstr ""
 msgid "Activate"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2757
-msgid "No plugins were selected to be installed. No action taken."
-msgstr ""
-
 #: inc/class-tgm-plugin-activation.php:2759
 msgid "No plugins were selected to be updated. No action taken."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2800
-msgid "No plugins are available to be installed at this time."
+#: inc/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
 msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:2802
 msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
 msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:2908
@@ -633,11 +634,6 @@ msgstr ""
 msgid "Plugin activation failed."
 msgstr ""
 
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: inc/class-tgm-plugin-activation.php:3498
-msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
 #. translators: 1: plugin name, 2: error message.
 #: inc/class-tgm-plugin-activation.php:3501
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
@@ -646,32 +642,6 @@ msgstr ""
 #. translators: 1: plugin name.
 #: inc/class-tgm-plugin-activation.php:3503
 msgid "The installation of %1$s failed."
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:3507
-msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
-msgstr ""
-
-#. translators: 1: plugin name.
-#: inc/class-tgm-plugin-activation.php:3509
-msgid "%1$s installed and activated successfully."
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:3509, inc/class-tgm-plugin-activation.php:3517
-msgid "Show Details"
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:3509, inc/class-tgm-plugin-activation.php:3517
-msgid "Hide Details"
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:3510
-msgid "All installations and activations have been completed."
-msgstr ""
-
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: inc/class-tgm-plugin-activation.php:3512
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: inc/class-tgm-plugin-activation.php:3515
@@ -683,6 +653,14 @@ msgstr ""
 msgid "%1$s installed successfully."
 msgstr ""
 
+#: inc/class-tgm-plugin-activation.php:3517, inc/class-tgm-plugin-activation.php:3509
+msgid "Show Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3517, inc/class-tgm-plugin-activation.php:3509
+msgid "Hide Details"
+msgstr ""
+
 #: inc/class-tgm-plugin-activation.php:3518
 msgid "All installations have been completed."
 msgstr ""
@@ -690,6 +668,26 @@ msgstr ""
 #. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: inc/class-tgm-plugin-activation.php:3520
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3507
+msgid "The installation and activation process is starting. This process may take a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3509
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3512
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3498
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: inc/customizer.php:73
@@ -740,10 +738,6 @@ msgstr ""
 msgid "Controls meta color of site."
 msgstr ""
 
-#: inc/demo-config.php:23
-msgid "Suffice"
-msgstr ""
-
 #: inc/demo-config.php:27
 msgid "Suffice Pro"
 msgstr ""
@@ -788,11 +782,23 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: inc/extras.php:235, inc/extras.php:235, inc/extras.php:235, inc/extras.php:238, inc/extras.php:247, inc/extras.php:247, inc/extras.php:247, inc/extras.php:255
+#: inc/extras.php:277
+msgid "404 Error"
+msgstr ""
+
+#: inc/extras.php:273
+msgid "Search results for: "
+msgstr ""
+
+#: inc/extras.php:269
+msgid "Page"
+msgstr ""
+
+#: inc/extras.php:255, inc/extras.php:247, inc/extras.php:247, inc/extras.php:247, inc/extras.php:235, inc/extras.php:235, inc/extras.php:235, inc/extras.php:238
 msgid "Y"
 msgstr ""
 
-#: inc/extras.php:238, inc/extras.php:238, inc/extras.php:238, inc/extras.php:241, inc/extras.php:250
+#: inc/extras.php:250, inc/extras.php:238, inc/extras.php:238, inc/extras.php:238, inc/extras.php:241
 msgid "M"
 msgstr ""
 
@@ -800,24 +806,12 @@ msgstr ""
 msgid "jS"
 msgstr ""
 
-#: inc/extras.php:269
-msgid "Page"
-msgstr ""
-
-#: inc/extras.php:273
-msgid "Search results for: "
-msgstr ""
-
-#: inc/extras.php:277
-msgid "404 Error"
+#: inc/extras.php:299, search.php:27
+msgid "Search Results for: %s"
 msgstr ""
 
 #: inc/extras.php:297
 msgid "Page NOT Found"
-msgstr ""
-
-#: inc/extras.php:299, search.php:27
-msgid "Search Results for: %s"
 msgstr ""
 
 #: inc/extras.php:369, inc/extras.php:369
@@ -1774,16 +1768,16 @@ msgstr ""
 msgid "Nothing Found"
 msgstr ""
 
-#: template-parts/content-none.php:23
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#: template-parts/content-none.php:33
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
 #: template-parts/content-none.php:27
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr ""
 
-#: template-parts/content-none.php:33
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+#: template-parts/content-none.php:23
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: template-parts/content-page.php:33, template-parts/content.php:68
