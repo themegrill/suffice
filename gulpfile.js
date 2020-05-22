@@ -17,6 +17,10 @@ var paths = {
         src: './assets/sass/**/*.scss',
         dest: './'
     },
+    adminscss: {
+        src : './inc/admin/sass/admin.scss',
+        dest: './inc/admin/css/'
+    },
     js: {
         src: './assets/js/*.js',
         dest: './assets/js/'
@@ -62,8 +66,22 @@ function sassCompile() {
             indentWidth: 1,
             outputStyle: 'expanded',
             linefeed: 'crlf'
-        } ).on( 'error', sass.logError) )
+        } )
+        .on( 'error', sass.logError) )
         .pipe( gulp.dest( paths.styles.dest ) )
+        .pipe( browserSync.stream() );
+}
+
+function compileAdminSass() {
+    return gulp.src( paths.adminscss.src )
+        .pipe( sass({
+            indentType: 'tab',
+            indentWidth: 1,
+            outputStyle: 'expanded',
+            linefeed: 'crlf'
+        } )
+        .on( 'error', sass.logError) )
+        .pipe( gulp.dest( paths.adminscss.dest ) )
         .pipe( browserSync.stream() );
 }
 
@@ -118,6 +136,7 @@ function makepotfile() {
 // Watch for file changes
 function watch() {
     gulp.watch( paths.styles.src, sassCompile );
+    gulp.watch( paths.adminscss.src, compileAdminSass );
     gulp.watch( [paths.js.src, paths.php.src], browserSyncReload );
 }
 
@@ -139,6 +158,7 @@ var build = gulp.series( sassCompile, postCSSfile, makepotfile, minifyImg, minif
 exports.browserSyncStart = browserSyncStart;
 exports.browserSyncReload = browserSyncReload;
 exports.sassCompile = sassCompile;
+exports.compileAdminSass   = compileAdminSass;
 exports.postCSSfile = postCSSfile;
 exports.createZip = createZip;
 exports.minifyImg = minifyImg;

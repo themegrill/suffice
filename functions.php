@@ -370,8 +370,9 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
 /**
  * Assign the Suffice version to a variable.
  */
-$theme           = wp_get_theme( 'suffice' );
-$suffice_version = $theme['Version'];
+$suffice_theme = wp_get_theme( 'suffice' );
+
+define( 'SUFFICE_THEME_VERSION', $suffice_theme->get( 'Version' ) );
 
 /**
  * Calling in the admin area for the Welcome Page as well as for the new theme notice too.
@@ -379,4 +380,8 @@ $suffice_version = $theme['Version'];
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-suffice-admin.php';
 	require get_template_directory() . '/inc/admin/class-suffice-tdi-notice.php';
+	require get_template_directory() . '/inc/admin/class-suffice-notice.php';
+	require get_template_directory() . '/inc/admin/class-suffice-welcome-notice.php';
+	require get_template_directory() . '/inc/admin/class-suffice-upgrade-notice.php';
+	require get_template_directory() . '/inc/admin/class-suffice-theme-review-notice.php';
 }
