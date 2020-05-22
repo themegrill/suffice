@@ -18,7 +18,7 @@ class Suffice_Notice {
 	 * @param string $dismiss_url Notice permanent dismiss URL.
 	 * @param string $temporary_dismiss_url Notice temporary dismiss URL.
 	 *
-	 * @since 1.4.2
+	 * @since 1.2.0
 	 *
 	 */
 	public function __construct( $name, $type, $dismiss_url, $temporary_dismiss_url ) {
@@ -26,7 +26,7 @@ class Suffice_Notice {
 		$this->type                  = $type;
 		$this->dismiss_url           = $dismiss_url;
 		$this->temporary_dismiss_url = $temporary_dismiss_url;
-		$this->pricing_url           = 'https://themegrill.com/pricing/?utm_source=suffice-dashboard-message&utm_medium=view-pricing-link&utm_campaign=upgrade';
+		$this->pricing_url           = 'https://themegrill.com/suffice-pricing/?utm_source=suffice-dashboard-message&utm_medium=view-pricing-link&utm_campaign=upgrade';
 		$this->current_user_id       = get_current_user_id();
 
 		// Notice markup.

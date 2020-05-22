@@ -371,6 +371,7 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
  * Assign the Suffice version to a variable.
  */
 $suffice_theme = wp_get_theme( 'suffice' );
+
 define( 'SUFFICE_THEME_VERSION', $suffice_theme->get( 'Version' ) );
 
 /**

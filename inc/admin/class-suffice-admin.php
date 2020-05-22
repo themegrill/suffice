@@ -59,16 +59,8 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 					'welcome_screen',
 				)
 			);
-			add_action( 'admin_print_styles-' . $page, array( $this, 'enqueue_styles' ) );
+			add_action( 'admin_print_styles-' . $page, array( $this, 'enqueue_scripts' ) );
 		}
-
-		/**
-		 * Enqueue styles.
-		 */
-		public function enqueue_styles() {
-			wp_enqueue_style( 'suffice-welcome', get_template_directory_uri() . '/inc/admin/css/admin.css', array(), SUFFICE_THEME_VERSION );
-		}
-
 
 		/**
 		 * Intro text/links shown to all about pages.

@@ -66,7 +66,8 @@ function sassCompile() {
             indentWidth: 1,
             outputStyle: 'expanded',
             linefeed: 'crlf'
-        } ).on( 'error', sass.logError) )
+        } )
+        .on( 'error', sass.logError) )
         .pipe( gulp.dest( paths.styles.dest ) )
         .pipe( browserSync.stream() );
 }
@@ -78,7 +79,8 @@ function compileAdminSass() {
             indentWidth: 1,
             outputStyle: 'expanded',
             linefeed: 'crlf'
-        } ).on( 'error', sass.logError) )
+        } )
+        .on( 'error', sass.logError) )
         .pipe( gulp.dest( paths.adminscss.dest ) )
         .pipe( browserSync.stream() );
 }
