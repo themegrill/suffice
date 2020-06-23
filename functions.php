@@ -106,9 +106,14 @@ if ( ! function_exists( 'suffice_setup' ) ) :
 		*/
 		add_editor_style( array( 'editor-style.css', suffice_fonts_url() ) );
 
-		// Gutenberg layout support.
+		// Gutenberg wide layout support.
 		add_theme_support( 'align-wide' );
 
+		// Gutenberg block styles support.
+		add_theme_support( 'wp-block-styles' );
+
+		// Gutenberg responsive embeds support.
+		add_theme_support( 'responsive-embeds' );
 	}
 endif;
 add_action( 'after_setup_theme', 'suffice_setup' );
@@ -256,6 +261,7 @@ function suffice_scripts() {
 	wp_enqueue_style( 'perfect-scrollbar', get_template_directory_uri() . '/assets/css/perfect-scrollbar' . $suffix . '.css', array(), '0.6.16' );
 	wp_enqueue_style( 'suffice-style', get_stylesheet_uri() );
 
+
 	/* Scripts */
 	wp_enqueue_script( 'suffice-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 	wp_enqueue_script( 'swiper', get_template_directory_uri() . '/assets/js/swiper.jquery' . $suffix . '.js', array( 'jquery' ), '3.4.0', true );
@@ -288,6 +294,18 @@ function suffice_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'suffice_scripts' );
+
+/**
+ * Enqueue Google fonts and editor styles.
+ */
+
+function suffice_block_editor_styles() {
+	wp_enqueue_style( 'suffice-editor-googlefonts', '//fonts.googleapis.com/css2?family=Open+Sans' );
+	wp_enqueue_style( 'suffice-block-editor-styles', get_template_directory_uri() . '/style-editor-block.css' );
+}
+
+add_action( 'enqueue_block_editor_assets', 'suffice_block_editor_styles', 1, 1 );
+
 
 /**
  * Adds css style for customizer ui
