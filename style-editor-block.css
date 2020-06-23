@@ -27,6 +27,16 @@
 	padding-bottom: 0;
 	line-height: 36px;
 }
+
+/* Block quote */
+.editor-styles-wrapper blockquote {
+	font-family: georgia, "Times New Roman", cursive;
+	font-size: 16px;
+	border-left: 3px solid #E5E4E6;
+	margin-left: 30px;
+	padding-left: 30px;
+}
+
 /* heading */
 
 .editor-styles-wrapper h1,
@@ -132,6 +142,137 @@
 	width: 100%;
 }
 
+/*----------  Elements  ----------*/
+.editor-styles-wrapper table,
+.editor-styles-wrapper th,
+.editor-styles-wrapper td {
+	border: 1px solid #D1D1D1;
+}
+
+.editor-styles-wrapper table {
+	border-collapse: separate;
+	border-spacing: 0;
+	border-width: 1px 0 0 1px;
+	margin: 0 0 1.75em;
+	table-layout: fixed;
+	/* Prevents HTML tables from becoming too wide */
+	width: 100%;
+}
+
+.editor-styles-wrapper caption,
+.editor-styles-wrapper th,
+.editor-styles-wrapper td {
+	font-weight: normal;
+	text-align: left;
+}
+
+.editor-styles-wrapper th {
+	border-width: 0 1px 1px 0;
+	font-weight: 700;
+}
+
+.editor-styles-wrapper td {
+	border-width: 0 1px 1px 0;
+}
+
+.editor-styles-wrapper th,
+.editor-styles-wrapper td {
+	padding: 0.4375em;
+}
+
+.editor-styles-wrapper .title {
+	margin: 30px 0;
+}
+
+.editor-styles-wrapper .title .title-title {
+	font-weight: 500;
+	font-size: 26px;
+	color: #424143;
+	margin: 0 0 15px;
+}
+
+.editor-styles-wrapper .title .sub-title {
+	margin: 0;
+	color: #67666A;
+}
+
+.editor-styles-wrapper .title.title-left {
+	text-align: left;
+}
+
+.editor-styles-wrapper .title.title-right {
+	text-align: right;
+}
+
+.editor-styles-wrapper .title.title-center {
+	text-align: center;
+}
+
+.editor-styles-wrapper .title.title-magazine {
+	position: relative;
+	margin: 45px 0 15px;
+}
+
+.editor-styles-wrapper .title.title-magazine .title-title {
+	padding: 10px 20px;
+	background: #EF7278;
+	display: inline-block;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: normal;
+	text-transform: none;
+	margin: 0;
+}
+
+.editor-styles-wrapper .title.title-magazine .title-title::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+.editor-styles-wrapper .title.title-arrow-down .title-title {
+	padding: 10px 20px;
+	background: #1E1E1F;
+	font-size: 16px;
+	color: #FFF;
+	font-weight: normal;
+	text-transform: none;
+	margin: 0;
+	position: relative;
+}
+
+.editor-styles-wrapper .title.title-arrow-down .title-title::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: inherit;
+	bottom: -10px;
+	left: 35px;
+	-ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
+}
+
+.editor-styles-wrapper .title.title-arrow-down.title-center .title-title::before {
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.editor-styles-wrapper .title.title-arrow-down.title-right .title-title::before {
+	left: auto;
+	right: 20px;
+	margin: 0 auto;
+}
+
+.editor-styles-wrapper .slider {
+	overflow: hidden;
+    z-index: -2;
+}
 /*----------  Media  ----------*/
 .editor-styles-wrapper .wp-caption {
 	margin-bottom: 1.5em;
