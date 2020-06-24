@@ -130,31 +130,38 @@
 	}
 
 	.full-width {
+		#primary .entry-content >
 		&.boxed {
-			.alignwide {
+			#primary {
+			
+			>.alignwide {
 				margin-left: -20px;
 				margin-right: -20px;
 			}
 
 		}
 	}
+}
 
 }
 
 @media screen and ( max-width: 600px ) {
 	.full-width {
+		#primary .entry-content >
 		.alignwide {
 			margin-left: 0;
 			margin-right: 0;
 		}
 
 		&.boxed {
-			.alignwide {
+			#primary {
+			>.alignwide {
 				margin-left: 0;
 				margin-right: 0;
 			}
 
 		}
+	}
 	}
 }
 
