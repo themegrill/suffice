@@ -420,33 +420,38 @@
 =            Gutenberg AlignWide            =
 ====================================*/
 .full-width {
-	.alignfull {
+	#primary .entry-content > .alignfull {
 		margin-left: calc(50% - 49.5vw);
 		margin-right: calc(50% - 49.5vw);
 		max-width: unset;
 
-		img {
-			max-width: unset;
-		}
+		&.wp-block-cover,
+				&.wp-block-cover-image
+				{
+					width: unset;
+				}
 	}
 
-	.alignwide {
+	#primary .entry-content > .alignwide {
 		margin-left: -60px;
 		margin-right: -60px;
 		max-width: unset;
 	}
 
 	&.boxed {
+		#primary {
+
 		#content {
 			overflow: hidden;
 		}
 
-		.alignwide {
+		>.alignwide {
 			margin-left: -60px;
 			margin-right: -60px;
 		}
 
 	}
+}
 }
 
 /*=====  End of Gutenberg AlignWide  ======*/
