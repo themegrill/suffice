@@ -1202,8 +1202,8 @@ h6 {
 
 /*----------  Elements  ----------*/
 table,
-th,
-td {
+.wp-block-table th,
+.wp-block-table td {
 	border: 1px solid #D1D1D1;
 }
 
@@ -5104,6 +5104,10 @@ a:focus {
 	right: 0;
 }
 
+.wp-social-link svg {
+	color: #ffffff;
+}
+
 /*----------  Modules  ----------*/
 /* Text meant only for screen readers. */
 .screen-reader-text {
@@ -6571,27 +6575,27 @@ html {
 /*====================================
 =            Gutenberg AlignWide            =
 ====================================*/
-.full-width #primary .entry-content > .alignfull {
+.no-sidebar-full-width .no-sidebar #primary .entry-content > .alignfull {
 	margin-left: calc(50% - 49.5vw);
 	margin-right: calc(50% - 49.5vw);
 	max-width: unset;
 }
 
-.full-width #primary .entry-content > .alignfull.wp-block-cover, .full-width #primary .entry-content > .alignfull.wp-block-cover-image {
+.no-sidebar-full-width .no-sidebar #primary .entry-content > .alignfull.wp-block-cover, .no-sidebar-full-width .no-sidebar #primary .entry-content > .alignfull.wp-block-cover-image {
 	width: unset;
 }
 
-.full-width #primary .entry-content > .alignwide {
+.no-sidebar-full-width #primary .entry-content > .alignwide {
 	margin-left: -60px;
 	margin-right: -60px;
 	max-width: unset;
 }
 
-.full-width.boxed #primary #content {
+.no-sidebar-full-width.boxed #primary #content {
 	overflow: hidden;
 }
 
-.full-width.boxed #primary > .alignwide {
+.no-sidebar-full-width.boxed #primary > .alignwide {
 	margin-left: -60px;
 	margin-right: -60px;
 }
@@ -6978,6 +6982,24 @@ html {
 	display: block;
 }
 
+ul.wp-block-gallery {
+	padding: 0;
+}
+
+.wp-block-gallery ul.blocks-gallery-grid img,
+ul.wp-block-gallery img {
+	margin-bottom: 0;
+}
+
+/* Gutenberg Blocks Layout.
+--------------------------------------------------------------*/
+.wp-block-gallery.alignleft, .wp-block-gallery.alignright, .wp-block-gallery.aligncenter,
+.wp-block-social-links.alignleft,
+.wp-block-social-links.alignright,
+.wp-block-social-links.aligncenter {
+	display: flex;
+}
+
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
@@ -7108,9 +7130,24 @@ object {
 
 /*----------  responsive  ----------*/
 @media screen and (max-width: 1200px) {
-	.full-width #primary .entry-content > .alignwide {
+	.full-width .alignwide {
 		margin-left: -10px;
 		margin-right: -10px;
+	}
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+	.no-sidebar-full-width #primary .entry-content > .alignwide {
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+	.no-sidebar #primary .entry-content > .alignwide {
+		margin-left: -50px;
+		margin-right: -50px;
+	}
+	.no-sidebar #primary .entry-content > .alignfull {
+		margin-left: -100px;
+		margin-right: -100px;
 	}
 }
 
@@ -7121,13 +7158,6 @@ object {
 	}
 	.header-sticky-desktop.headroom--not-top .header-inner-wrapper {
 		box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-	}
-}
-
-@media (min-width: 768px) {
-	/* Only make slider full viewport height on larger devices */
-	.slider.slider-height--full .swiper-container {
-		height: 100vh;
 	}
 }
 
@@ -7233,26 +7263,27 @@ object {
 	.footer-widgets.footer-widgets-col--three .footer-widget-area, .footer-widgets.footer-widgets-col--four .footer-widget-area {
 		width: 48.5%;
 	}
-	#primary .entry-content >
-.full-width.boxed #primary > .alignwide {
+	.full-width.boxed .alignwide {
 		margin-left: -20px;
 		margin-right: -20px;
 	}
 }
 
 @media screen and (max-width: 600px) {
-	.full-width #primary .entry-content >
-.alignwide {
+	.full-width #primary .entry-content > .alignwide {
 		margin-left: 0;
 		margin-right: 0;
 	}
-	.full-width.boxed #primary > .alignwide {
+	.full-width.boxed .site-content {
+		overflow: hidden;
+	}
+	.full-width.boxed #primary .entry-content > .alignwide {
 		margin-left: 0;
 		margin-right: 0;
 	}
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) and (max-width: 480px) {
 	/* Header adjustment on mobile devices*/
 	.header-top .container--flex {
 		flex-direction: column;
