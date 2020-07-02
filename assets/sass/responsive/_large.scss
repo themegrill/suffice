@@ -1,18 +1,26 @@
 @media screen and ( max-width: 1200px ) {
 	.full-width {
-		#primary {
-
-			.entry-content {
-
-				> .alignwide {
+		.alignwide {
 			margin-left: -10px;
 			margin-right: -10px;
 		}
 	}
 }
-	}
-}
 
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+	.no-sidebar-full-width #primary .entry-content > .alignwide {
+	   margin-left: -30px;
+	   margin-right: -30px;
+	}
+	.no-sidebar #primary .entry-content > .alignwide {
+	   margin-left: -50px;
+	   margin-right: -50px;
+	}
+	.no-sidebar #primary .entry-content > .alignfull {
+	   margin-left: -100px;
+	   margin-right: -100px;
+	}
+ }
 @media screen and ( min-width: 992px ) {
 	/* Make sticky header on desktop */
 	.header-sticky-desktop {
@@ -23,20 +31,6 @@
 		&.headroom--not-top {
 			.header-inner-wrapper {
 				box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-			}
-		}
-	}
-}
-
-
-
-@media ( min-width: 768px ) {
-
-	/* Only make slider full viewport height on larger devices */
-	.slider {
-		&.slider-height--full {
-			.swiper-container {
-				height: 100vh;
 			}
 		}
 	}
