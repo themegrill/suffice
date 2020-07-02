@@ -130,39 +130,45 @@
 	}
 
 	.full-width {
-		#primary .entry-content >
 		&.boxed {
-			#primary {
-			
-			>.alignwide {
+			.alignwide {
 				margin-left: -20px;
 				margin-right: -20px;
 			}
 
 		}
 	}
-}
 
 }
 
 @media screen and ( max-width: 600px ) {
 	.full-width {
-		#primary .entry-content >
-		.alignwide {
-			margin-left: 0;
-			margin-right: 0;
-		}
+		#primary {
+			.entry-content {
 
+				> .alignwide {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
 		&.boxed {
-			#primary {
-			>.alignwide {
-				margin-left: 0;
-				margin-right: 0;
+
+			.site-content {
+				overflow: hidden;
 			}
 
+			#primary {
+
+				.entry-content {
+
+					> .alignwide {
+						margin-left: 0;
+						margin-right: 0;
+					}
+				}
+			}
 		}
-	}
-	}
 }
 
 @media screen and ( max-width: 480px ) {
@@ -256,4 +262,5 @@
 			}
 		}
 	}
+}
 }
