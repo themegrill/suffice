@@ -1,5 +1,7 @@
 table,
-.wp-block-table th,
+th,
+.wp-block-table th 
+td,
 .wp-block-table td {
 	border: 1px solid #D1D1D1;
 }
@@ -16,21 +18,27 @@ table {
 
 caption,
 th,
-td {
+.wp-block-table th,
+td,
+.wp-block-table td {
 	font-weight: normal;
 	text-align: left;
 }
 
-th {
+th,
+.wp-block-table th {
 	border-width: 0 1px 1px 0;
 	font-weight: 700;
 }
 
-td {
+td,
+.wp-block-table td {
 	border-width: 0 1px 1px 0;
 }
 
 th,
-td {
+.wp-block-table th ,
+td,
+.wp-block-table td {
 	padding: 0.4375em;
 }
