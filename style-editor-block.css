@@ -5,30 +5,24 @@
 	line-height: 1.3;
 	color: #424143;
 }
-
 .editor-styles-wrapper > * {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	color: #424143;
 }
-
 .wp-block {
 	max-width: 1170px;
 }
-
 .editor-styles-wrapper .wp-block[data-align="wide"] {
 	max-width: 1200px;
 }
-
 .editor-styles-wrapper .wp-block.editor-post-title__block .editor-post-title__input {
 	font-weight: normal;
-	color: #222222;
+	color:  #424143;
 	font-family: 'Lato', sans-serif;
 	font-size: 22px;
 	padding-bottom: 0;
 	line-height: 36px;
 }
-
-
 .editor-styles-wrapper  hr {
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
@@ -294,6 +288,29 @@
 
 .editor-styles-wrapper template {
 	display: none;
+}
+.editor-styles-wrapper [type="text"],
+.editor-styles-wrapper [type="email"],
+.editor-styles-wrapper [type="url"],
+.editor-styles-wrapper [type="password"],
+.editor-styles-wrapper [type="search"],
+.editor-styles-wrapper [type="number"],
+.editor-styles-wrapper [type="tel"],
+.editor-styles-wrapper [type="range"],
+.editor-styles-wrapper [type="date"],
+.editor-styles-wrapper [type="month"],
+.editor-styles-wrapper [type="week"],
+.editor-styles-wrapper [type="time"],
+.editor-styles-wrapper [type="datetime"],
+.editor-styles-wrapper [type="datetime-local"],
+.editor-styles-wrapper [type="color"],
+textarea {
+   padding: 7px 15px;
+   border: 1px solid #FFF;
+   outline: none;
+   transition: border-color 0.35s;
+   margin-bottom: 15px;
+   border: 1px solid #CCC;
 }
 
 
