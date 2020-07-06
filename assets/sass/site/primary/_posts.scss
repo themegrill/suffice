@@ -421,23 +421,21 @@
 ====================================*/
 .full-width {
 	#primary .entry-content > .alignfull {
-		margin-left: calc(50% - 49.5vw);
-		margin-right: calc(50% - 49.5vw);
+		margin-left: calc(50% - 50vw);
+		margin-right: calc(50% - 50vw);
 		max-width: unset;
 
-.full-width #primary .entry-content > .alignfull.wp-block-cover, 
-.full-width #primary .entry-content > .alignfull.wp-block-cover-image,
-.full-width #primary .entry-content > .alignfull.wp-block-cover,
-.full-width #primary .entry-content > .alignfull.wp-block-cover-image {
-	width: unset;
-}
+		&.wp-block-cover,
+		&.wp-block-cover-image {
+			width: unset;
+		}
 	}
 
-.full-width #primary .entry-content > .alignwide,
-.full-width #primary .entry-content > .alignwide {
-		margin-left: -60px;
-		margin-right: -60px;
+		> .alignwide {
+		margin-left: -50px;
+		margin-right: -50px;
 		max-width: unset;
+		width: unset;
 	}
 
 	&.boxed {
@@ -448,9 +446,18 @@
 
 			.entry-content {
 
+				> .alignfull {
+					margin-left: -55px;
+					margin-right: -55px;
+
+					&.wp-block-cover,
+					&.wp-block-cover-image {
+						width: unset;
+					}
+				}
+
 				> .alignwide {
-					margin-left: -60px;
-					margin-right: -60px;
+					margin: 0;
 				}
 			}
 		}
