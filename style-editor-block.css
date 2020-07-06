@@ -30,186 +30,118 @@
 	height: 0;
 	overflow: visible;
 }
-
-
 .editor-styles-wrapper pre {
 	font-family: monospace, monospace;
 	font-size: 1em;
 	white-space: pre-wrap;
 }
-
-
 .editor-styles-wrapper  a {
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
 }
-
-
 .editor-styles-wrapper  a:active,
-
 .editor-styles-wrapper  a:hover {
 	outline-width: 0;
 }
-
-
 .editor-styles-wrapper  abbr[title] {
 	border-bottom: 1px #767676 dotted;
 	text-decoration: none;
 }
-
-
 .editor-styles-wrapper  b,
 .editor-styles-wrapper  strong {
 	font-weight: inherit;
 }
-
-
 .editor-styles-wrapper  b,
 .editor-styles-wrapper  strong {
 	font-weight: 700;
 }
-
-
 .editor-styles-wrapper code,
 .editor-styles-wrapper  kbd,
 .editor-styles-wrapper samp {
 	font-family: monospace, monospace;
 	font-size: 1em;
 }
-
-
 .editor-styles-wrapper  dfn {
 	font-style: italic;
 }
-
-
 .editor-styles-wrapper  mark {
 	background-color: #EEE;
 	color: #222;
 }
-
-
 .editor-styles-wrapper  small {
 	font-size: 80%;
 }
-
-
 .editor-styles-wrapper  sub,
-
 .editor-styles-wrapper  sup {
 	font-size: 75%;
 	line-height: 0;
 	position: relative;
 	vertical-align: baseline;
 }
-
-
 .editor-styles-wrapper  sub {
 	bottom: -0.25em;
 }
-
-
 .editor-styles-wrapper  sup {
 	top: -0.5em;
 }
-
-
 .editor-styles-wrapper  audio,
-
 .editor-styles-wrapper  video {
 	display: inline-block;
 }
-
-
 .editor-styles-wrapper  audio:not([controls]) {
 	display: none;
 	height: 0;
 }
-
-
 .editor-styles-wrapper  img {
 	border-style: none;
 	max-width: 100%;
 	height: auto;
 }
-
-
 .editor-styles-wrapper  svg:not(:root) {
 	overflow: hidden;
 }
-
-
 .editor-styles-wrapper button,
-
 .editor-styles-wrapper  input,
-
 .editor-styles-wrapper optgroup,
-
 .editor-styles-wrapper  select,
-
 .editor-styles-wrapper  textarea {
 	font-family: sans-serif;
 	font-size: 100%;
 	line-height: 1.15;
 	margin: 0;
 }
-
-
 .editor-styles-wrapper  button,
-
 .editor-styles-wrapper  input {
 	overflow: visible;
 }
-
-
 .editor-styles-wrapper  button,
-
 .editor-styles-wrapper  select {
 	text-transform: none;
 }
-
-
 .editor-styles-wrapper  button,
-
 .editor-styles-wrapper  html [type="button"],
-
 .editor-styles-wrapper [type="reset"],
-
 .editor-styles-wrapper  [type="submit"] {
 	-webkit-appearance: button;
 }
-
-
 .editor-styles-wrapper  button::-moz-focus-inner,
-
 .editor-styles-wrapper [type="button"]::-moz-focus-inner,
-
 .editor-styles-wrapper [type="reset"]::-moz-focus-inner,
-
 .editor-styles-wrapper [type="submit"]::-moz-focus-inner {
 	border-style: none;
 	padding: 0;
 }
-
-
 .editor-styles-wrapper button:-moz-focusring,
-
 .editor-styles-wrapper [type="button"]:-moz-focusring,
-
 .editor-styles-wrapper [type="reset"]:-moz-focusring,
-
 .editor-styles-wrapper [type="submit"]:-moz-focusring {
 	outline: 1px dotted ButtonText;
 }
-
-
 .editor-styles-wrapper fieldset {
 	border: 1px solid #BBB;
 	margin: 0 2px;
 	padding: 0.35em 0.625em 0.75em;
 }
-
-
 .editor-styles-wrapper legend {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -220,72 +152,46 @@
 	padding: 0;
 	white-space: normal;
 }
-
-
 .editor-styles-wrapper progress {
 	display: inline-block;
 	vertical-align: baseline;
 }
-
-
 .editor-styles-wrapper textarea {
 	overflow: auto;
 }
-
-
 .editor-styles-wrapper [type="checkbox"],
-
 .editor-styles-wrapper [type="radio"] {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 0;
 }
-
-
 .editor-styles-wrapper [type="number"]::-webkit-inner-spin-button,
-
 .editor-styles-wrapper [type="number"]::-webkit-outer-spin-button {
 	height: auto;
 }
-
-
 .editor-styles-wrapper [type="search"] {
 	-webkit-appearance: textfield;
 	outline-offset: -2px;
 }
-
-
 .editor-styles-wrapper [type="search"]::-webkit-search-cancel-button,
-
 .editor-styles-wrapper [type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
-
-
 .editor-styles-wrapper ::-webkit-file-upload-button {
 	-webkit-appearance: button;
 	font: inherit;
 }
-
-
 .editor-styles-wrapper details,
-
 .editor-styles-wrapper menu {
 	display: block;
 }
-
-
 .editor-styles-wrapper summary {
 	display: list-item;
 }
-
-
 .editor-styles-wrapper canvas {
 	display: inline-block;
 }
-
-
 .editor-styles-wrapper template {
 	display: none;
 }
@@ -312,8 +218,6 @@ textarea {
    margin-bottom: 15px;
    border: 1px solid #CCC;
 }
-
-
 /* Block quote */
 .editor-styles-wrapper blockquote {
 	font-family: georgia, "Times New Roman", cursive;
@@ -322,9 +226,7 @@ textarea {
 	margin-left: 30px;
 	padding-left: 30px;
 }
-
 /* heading */
-
 .editor-styles-wrapper h1,
 .editor-styles-wrapper h2,
 .editor-styles-wrapper h3,
@@ -334,31 +236,25 @@ textarea {
 	font-family: "Poppins", Helvetica, Arial, sans-serif;
 	color: #424143;
 }
-
 .editor-styles-wrapper .wp-block h1 {
 	font-size: 48px;
 	font-weight: normal;
 }
-
 .editor-styles-wrapper .wp-block h2 {
 	font-size: 32px;
 	font-weight: normal;
 }
-
 .editor-styles-wrapper .wp-block h3 {
 	font-size: 26px;
 	font-weight: normal;
 }
-
 .editor-styles-wrapper .wp-block h4 {
 	font-size: 20px;
 }
-
 .editor-styles-wrapper .wp-block h5 {
 	font-size: 18px;
 	font-weight: normal;
 }
-
 .editor-styles-wrapper .wp-block h6 {
 	font-size: 16px;
 	font-weight: bold;
@@ -367,45 +263,35 @@ textarea {
 .editor-styles-wrapper p {
 	line-height: 24px;
 }
-
 .editor-styles-wrapper .text-left {
 	text-align: left;
 }
-
 .editor-styles-wrapper .text-center {
 	text-align: center;
 }
-
 .editor-styles-wrapper .text-right {
 	text-align: right;
 }
-
 .editor-styles-wrapper .center-block {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
-
 .editor-styles-wrapper .pull-right {
 	float: right !important;
 }
-
 .editor-styles-wrapper .pull-left {
 	float: left !important;
 }
-
 .editor-styles-wrapper .hide {
 	display: none !important;
 }
-
 .editor-styles-wrapper .show {
 	display: block !important;
 }
-
 .editor-styles-wrapper .invisible {
 	visibility: hidden;
 }
-
 .editor-styles-wrapper .text-hide {
 	font: 0/0 a;
 	color: transparent;
@@ -413,27 +299,22 @@ textarea {
 	background-color: transparent;
 	border: 0;
 }
-
 .editor-styles-wrapper .hidden {
 	display: none !important;
 }
-
 .editor-styles-wrapper .affix {
 	position: fixed;
 }
-
 .editor-styles-wrapper .suffice-table-container {
 	display: table;
 	width: 100%;
 }
-
 /*----------  Elements  ----------*/
 .editor-styles-wrapper table,
 .editor-styles-wrapper th,
 .editor-styles-wrapper td {
 	border: 1px solid #D1D1D1;
 }
-
 .editor-styles-wrapper table {
 	border-collapse: separate;
 	border-spacing: 0;
@@ -443,61 +324,49 @@ textarea {
 	/* Prevents HTML tables from becoming too wide */
 	width: 100%;
 }
-
 .editor-styles-wrapper caption,
 .editor-styles-wrapper th,
 .editor-styles-wrapper td {
 	font-weight: normal;
 	text-align: left;
 }
-
 .editor-styles-wrapper th {
 	border-width: 0 1px 1px 0;
 	font-weight: 700;
 }
-
 .editor-styles-wrapper td {
 	border-width: 0 1px 1px 0;
 }
-
 .editor-styles-wrapper th,
 .editor-styles-wrapper td {
 	padding: 0.4375em;
 }
-
 .editor-styles-wrapper .title {
 	margin: 30px 0;
 }
-
 .editor-styles-wrapper .title .title-title {
 	font-weight: 500;
 	font-size: 26px;
 	color: #424143;
 	margin: 0 0 15px;
 }
-
 .editor-styles-wrapper .title .sub-title {
 	margin: 0;
 	color: #67666A;
 }
-
 .editor-styles-wrapper .title.title-left {
 	text-align: left;
 }
-
 .editor-styles-wrapper .title.title-right {
 	text-align: right;
 }
-
 .editor-styles-wrapper .title.title-center {
 	text-align: center;
 }
-
 .editor-styles-wrapper .title.title-magazine {
 	position: relative;
 	margin: 45px 0 15px;
 }
-
 .editor-styles-wrapper .title.title-magazine .title-title {
 	padding: 10px 20px;
 	background: #EF7278;
@@ -508,7 +377,6 @@ textarea {
 	text-transform: none;
 	margin: 0;
 }
-
 .editor-styles-wrapper .title.title-magazine .title-title::before {
 	content: "";
 	position: absolute;
@@ -518,7 +386,6 @@ textarea {
 	left: 0;
 	bottom: 0;
 }
-
 .editor-styles-wrapper .title.title-arrow-down .title-title {
 	padding: 10px 20px;
 	background: #1E1E1F;
@@ -529,7 +396,6 @@ textarea {
 	margin: 0;
 	position: relative;
 }
-
 .editor-styles-wrapper .title.title-arrow-down .title-title::before {
 	content: "";
 	position: absolute;
@@ -541,19 +407,16 @@ textarea {
 	-ms-transform: rotate(45deg);
 	    transform: rotate(45deg);
 }
-
 .editor-styles-wrapper .title.title-arrow-down.title-center .title-title::before {
 	left: 0;
 	right: 0;
 	margin: 0 auto;
 }
-
 .editor-styles-wrapper .title.title-arrow-down.title-right .title-title::before {
 	left: auto;
 	right: 20px;
 	margin: 0 auto;
 }
-
 .editor-styles-wrapper .slider {
 	overflow: hidden;
     z-index: -2;
@@ -563,68 +426,53 @@ textarea {
 	margin-bottom: 1.5em;
 	max-width: 100%;
 }
-
 .editor-styles-wrapper .wp-caption img[class*="wp-image-"] {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
-
 .editor-styles-wrapper .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
 }
-
 .editor-styles-wrapper .wp-caption-text {
 	text-align: center;
 }
-
 .editor-styles-wrapper .gallery {
 	margin-bottom: 1.5em;
 }
-
 .editor-styles-wrapper .gallery-item {
 	display: inline-block;
 	text-align: center;
 	vertical-align: top;
 	width: 100%;
 }
-
 .editor-styles-wrapper .wp-block .gallery-columns-2 .gallery-item {
 	max-width: 50%;
 }
-
 .editor-styles-wrapper .wp-block .gallery-columns-3 .gallery-item {
 	max-width: 33.33%;
 }
-
 .editor-styles-wrapper .wp-block .gallery-columns-4 .gallery-item {
 	max-width: 25%;
 }
-
 .editor-styles-wrapper .wp-block .gallery-columns-5 .gallery-item {
 	max-width: 20%;
 }
-
 .editor-styles-wrapper .wp-block .gallery-columns-6 .gallery-item {
 	max-width: 16.66%;
 }
-
 .editor-styles-wrapper .wp-block .gallery-columns-7 .gallery-item {
 	max-width: 14.28%;
 }
-
 .editor-styles-wrapper .wp-block .gallery-columns-8 .gallery-item {
 	max-width: 12.5%;
 }
-
 .editor-styles-wrapper .wp-block .gallery-columns-9 .gallery-item {
 	max-width: 11.11%;
 }
-
 .editor-styles-wrapper .gallery-caption {
 	display: block;
 }
-
 .editor-styles-wrapper .page-content .wp-smiley,
 .editor-styles-wrapper .entry-content .wp-smiley,
 .editor-styles-wrapper .comment-content .wp-smiley {
@@ -633,7 +481,6 @@ textarea {
 	margin-top: 0;
 	padding: 0;
 }
-
 /* Make sure embeds and iframes fit their containers. */
 .editor-styles-wrapper embed,
 .editor-styles-wrapper iframe,
