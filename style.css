@@ -6596,20 +6596,19 @@ html {
 	width: unset;
 }
 
-.full-width > .alignwide {
-	margin-left: -50px;
-	margin-right: -50px;
+.full-width #primary .entry-content > .alignwide {
+	margin-left: -60px;
+	margin-right: -60px;
 	max-width: unset;
-	width: unset;
 }
 
-.full-width.boxed .site-content {
+.full-width.boxed #content {
 	overflow: hidden;
 }
 
 .full-width.boxed #primary .entry-content > .alignfull {
-	margin-left: -50px;
-	margin-right: -50px;
+	margin-left: -15px;
+	margin-right: -15px;
 }
 
 .full-width.boxed #primary .entry-content > .alignfull.wp-block-cover, .full-width.boxed #primary .entry-content > .alignfull.wp-block-cover-image {
@@ -6617,7 +6616,9 @@ html {
 }
 
 .full-width.boxed #primary .entry-content > .alignwide {
-	margin: 0;
+	margin-left: -15px;
+	margin-right: -15px;
+	max-width: unset;
 }
 
 /*=====  End of Gutenberg AlignWide  ======*/
