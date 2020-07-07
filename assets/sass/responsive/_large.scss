@@ -5,6 +5,7 @@
 			margin-right: -10px;
 		}
 	}
+	
 @media screen and (max-width: 1400px) and (min-width: 1200px) {
 	.full-width #primary .entry-content > .alignwide {
 	   margin-left: -30px;
@@ -12,8 +13,8 @@
 	}
 	
 	.full-width #primary .entry-content > .alignfull {
-	   margin-left: -100px;
-	   margin-right: -100px;
+	   margin-left: -50px;
+	   margin-right: -50px;
 	}
  }
 @media screen and ( min-width: 992px ) {
@@ -26,6 +27,18 @@
 		&.headroom--not-top {
 			.header-inner-wrapper {
 				box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+			}
+		}
+	}
+}
+
+@media ( min-width: 768px ) {
+
+	/* Only make slider full viewport height on larger devices */
+	.slider {
+		&.slider-height--full {
+			.swiper-container {
+				height: 100vh;
 			}
 		}
 	}
