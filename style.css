@@ -1206,8 +1206,8 @@ h6 {
 /*----------  Elements  ----------*/
 table,
 th,
-.wp-block-table th
 td,
+.wp-block-table th,
 .wp-block-table td {
 	border: 1px solid #D1D1D1;
 }
@@ -1224,8 +1224,8 @@ table {
 
 caption,
 th,
-.wp-block-table th,
 td,
+.wp-block-table th,
 .wp-block-table td {
 	font-weight: normal;
 	text-align: left;
@@ -1243,8 +1243,8 @@ td,
 }
 
 th,
-.wp-block-table th,
 td,
+.wp-block-table th,
 .wp-block-table td {
 	padding: 0.4375em;
 }
@@ -6608,8 +6608,8 @@ html {
 }
 
 .full-width.boxed #primary .entry-content > .alignfull {
-	margin-left: -55px;
-	margin-right: -55px;
+	margin-left: -50px;
+	margin-right: -50px;
 }
 
 .full-width.boxed #primary .entry-content > .alignfull.wp-block-cover, .full-width.boxed #primary .entry-content > .alignfull.wp-block-cover-image {
@@ -7162,8 +7162,8 @@ object {
 		margin-right: -30px;
 	}
 	.full-width #primary .entry-content > .alignfull {
-		margin-left: -100px;
-		margin-right: -100px;
+		margin-left: -50px;
+		margin-right: -50px;
 	}
 }
 
@@ -7174,6 +7174,13 @@ object {
 	}
 	.header-sticky-desktop.headroom--not-top .header-inner-wrapper {
 		box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+	}
+}
+
+@media (min-width: 768px) {
+	/* Only make slider full viewport height on larger devices */
+	.slider.slider-height--full .swiper-container {
+		height: 100vh;
 	}
 }
 
