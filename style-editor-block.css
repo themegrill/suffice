@@ -315,65 +315,6 @@ textarea {
 	line-height: 24px;
 }
 
-.editor-styles-wrapper .text-left {
-	text-align: left;
-}
-
-.editor-styles-wrapper .text-center {
-	text-align: center;
-}
-
-.editor-styles-wrapper .text-right {
-	text-align: right;
-}
-
-.editor-styles-wrapper .center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.editor-styles-wrapper .pull-right {
-	float: right !important;
-}
-
-.editor-styles-wrapper .pull-left {
-	float: left !important;
-}
-
-.editor-styles-wrapper .hide {
-	display: none !important;
-}
-
-.editor-styles-wrapper .show {
-	display: block !important;
-}
-
-.editor-styles-wrapper .invisible {
-	visibility: hidden;
-}
-
-.editor-styles-wrapper .text-hide {
-	font: 0/0 a;
-	color: transparent;
-	text-shadow: none;
-	background-color: transparent;
-	border: 0;
-}
-
-.editor-styles-wrapper .hidden {
-	display: none !important;
-}
-
-.editor-styles-wrapper .affix {
-	position: fixed;
-}
-
-.editor-styles-wrapper .suffice-table-container {
-	display: table;
-	width: 100%;
-}
-
 /*----------  Elements  ----------*/
 .editor-styles-wrapper table,
 .editor-styles-wrapper th,
