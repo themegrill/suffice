@@ -420,47 +420,54 @@
 =            Gutenberg AlignWide            =
 ====================================*/
 .full-width {
-	#primary .entry-content > .alignfull {
-		margin-left: calc(50% - 50vw);
-		margin-right: calc(50% - 50vw);
-		max-width: unset;
+	#primary {
+		.entry-content {
 
-		&.wp-block-cover,
-		&.wp-block-cover-image {
-			width: unset;
-		}
-	}
+			> .alignfull {
+				margin-left: calc(50% - 50vw);
+				margin-right: calc(50% - 50vw);
+				max-width: unset;
 
-		> .alignwide {
-		margin-left: -50px;
-		margin-right: -50px;
-		max-width: unset;
-		width: unset;
-	}
-
-	&.boxed {
-		.site-content {
-			overflow: hidden;
-		}
-		#primary {
-
-			.entry-content {
-
-				> .alignfull {
-					margin-left: -50px;
-					margin-right: -50px;
-
-					&.wp-block-cover,
-					&.wp-block-cover-image {
-						width: unset;
-					}
-				}
-
-				> .alignwide {
-					margin: 0;
+				&.wp-block-cover,
+				&.wp-block-cover-image {
+					width: unset;
 				}
 			}
+
+	> .alignwide {
+		margin-left: -60px;
+		margin-right: -60px;
+		max-width: unset;
+	}
+}
+	}
+	&.boxed {
+		#content {
+			overflow: hidden;
 		}
+
+	#primary {
+
+		.entry-content {
+
+			> .alignfull {
+				margin-left: -15px;
+				margin-right: -15px;
+
+				&.wp-block-cover,
+				&.wp-block-cover-image {
+					width: unset;
+				}
+			}
+
+			> .alignwide {
+				margin-left: -15px;
+				margin-right: -15px;
+				max-width: unset;
+			}
+		}
+	}
+
 	}
 }
 
