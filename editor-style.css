@@ -285,7 +285,10 @@ p {
 	line-height: 24px;
 }
 
-blockquote {
+blockquote,
+.wp-block-quote,
+.wp-block-quote.is-style-large,
+.wp-block-quote.has-text-align-right {
 	font-family: georgia, "Times New Roman", cursive;
 	font-size: 16px;
 	border-left: 3px solid #E5E4E6;
@@ -419,6 +422,24 @@ h6 {
 
 .gallery-caption {
 	display: block;
+}
+
+ul.wp-block-gallery {
+	padding: 0;
+}
+
+.wp-block-gallery ul.blocks-gallery-grid img,
+ul.wp-block-gallery img {
+	margin-bottom: 0;
+}
+
+/* Gutenberg Blocks Layout.
+--------------------------------------------------------------*/
+.wp-block-gallery.alignleft, .wp-block-gallery.alignright, .wp-block-gallery.aligncenter,
+.wp-block-social-links.alignleft,
+.wp-block-social-links.alignright,
+.wp-block-social-links.aligncenter {
+	display: flex;
 }
 
 /*----------  Media Elements  ----------*/

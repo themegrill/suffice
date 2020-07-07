@@ -143,19 +143,32 @@
 
 @media screen and ( max-width: 600px ) {
 	.full-width {
-		.alignwide {
-			margin-left: 0;
-			margin-right: 0;
-		}
+		#primary {
+			.entry-content {
 
+				> .alignwide {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
 		&.boxed {
-			.alignwide {
-				margin-left: 0;
-				margin-right: 0;
+
+			.site-content {
+				overflow: hidden;
 			}
 
+			#primary {
+
+				.entry-content {
+
+					> .alignwide {
+						margin-left: 0;
+						margin-right: 0;
+					}
+				}
+			}
 		}
-	}
 }
 
 @media screen and ( max-width: 480px ) {
@@ -249,4 +262,5 @@
 			}
 		}
 	}
+}
 }

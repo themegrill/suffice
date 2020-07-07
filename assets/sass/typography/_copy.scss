@@ -10,7 +10,10 @@ p {
 }
 
 
-blockquote {
+blockquote,
+.wp-block-quote,
+.wp-block-quote.is-style-large,
+.wp-block-quote.has-text-align-right {
 	font-family: georgia, "Times New Roman", cursive;
 	font-size: 16px;
 	border-left: 3px solid $color-gray-lighten;
