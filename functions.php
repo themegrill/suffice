@@ -295,6 +295,12 @@ function suffice_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'suffice_scripts' );
 
+function suffice_block_editor_styles() {
+	wp_enqueue_style( 'suffice-editor-googlefonts', '//fonts.googleapis.com/css?family=Open+Sans:400,700' );
+	wp_enqueue_style( 'suffice-block-editor-styles', get_template_directory_uri() . '/style-editor-block.css' );
+}
+add_action( 'enqueue_block_editor_assets', 'suffice_block_editor_styles', 1, 1 );
+
 /**
  * Adds css style for customizer ui
  */
