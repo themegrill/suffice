@@ -28,8 +28,6 @@
 	}
 }
 
-
-
 @media ( min-width: 768px ) {
 
 	/* Only make slider full viewport height on larger devices */
@@ -37,36 +35,6 @@
 		&.slider-height--full {
 			.swiper-container {
 				height: 100vh;
-			}
-		}
-	}
-}
-
-@media ( max-width: 768px ) {
-
-	/* Only make slider full viewport height on larger devices */
-	.slider {
-		&.slider-height--full {
-			.swiper-container {
-				height: 100vh;
-			}
-		}
-	}
-
-	.full-width {
-		#primary {
-
-			.entry-content {
-
-				> .alignwide {
-					margin-left: 0;
-					margin-right: 0;
-				}
-
-				> .alignfull {
-					margin-left: -15px;
-					margin-right: -15px;
-				}
 			}
 		}
 	}

@@ -130,12 +130,20 @@
 	}
 
 	.full-width {
-		&.boxed {
-			.alignwide {
-				margin-left: -20px;
-				margin-right: -20px;
-			}
+		#primary {
 
+			.entry-content {
+
+				> .alignwide {
+					margin-left: 0;
+					margin-right: 0;
+				}
+
+				> .alignfull {
+					margin-left: -15px;
+					margin-right: -15px;
+				}
+			}
 		}
 	}
 
