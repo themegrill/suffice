@@ -420,20 +420,27 @@
 =            Gutenberg AlignWide            =
 ====================================*/
 .full-width {
-	.alignfull {
-		margin-left: calc(50% - 49.5vw);
-		margin-right: calc(50% - 49.5vw);
-		max-width: unset;
+	#primary {
 
-		img {
-			max-width: unset;
+		.entry-content {
+
+			> .alignfull {
+				margin-left: calc(50% - 49.5vw);
+				margin-right: calc(50% - 49.5vw);
+				max-width: unset;
+
+				&.wp-block-cover,
+				&.wp-block-cover-image {
+					width: unset;
+				}
+			}
+
+			> .alignwide {
+				margin-left: -60px;
+				margin-right: -60px;
+				max-width: unset;
+			}
 		}
-	}
-
-	.alignwide {
-		margin-left: -60px;
-		margin-right: -60px;
-		max-width: unset;
 	}
 
 	&.boxed {
@@ -441,9 +448,26 @@
 			overflow: hidden;
 		}
 
-		.alignwide {
-			margin-left: -60px;
-			margin-right: -60px;
+		#primary {
+
+			.entry-content {
+
+				> .alignfull {
+					margin-left: -15px;
+					margin-right: -15px;
+
+					&.wp-block-cover,
+					&.wp-block-cover-image {
+						width: unset;
+					}
+				}
+
+				> .alignwide {
+					margin-left: 0;
+					margin-right: 0;
+					max-width: unset;
+				}
+			}
 		}
 
 	}
