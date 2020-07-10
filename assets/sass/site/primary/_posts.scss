@@ -428,7 +428,8 @@
 				margin-left: calc(50% - 49.5vw);
 				margin-right: calc(50% - 49.5vw);
 				max-width: unset;
-
+				width: unset;
+				
 				&.wp-block-cover,
 				&.wp-block-cover-image {
 					width: unset;

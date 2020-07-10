@@ -1,3 +1,20 @@
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+	.full-width {
+		#primary {
+
+			.entry-content {
+
+				> .alignwide {
+					margin-left: -30px;
+					margin-right: -30px;
+					max-width: unset;
+				}
+			}
+		}
+
+	}
+}
+
 @media screen and ( max-width: 1200px ) {
 	.full-width {
 		#primary {
