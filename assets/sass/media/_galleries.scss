@@ -44,3 +44,25 @@
 .gallery-caption {
 	display: block;
 }
+
+ul.blocks-gallery-grid,
+ul.wp-block-gallery {
+	padding: 0;
+
+	img {
+		margin-bottom: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+Gutenberg Blocks Layout.
+--------------------------------------------------------------*/
+.wp-block-gallery,
+.wp-block-social-links {
+
+	&.alignleft,
+	&.alignright,
+	&.aligncenter {
+		display: flex;
+	}
+}

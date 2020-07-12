@@ -54,7 +54,8 @@ figure {
 	margin: 1em 0;
 }
 
-hr {
+hr,
+.wp-block-separator {
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
@@ -285,12 +286,21 @@ p {
 	line-height: 24px;
 }
 
-blockquote {
+blockquote,
+.wp-block-quote,
+.wp-block-quote.is-style-large,
+.wp-block-quote.has-text-align-right {
 	font-family: georgia, "Times New Roman", cursive;
 	font-size: 16px;
 	border-left: 3px solid #E5E4E6;
 	margin-left: 30px;
 	padding-left: 30px;
+	border-left: 0;
+}
+
+.wp-block-quote.has-text-align-right {
+	border-left: 0;
+	border-right: 0;
 }
 
 h1,
@@ -351,6 +361,7 @@ h6 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	text-align: center;
 }
 
 /*----------  Caption  ----------*/
@@ -419,6 +430,26 @@ h6 {
 
 .gallery-caption {
 	display: block;
+}
+
+ul.blocks-gallery-grid,
+ul.wp-block-gallery {
+	padding: 0;
+}
+
+ul.blocks-gallery-grid img,
+ul.wp-block-gallery img {
+	margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+Gutenberg Blocks Layout.
+--------------------------------------------------------------*/
+.wp-block-gallery.alignleft, .wp-block-gallery.alignright, .wp-block-gallery.aligncenter,
+.wp-block-social-links.alignleft,
+.wp-block-social-links.alignright,
+.wp-block-social-links.aligncenter {
+	display: flex;
 }
 
 /*----------  Media Elements  ----------*/
