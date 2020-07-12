@@ -373,13 +373,6 @@ require get_template_directory() . '/inc/kirki-translation.php';
 require get_template_directory() . '/inc/kirki-customizer.php';
 
 /**
- * Load Demo Importer Configs.
- */
-if ( class_exists( 'TG_Demo_Importer' ) ) {
-	require get_template_directory() . '/inc/demo-config.php';
-}
-
-/**
  * Assign the Suffice version to a variable.
  */
 $suffice_theme = wp_get_theme( 'suffice' );
