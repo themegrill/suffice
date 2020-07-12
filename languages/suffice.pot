@@ -58,31 +58,31 @@ msgstr ""
 msgid "Footer"
 msgstr ""
 
-#: functions.php:143
+#: functions.php:149
 msgid "Sidebar Left"
 msgstr ""
 
-#: functions.php:145, functions.php:155, functions.php:165, functions.php:175, functions.php:185, functions.php:195
+#: functions.php:151, functions.php:161, functions.php:171, functions.php:181, functions.php:191, functions.php:201
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:153
+#: functions.php:159
 msgid "Sidebar Right"
 msgstr ""
 
-#: functions.php:163
+#: functions.php:169
 msgid "Footer Sidebar 1"
 msgstr ""
 
-#: functions.php:173
+#: functions.php:179
 msgid "Footer Sidebar 2"
 msgstr ""
 
-#: functions.php:183
+#: functions.php:189
 msgid "Footer Sidebar 3"
 msgstr ""
 
-#: functions.php:193
+#: functions.php:199
 msgid "Footer Sidebar 4"
 msgstr ""
 
@@ -301,7 +301,7 @@ msgstr ""
 msgid "Get started with Suffice"
 msgstr ""
 
-#: inc/admin/class-suffice-welcome-notice.php:46, inc/demo-config.php:23
+#: inc/admin/class-suffice-welcome-notice.php:46
 msgid "Suffice"
 msgstr ""
 
@@ -736,46 +736,6 @@ msgstr ""
 
 #: inc/customizer.php:139
 msgid "Controls meta color of site."
-msgstr ""
-
-#: inc/demo-config.php:27
-msgid "Suffice Pro"
-msgstr ""
-
-#: inc/demo-config.php:32
-msgid "Suffice Pro App"
-msgstr ""
-
-#: inc/demo-config.php:37
-msgid "Suffice Pro Construction"
-msgstr ""
-
-#: inc/demo-config.php:42
-msgid "Suffice Pro Food"
-msgstr ""
-
-#: inc/demo-config.php:47
-msgid "Suffice Pro Gym"
-msgstr ""
-
-#: inc/demo-config.php:52
-msgid "Suffice Pro Magazine"
-msgstr ""
-
-#: inc/demo-config.php:57
-msgid "Suffice Pro One Page"
-msgstr ""
-
-#: inc/demo-config.php:62
-msgid "Suffice Pro Photography"
-msgstr ""
-
-#: inc/demo-config.php:67
-msgid "Suffice Pro Portfolio"
-msgstr ""
-
-#: inc/demo-config.php:72
-msgid "Suffice Pro Shop"
 msgstr ""
 
 #: inc/extras.php:120
