@@ -104,6 +104,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 == Changelog
 = Version TBD =
 * Enhancement - Gutenberg compatibility.
+* Remove - Unrequired deprecated demo config for theme demo lists.
 
 = Version 1.2.0 -2020-05-22 =
 * Add   - Required header fields: `Tested up to` and `Requires PHP` in style.css.
