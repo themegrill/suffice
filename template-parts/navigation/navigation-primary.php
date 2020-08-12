@@ -18,13 +18,15 @@
 	</header>
 
 	<?php
-	$args = array(
-		'theme_location' => 'primary',
-		'menu' => '',
-		'container' => 'div',
-		'container_class' => 'menu-primary',
-		'menu_class' => 'primary-menu',
+	wp_nav_menu(
+		array(
+			'theme_location' => '',
+			'theme_location' => 'primary',
+			'menu' => '',
+			'container' => 'div',
+			'container_class' => 'menu-primary',
+			'menu_class' => 'primary-menu',
+		)
 	);
-	wp_nav_menu( $args );
 	?>
 </nav><!-- #site-navigation -->

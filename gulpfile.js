@@ -137,7 +137,8 @@ function makepotfile() {
 function watch() {
     gulp.watch( paths.styles.src, sassCompile );
     gulp.watch( paths.adminscss.src, compileAdminSass );
-    gulp.watch( [paths.js.src, paths.php.src], browserSyncReload );
+    gulp.watch(paths.js.src, browserSyncReload);
+    gulp.watch(paths.php.src, browserSyncReload);
 }
 
 function deleteCSS() {
