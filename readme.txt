@@ -102,6 +102,9 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog
+= TBD =
+* Update - Kirki version to `3.1.5`
+
 = Version 1.2.1 -2020-07-12 =
 * Enhancement - Gutenberg compatibility.
 * Remove - Unrequired deprecated demo config for theme demo lists.
