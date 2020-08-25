@@ -210,13 +210,6 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 				<div class="changelog point-releases">
 					<div class="under-the-hood two-col">
 						<div class="col">
-							<h3><?php esc_html_e( 'Import Demo', 'suffice' ); ?></h3>
-							<p><?php esc_html_e( 'Needs ThemeGrill Demo Importer plugin.', 'suffice' ); ?></p>
-							<p>
-								<a href="<?php echo esc_url( network_admin_url( 'plugin-install.php?tab=search&type=term&s=themegrill-demo-importer' ) ); ?>" class="button button-primary"><?php esc_html_e( 'Install', 'suffice' ); ?></a>
-							</p>
-						</div>
-						<div class="col">
 							<h3><?php esc_html_e( 'Theme Customizer', 'suffice' ); ?></h3>
 							<p><?php esc_html_e( 'All Theme Options are available via Customize screen.', 'suffice' ); ?></p>
 							<p>
@@ -237,22 +230,6 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 							<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'suffice' ); ?></p>
 							<p>
 								<a href="<?php echo esc_url( 'https://themegrill.com/support-forum/?utm_source=suffice-about&utm_medium=support-forum-link&utm_campaign=support-forum' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Support Forum', 'suffice' ); ?></a>
-							</p>
-						</div>
-
-						<div class="col">
-							<h3><?php esc_html_e( 'Need more features?', 'suffice' ); ?></h3>
-							<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'suffice' ); ?></p>
-							<p>
-								<a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/?utm_source=suffice-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'View Pro', 'suffice' ); ?></a>
-							</p>
-						</div>
-
-						<div class="col">
-							<h3><?php esc_html_e( 'Got sales related question?', 'suffice' ); ?></h3>
-							<p><?php esc_html_e( 'Please send it via our sales contact page.', 'suffice' ); ?></p>
-							<p>
-								<a href="<?php echo esc_url( 'https://themegrill.com/contact/?utm_source=suffice-about&utm_medium=contact-page-link&utm_campaign=contact-page' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Contact Page', 'suffice' ); ?></a>
 							</p>
 						</div>
 
