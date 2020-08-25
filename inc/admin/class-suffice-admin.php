@@ -92,6 +92,8 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 			<p class="suffice-actions">
 				<a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/?utm_source=suffice-about&utm_medium=theme-info-link&utm_campaign=theme-info' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Theme Info', 'suffice' ); ?></a>
 
+				<a href="<?php echo esc_url( 'https://demo.themegrill.com/suffice/' ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'suffice' ); ?></a>
+
 				<a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/?utm_source=suffice-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'suffice' ); ?></a>
 
 				<a href="<?php echo esc_url( 'https://wordpress.org/support/theme/suffice/reviews?rate=5#new-post' ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'suffice' ); ?></a>
@@ -228,14 +230,6 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 							<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'suffice' ); ?></p>
 							<p>
 								<a href="<?php echo esc_url( 'https://themegrill.com/support-forum/?utm_source=suffice-about&utm_medium=support-forum-link&utm_campaign=support-forum' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Support Forum', 'suffice' ); ?></a>
-							</p>
-						</div>
-
-						<div class="col">
-							<h3><?php esc_html_e( 'Got sales related question?', 'suffice' ); ?></h3>
-							<p><?php esc_html_e( 'Please send it via our sales contact page.', 'suffice' ); ?></p>
-							<p>
-								<a href="<?php echo esc_url( 'https://themegrill.com/contact/?utm_source=suffice-about&utm_medium=contact-page-link&utm_campaign=contact-page' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Contact Page', 'suffice' ); ?></a>
 							</p>
 						</div>
 
