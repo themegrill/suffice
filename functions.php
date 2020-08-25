@@ -355,11 +355,6 @@ require get_template_directory() . '/inc/template-functions.php';
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
- * TGM Plugin Activation.
- */
-require get_template_directory() . '/inc/class-tgm-plugin-activation.php';
-
-/**
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
