@@ -4,7 +4,7 @@
  *
  * @author  ThemeGrill
  * @package suffice
- * @since   1.0.4
+ * @since   1.2.3
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
