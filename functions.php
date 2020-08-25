@@ -62,23 +62,28 @@ if ( ! function_exists( 'suffice_setup' ) ) :
 		add_image_size( 'suffice-thumbnail-portfolio-masonry', 572, 652, true );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary', 'suffice' ),
-			'social'  => esc_html__( 'Social', 'suffice' ),
-			'footer'  => esc_html__( 'Footer', 'suffice' ),
-		) );
+		register_nav_menus(
+			array(
+				'primary' => esc_html__( 'Primary', 'suffice' ),
+				'social'  => esc_html__( 'Social', 'suffice' ),
+				'footer'  => esc_html__( 'Footer', 'suffice' ),
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -95,10 +100,13 @@ if ( ! function_exists( 'suffice_setup' ) ) :
 		add_theme_support( 'custom-logo' );
 
 		// Add theme support for SiteOrigin Page Builder.
-		add_theme_support( 'siteorigin-panels', array(
-			'margin-bottom'       => 30,
-			'recommended-widgets' => false,
-		) );
+		add_theme_support(
+			'siteorigin-panels',
+			array(
+				'margin-bottom'       => 30,
+				'recommended-widgets' => false,
+			)
+		);
 
 		/*
 		* This theme styles the visual editor to resemble the theme style,
@@ -145,65 +153,77 @@ add_action( 'template_redirect', 'suffice_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function suffice_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar Left', 'suffice' ),
-		'id'            => 'sidebar-left',
-		'description'   => esc_html__( 'Add widgets here.', 'suffice' ),
-		'before_widget' => '<section id="%1$s" class="widget ' . suffice_get_widget_class() . ' %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar Left', 'suffice' ),
+			'id'            => 'sidebar-left',
+			'description'   => esc_html__( 'Add widgets here.', 'suffice' ),
+			'before_widget' => '<section id="%1$s" class="widget ' . suffice_get_widget_class() . ' %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar Right', 'suffice' ),
-		'id'            => 'sidebar-right',
-		'description'   => esc_html__( 'Add widgets here.', 'suffice' ),
-		'before_widget' => '<section id="%1$s" class="widget ' . suffice_get_widget_class() . ' %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar Right', 'suffice' ),
+			'id'            => 'sidebar-right',
+			'description'   => esc_html__( 'Add widgets here.', 'suffice' ),
+			'before_widget' => '<section id="%1$s" class="widget ' . suffice_get_widget_class() . ' %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Sidebar 1', 'suffice' ),
-		'id'            => 'footer-sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'suffice' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Sidebar 1', 'suffice' ),
+			'id'            => 'footer-sidebar-1',
+			'description'   => esc_html__( 'Add widgets here.', 'suffice' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Sidebar 2', 'suffice' ),
-		'id'            => 'footer-sidebar-2',
-		'description'   => esc_html__( 'Add widgets here.', 'suffice' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Sidebar 2', 'suffice' ),
+			'id'            => 'footer-sidebar-2',
+			'description'   => esc_html__( 'Add widgets here.', 'suffice' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Sidebar 3', 'suffice' ),
-		'id'            => 'footer-sidebar-3',
-		'description'   => esc_html__( 'Add widgets here.', 'suffice' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Sidebar 3', 'suffice' ),
+			'id'            => 'footer-sidebar-3',
+			'description'   => esc_html__( 'Add widgets here.', 'suffice' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 
-	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Sidebar 4', 'suffice' ),
-		'id'            => 'footer-sidebar-4',
-		'description'   => esc_html__( 'Add widgets here.', 'suffice' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer Sidebar 4', 'suffice' ),
+			'id'            => 'footer-sidebar-4',
+			'description'   => esc_html__( 'Add widgets here.', 'suffice' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 
 add_action( 'widgets_init', 'suffice_widgets_init' );
@@ -236,10 +256,13 @@ if ( ! function_exists( 'suffice_fonts_url' ) ) :
 		}
 
 		if ( $fonts ) {
-			$fonts_url = add_query_arg( array(
-				'family' => urlencode( implode( '|', $fonts ) ),
-				'subset' => urlencode( $subsets ),
-			), 'https://fonts.googleapis.com/css' );
+			$fonts_url = add_query_arg(
+				array(
+					'family' => urlencode( implode( '|', $fonts ) ),
+					'subset' => urlencode( $subsets ),
+				),
+				'https://fonts.googleapis.com/css'
+			);
 		}
 
 		return $fonts_url;
@@ -384,7 +407,6 @@ define( 'SUFFICE_THEME_VERSION', $suffice_theme->get( 'Version' ) );
  */
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-suffice-admin.php';
-	require get_template_directory() . '/inc/admin/class-suffice-tdi-notice.php';
 	require get_template_directory() . '/inc/admin/class-suffice-notice.php';
 	require get_template_directory() . '/inc/admin/class-suffice-welcome-notice.php';
 	require get_template_directory() . '/inc/admin/class-suffice-upgrade-notice.php';
