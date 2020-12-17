@@ -251,7 +251,7 @@ msgstr ""
 msgid "Get started with Suffice"
 msgstr ""
 
-#: inc/admin/class-suffice-welcome-notice.php:46
+#: inc/admin/class-suffice-welcome-notice.php:46, inc/extras.php:377, inc/extras.php:377
 msgid "Suffice"
 msgstr ""
 
@@ -312,174 +312,174 @@ msgstr ""
 msgid "Controls meta color of site."
 msgstr ""
 
-#: inc/extras.php:120
+#: inc/extras.php:126
 msgid "Home"
 msgstr ""
 
-#: inc/extras.php:277
+#: inc/extras.php:283
 msgid "404 Error"
 msgstr ""
 
-#: inc/extras.php:273
+#: inc/extras.php:279
 msgid "Search results for: "
 msgstr ""
 
-#: inc/extras.php:269
+#: inc/extras.php:275
 msgid "Page"
 msgstr ""
 
-#: inc/extras.php:255, inc/extras.php:247, inc/extras.php:247, inc/extras.php:247, inc/extras.php:235, inc/extras.php:235, inc/extras.php:235, inc/extras.php:238
+#: inc/extras.php:261, inc/extras.php:253, inc/extras.php:253, inc/extras.php:253, inc/extras.php:241, inc/extras.php:241, inc/extras.php:241, inc/extras.php:244
 msgid "Y"
 msgstr ""
 
-#: inc/extras.php:250, inc/extras.php:238, inc/extras.php:238, inc/extras.php:238, inc/extras.php:241
+#: inc/extras.php:256, inc/extras.php:244, inc/extras.php:244, inc/extras.php:244, inc/extras.php:247
 msgid "M"
 msgstr ""
 
-#: inc/extras.php:241
+#: inc/extras.php:247
 msgid "jS"
 msgstr ""
 
-#: inc/extras.php:299, search.php:27
+#: inc/extras.php:305, search.php:27
 msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/extras.php:297
+#: inc/extras.php:303
 msgid "Page NOT Found"
 msgstr ""
 
-#: inc/extras.php:369, inc/extras.php:369
+#: inc/extras.php:375, inc/extras.php:375
 msgid "WordPress"
 msgstr ""
 
-#: inc/extras.php:371, inc/extras.php:371
-msgid "ThemeGrill"
+#: inc/extras.php:379
+msgid "Copyright &copy; %1$s %2$s."
 msgstr ""
 
-#: inc/extras.php:373
-msgid "Copyright %1$s %2$s. All rights reserved."
+#: inc/extras.php:379
+msgid "All rights reserved."
 msgstr ""
 
-#: inc/extras.php:373
-msgid "Powered by %s."
+#: inc/extras.php:379
+msgid " Theme %1s"
 msgstr ""
 
-#: inc/extras.php:373
-msgid "Theme: %1$s by %2$s."
+#: inc/extras.php:379
+msgid "by ThemeGrill. Powered by: %2$s."
 msgstr ""
 
-#: inc/extras.php:459
+#: inc/extras.php:473
 msgid "Install Required Plugins"
 msgstr ""
 
-#: inc/extras.php:460
+#: inc/extras.php:474
 msgid "Install Plugins"
 msgstr ""
 
 #. translators: %s: plugin name.
-#: inc/extras.php:462
+#: inc/extras.php:476
 msgid "Installing Plugin: %s"
 msgstr ""
 
 #. translators: %s: plugin name.
-#: inc/extras.php:464
+#: inc/extras.php:478
 msgid "Updating Plugin: %s"
 msgstr ""
 
-#: inc/extras.php:465
+#: inc/extras.php:479
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: inc/extras.php:466
+#: inc/extras.php:480
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/extras.php:472
+#: inc/extras.php:486
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/extras.php:478
+#: inc/extras.php:492
 msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
 msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/extras.php:484
+#: inc/extras.php:498
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/extras.php:490
+#: inc/extras.php:504
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/extras.php:496
+#: inc/extras.php:510
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/extras.php:502
+#: inc/extras.php:516
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/extras.php:507
+#: inc/extras.php:521
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/extras.php:512
+#: inc/extras.php:526
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/extras.php:517
+#: inc/extras.php:531
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: inc/extras.php:518
+#: inc/extras.php:532
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: inc/extras.php:519
+#: inc/extras.php:533
 msgid "The following plugin was activated successfully:"
 msgstr ""
 
 #. translators: 1: plugin name.
-#: inc/extras.php:521
+#: inc/extras.php:535
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
 #. translators: 1: plugin name.
-#: inc/extras.php:523
+#: inc/extras.php:537
 msgid "Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin."
 msgstr ""
 
 #. translators: 1: dashboard link.
-#: inc/extras.php:525
+#: inc/extras.php:539
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
-#: inc/extras.php:526
+#: inc/extras.php:540
 msgid "Dismiss this notice"
 msgstr ""
 
-#: inc/extras.php:527
+#: inc/extras.php:541
 msgid "There are one or more required or recommended plugins to install, update or activate."
 msgstr ""
 
-#: inc/extras.php:528
+#: inc/extras.php:542
 msgid "Please contact the administrator of this site for help."
 msgstr ""
 

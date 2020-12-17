@@ -102,6 +102,20 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog
+### Version 1.2.4 -2020-12-17
+* Tweak - Update footer credit link with `rel="nofollow"` attributes.
+* Fix   - jQuery deprecated message in some of the theme custom JS files.
+
+### Version 1.2.3 -2020-08-25
+* Remove - TGMPA library to recommend plugins.
+
+### Version 1.2.2 -2020-08-13
+* Update - Kirki version to `3.1.5`
+
+### Version 1.2.1 -2020-07-12
+* Enhancement - Gutenberg compatibility.
+* Remove - Unrequired deprecated demo config for theme demo lists.
+
 ### Version 1.2.0 - 2020-05-22
 * Add   - Required header fields: `Tested up to` and `Requires PHP` in style.css.
 * Tweak - Add and improve theme-related notices.
