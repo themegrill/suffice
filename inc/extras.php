@@ -376,7 +376,7 @@ if ( ! function_exists( 'suffice_footer_copyright_text' ) ) {
 
 		$tg_link = '<a href="' . esc_url( 'https://themegrill.com/themes/suffice' ) . '" target="_blank" title="' . esc_attr__( 'Suffice', 'suffice' ) . '" rel="nofollow"><span>' . __( 'Suffice', 'suffice' ) . '</span></a>';
 
-		$default_footer_value = sprintf( __( 'Copyright &copy; %1$s %2$s.', 'suffice' ), date( 'Y' ), $site_link ) . ' ' . __( 'All rights reserved.', 'suffice' ) . sprintf( __( ' Theme %1s', 'suffice' ), $tg_link ) . ' ' . sprintf( __( 'by ThemeGrill. Powered by: %2$s.', 'suffice' ), 'Spacious', $wp_link );
+		$default_footer_value = sprintf( __( 'Copyright &copy; %1$s %2$s.', 'suffice' ), date( 'Y' ), $site_link ) . ' ' . __( 'All rights reserved.', 'suffice' ) . sprintf( __( ' Theme %1s', 'suffice' ), $tg_link ) . ' ' . sprintf( __( 'by ThemeGrill. Powered by: %2$s.', 'suffice' ), 'Suffice', $wp_link );
 
 		$suffice_footer_copyright = '<div class="copyright">' . $default_footer_value . '</div>';
 		echo $suffice_footer_copyright;
