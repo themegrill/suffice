@@ -1,4 +1,4 @@
-# Copyright (C) 2020 Suffice
+# Copyright (C) 2021 Suffice
 # This file is distributed under the same license as the Suffice package.
 msgid ""
 msgstr ""
