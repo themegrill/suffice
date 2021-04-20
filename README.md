@@ -102,6 +102,9 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 ## Changelog
+##Version TBD 
+* Feature - Added RTL support.
+
 ### Version 1.2.4 -2020-12-17
 * Tweak - Update footer credit link with `rel="nofollow"` attributes.
 * Fix   - jQuery deprecated message in some of the theme custom JS files.
