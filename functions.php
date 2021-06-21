@@ -258,8 +258,9 @@ if ( ! function_exists( 'suffice_fonts_url' ) ) :
 		if ( $fonts ) {
 			$fonts_url = add_query_arg(
 				array(
-					'family' => urlencode( implode( '|', $fonts ) ),
-					'subset' => urlencode( $subsets ),
+					'family'  => urlencode( implode( '|', $fonts ) ),
+					'subset'  => urlencode( $subsets ),
+					'display' => 'swap',
 				),
 				'https://fonts.googleapis.com/css'
 			);
