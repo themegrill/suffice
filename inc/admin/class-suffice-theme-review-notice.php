@@ -61,82 +61,82 @@ class Suffice_Theme_Review_Notice {
 		/**
 		 * Return from notice display if:
 		 *
-		 * 1. The theme installed is less than 15 days ago.
-		 * 2. If the user has ignored the message partially for 15 days.
+		 * 1. The theme installed is less than 14 days ago.
+		 * 2. If the user has ignored the message partially for 14 days.
 		 * 3. Dismiss always if clicked on 'I Already Did' button.
 		 */
-		if ( ( get_option( 'suffice_theme_installed_time' ) > strtotime( '-15 day' ) ) || ( $ignored_notice_partially > strtotime( '-15 day' ) ) || ( $ignored_notice ) ) {
+		if ( ( get_option( 'suffice_theme_installed_time' ) > strtotime( '-14 day' ) ) || ( $ignored_notice_partially > strtotime( '-14 day' ) ) || ( $ignored_notice ) ) {
 			return;
 		}
 		?>
 		<div class="notice notice-success suffice-notice theme-review-notice" style="position:relative;">
-            <div class="suffice-message__content">
-                <div class="suffice-message__image">
-                    <img class="suffice-logo--png" src="<?php echo esc_url( get_template_directory_uri() . '/inc/admin/images/suffice-square-logo.png' ); ?>" alt="<?php esc_attr_e( 'Radiate', 'suffice' ); ?>" />
-                </div>
+			<div class="suffice-message__content">
+				<div class="suffice-message__image">
+					<img class="suffice-logo--png" src="<?php echo esc_url( get_template_directory_uri() . '/inc/admin/images/suffice-square-logo.png' ); ?>" alt="<?php esc_attr_e( 'Radiate', 'suffice' ); ?>" />
+				</div>
 
-                <div class="suffice-message__text">
-                    <h3><?php echo esc_html( 'HAKUNA MATATA!' ); ?></h3>
-                    <p>(
+				<div class="suffice-message__text">
+					<h3><?php echo esc_html( 'HAKUNA MATATA!' ); ?></h3>
+					<p>(
 						<?php
 						printf(
-						    /* translators: %s: Smile icon */
+							/* translators: %s: Smile icon */
 							esc_html__( 'The above word is just to draw your attention. %s', 'suffice' ),
 							'<span class="dashicons dashicons-smiley smile-icon"></span>'
 						);
 						?>
-                    )</p>
-                    <p>
+					)</p>
+					<p>
 						<?php
-						    printf(
-                                /* translators: %1$s: Opening of strong tag, %2$s: Theme's Name, %3$s: Closing of strong tag  */
-                                esc_html__( 'Hope you are having a nice experience with %1$s %2$s %3$s theme. Please provide this theme a nice review.', 'suffice' ),
-                                '<strong>',
-                                esc_html( wp_get_theme( get_template() ) ),
-                                '</strong>'
-						    );
+							printf(
+								/* translators: %1$s: Opening of strong tag, %2$s: Theme's Name, %3$s: Closing of strong tag  */
+								esc_html__( 'Hope you are having a nice experience with %1$s %2$s %3$s theme. Please provide this theme a nice review.', 'suffice' ),
+								'<strong>',
+								esc_html( wp_get_theme( get_template() ) ),
+								'</strong>'
+							);
 						?>
-                    </p>
-                    <strong>
+					</p>
+					<strong>
 						<?php esc_html_e( 'What benefit would you have?', 'suffice' ); ?>
-                    </strong>
-                    <p>
+					</strong>
+					<p>
 						<?php
-						    printf(
-                                /* translators: %s: Smiley icon */
-                                esc_html__( 'Basically, it would encourage us to release updates regularly with new features & bug fixes so that you can keep on using the theme without any issues and also to provide free support like we have been doing. %s', 'suffice' ),
-                                '<span class="dashicons dashicons-smiley smile-icon"></span>'
-						);
+							printf(
+								/* translators: %s: Smiley icon */
+								esc_html__( 'Basically, it would encourage us to release updates regularly with new features & bug fixes so that you can keep on using the theme without any issues and also to provide free support like we have been doing. %s', 'suffice' ),
+								'<span class="dashicons dashicons-smiley smile-icon"></span>'
+							);
 						?>
-                    </p>
+					</p>
 
-                    <div class="links">
-                        <a href="https://wordpress.org/support/theme/suffice/reviews/?filter=5#new-post" class="btn button-primary" target="_blank">
-                            <span class="dashicons dashicons-external"></span>
-                            <span><?php esc_html_e( 'Sure, I\'d love to!', 'suffice' ); ?></span>
-                        </a>
+					<div class="links">
+						<a href="https://wordpress.org/support/theme/suffice/reviews/?filter=5#new-post" class="btn button-primary" target="_blank">
+							<span class="dashicons dashicons-external"></span>
+							<span><?php esc_html_e( 'Sure, I\'d love to!', 'suffice' ); ?></span>
+						</a>
 
-                        <a href="<?php echo esc_url( $dismiss_url ); ?>" class="btn button-secondary">
-                            <span class="dashicons dashicons-smiley"></span>
-                            <span><?php esc_html_e( 'I already did!', 'suffice' ); ?></span>
-                        </a>
+						<a href="<?php echo esc_url( $dismiss_url ); ?>" class="btn button-secondary">
+							<span class="dashicons dashicons-smiley"></span>
+							<span><?php esc_html_e( 'I already did!', 'suffice' ); ?></span>
+						</a>
 
-                        <a href="<?php echo esc_url( $temporary_dismiss_url ); ?>" class="btn button-secondary">
-                            <span class="dashicons dashicons-calendar"></span>
-                            <span><?php esc_html_e( 'Maybe later', 'suffice' ); ?></span>
-                        </a>
+						<a href="<?php echo esc_url( $temporary_dismiss_url ); ?>" class="btn button-secondary">
+							<span class="dashicons dashicons-calendar"></span>
+							<span><?php esc_html_e( 'Maybe later', 'suffice' ); ?></span>
+						</a>
 
-                        <a href="<?php echo esc_url( 'https://wordpress.org/support/theme/suffice/' ); ?>" class="btn button-secondary" target="_blank">
-                            <span class="dashicons dashicons-testimonial"></span>
-                            <span><?php esc_html_e( 'I have a query', 'suffice' ); ?></span>
-                        </a>
-                    </div> <!-- /.links -->
-                </div> <!-- /.suffice-message__text -->
+						<a href="<?php echo esc_url( 'https://wordpress.org/support/theme/suffice/' ); ?>" class="btn button-secondary" target="_blank">
+							<span class="dashicons dashicons-testimonial"></span>
+							<span><?php esc_html_e( 'I have a query', 'suffice' ); ?></span>
+						</a>
+					</div> <!-- /.links -->
+				</div> <!-- /.suffice-message__text -->
 
-                <a class="notice-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>"></a>
+				<a class="notice-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>"></a>
 
-            </div> <!-- /.suffice-message__content -->
-        </div> <!-- /.theme-review-notice -->
+			</div> <!-- /.suffice-message__content -->
+		</div> <!-- /.theme-review-notice -->
 		<?php
 	}
 
@@ -146,13 +146,13 @@ class Suffice_Theme_Review_Notice {
 	public function ignore_theme_review_notice() {
 
 		/* If user clicks to ignore the notice, add that to their user meta */
-		if ( isset( $_GET[ 'nag_suffice_ignore_theme_review_notice' ] ) && isset( $_GET[ '_suffice_ignore_theme_review_notice_nonce' ] ) ) {
+		if ( isset( $_GET['nag_suffice_ignore_theme_review_notice'] ) && isset( $_GET['_suffice_ignore_theme_review_notice_nonce'] ) ) {
 
-			if ( ! wp_verify_nonce( wp_unslash( $_GET[ '_suffice_ignore_theme_review_notice_nonce' ] ), 'nag_suffice_ignore_theme_review_notice_nonce' ) ) {
+			if ( ! wp_verify_nonce( wp_unslash( $_GET['_suffice_ignore_theme_review_notice_nonce'] ), 'nag_suffice_ignore_theme_review_notice_nonce' ) ) {
 				wp_die( esc_html__( 'Action failed. Please refresh the page and retry.', 'suffice' ) );
 			}
 
-			if ( '0' === $_GET[ 'nag_suffice_ignore_theme_review_notice' ] ) {
+			if ( '0' === $_GET['nag_suffice_ignore_theme_review_notice'] ) {
 				add_user_meta( get_current_user_id(), 'suffice_ignore_theme_review_notice', 'true', true );
 			}
 		}
@@ -163,13 +163,13 @@ class Suffice_Theme_Review_Notice {
 	public function ignore_theme_review_notice_partially() {
 
 		/* If user clicks to ignore the notice, add that to their user meta */
-		if ( isset( $_GET[ 'nag_suffice_ignore_theme_review_notice_partially' ] ) && isset( $_GET[ '_suffice_ignore_theme_review_notice_nonce' ] ) ) {
+		if ( isset( $_GET['nag_suffice_ignore_theme_review_notice_partially'] ) && isset( $_GET['_suffice_ignore_theme_review_notice_nonce'] ) ) {
 
-			if ( ! wp_verify_nonce( wp_unslash( $_GET[ '_suffice_ignore_theme_review_notice_nonce' ] ), 'nag_suffice_ignore_theme_review_notice_partially_nonce' ) ) {
+			if ( ! wp_verify_nonce( wp_unslash( $_GET['_suffice_ignore_theme_review_notice_nonce'] ), 'nag_suffice_ignore_theme_review_notice_partially_nonce' ) ) {
 				wp_die( esc_html__( 'Action failed. Please refresh the page and retry.', 'suffice' ) );
 			}
 
-			if ( '0' === $_GET[ 'nag_suffice_ignore_theme_review_notice_partially' ] ) {
+			if ( '0' === $_GET['nag_suffice_ignore_theme_review_notice_partially'] ) {
 				update_user_meta( get_current_user_id(), 'nag_suffice_ignore_theme_review_notice_partially', time() );
 			}
 		}
