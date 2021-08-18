@@ -103,7 +103,7 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 == Changelog
 = Version TBD =
-* Fix - Font display swap property and value for google fonts.
+* Enhancement - Added CSS font-display property and swap value for better performance.
 
 = Version 1.2.6 -2021-07-20 =
 * Feature - Added RTL support.
