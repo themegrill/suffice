@@ -50,7 +50,7 @@ p.suffice-actions a.button-secondary {
 	text-align: center;
 	width: 100%;
 	font-size: 38px;
-	font-weight: 600;
+	font-weight: 768;
 }
 
 .welcome-description-wrap {
@@ -97,19 +97,22 @@ p.suffice-actions a.button-secondary {
  */
 .suffice-notice {
 	position: relative;
-	padding: 6px 40px 6px 12px;
+	padding: 8px 40px 8px 8px;
 }
 
 .suffice-notice .links {
 	margin: 0.5em 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .suffice-notice .links a {
-	margin: 2px;
+	margin-right: 10px;
 }
 
 .suffice-notice .links a > span {
 	vertical-align: middle;
+	padding-right: 5px;
 }
 
 .suffice-notice .notice-text .coupon-code {
@@ -125,7 +128,6 @@ p.suffice-actions a.button-secondary {
  */
 .suffice-message__content {
 	display: flex;
-	align-items: center;
 }
 
 .suffice-message__content .suffice-message__image {
@@ -182,9 +184,13 @@ a.suffice-message-close:before {
 	transition: all .1s ease-in-out;
 }
 
-@media screen and (max-width: 782px) {
-	.suffice-message__image {
+@media screen and (max-width: 768px) {
+	.suffice-message__content .suffice-screenshot {
 		display: none;
+	}
+	.suffice-message__content .suffice-message__text {
+		padding: 0;
+		width: 100%;
 	}
 }
 
@@ -206,7 +212,7 @@ a.suffice-message-close:before {
 /**
  * Responsive.
  */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	.suffice-message__content .suffice-screenshot {
 		display: none;
 	}
@@ -214,4 +220,97 @@ a.suffice-message-close:before {
 		padding: 0;
 		width: 100%;
 	}
+}
+
+/* Suffice review notice */
+.suffice-notice.theme-review-notice {
+	border-left-color: #6547DB;
+	padding: 20px 15px;
+}
+
+@media screen and (max-width: 768px) {
+	.suffice-notice.theme-review-notice .suffice-message__content {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.suffice-notice.theme-review-notice a.btn {
+	display: flex;
+	max-width: fit-content;
+	justify-content: center;
+	align-items: center;
+}
+
+.suffice-notice.theme-review-notice .suffice-message__image {
+	flex: 0;
+	min-height: auto;
+	margin-right: 35px;
+	margin-left: 10px;
+	padding-right: 0;
+	border-right: none;
+}
+
+.suffice-notice.theme-review-notice .suffice-logo--png {
+	width: 80px;
+	height: 80px;
+}
+
+.suffice-notice.theme-review-notice h3 {
+	font-size: 21px;
+	margin: 0;
+	line-height: 1;
+	color: #000;
+}
+
+.suffice-notice.theme-review-notice p {
+	font-size: 14px;
+	line-height: 21px;
+	color: #3C434A;
+	margin: 0 0 6px 0;
+	max-width: 720px;
+	padding: 2px 0;
+}
+
+.suffice-notice.theme-review-notice span.dashicons.dashicons-smiley.smile-icon {
+	background: #f7e143;
+	border-radius: 50%;
+	font-size: 15px;
+	border: 1px solid;
+	width: 17px;
+	height: 17px;
+}
+
+.suffice-notice.theme-review-notice .button-primary {
+	background: #6547DB;
+	border-color: #6547DB;
+	box-shadow: none;
+	color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+	.suffice-notice.theme-review-notice .button-primary {
+		margin-bottom: 10px;
+	}
+}
+
+.suffice-notice.theme-review-notice .button-secondary {
+	color: #6547DB;
+	border-color: #6547DB;
+	background: #f6f7f7;
+	vertical-align: top;
+}
+
+@media screen and (max-width: 768px) {
+	.suffice-notice.theme-review-notice .button-secondary {
+		margin-bottom: 10px;
+	}
+}
+
+.suffice-notice.theme-review-notice strong {
+	color: #000;
+}
+
+.suffice-notice.theme-review-notice .links {
+	margin: 1.2em 0 5px 0;
 }

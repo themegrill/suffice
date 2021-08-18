@@ -92,7 +92,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 			<p class="suffice-actions">
 				<a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/?utm_source=suffice-about&utm_medium=theme-info-link&utm_campaign=theme-info' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Theme Info', 'suffice' ); ?></a>
 
-				<a href="<?php echo esc_url( 'https://demo.themegrill.com/suffice/' ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'suffice' ); ?></a>
+				<a href="<?php echo esc_url( 'https://themegrilldemos.com/suffice/' ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'View Demo', 'suffice' ); ?></a>
 
 				<a href="<?php echo esc_url( 'https://themegrill.com/themes/suffice/?utm_source=suffice-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View PRO version', 'suffice' ); ?></a>
 
@@ -100,7 +100,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 			</p>
 
 			<h2 class="nav-tab-wrapper">
-				<a class="nav-tab 
+				<a class="nav-tab
 				<?php
 				if ( empty( $_GET['tab'] ) && $_GET['page'] == 'suffice-welcome' ) {
 					echo 'nav-tab-active';
@@ -109,7 +109,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 				" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'suffice-welcome' ), 'themes.php' ) ) ); ?>">
 					<?php echo $theme->display( 'Name' ); ?>
 				</a>
-				<a class="nav-tab 
+				<a class="nav-tab
 				<?php
 				if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'supported_plugins' ) {
 					echo 'nav-tab-active';
@@ -132,7 +132,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 				">
 					<?php esc_html_e( 'Supported Plugins', 'suffice' ); ?>
 				</a>
-				<a class="nav-tab 
+				<a class="nav-tab
 				<?php
 				if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'free_vs_pro' ) {
 					echo 'nav-tab-active';
@@ -155,7 +155,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 				">
 					<?php esc_html_e( 'Free Vs Pro', 'suffice' ); ?>
 				</a>
-				<a class="nav-tab 
+				<a class="nav-tab
 				<?php
 				if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'changelog' ) {
 					echo 'nav-tab-active';
@@ -229,7 +229,7 @@ if ( ! class_exists( 'Suffice_Admin' ) ) :
 							<h3><?php esc_html_e( 'Got theme support question?', 'suffice' ); ?></h3>
 							<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'suffice' ); ?></p>
 							<p>
-								<a href="<?php echo esc_url( 'https://themegrill.com/support-forum/?utm_source=suffice-about&utm_medium=support-forum-link&utm_campaign=support-forum' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Support Forum', 'suffice' ); ?></a>
+								<a href="<?php echo esc_url( 'https://themegrill.com/contact/?utm_source=suffice-about&utm_medium=support-forum-link&utm_campaign=support-forum' ); ?>" class="button button-secondary" target="_blank"><?php esc_html_e( 'Support Forum', 'suffice' ); ?></a>
 							</p>
 						</div>
 

@@ -105,8 +105,9 @@ Unless otherwise specified, all the theme files, scripts and images including th
 = Version TBD =
 * Fix - Font display swap property and value for google fonts.
 
-= Version TBD =
+= Version 1.2.6 -2021-07-20 =
 * Feature - Added RTL support.
+* Update - Kirki version to `3.1.9`
 
 = Version 1.2.5 -2021-02-25 =
 * Tweak - Update Screenshot Image.

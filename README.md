@@ -103,7 +103,14 @@ Unless otherwise specified, all the theme files, scripts and images including th
 
 ## Changelog
 ##Version TBD 
+* Fix - Font display swap property and value for google fonts.
+
+### Version 1.2.6 -2021-07-20
 * Feature - Added RTL support.
+* Update - Kirki version to `3.1.9`
+
+### Version 1.2.5 -2021-02-25
+* Tweak - Update Screenshot Image.
 
 ### Version 1.2.4 -2020-12-17
 * Tweak - Update footer credit link with `rel="nofollow"` attributes.

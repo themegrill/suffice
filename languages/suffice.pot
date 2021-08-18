@@ -146,7 +146,7 @@ msgstr ""
 msgid "Please view our documentation page to setup the theme."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:229, inc/admin/class-suffice-theme-review-notice.php:95
+#: inc/admin/class-suffice-admin.php:229
 msgid "Got theme support question?"
 msgstr ""
 
@@ -210,7 +210,7 @@ msgstr ""
 msgid "View Pro"
 msgstr ""
 
-#: inc/admin/class-suffice-notice.php:59, inc/admin/class-suffice-notice.php:78, inc/admin/class-suffice-welcome-notice.php:77
+#: inc/admin/class-suffice-notice.php:59, inc/admin/class-suffice-notice.php:78, inc/admin/class-suffice-theme-review-notice.php:152, inc/admin/class-suffice-theme-review-notice.php:169, inc/admin/class-suffice-welcome-notice.php:77
 msgid "Action failed. Please refresh the page and retry."
 msgstr ""
 
@@ -218,21 +218,43 @@ msgstr ""
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#. translators: %1$s current user display name.
-#: inc/admin/class-suffice-theme-review-notice.php:68
-msgid "Howdy, %1$s! It seems that you have been using this theme for more than 15 days. We hope you are happy with everything that the theme has to offer. If you can spare a minute, please help us by leaving a 5-star review on WordPress.org.  By spreading the love, we can continue to develop new amazing features in the future, for free!"
+#: inc/admin/class-suffice-theme-review-notice.php:75
+msgid "Radiate"
 msgstr ""
 
-#: inc/admin/class-suffice-theme-review-notice.php:80
-msgid "Sure"
+#. translators: %s: Smile icon
+#: inc/admin/class-suffice-theme-review-notice.php:84
+msgid "The above word is just to draw your attention. %s"
 msgstr ""
 
-#: inc/admin/class-suffice-theme-review-notice.php:85, inc/admin/class-suffice-upgrade-notice.php:95
+#. translators: %1$s: Opening of strong tag, %2$s: Theme's Name, %3$s: Closing of strong tag
+#: inc/admin/class-suffice-theme-review-notice.php:93
+msgid "Hope you are having a nice experience with %1$s %2$s %3$s theme. Please provide this theme a nice review."
+msgstr ""
+
+#: inc/admin/class-suffice-theme-review-notice.php:101
+msgid "What benefit would you have?"
+msgstr ""
+
+#. translators: %s: Smiley icon
+#: inc/admin/class-suffice-theme-review-notice.php:107
+msgid "Basically, it would encourage us to release updates regularly with new features & bug fixes so that you can keep on using the theme without any issues and also to provide free support like we have been doing. %s"
+msgstr ""
+
+#: inc/admin/class-suffice-theme-review-notice.php:116
+msgid "Sure, I'd love to!"
+msgstr ""
+
+#: inc/admin/class-suffice-theme-review-notice.php:121
+msgid "I already did!"
+msgstr ""
+
+#: inc/admin/class-suffice-theme-review-notice.php:126, inc/admin/class-suffice-upgrade-notice.php:95
 msgid "Maybe later"
 msgstr ""
 
-#: inc/admin/class-suffice-theme-review-notice.php:90
-msgid "I already did"
+#: inc/admin/class-suffice-theme-review-notice.php:131
+msgid "I have a query"
 msgstr ""
 
 #: inc/admin/class-suffice-upgrade-notice.php:74
