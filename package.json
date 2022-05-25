@@ -31,7 +31,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "grunt": "^1.3.0",
+    "grunt": "^1.5.3",
     "gulp-compress": "0.0.9",
     "gulp-install": "^1.1.0",
     "gulp-line-ending-corrector": "^1.0.3"
