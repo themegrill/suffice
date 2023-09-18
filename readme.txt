@@ -102,6 +102,9 @@ License: GNU GPL, Version 3, https://www.gnu.org/licenses/gpl-3.0.html
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 == Changelog
+= Version 1.2.8 -2023-09-18 =
+* Tweak - Update WordPress tested upto version to 6.3.
+
 = Version 1.2.7 -2021-08-18 =
 * Enhancement - Added CSS font-display property and swap value for better performance.
 
