@@ -1,4 +1,4 @@
-# Copyright (C) 2023 Suffice
+# Copyright (C) 2025 Suffice
 # This file is distributed under the same license as the Suffice package.
 msgid ""
 msgstr ""
@@ -94,127 +94,127 @@ msgstr ""
 msgid "Processing..."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:53, inc/admin/class-suffice-admin.php:54, inc/admin/class-suffice-admin.php:78
+#: inc/admin/class-suffice-admin.php:58, inc/admin/class-suffice-admin.php:59, inc/admin/class-suffice-admin.php:83
 msgid "About"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:93
+#: inc/admin/class-suffice-admin.php:98
 msgid "Theme Info"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:95
+#: inc/admin/class-suffice-admin.php:100
 msgid "View Demo"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:97, inc/customizer.php:188
+#: inc/admin/class-suffice-admin.php:102, inc/customizer.php:188
 msgid "View PRO version"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:99
+#: inc/admin/class-suffice-admin.php:104
 msgid "Rate this theme"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:133
+#: inc/admin/class-suffice-admin.php:138
 msgid "Supported Plugins"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:156
+#: inc/admin/class-suffice-admin.php:161
 msgid "Free Vs Pro"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:179
+#: inc/admin/class-suffice-admin.php:184
 msgid "Changelog"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:213
+#: inc/admin/class-suffice-admin.php:218
 msgid "Theme Customizer"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:214
+#: inc/admin/class-suffice-admin.php:219
 msgid "All Theme Options are available via Customize screen."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:216
+#: inc/admin/class-suffice-admin.php:221
 msgid "Customize"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:221, inc/admin/class-suffice-admin.php:224
+#: inc/admin/class-suffice-admin.php:226, inc/admin/class-suffice-admin.php:229
 msgid "Documentation"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:222
+#: inc/admin/class-suffice-admin.php:227
 msgid "Please view our documentation page to setup the theme."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:229
+#: inc/admin/class-suffice-admin.php:234
 msgid "Got theme support question?"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:230
+#: inc/admin/class-suffice-admin.php:235
 msgid "Please put it in our dedicated support forum."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:232
+#: inc/admin/class-suffice-admin.php:237
 msgid "Support Forum"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:239, inc/admin/class-suffice-admin.php:247
+#: inc/admin/class-suffice-admin.php:244, inc/admin/class-suffice-admin.php:252
 msgid "Translate"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:243
+#: inc/admin/class-suffice-admin.php:248
 msgid "Click below to translate this theme into your own language."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:279
+#: inc/admin/class-suffice-admin.php:284
 msgid "View changelog below:"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:333
+#: inc/admin/class-suffice-admin.php:338
 msgid "This theme recommends following plugins:"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:336
+#: inc/admin/class-suffice-admin.php:341
 msgid "Suffice Toolkit"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:337, inc/admin/class-suffice-admin.php:341, inc/admin/class-suffice-admin.php:345, inc/admin/class-suffice-admin.php:349
+#: inc/admin/class-suffice-admin.php:342, inc/admin/class-suffice-admin.php:346, inc/admin/class-suffice-admin.php:350, inc/admin/class-suffice-admin.php:354
 msgid " by ThemeGrill"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:340
+#: inc/admin/class-suffice-admin.php:345
 msgid "Social Icons"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:344
+#: inc/admin/class-suffice-admin.php:349
 msgid "Easy Social Sharing"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:348
+#: inc/admin/class-suffice-admin.php:353
 msgid "Everest Forms – Easy Contact Form and Form Builder"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:352
+#: inc/admin/class-suffice-admin.php:357
 msgid "Page Builder by SiteOrigin"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:355
+#: inc/admin/class-suffice-admin.php:360
 msgid "WooCommerce"
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:372
+#: inc/admin/class-suffice-admin.php:377
 msgid "Upgrade to PRO version for more exciting features."
 msgstr ""
 
-#: inc/admin/class-suffice-admin.php:375
+#: inc/admin/class-suffice-admin.php:380
 msgid "View Pro"
 msgstr ""
 
-#: inc/admin/class-suffice-notice.php:59, inc/admin/class-suffice-notice.php:78, inc/admin/class-suffice-theme-review-notice.php:152, inc/admin/class-suffice-theme-review-notice.php:169, inc/admin/class-suffice-welcome-notice.php:77
+#: inc/admin/class-suffice-notice.php:59, inc/admin/class-suffice-notice.php:78, inc/admin/class-suffice-theme-review-notice.php:152, inc/admin/class-suffice-theme-review-notice.php:169, inc/admin/class-suffice-welcome-notice.php:82
 msgid "Action failed. Please refresh the page and retry."
 msgstr ""
 
-#: inc/admin/class-suffice-notice.php:63, inc/admin/class-suffice-notice.php:82, inc/admin/class-suffice-welcome-notice.php:81
+#: inc/admin/class-suffice-notice.php:63, inc/admin/class-suffice-notice.php:82, inc/admin/class-suffice-welcome-notice.php:86
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
@@ -273,17 +273,21 @@ msgstr ""
 msgid "Get started with Suffice"
 msgstr ""
 
-#: inc/admin/class-suffice-welcome-notice.php:46, inc/extras.php:377, inc/extras.php:377
+#: inc/admin/class-suffice-welcome-notice.php:51, inc/extras.php:377, inc/extras.php:377
 msgid "Suffice"
 msgstr ""
 
 #. translators: 1: welcome page link starting html tag, 2: welcome page link ending html tag.
-#: inc/admin/class-suffice-welcome-notice.php:54
+#: inc/admin/class-suffice-welcome-notice.php:59
 msgid "Welcome! Thank you for choosing Suffice! To fully take advantage of the best our theme can offer please make sure you visit our %1$swelcome page%2$s."
 msgstr ""
 
-#: inc/admin/class-suffice-welcome-notice.php:63
+#: inc/admin/class-suffice-welcome-notice.php:68
 msgid "Clicking the button will install and activate the ThemeGrill demo importer plugin."
+msgstr ""
+
+#: inc/admin/class-suffice-welcome-notice.php:110
+msgid "You do not have permission to perform this action."
 msgstr ""
 
 #: inc/customizer.php:73

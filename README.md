@@ -1,9 +1,9 @@
 # Suffice
 **Author**: ThemeGrill
 **Requires** at least: WordPress 4.3
-**Tested up to**: WordPress 6.3
+**Tested up to**: WordPress 6.8
 **Requires PHP**: 5.6
-**Version**: 1.2.8
+**Version**: 1.2.9
 **License**: GPLv3 or later
 **License URI**: https://www.gnu.org/licenses/gpl-3.0.en.html
 **Tags**: one-column, two-columns, left-sidebar, right-sidebar, grid-layout, custom-background, custom-colors, custom-logo, featured-images, footer-widgets, full-width-template, theme-options, threaded-comments, translation-ready, blog, e-commerce, portfolio
